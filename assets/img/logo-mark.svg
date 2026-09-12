@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" role="img" aria-label="روند یدک">
+  <defs>
+    <linearGradient id="rvDisc" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#2d8ae1"/>
+      <stop offset="1" stop-color="#13598f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge plate: reads identically on white and on navy -->
+  <circle cx="28" cy="28" r="27" fill="url(#rvDisc)"/>
+  <circle cx="28" cy="28" r="23.4" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.2"/>
+
+  <!-- car, facing forward -->
+  <g transform="translate(10 17)" fill="#ffffff">
+    <g transform="scale(0.379)">
+      <path d="M2 26 L6 17.5C8.4 12.4 12.6 9.6 19 9.1L36.5 8c8.6-.5 15.6 1.4 22.6 5.6L70 20l14.5 2.2c5.6.9 8.5 3 8.5 6.4V31H2z"/>
+      <path d="M13.4 19.4 L16.8 13.9C18.2 11.6 20.4 10.4 23.8 10.2L34.6 9.6 L33.6 19.4Z" fill="#1a6cba"/>
+      <path d="M38.4 9.4 L37.4 19.4 L63.4 19.4 L55.4 14.1c-5.2-2.9-10.6-4.4-17-4.7Z" fill="#1a6cba"/>
+      <circle cx="26" cy="31" r="7.8"/>
+      <circle cx="26" cy="31" r="3.3" fill="#1a6cba"/>
+      <circle cx="74" cy="31" r="7.8"/>
+      <circle cx="74" cy="31" r="3.3" fill="#1a6cba"/>
+    </g>
+  </g>
+
+  <!-- the route: ground line with its leading edge in red, plus a trailing motion line -->
+  <path d="M12.8 35.6H43.2" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+  <path d="M12.8 35.6H21.4" stroke="#e33241" stroke-width="2.9" stroke-linecap="round" fill="none"/>
+  <path d="M18.6 40.3H37.4" stroke="#ffffff" stroke-opacity=".45" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>روند یدک | فروشگاه اینترنتی لوازم و قطعات یدکی خودرو</title>
+<meta name="description" content="خرید آنلاین انواع لوازم و قطعات یدکی خودرو؛ قطعات موتور، بدنه، جلوبندی، برقی و داخل کابین با گارانتی اصالت کالا و ارسال به تمام نقاط کشور.">
+<link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER — single line ============ -->
+<header class="topbar" id="topbar">
+  <div class="container topbar__inner">
+
+    <a class="logo" href="index.html" aria-label="روند یدک — قطعات یدکی خودرو">
+      <img class="logo__mark" src="assets/img/logo-mark.svg" alt="">
+      <span class="logo__text"><b>روند یدک</b><i>قطعات یدکی خودرو</i></span>
+    </a>
+
+    <nav class="mainnav" aria-label="منوی اصلی">
+      <ul class="menu">
+        <li><a class="is-active" href="index.html">صفحه اصلی</a></li>
+        <li><a href="#">قطعات موتور</a></li>
+        <li><a href="#">قطعات بدنه</a></li>
+        <li><a href="#">قطعات جلوبندی</a></li>
+        <li><a href="#">قطعات برقی</a></li>
+        <li><a href="#blog">مجله</a></li>
+      </ul>
+    </nav>
+
+    <div class="tools">
+      <a class="btn-request" href="#request">درخواست قطعه</a>
+      <a class="tools__item tools__item--cart" href="#" aria-label="سبد خرید">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 10.4h9.9l2.1-7.4H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.4" cy="19" r="1.5" fill="currentColor"/><circle cx="16.6" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="tools__badge">۰</span>
+      </a>
+      <a class="tools__item tools__item--user" href="#" aria-label="حساب کاربری">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M4.8 20c.6-3.8 3.6-5.8 7.2-5.8s6.6 2 7.2 5.8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+      </a>
+      <button class="burger" aria-label="منو" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO — full first screen, real 3D parallax rig ============ -->
+<section class="hero" id="hero">
+  <div class="hero__stage" aria-hidden="true">
+    <span class="hero__layer hero__plate"></span>
+    <span class="hero__layer hero__mist"></span>
+    <span class="hero__layer hero__car"></span>
+    <span class="hero__layer hero__fore"></span>
+  </div>
+  <canvas class="hero__fx" aria-hidden="true"></canvas>
+  <span class="hero__veil" aria-hidden="true"></span>
+
+  <div class="container hero__inner">
+    <p class="hero__kicker">تأمین سریع قطعات اصلی خودرو</p>
+    <h1 class="hero__title">انواع قطعات و لوازم<br><em>یدکی خودرو</em></h1>
+    <p class="hero__sub">بیش از ۱۲٬۰۰۰ قطعه اصلی و اورجینال، با ضمانت اصالت کالا و ارسال به تمام نقاط کشور.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#newest">مشاهده محصولات</a>
+      <a class="btn btn--ghost" href="#finder">جستجوی قطعه</a>
+    </div>
+    <ul class="hero__stats">
+      <li><b>+۱۲٬۰۰۰</b><span>قطعه موجود</span></li>
+      <li><b>+۸٬۵۰۰</b><span>مشتری راضی</span></li>
+      <li><b>۲۴ ساعته</b><span>پشتیبانی فنی</span></li>
+    </ul>
+  </div>
+
+  <a class="hero__scroll" href="#promos" aria-label="ادامه صفحه">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ PROMO BANNERS ============ -->
+<section class="promos" id="promos">
+  <div class="container promos__grid">
+    <a class="banner banner--engine" href="#">
+      <div class="banner__body">
+        <span class="banner__kicker">پرفروش ترین ها</span>
+        <h3 class="banner__title">قطعات موتور</h3>
+        <p class="banner__sub">همراه با گارانتی یک ساله</p>
+        <span class="banner__more">مشاهده دسته</span>
+      </div>
+    </a>
+    <a class="banner banner--cabin" href="#">
+      <div class="banner__body">
+        <span class="banner__kicker">تازه رسیده‌ها</span>
+        <h3 class="banner__title">قطعات داخل کابین</h3>
+        <p class="banner__sub">از داشبورد تا تودوزی</p>
+        <span class="banner__more">مشاهده دسته</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="catband">
+  <div class="container">
+    <ul class="cats">
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><path d="M6 6 13 19M20 6 13 19"/><path d="M8.4 11.5H17.6"/><rect x="8.5" y="19" width="9" height="12" rx="3"/><path d="M44 6 51 19M58 6 51 19"/><path d="M46.4 11.5H55.6"/><rect x="46.5" y="19" width="9" height="12" rx="3"/><path d="M13 31C13 45 21 53 32 53S51 45 51 31"/><path d="M20 31.5C20.6 41 25.6 46.5 32 46.5S43.4 41 44 31.5"/></svg>
+        </span>
+        <span class="cats__label">قطعات برقی</span>
+      </a></li>
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><rect x="6" y="6" width="52" height="52" rx="10"/><circle cx="32" cy="32" r="5"/><path d="M32 27C31.4 18 26 12.4 18.6 12.4 18.6 20.4 24 26.2 31 27Z"/><path d="M32 27C31.4 18 26 12.4 18.6 12.4 18.6 20.4 24 26.2 31 27Z" transform="rotate(90 32 32)"/><path d="M32 27C31.4 18 26 12.4 18.6 12.4 18.6 20.4 24 26.2 31 27Z" transform="rotate(180 32 32)"/><path d="M32 27C31.4 18 26 12.4 18.6 12.4 18.6 20.4 24 26.2 31 27Z" transform="rotate(270 32 32)"/></svg>
+        </span>
+        <span class="cats__label">قطعات جلوبندی</span>
+      </a></li>
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><path d="M6 34v10a3 3 0 0 0 3 3h5l6 7h16l5-7h11a3 3 0 0 0 3-3V29a3 3 0 0 0-3-3h-6l-5-7H32l-4 5h-9a3 3 0 0 0-3 3v4H9a3 3 0 0 0-3 3z"/><path d="M20 19v7M27 14h10"/><circle cx="47" cy="37" r="6"/></svg>
+        </span>
+        <span class="cats__label">قطعات موتور</span>
+      </a></li>
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><path d="M9 45V29c0-2 .8-3.6 2.3-4.8L26 12.4c1.2-1 2.6-1.4 4-1.4h20c2.8 0 5 2.2 5 5v29c0 2.8-2.2 5-5 5H14c-2.8 0-5-2.2-5-5z"/><path d="M16 28l11-9.4c.8-.7 1.7-1 2.7-1H49v11.6H16z"/><path d="M18 40h13"/><circle cx="46" cy="40" r="3"/></svg>
+        </span>
+        <span class="cats__label">قطعات بدنه</span>
+      </a></li>
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><circle cx="32" cy="32" r="25"/><circle cx="32" cy="32" r="8"/><path d="M32 40v17M25.1 28.1L10.4 19.6M38.9 28.1l14.7-8.5"/><path d="M8.5 27.5c6.5 4.5 14.8 6.6 23.5 6.6s17-2.1 23.5-6.6"/></svg>
+        </span>
+        <span class="cats__label">قطعات داخل کابین</span>
+      </a></li>
+      <li><a href="#">
+        <span class="cats__ico">
+          <svg viewBox="0 0 64 64" class="ic"><circle cx="32" cy="32" r="25"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="13.5" r="4.6"/><circle cx="45.1" cy="18.9" r="4.6"/><circle cx="50.5" cy="32" r="4.6"/><circle cx="45.1" cy="45.1" r="4.6"/><circle cx="32" cy="50.5" r="4.6"/><circle cx="18.9" cy="45.1" r="4.6"/><circle cx="13.5" cy="32" r="4.6"/><circle cx="18.9" cy="18.9" r="4.6"/></svg>
+        </span>
+        <span class="cats__label">سایر قطعات</span>
+      </a></li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ============ NEWEST PRODUCTS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="sechead">
+      <h2>جدیدترین محصولات</h2>
+      <span class="sechead__line"></span>
+    </div>
+
+    <div class="pgrid" id="newest"></div>
+  </div>
+</section>
+
+<!-- ============ PART FINDER ============ -->
+<section class="finder" id="finder">
+  <div class="container finder__inner">
+    <span class="finder__kicker">جستجوی سریع قطعه</span>
+    <h2 class="finder__title">قطعه مورد نیاز خود را پیدا کنید</h2>
+    <p class="finder__sub">نام قطعه، دسته بندی یا شماره فنی را وارد کنید</p>
+
+    <form class="finder__form" role="search" autocomplete="off" novalidate>
+      <div class="finder__box">
+        <input class="finder__input" id="finderInput" type="text" name="q"
+               placeholder="مثلا چراغ جلو، دیسک ترمز، فیلتر روغن ..."
+               aria-label="جستجوی قطعه" role="combobox" aria-expanded="false"
+               aria-controls="finderPanel" aria-autocomplete="list" aria-haspopup="listbox">
+        <span class="finder__sep"></span>
+        <span class="finder__cat">
+          <select id="finderCat" aria-label="انتخاب دسته بندی">
+            <option value="">همه دسته ها</option>
+            <option>قطعات برقی</option>
+            <option>قطعات جلوبندی</option>
+            <option>قطعات موتور</option>
+            <option>قطعات بدنه</option>
+          </select>
+          <svg viewBox="0 0 24 24" class="ico-chev" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <button class="finder__btn" type="submit" aria-label="جستجو">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="finder__panel" id="finderPanel" role="listbox" aria-label="نتایج جستجو" hidden></div>
+    </form>
+
+    <p class="finder__hot">
+      <span>جستجوهای پرطرفدار:</span>
+      <a href="#finder" data-q="چراغ جلو">چراغ جلو</a>
+      <a href="#finder" data-q="دیسک ترمز">دیسک ترمز</a>
+      <a href="#finder" data-q="فیلتر روغن">فیلتر روغن</a>
+      <a href="#finder" data-q="رینگ">رینگ</a>
+      <a href="#finder" data-q="توربو">توربو</a>
+      <a href="#finder" data-q="کلاچ">کلاچ</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ SPECIAL OFFERS ============ -->
+<section class="section special">
+  <div class="container special__inner">
+    <div class="special__copy">
+      <h2 class="special__title">پیشنهادات ویژه</h2>
+      <p class="special__sub">فرصت استثنایی برای خرید</p>
+      <div class="special__list" id="special"></div>
+    </div>
+    <div class="special__art">
+      <img src="assets/img/banners/car-xray.png" alt="نمای برش خودرو و قطعات آن" onerror="this.closest('.special__art').classList.add('is-missing')">
+      <span class="dot dot--1"></span><span class="dot dot--2"></span><span class="dot dot--3"></span>
+      <span class="dot dot--4"></span><span class="dot dot--5"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REQUEST CTA ============ -->
+<section class="ctawrap" id="request">
+  <div class="container">
+    <div class="cta">
+      <div class="cta__inner">
+        <div class="cta__head">
+          <h3>ثبت فوری درخواست قطعه</h3>
+          <img class="cta__logo" src="assets/img/logo-mark.svg" alt="روند یدک">
+        </div>
+        <p class="cta__sub">لطفا فرم زیر را تکمیل نمایید</p>
+        <a class="btn-gold" href="#">درخواست قطعه</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="section blog" id="blog">
+  <div class="container">
+    <div class="sechead">
+      <h2>مجله ی آموزشی</h2>
+      <span class="sechead__line"></span>
+    </div>
+
+    <div class="bgrid">
+      <article class="post">
+        <a class="post__thumb" href="#">
+          <img src="assets/img/blog/blog1.jpg" alt="مهم ترین قطعات جلوبندی">
+          <span class="post__tag">پشتیبان سایت</span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">آموزشی <i>/</i> ۲۶ آوریل ۲۰۲۳</div>
+          <h3 class="post__title"><a href="#">مهم ترین قطعات جلوبندی</a></h3>
+          <p class="post__excerpt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. آنچه لازم است.</p>
+          <a class="post__more" href="#">ادامه مطلب</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <a class="post__thumb" href="#">
+          <img src="assets/img/blog/blog2.jpg" alt="راهنمای تعویض کمک فنر خودرو">
+          <span class="post__tag">پشتیبان سایت</span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">آموزشی <i>/</i> ۱۸ مارس ۲۰۲۳</div>
+          <h3 class="post__title"><a href="#">راهنمای تعویض کمک فنر خودرو</a></h3>
+          <p class="post__excerpt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. آنچه لازم است.</p>
+          <a class="post__more" href="#">ادامه مطلب</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <a class="post__thumb" href="#">
+          <img src="assets/img/blog/blog3.jpg" alt="نشانه های خرابی قطعات موتور">
+          <span class="post__tag">پشتیبان سایت</span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">آموزشی <i>/</i> ۹ فوریه ۲۰۲۳</div>
+          <h3 class="post__title"><a href="#">نشانه های خرابی قطعات موتور</a></h3>
+          <p class="post__excerpt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. آنچه لازم است.</p>
+          <a class="post__more" href="#">ادامه مطلب</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+
+  <div class="features">
+    <div class="container features__inner">
+      <div class="feature">
+        <span class="feature__ico">
+          <svg viewBox="0 0 64 64" class="ic ic--gold"><path d="M4 18h30v22H4z"/><path d="M34 25h11l7 8v7H34z"/><circle cx="17" cy="45" r="5"/><circle cx="45" cy="45" r="5"/><path d="M22 45h18"/></svg>
+          <em>FREE</em>
+        </span>
+        <div class="feature__txt"><b>ارسال رایگان</b><span>ارسال به تمامی نقاط کشور</span></div>
+      </div>
+      <div class="feature">
+        <span class="feature__ico">
+          <svg viewBox="0 0 64 64" class="ic ic--gold"><path d="M12 36v-6c0-11 9-20 20-20s20 9 20 20v6"/><path d="M12 32h5a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-5a3 3 0 0 1-3-3V35a3 3 0 0 1 3-3zM47 32h5a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-5a3 3 0 0 1-3-3V35a3 3 0 0 1 3-3z"/><path d="M52 48c0 4-4 7-11 7"/></svg>
+        </span>
+        <div class="feature__txt"><b>پشتیبانی ۲۴ ساعته</b><span>همیشه کنار شما هستیم</span></div>
+      </div>
+      <div class="feature">
+        <span class="feature__ico">
+          <svg viewBox="0 0 64 64" class="ic ic--gold"><path d="M32 6l22 9v16c0 13-9 23-22 27C19 54 10 44 10 31V15z"/><path d="M22 31l7 7 14-14"/></svg>
+        </span>
+        <div class="feature__txt"><b>ضمانت اصالت کالا</b><span>تضمین کیفیت تمام قطعات</span></div>
+      </div>
+      <div class="feature">
+        <span class="feature__ico">
+          <svg viewBox="0 0 64 64" class="ic ic--gold"><rect x="6" y="14" width="52" height="36" rx="5"/><path d="M6 26h52M14 40h12"/></svg>
+        </span>
+        <div class="feature__txt"><b>پرداخت امن</b><span>درگاه پرداخت معتبر بانکی</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__inner">
+    <div class="fcol fcol--about">
+      <h4>درباره ما</h4>
+      <p>ما در فروشگاه اینترنتی روند یدک با تکیه بر تخصص و تجربه بالا در امور خودرویی، به خصوص قطعات و لوازم یدکی، آماده هستیم تا با ارائه تمامی مشاوره ها و پشتیبانی های لازم و با تامین سریع قطعات اصلی و اورجینال خودرو های شرکت ایران خودرو، با قیمت مناسب و در زمان بروز مشکل برای خودروی شما در کنار شما باشیم.</p>
+    </div>
+
+    <div class="fcol">
+      <h4>دسته بندی</h4>
+      <ul>
+        <li><a href="#">قطعات برقی</a></li>
+        <li><a href="#">قطعات جلوبندی</a></li>
+        <li><a href="#">قطعات موتور</a></li>
+        <li><a href="#">قطعات بدنه</a></li>
+        <li><a href="#">قطعات کابین</a></li>
+        <li><a href="#">سایر قطعات</a></li>
+      </ul>
+    </div>
+
+    <div class="fcol">
+      <h4>دسترسی سریع</h4>
+      <ul>
+        <li><a href="#">درباره ما</a></li>
+        <li><a href="#">تماس با ما</a></li>
+        <li><a href="#">سوالات متداول</a></li>
+        <li><a href="#blog">مجله</a></li>
+        <li><a href="#">درخواست قطعه</a></li>
+      </ul>
+    </div>
+
+    <div class="fcol fcol--trust">
+      <a class="logo logo--light fcol__logo" href="index.html" aria-label="روند یدک">
+        <img class="logo__mark" src="assets/img/logo-mark.svg" alt="">
+      <span class="logo__text"><b>روند یدک</b><i>قطعات یدکی خودرو</i></span>
+      </a>
+      <img class="fcol__badge" src="assets/img/samandehi.svg" alt="نماد ساماندهی">
+    </div>
+  </div>
+
+  <div class="footbar">
+    <div class="container footbar__inner">
+      <p class="footbar__copy">© تمام حقوق برای روند یدک محفوظ است</p>
+      <p class="footbar__by">طراحی شده توسط <a href="#">روند</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="بازگشت به بالا" type="button">
+  <svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero-fx.js"></script>
+</body>
+</html>

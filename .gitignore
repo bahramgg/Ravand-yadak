@@ -1,0 +1,8 @@
+# image-generation scratch, spend ledger and scripts stay local
+tools/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/

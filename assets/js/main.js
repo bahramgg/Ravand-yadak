@@ -1,0 +1,320 @@
+/* ==========================================================
+   روند یدک — رفتار صفحه اصلی
+   ========================================================== */
+(function () {
+  'use strict';
+
+  var FA = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+
+  /** 320000 -> "۳۲۰,۰۰۰" */
+  function toman(n) {
+    var s = String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return s.replace(/\d/g, function (d) { return FA[+d]; });
+  }
+  function fa(n) {
+    return String(n).replace(/\d/g, function (d) { return FA[+d]; });
+  }
+
+  /* ---------------------------------------------------------
+     کاتالوگ محصولات
+     --------------------------------------------------------- */
+  var P = {
+    p1:  { name: 'کالیپر ترمز اسپرت ۴ پیستون', rate: 4.8, stock: 36,  price: 120000, old: 132000, off: 9,
+           cat: 'قطعات جلوبندی', part: 'کالیپر ترمز', sku: 'RV-1201',
+           tags: 'کالیپر ترمز جلوبندی کولیس لنت' },
+    p2:  { name: 'چراغ جلو پروژکتوری با نور امبر', rate: 4.6, stock: 52,  price: 220000, old: 240000, off: 8,
+           cat: 'قطعات بدنه', part: 'چراغ جلو', sku: 'RV-2204',
+           tags: 'چراغ جلو هدلایت نور بدنه' },
+    p3:  { name: 'رینگ آلومینیومی کروم ۱۷ اینچ', rate: 4.9, stock: 18,  price: 800000, old: 840000, off: 5,
+           cat: 'قطعات بدنه', part: 'رینگ اسپرت', sku: 'RV-3310',
+           tags: 'رینگ چرخ اسپرت آلومینیومی بدنه' },
+    p4:  { name: 'توربوشارژر کامل با وستگیت', rate: 4.7, stock: 9,  price: 250000, old: 275000, off: 9,
+           cat: 'قطعات موتور', part: 'توربوشارژر', sku: 'RV-4118',
+           tags: 'توربو توربوشارژر شارژر هوا موتور' },
+    p5:  { name: 'دیسک و صفحه کلاچ اصلی', rate: 4.5, stock: 27,  price: 780000, old: 850000, off: 9,
+           cat: 'قطعات موتور', part: 'صفحه کلاچ', sku: 'RV-5023',
+           tags: 'کلاچ صفحه دیسک کلاچ موتور گیربکس' },
+    p6:  { name: 'چراغ جلو گرد ال‌ای‌دی هالو', rate: 4.4, stock: 41,  price: 180000,
+           cat: 'قطعات برقی', part: 'چراغ جلو ال ای دی', sku: 'RV-6077',
+           tags: 'چراغ ال ای دی led برقی نور' },
+    p7:  { name: 'فیلتر روغن موتور', rate: 4.8, stock: 120,  price: 500000,
+           cat: 'قطعات موتور', part: 'فیلتر روغن', sku: 'RV-7045',
+           tags: 'فیلتر روغن صافی موتور' },
+    p8:  { name: 'رینگ اسپرت دو رنگ ۱۸ اینچ', rate: 4.9, stock: 14,  price: 320000,
+           cat: 'قطعات بدنه', part: 'رینگ آلومینیومی', sku: 'RV-8312',
+           tags: 'رینگ چرخ آلومینیومی بدنه' },
+    p9:  { name: 'دیسک ترمز خنک‌شونده سوراخ‌دار', rate: 4.7, stock: 33,  price: 130000,
+           cat: 'قطعات جلوبندی', part: 'دیسک ترمز', sku: 'RV-9150',
+           tags: 'دیسک ترمز صفحه ترمز جلوبندی' },
+    p10: { name: 'چراغ جلو دوقلو دودی', rate: 4.6, stock: 22, price: 320000,
+           cat: 'قطعات برقی', part: 'چراغ جلو پروژکتوری', sku: 'RV-1042',
+           tags: 'چراغ جلو پروژکتور برقی نور' }
+  };
+
+  function img(id) { return 'assets/img/products/' + id + '.png'; }
+
+  function priceHtml(p) {
+    var html = '<span class="pcard__price">';
+    if (p.old) html += '<del class="pcard__old">' + toman(p.old) + '</del>';
+    html += '<b>' + toman(p.price) + '</b><i>تومان</i></span>';
+    return html;
+  }
+
+  function cardHtml(id, cls) {
+    var p = P[id];
+    return '' +
+      '<article class="' + (cls || 'pcard') + '">' +
+        '<a class="pcard__media" href="#" aria-label="' + p.name + '">' +
+          (p.off ? '<span class="badge">٪' + fa(p.off) + '-</span>' : '') +
+          '<img src="' + img(id) + '" alt="' + p.name + '" loading="lazy">' +
+          '<span class="pcard__quick">مشاهده سریع</span>' +
+        '</a>' +
+        '<div class="pcard__body">' +
+          '<span class="pcard__cat">' + p.cat.replace('قطعات ', '') + '</span>' +
+          '<h3 class="pcard__title"><a href="#">' + p.name + '</a></h3>' +
+          '<div class="pcard__foot">' +
+            priceHtml(p) +
+            '<button class="pcard__add" type="button" aria-label="افزودن ' + p.name + ' به سبد خرید">' +
+              '<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>' +
+            '</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  function fill(sel, ids, cls) {
+    var el = document.querySelector(sel);
+    if (!el) return;
+    el.innerHTML = ids.map(function (id) { return cardHtml(id, cls); }).join('');
+  }
+
+  /* جدیدترین محصولات — سطر اول ۱۰ تا ۶، سطر دوم ۵ تا ۱ */
+  fill('#newest', ['p10', 'p9', 'p8', 'p7', 'p6', 'p5', 'p4', 'p3', 'p2', 'p1']);
+
+  /* پیشنهادات ویژه — دو ستون */
+  (function () {
+    var el = document.querySelector('#special');
+    if (!el) return;
+    var ids = ['p10', 'p9', 'p8', 'p7', 'p6', 'p5'];
+    el.innerHTML = ids.map(function (id) {
+      var p = P[id];
+      return '' +
+        '<a class="sitem" href="#">' +
+          '<span class="sitem__thumb"><img src="' + img(id) + '" alt="' + p.name + '" loading="lazy"></span>' +
+          '<span class="sitem__body">' +
+            '<span class="sitem__title">' + p.name + '</span>' +
+            '<span class="sitem__cat">' + p.cat.replace('قطعات ', '') + '</span>' +
+            '<span class="sitem__price">' + toman(p.price) + ' تومان</span>' +
+          '</span>' +
+        '</a>';
+    }).join('');
+  })();
+
+  /* ---------------------------------------------------------
+     جستجوی قطعه — نوار تیره
+     --------------------------------------------------------- */
+  (function () {
+    var input = document.getElementById('finderInput');
+    var panel = document.getElementById('finderPanel');
+    var catSel = document.getElementById('finderCat');
+    if (!input || !panel) return;
+
+    var form = input.closest('form');
+    var ids = Object.keys(P);
+    var active = -1;
+    var shown = [];
+
+    /* ارقام فارسی/عربی و «ی/ک» عربی را یکدست می‌کند تا جستجو هر دو املا را بگیرد */
+    function norm(str) {
+      return String(str)
+        .replace(/[۰-۹]/g, function (d) { return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); })
+        .replace(/[٠-٩]/g, function (d) { return String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)); })
+        .replace(/ي/g, 'ی').replace(/ك/g, 'ک')
+        .replace(/‌/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim().toLowerCase();
+    }
+
+    function haystack(id) {
+      var p = P[id];
+      return norm([p.name, p.part, p.cat, p.tags, p.sku, id].join(' '));
+    }
+
+    function search(q, cat) {
+      var nq = norm(q);
+      if (!nq) return [];
+      var terms = nq.split(' ');
+      return ids.filter(function (id) {
+        if (cat && P[id].cat !== cat) return false;
+        var hay = haystack(id);
+        return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+      }).sort(function (a, b) {
+        /* تطابق در نام قطعه بالاتر از تطابق در برچسب‌ها می‌نشیند */
+        var sa = norm(P[a].part).indexOf(terms[0]) === 0 ? 0 : 1;
+        var sb = norm(P[b].part).indexOf(terms[0]) === 0 ? 0 : 1;
+        return sa - sb;
+      });
+    }
+
+    function mark(text, q) {
+      var nq = norm(q).split(' ')[0];
+      if (!nq) return text;
+      var i = norm(text).indexOf(nq);
+      if (i === -1) return text;
+      return text.slice(0, i) + '<b>' + text.slice(i, i + nq.length) + '</b>' + text.slice(i + nq.length);
+    }
+
+    function close() {
+      panel.hidden = true;
+      panel.innerHTML = '';
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      active = -1;
+      shown = [];
+    }
+
+    function render(q) {
+      var hits = search(q, catSel ? catSel.value : '');
+      shown = hits;
+      active = -1;
+      if (!norm(q)) return close();
+
+      if (!hits.length) {
+        panel.innerHTML = '<div class="fres fres--empty">قطعه‌ای با این مشخصات پیدا نشد. ' +
+                          'می‌توانید درخواست قطعه ثبت کنید.</div>';
+      } else {
+        panel.innerHTML = hits.map(function (id, i) {
+          var p = P[id];
+          return '' +
+            '<a class="fres" id="fres-' + i + '" role="option" aria-selected="false" href="#">' +
+              '<span class="fres__thumb"><img src="' + img(id) + '" alt="" loading="lazy"></span>' +
+              '<span class="fres__body">' +
+                '<span class="fres__name">' + mark(p.name, q) + '</span>' +
+                '<span class="fres__meta">' + p.cat + ' • شماره فنی ' + p.sku + '</span>' +
+              '</span>' +
+              '<span class="fres__price">' + toman(p.price) + ' تومان</span>' +
+            '</a>';
+        }).join('');
+      }
+      panel.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    }
+
+    function highlight(i) {
+      var opts = panel.querySelectorAll('.fres:not(.fres--empty)');
+      if (!opts.length) return;
+      if (active > -1 && opts[active]) {
+        opts[active].classList.remove('is-active');
+        opts[active].setAttribute('aria-selected', 'false');
+      }
+      active = (i + opts.length) % opts.length;
+      opts[active].classList.add('is-active');
+      opts[active].setAttribute('aria-selected', 'true');
+      input.setAttribute('aria-activedescendant', opts[active].id);
+      opts[active].scrollIntoView({ block: 'nearest' });
+    }
+
+    input.addEventListener('input', function () { render(input.value); });
+    input.addEventListener('focus', function () { if (input.value) render(input.value); });
+    if (catSel) catSel.addEventListener('change', function () { render(input.value); });
+
+    input.addEventListener('keydown', function (e) {
+      if (panel.hidden) {
+        if (e.key === 'ArrowDown' && input.value) { render(input.value); e.preventDefault(); }
+        return;
+      }
+      if (e.key === 'ArrowDown') { highlight(active + 1); e.preventDefault(); }
+      else if (e.key === 'ArrowUp') { highlight(active - 1); e.preventDefault(); }
+      else if (e.key === 'Escape') { close(); }
+      else if (e.key === 'Enter' && active > -1) {
+        panel.querySelectorAll('.fres')[active].click();
+        e.preventDefault();
+      }
+    });
+
+    if (form) form.addEventListener('submit', function (e) { e.preventDefault(); render(input.value); });
+
+    document.addEventListener('click', function (e) {
+      if (!panel.hidden && !e.target.closest('.finder__form')) close();
+    });
+
+    /* چیپ‌های جستجوی پرطرفدار */
+    document.querySelectorAll('.finder__hot a[data-q]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        input.value = a.getAttribute('data-q');
+        input.focus();
+        render(input.value);
+      });
+    });
+
+    /* ?q=... صفحه را با نتیجه باز می‌کند — برای لینک‌دهی و تست */
+    var pre = new URLSearchParams(location.search).get('q');
+    if (pre) { input.value = pre; render(pre); }
+  })();
+
+  /* ---------------------------------------------------------
+     دکمه بازگشت به بالا
+     --------------------------------------------------------- */
+  (function () {
+    var btn = document.getElementById('totop');
+    if (!btn) return;
+    function onScroll() {
+      btn.classList.toggle('is-on', window.scrollY > 420);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+
+
+  /* ---------------------------------------------------------
+     ظهور تدریجی بخش‌ها هنگام اسکرول + سایه‌ی هدر چسبان
+     --------------------------------------------------------- */
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var targets = document.querySelectorAll(
+      '.promos__grid, .cats, .sechead, .pgrid, .finder__inner, .special__inner, .cta, .bgrid, .features__inner'
+    );
+    if (!reduce.matches && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+      targets.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+    }
+
+    var bar = document.getElementById('topbar');
+    if (bar) {
+      var hero = document.querySelector('.hero');
+      var onScroll = function () {
+        bar.classList.toggle('is-top', !!hero && window.scrollY <= 8);
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('load', onScroll);
+      onScroll();
+      /* an anchor jump can move the page before the first scroll event fires */
+      requestAnimationFrame(onScroll);
+    }
+  })();
+
+  /* ---------------------------------------------------------
+     منوی موبایل
+     --------------------------------------------------------- */
+  (function () {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('.menu');
+    if (!burger || !menu) return;
+    burger.addEventListener('click', function () {
+      var open = menu.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', String(open));
+      var bar = document.getElementById('topbar');
+      if (bar) bar.classList.toggle('is-open', open);
+    });
+  })();
+})();
