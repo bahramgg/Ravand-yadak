@@ -287,4 +287,29 @@
       if (bar) bar.classList.toggle('is-open', open);
     });
   })();
+  /* ---------------------------------------------------------
+     اسکرول دقیق لینک‌های داخلی، با احتساب ارتفاع هدر ثابت
+     (دکمه‌ی هیرو، منو، دکمه‌ی دستیار). data-scroll-gap فاصله‌ی اضافه.
+     --------------------------------------------------------- */
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    document.addEventListener('click', function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!a) return;
+      var id = decodeURIComponent(a.getAttribute('href').slice(1));
+      var target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+
+      var burger = document.querySelector('.burger');
+      if (document.querySelector('.menu.is-open') && burger) burger.click();
+
+      var bar = document.getElementById('topbar');
+      var offset = (bar ? bar.offsetHeight : 0) + (Number(a.getAttribute('data-scroll-gap')) || 0);
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: Math.max(0, Math.round(top)), behavior: reduce.matches ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', '#' + id);
+    });
+  })();
 })();

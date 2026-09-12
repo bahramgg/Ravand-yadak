@@ -5,7 +5,12 @@
    کلید OpenRouter فقط در متغیر محیطی همین سرور است و هرگز به مرورگر نمی‌رسد.
 
    GET  /health         بیدار کردن و بررسی سلامت
-   POST /api/diagnose   { vehicle:{model,year,km}, turns:[{role:'user',text}|{role:'assistant',data}] }
+   POST /api/diagnose   { vehicle:{make_id,make,model_id,model,year,km,fuel},
+                          turns:[{role:'user',text}|{role:'assistant',data}] }
+
+   دانش پژوهش‌شده‌ی خودروها (اختیاری):
+     server/knowledge/profiles.json   { [model_id]: پرونده‌ی ایرادهای رایج مدل }
+     server/knowledge/context.json    زمینه‌ی کلی خودروهای ایران (CNG، اصطلاحات، چراغ‌های هشدار...)
    ========================================================== */
 
 const http = require('http');
@@ -37,6 +42,13 @@ if (!KEY) {
   process.exit(1);
 }
 
+const txt = (v) => (v == null ? '' : String(v)).trim();
+const take = (list, n) => (Array.isArray(list) ? list.slice(0, n) : []);
+
+function readJson(file) {
+  try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch (e) { return null; }
+}
+
 /* ---------- catalogue: the same file the storefront loads ---------- */
 function loadCatalog() {
   const file = path.join(__dirname, '..', 'assets', 'data', 'catalog.js');
@@ -51,13 +63,70 @@ const CATALOG_TEXT = Object.keys(CATALOG).map((id) => {
   return `- ${id} | ${p.name} | ${p.cat} | fits: ${p.use}`;
 }).join('\n');
 
-/* ---------- prompt + output contract ---------- */
-const SYSTEM = `You are "دستیار عیب‌یابی روند یدک", the car-diagnosis assistant of Ravand Yadak (روند یدک), an Iranian online store for genuine car spare parts.
+/* ---------- researched car knowledge (optional) ---------- */
+const KNOWLEDGE_DIR = path.join(__dirname, 'knowledge');
+const PROFILES = readJson(path.join(KNOWLEDGE_DIR, 'profiles.json')) || {};
+const CONTEXT = readJson(path.join(KNOWLEDGE_DIR, 'context.json'));
 
-A driver describes a problem with their car. Work like an experienced, careful mechanic talking to a customer:
+function contextText(c) {
+  if (!c) return '';
+  const lines = ['IRAN-WIDE CONTEXT (gathered from Iranian sources):'];
+  const section = (title, list, n) => {
+    const items = take(list, n).map(txt).filter(Boolean);
+    if (items.length) lines.push(title, ...items.map((x) => '- ' + x));
+  };
+  section('Fuel quality and dual-fuel CNG:', c.fuel_and_cng_fa, 8);
+  section('Climate and usage in Iran:', c.climate_and_usage_fa, 6);
+  section('Counterfeit and low-grade parts:', c.counterfeit_parts_fa, 6);
+  section('Service norms of Iranian mechanics:', c.service_norms_fa, 6);
+  const glossary = take(c.glossary, 60)
+    .map((g) => (g && g.term_fa ? `${txt(g.term_fa)} = ${txt(g.meaning_fa)}` : ''))
+    .filter(Boolean);
+  if (glossary.length) lines.push('Driver and mechanic slang:', glossary.join(' | '));
+  const lights = take(c.warning_lights, 20)
+    .map((w) => (w && w.name_fa ? `- ${txt(w.name_fa)} (${txt(w.urgency)}): ${txt(w.meaning_fa)}` : ''))
+    .filter(Boolean);
+  if (lights.length) lines.push('Dashboard warning lights:', ...lights);
+  return lines.length > 1 ? lines.join('\n').slice(0, 7000) : '';
+}
+const CONTEXT_TEXT = contextText(CONTEXT);
+
+function profileText(p) {
+  const lines = [`MODEL PROFILE — ${txt(p.model_fa)} (${txt(p.make_fa)}), researched from Iranian and international sources:`];
+  const engines = take(p.engines, 6).map((e) => (e ? `${txt(e.code)}: ${txt(e.desc_fa)}` : '')).filter(Boolean);
+  if (engines.length) lines.push('Engines: ' + engines.join(' | '));
+  const variants = take(p.variants, 10)
+    .map((v) => (v ? `${txt(v.name_fa)} [${txt(v.years)}; ${txt(v.engine_code)}; ${txt(v.transmission_fa)}]` : ''))
+    .filter(Boolean);
+  if (variants.length) lines.push('Variants: ' + variants.join(' | '));
+  const gearboxes = take(p.transmissions_fa, 5).map(txt).filter(Boolean);
+  if (gearboxes.length) lines.push('Gearboxes: ' + gearboxes.join(' | '));
+  const faults = take(p.common_faults, 16).map((f) => (f
+    ? `- [${txt(f.system)}] ${txt(f.symptom_fa)} → ${txt(f.cause_fa)} | parts: ${take(f.parts_fa, 5).map(txt).join('، ')}` +
+      ` | km: ${txt(f.typical_km)} | severity: ${txt(f.severity)} | confidence: ${txt(f.confidence)}`
+    : '')).filter(Boolean);
+  if (faults.length) lines.push('Known faults, most common first:', ...faults);
+  const tips = take(p.diagnostic_tips_fa, 8).map(txt).filter(Boolean);
+  if (tips.length) lines.push('Diagnostic tips:', ...tips.map((t) => '- ' + t));
+  const care = take(p.maintenance_fa, 5).map(txt).filter(Boolean);
+  if (care.length) lines.push('Maintenance notes:', ...care.map((t) => '- ' + t));
+  return lines.join('\n').slice(0, 9000);
+}
+
+/* ---------- prompt + output contract ---------- */
+const SYSTEM_BASE = `You are "دستیار عیب‌یابی روند یدک", the car-diagnosis assistant of Ravand Yadak (روند یدک), an Iranian online store for genuine car spare parts.
+
+A driver describes a problem with their car. Work like an experienced, careful Iranian mechanic talking to a customer:
 1. Analyse the symptoms and list the plausible causes (at most 4), each with an honest likelihood from 0 to 100 and a one-sentence reason. Likelihoods do not need to sum to 100.
-2. While the picture is still ambiguous, ask 1 to 3 precise follow-up questions: the ones that best separate the leading causes (for example exactly when it happens, at what speed, with a cold or hot engine, where the sound comes from, which dashboard warning lights are on, recent repairs, kilometres since the last service). Each question gets 2 to 5 short answer options the customer can tap. Never repeat a question that was already answered.
+2. While the picture is still ambiguous, ask 1 to 3 precise follow-up questions: the ones that best separate the leading causes (exactly when it happens, at what speed, cold or hot engine, where a sound comes from, which warning lights are on, recent repairs, kilometres since the last service). Each question gets 2 to 5 short answer options the customer can tap. Never repeat a question that was already answered.
 3. When the cause is reasonably clear, or on the final round, set stage to "result": give a clear diagnosis and recommend matching parts ONLY from the store catalogue below, by id, each with a one-sentence reason and a confidence from 0 to 100.
+
+Using the car details:
+- The customer picked make and model from a menu, so the model name is reliable. Year, mileage and fuel may be «نامشخص».
+- When a MODEL PROFILE is provided, treat its known faults as strong priors: rank a known fault higher when the symptoms match it, name the engine or gearbox code when it helps, and choose follow-up questions that tell those known causes apart. Never force-fit a known fault the symptoms do not support.
+- Set known=true on a hypothesis only when it matches a fault listed in the MODEL PROFILE; otherwise known=false.
+- Use mileage and age: wear items (clutch, timing belt, water pump, suspension bushes, brake pads) become likely around their typical intervals.
+- If the car runs on dual-fuel CNG, consider CNG-system causes as well.
 
 Rules:
 - Every user-facing string must be natural, polite, easy Persian (Farsi). Use Persian digits inside text.
@@ -79,6 +148,17 @@ function roundHint(round) {
     : `This is round ${round} of ${MAX_ROUNDS}. Ask questions only if the answers would still change the diagnosis or the recommended part; otherwise give the result now.`;
 }
 
+function systemPrompt(profile, rounds) {
+  return [
+    SYSTEM_BASE,
+    CONTEXT_TEXT,
+    profile
+      ? profileText(profile)
+      : 'No researched MODEL PROFILE is available for this car. Use what you reliably know about this model and say so when unsure; every hypothesis gets known=false.',
+    roundHint(rounds),
+  ].filter(Boolean).join('\n\n');
+}
+
 const obj = (props) => ({ type: 'object', additionalProperties: false, required: Object.keys(props), properties: props });
 const SCHEMA = {
   name: 'car_diagnosis',
@@ -88,7 +168,10 @@ const SCHEMA = {
     summary: { type: 'string' },
     urgency: { type: 'string', enum: ['low', 'medium', 'high'] },
     safety_note: { type: 'string' },
-    hypotheses: { type: 'array', items: obj({ cause: { type: 'string' }, likelihood: { type: 'integer' }, reason: { type: 'string' } }) },
+    hypotheses: {
+      type: 'array',
+      items: obj({ cause: { type: 'string' }, likelihood: { type: 'integer' }, reason: { type: 'string' }, known: { type: 'boolean' } }),
+    },
     questions: { type: 'array', items: obj({ text: { type: 'string' }, options: { type: 'array', items: { type: 'string' } } }) },
     diagnosis: { type: 'string' },
     recommendations: { type: 'array', items: obj({ product_id: { type: 'string' }, reason: { type: 'string' }, confidence: { type: 'integer' } }) },
@@ -134,10 +217,17 @@ function buildMessages(body) {
   if (rounds > MAX_ROUNDS) throw bad('too_many_rounds');
 
   const v = (body && body.vehicle) || {};
-  const model = str(v.model, 60), year = str(v.year, 8), km = str(v.km, 12);
-  const carLine = `خودرو: ${model || 'نامشخص'} | سال ساخت: ${year || 'نامشخص'} | کارکرد: ${km ? km + ' کیلومتر' : 'نامشخص'}`;
+  const make = str(v.make, 40);
+  const model = str(v.model, 60);
+  const modelId = str(v.model_id, 60);
+  const year = str(v.year, 16);
+  const km = str(v.km, 40);
+  const fuel = str(v.fuel, 30);
+  const carName = make && model && model.indexOf(make) === 0 ? model : [make, model].filter(Boolean).join(' ');
+  const carLine = `خودرو: ${carName || 'نامشخص'} | سال ساخت: ${year || 'نامشخص'} | کارکرد: ${km || 'نامشخص'} | سوخت: ${fuel || 'نامشخص'}`;
+  const profile = modelId && Object.prototype.hasOwnProperty.call(PROFILES, modelId) ? PROFILES[modelId] : null;
 
-  const msgs = [{ role: 'system', content: SYSTEM + '\n\n' + roundHint(rounds) }];
+  const msgs = [{ role: 'system', content: systemPrompt(profile, rounds) }];
   turns.forEach((t, i) => {
     if (t && t.role === 'user') {
       const text = str(t.text, MAX_TEXT);
@@ -149,7 +239,7 @@ function buildMessages(body) {
       throw bad('bad_request');
     }
   });
-  return { msgs, rounds };
+  return { msgs, rounds, hasProfile: Boolean(profile) };
 }
 
 async function callModel(msgs) {
@@ -169,7 +259,7 @@ async function callModel(msgs) {
         model: MODEL,
         messages: msgs,
         temperature: 0.3,
-        max_tokens: 1600,
+        max_tokens: 1800,
         response_format: { type: 'json_schema', json_schema: SCHEMA },
         provider: { require_parameters: true },
         usage: { include: true },
@@ -195,7 +285,7 @@ function parseJson(s) {
 
 const NO_MATCH = 'قطعه‌ی مناسب این مشکل در فهرست فعلی فروشگاه نیست. می‌توانید فرم «درخواست قطعه» را ثبت کنید تا همکاران ما قطعه را برایتان تأمین کنند.';
 
-function normalize(raw, rounds) {
+function normalize(raw, rounds, hasProfile) {
   const arr = (v) => (Array.isArray(v) ? v : []);
   const out = {
     stage: raw.stage === 'result' ? 'result' : 'questions',
@@ -203,7 +293,12 @@ function normalize(raw, rounds) {
     urgency: ['low', 'medium', 'high'].includes(raw.urgency) ? raw.urgency : 'medium',
     safety_note: str(raw.safety_note, 300),
     hypotheses: arr(raw.hypotheses).slice(0, 4)
-      .map((h) => ({ cause: str(h && h.cause, 120), likelihood: pct(h && h.likelihood), reason: str(h && h.reason, 220) }))
+      .map((h) => ({
+        cause: str(h && h.cause, 120),
+        likelihood: pct(h && h.likelihood),
+        reason: str(h && h.reason, 220),
+        known: Boolean(hasProfile && h && h.known === true),
+      }))
       .filter((h) => h.cause)
       .sort((x, y) => y.likelihood - x.likelihood),
     questions: arr(raw.questions).slice(0, 3)
@@ -331,7 +426,13 @@ const server = http.createServer(async (req, res) => {
 
   if (req.method === 'OPTIONS') { res.writeHead(allowed ? 204 : 403, headers); return res.end(); }
   if (req.method === 'GET' && (url === '/health' || url === '/')) {
-    return send(200, { ok: true, service: 'ravand-yadak-api', products: Object.keys(CATALOG).length });
+    return send(200, {
+      ok: true,
+      service: 'ravand-yadak-api',
+      products: Object.keys(CATALOG).length,
+      profiles: Object.keys(PROFILES).length,
+      context: Boolean(CONTEXT_TEXT),
+    });
   }
   if (req.method !== 'POST' || url !== '/api/diagnose') return fail('not_found');
   if (origin && !allowed) return fail('origin');
@@ -343,6 +444,7 @@ const server = http.createServer(async (req, res) => {
   } catch (e) {
     return fail(e.code || 'bad_request');
   }
+
   const left = await remainingCredit();
   if (left != null && left < MIN_BALANCE) {
     console.warn(`refusing: OpenRouter balance ${left.toFixed(3)} is below the ${MIN_BALANCE} floor`);
@@ -354,11 +456,11 @@ const server = http.createServer(async (req, res) => {
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
       const { content, cost } = await callModel(built.msgs);
-      const data = normalize(parseJson(content), built.rounds);
+      const data = normalize(parseJson(content), built.rounds, built.hasProfile);
       if (balance.remaining != null && cost) balance.remaining -= Number(cost);
-      console.log(`diagnose ok round=${built.rounds} stage=${data.stage} recs=${data.recommendations.length} ` +
-        `ms=${Date.now() - t0} cost=${cost == null ? '?' : cost} attempt=${attempt}`);
-      return send(200, { data, meta: { round: built.rounds, max_rounds: MAX_ROUNDS } });
+      console.log(`diagnose ok round=${built.rounds} stage=${data.stage} profile=${built.hasProfile} ` +
+        `recs=${data.recommendations.length} ms=${Date.now() - t0} cost=${cost == null ? '?' : cost} attempt=${attempt}`);
+      return send(200, { data, meta: { round: built.rounds, max_rounds: MAX_ROUNDS, profile: built.hasProfile } });
     } catch (e) {
       console.warn(`diagnose attempt ${attempt} failed: ${String((e && e.message) || e).slice(0, 240)}`);
     }
@@ -368,5 +470,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`ravand-yadak-api on ${HOST}:${PORT} model=${MODEL} floor=$${MIN_BALANCE} products=${Object.keys(CATALOG).length} origins=${ORIGINS.join(' ')}`);
+  console.log(`ravand-yadak-api on ${HOST}:${PORT} model=${MODEL} floor=$${MIN_BALANCE} ` +
+    `products=${Object.keys(CATALOG).length} profiles=${Object.keys(PROFILES).length} context=${Boolean(CONTEXT_TEXT)} ` +
+    `origins=${ORIGINS.join(' ')}`);
 });
