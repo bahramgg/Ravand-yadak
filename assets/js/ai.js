@@ -1,7 +1,7 @@
 /* ==========================================================
-   روند یدک — دستیار هوشمند عیب‌یابی (پنجره‌ی گفت‌وگو)
-   انتخاب برند و مدل از منو ← شرح مشکل ← احتمالات و پرسش‌های دقیق ← پیشنهاد قطعه.
-   گفت‌وگو داخل پنجره‌ای با ارتفاع ثابت اسکرول می‌شود؛ خود صفحه جابه‌جا نمی‌شود.
+   روند یدک — دستیار هوشمند عیب‌یابی (ویزارد تک‌صفحه)
+   در هر لحظه فقط مرحله‌ی جاری دیده می‌شود: خودرو و مشکل ← پرسش‌ها (یکی‌یکی) ← تشخیص و قطعه.
+   هیچ مرحله‌ای به صفحه اضافه نمی‌شود، پس نه صفحه اسکرول می‌خورد و نه پنجره.
    مدل زبانی فقط روی سرور صدا زده می‌شود و همه‌ی متن‌های مدل پیش از نمایش escape می‌شوند.
    ========================================================== */
 (function () {
@@ -17,6 +17,7 @@
   var CATALOG = window.RY_CATALOG || {};
   var MAKES = (window.RY_CARS && window.RY_CARS.makes) || [];
   var MAX_ROUNDS = 5;
+  var DONT_KNOW = 'نمی‌دانم';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   var FA = '۰۱۲۳۴۵۶۷۸۹';
@@ -30,21 +31,24 @@
     if (f.requestSubmit) f.requestSubmit();
     else f.dispatchEvent(new Event('submit', { cancelable: true }));
   }
+  function focusQuiet(el) { if (el && !el.disabled) el.focus({ preventScroll: true }); }
 
   var ui = {
-    body: byId('aiBody'), setup: byId('aiStart'), log: byId('aiThread'),
-    composer: byId('aiComposer'), reply: byId('aiReply'), hint: byId('aiHint'), err: byId('aiErr'),
-    status: byId('aiStatus'), badge: byId('aiCarBadge'), reset: byId('aiReset'),
+    stage: byId('aiStage'), setup: byId('aiStart'), view: byId('aiView'), steps: byId('aiSteps'),
+    carCard: byId('aiCarCard'), carName: byId('aiCarName'), carMeta: byId('aiCarMeta'),
+    answers: byId('aiAnswers'), reset: byId('aiReset'), err: byId('aiErr'),
     make: byId('aiMake'), model: byId('aiModel'), otherWrap: byId('aiOtherWrap'), other: byId('aiOther'),
     year: byId('aiYear'), km: byId('aiKm'), fuel: byId('aiFuel'),
     text: byId('aiText'), count: byId('aiCount'), launcher: byId('aiLauncher')
   };
-  if (!ui.body || !ui.setup || !ui.log || !ui.composer || !ui.reply || !ui.make || !ui.model || !ui.text) return;
-  var sendBtn = ui.composer.querySelector('.aiw__send');
+  if (!ui.stage || !ui.setup || !ui.view || !ui.make || !ui.model || !ui.text) return;
 
-  var state = { vehicle: null, turns: [], busy: false, pending: null, pendingEl: null };
+  var state = {
+    vehicle: null, turns: [], busy: false, view: 'setup',
+    data: null, meta: null, q: 0, picks: [], picking: false
+  };
 
-  /* ---------- car menus ---------- */
+  /* ================= car menus ================= */
   var GROUPS = [['domestic', 'ساخت و مونتاژ ایران'], ['imported', 'وارداتی']];
 
   function findMake(id) {
@@ -103,11 +107,11 @@
   ui.make.addEventListener('change', function () {
     fillModels();
     if (!ui.model.disabled) ui.model.focus();
-    else if (ui.make.value === '__other' && ui.other) ui.other.focus();
+    else if (ui.make.value === '__other') focusQuiet(ui.other);
   });
   ui.model.addEventListener('change', function () {
     syncOther();
-    if (ui.model.value === '__other' && ui.other) ui.other.focus();
+    if (ui.model.value === '__other') focusQuiet(ui.other);
   });
 
   function readVehicle() {
@@ -131,8 +135,8 @@
     return [v.make, v.model].filter(Boolean).join(' ');
   }
 
-  /* ---------- setup form ---------- */
-  function updateCount() { if (ui.count) ui.count.textContent = fa(ui.text.value.length) + ' / ' + fa(1200); }
+  /* ================= step 1: setup ================= */
+  function updateCount() { if (ui.count) ui.count.textContent = fa(ui.text.value.length) + ' از ' + fa(1200); }
   ui.text.addEventListener('input', updateCount);
   updateCount();
 
@@ -167,72 +171,146 @@
     if (text.length < 8) return setupError(ui.text, 'لطفاً مشکل را کمی کامل‌تر شرح دهید.');
     state.vehicle = v;
     state.turns = [{ role: 'user', text: text }];
-    begin(text);
+    begin();
   });
 
-  function begin(text) {
-    ui.setup.hidden = true;
-    ui.log.innerHTML = '';
-    ui.log.hidden = false;
-    ui.composer.hidden = false;
-    lock(true);
-    ui.reset.hidden = false;
+  function begin() {
     var v = state.vehicle;
-    /* «مدل» keeps the year from bidi-merging with digits in the model name (پراید ۱۳۱ • ۱۳۹۴) */
-    var bits = [carName(v), v.year && ('مدل ' + (/^\d+$/.test(v.year) ? fa(v.year) : v.year))].filter(Boolean);
-    ui.badge.textContent = bits.join(' • ');
-    ui.badge.hidden = !bits.length;
-    ui.body.scrollTop = 0;
-    addUser(text);
+    ui.answers.innerHTML = '';
+    ui.carName.textContent = carName(v);
+    /* each segment isolated: digits in «مدل ۱۳۹۶» and «۱۰۰ تا ۱۵۰ هزار» must not bidi-merge */
+    ui.carMeta.innerHTML = [
+      v.year && ('مدل ' + (/^\d+$/.test(v.year) ? fa(v.year) : v.year)),
+      v.km,
+      v.fuel
+    ].filter(Boolean).map(function (s) { return '<bdi>' + esc(s) + '</bdi>'; }).join('<i aria-hidden="true"> • </i>');
+    ui.carCard.hidden = false;
     ask();
   }
 
-  /* ---------- conversation ---------- */
-  function follow(node, align) {
-    var top = align === 'start' ? node.offsetTop - 12 : ui.body.scrollHeight;
-    ui.body.scrollTo({ top: Math.max(0, top), behavior: reduce.matches ? 'auto' : 'smooth' });
+  /* ================= views ================= */
+  function setStep(n) {
+    if (!ui.steps) return;
+    ui.steps.querySelectorAll('li').forEach(function (li) {
+      var s = Number(li.getAttribute('data-step'));
+      li.classList.toggle('is-current', s === n);
+      li.classList.toggle('is-done', s < n);
+      if (s === n) li.setAttribute('aria-current', 'step');
+      else li.removeAttribute('aria-current');
+    });
   }
 
-  function addUser(text) {
-    var m = document.createElement('div');
-    m.className = 'am am--user';
-    m.innerHTML = '<p>' + esc(text).replace(/\n/g, '<br>') + '</p>';
-    ui.log.appendChild(m);
-    follow(m, 'end');
+  function showView(cls, html) {
+    ui.setup.hidden = true;
+    ui.view.className = 'ai-view ' + cls;
+    ui.view.innerHTML = html;
+    ui.view.hidden = false;
+    ui.view.scrollTop = 0;
+    ui.view.style.animation = 'none';
+    void ui.view.offsetWidth;
+    ui.view.style.animation = '';
   }
 
-  function setStatus(text, busy) {
-    if (!ui.status) return;
-    ui.status.textContent = text;
-    ui.status.classList.toggle('is-busy', Boolean(busy));
+  /* Keep every view inside its stage, whatever the model's text length: step up the
+     compaction level (fit-1..fit-4 in style.css) until nothing overflows. */
+  var FIT = ['fit-1', 'fit-2', 'fit-3', 'fit-4'];
+  var fitFrame = 0;
+  function fitView() {
+    var v = ui.view;
+    if (v.hidden) return;
+    FIT.forEach(function (c) { v.classList.remove(c); });
+    for (var i = 0; i < FIT.length && v.scrollHeight > v.clientHeight + 1; i++) v.classList.add(FIT[i]);
+  }
+  function scheduleFit() {
+    cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitView);
+  }
+  if ('MutationObserver' in window) {
+    new MutationObserver(scheduleFit).observe(ui.view, { childList: true, subtree: true });
+  }
+  window.addEventListener('resize', scheduleFit);
+
+  function showSetup() {
+    ui.view.hidden = true;
+    ui.view.innerHTML = '';
+    ui.setup.hidden = false;
+    state.view = 'setup';
+    setStep(1);
   }
 
-  function lock(on) {
-    ui.reply.disabled = on;
-    if (sendBtn) sendBtn.disabled = on;
+  var URG = { low: ['فوریت کم', 'low'], medium: ['فوریت متوسط', 'medium'], high: ['فوریت بالا', 'high'] };
+
+  function headHtml(d, meta) {
+    var u = URG[d.urgency] || URG.medium;
+    return '<div class="ai-head"><span class="ai-urg ai-urg--' + u[1] + '">' + u[0] + '</span>' +
+      (meta.profile ? '<span class="ai-know">بر پایه‌ی ایرادهای رایج این مدل</span>' : '') +
+      '<span class="ai-round">مرحله‌ی ' + fa(meta.round || 1) + ' از ' + fa(meta.max_rounds || MAX_ROUNDS) + '</span></div>' +
+      (d.safety_note ? '<p class="ai-safety" role="alert">' + esc(d.safety_note) + '</p>' : '');
   }
 
-  function hint(msg) {
-    if (!ui.hint) return;
-    ui.hint.textContent = msg;
-    clearTimeout(ui.hint._t);
-    ui.hint._t = setTimeout(function () { ui.hint.textContent = ''; }, 4000);
+  function hypsHtml(list, label) {
+    if (!list || !list.length) return '';
+    var top = list.slice(0, 3);
+    var anyKnown = top.some(function (x) { return x.known; });
+    return '<div class="ai-hyps"><span class="ai-hyps__label">' + label +
+      (anyKnown ? '<em class="ai-hyps__legend"><i class="ai-hyp__known" aria-hidden="true"></i>رایج در این مدل</em>' : '') +
+      '</span>' + top.map(function (x) {
+        var p = clamp(x.likelihood);
+        return '<div class="ai-hyp">' +
+          '<button type="button" class="ai-hyp__btn" aria-expanded="false"' + (x.reason ? '' : ' disabled') + '>' +
+            '<span class="ai-hyp__cause">' +
+              (x.known ? '<i class="ai-hyp__known" role="img" aria-label="رایج در این مدل"></i>' : '') + esc(x.cause) +
+            '</span>' +
+            '<span class="ai-hyp__bar" aria-hidden="true"><i style="width:' + Math.max(3, p) + '%"></i></span>' +
+            '<span class="ai-hyp__pct">٪' + fa(p) + '</span>' +
+          '</button>' +
+          (x.reason ? '<p class="ai-hyp__why">' + esc(x.reason) + '</p>' : '') +
+        '</div>';
+      }).join('') + '</div>';
   }
 
+  function closePopovers(except) {
+    root.querySelectorAll('.ai-hyp.is-open').forEach(function (o) {
+      if (o === except) return;
+      o.classList.remove('is-open');
+      var b = o.querySelector('.ai-hyp__btn');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+    root.querySelectorAll('.ai-more[open]').forEach(function (d) {
+      if (!except || !d.contains(except)) d.open = false;
+    });
+  }
+
+  function wireHyps() {
+    ui.view.querySelectorAll('.ai-hyp__btn').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var item = b.parentNode;
+        var open = !item.classList.contains('is-open');
+        closePopovers(item);
+        item.classList.toggle('is-open', open);
+        b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest || (!e.target.closest('.ai-hyp') && !e.target.closest('.ai-more'))) closePopovers(null);
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePopovers(null); });
+
+  /* ================= talking to the API ================= */
   function ask() {
     state.busy = true;
-    lock(true);
-    setStatus('در حال تحلیل…', true);
-
-    var typing = document.createElement('div');
-    typing.className = 'am am--bot am--typing';
-    typing.innerHTML = '<span class="ai-dots" aria-hidden="true"><i></i><i></i><i></i></span>' +
-      '<span class="am__wait">در حال بررسی علائم ' + esc(carName(state.vehicle)) + '…</span>';
-    ui.log.appendChild(typing);
-    follow(typing, 'end');
+    state.view = 'thinking';
+    setStep(2);
+    showView('ai-think',
+      '<span class="ai-think__orb" aria-hidden="true"></span>' +
+      '<b>در حال تحلیل…</b>' +
+      '<p id="aiWait">علائم ' + esc(carName(state.vehicle)) + ' و احتمال‌ها بررسی می‌شود.</p>');
 
     var slow = setTimeout(function () {
-      var w = typing.querySelector('.am__wait');
+      var w = byId('aiWait');
       if (w) w.textContent = 'دستیار در حال آماده شدن است؛ اولین درخواست ممکن است تا یک دقیقه طول بکشد.';
     }, 7000);
     var ctrl = typeof AbortController === 'function' ? new AbortController() : null;
@@ -249,137 +327,187 @@
       if (!res.ok || !res.j || !res.j.data) {
         throw new Error((res.j && res.j.error && res.j.error.message) || '');
       }
-      state.turns.push({ role: 'assistant', data: res.j.data });
-      var msg = renderBot(res.j.data, res.j.meta || {});
-      typing.replaceWith(msg);
-      follow(msg, 'start');
-      settle(res.j.data, msg);
+      var d = res.j.data;
+      var meta = res.j.meta || {};
+      state.turns.push({ role: 'assistant', data: d });
+      state.busy = false;
+      if (d.stage === 'result') showResult(d, meta);
+      else showQuestions(d, meta);
     }).catch(function (err) {
+      state.busy = false;
       var text = err && err.name === 'AbortError'
         ? 'پاسخ دستیار بیش از حد طول کشید. دوباره تلاش کنید.'
         : (err && /[؀-ۿ]/.test(err.message || '')
           ? err.message
           : 'اتصال به دستیار برقرار نشد. اینترنت خود را بررسی کنید و دوباره تلاش کنید.');
-      var msg = renderError(text);
-      typing.replaceWith(msg);
-      follow(msg, 'start');
-      setStatus('ارتباط برقرار نشد', false);
+      showError(text);
     }).then(function () {
       clearTimeout(slow);
       clearTimeout(hard);
-      state.busy = false;
     });
   }
 
-  function settle(d, msg) {
-    if (d.stage === 'result') {
-      state.pending = null;
-      state.pendingEl = null;
-      ui.composer.hidden = true;
-      setStatus('تشخیص آماده است', false);
-    } else {
-      state.pending = d;
-      state.pendingEl = msg;
-      ui.composer.hidden = false;
-      lock(false);
-      ui.reply.placeholder = d.questions && d.questions.length
-        ? 'گزینه‌ای را انتخاب کنید یا پاسخ را بنویسید…'
-        : 'پاسخ خود را بنویسید…';
-      setStatus('منتظر پاسخ شما', false);
-    }
+  /* ================= step 2: questions, one at a time ================= */
+  function showQuestions(d, meta) {
+    state.view = 'questions';
+    state.data = d;
+    state.meta = meta;
+    state.q = 0;
+    state.picks = [];
+    state.picking = false;
+    setStep(2);
+    showView('ai-qs',
+      headHtml(d, meta) +
+      (d.summary ? '<p class="ai-summary">' + esc(d.summary) + '</p>' : '') +
+      hypsHtml(d.hypotheses, 'احتمالات فعلی') +
+      '<div class="ai-ask" id="aiAsk"></div>');
+    wireHyps();
+    renderAsk(false);
   }
 
-  var URG = { low: ['فوریت کم', 'low'], medium: ['فوریت متوسط', 'medium'], high: ['فوریت بالا', 'high'] };
+  function renderAsk(animate) {
+    var box = byId('aiAsk');
+    var qs = (state.data && state.data.questions) || [];
+    var i = state.q;
+    var q = qs[i];
+    if (!box || !q) return;
+    state.picking = false;
+    var last = i === qs.length - 1;
+    var picked = state.picks[i] || '';
+    var typed = picked && picked !== DONT_KNOW && (q.options || []).indexOf(picked) === -1 ? picked : '';
 
-  function renderBot(d, meta) {
-    var m = document.createElement('div');
-    m.className = 'am am--bot' + (d.stage === 'result' ? ' am--result' : '');
-    var u = URG[d.urgency] || URG.medium;
-    var h = '<div class="am__meta"><span class="am__urg am__urg--' + u[1] + '">' + u[0] + '</span>' +
-      (meta.profile ? '<span class="am__know">بر پایه‌ی ایرادهای رایج این مدل</span>' : '') + '</div>';
+    box.innerHTML =
+      '<div class="ai-ask__top"><span class="ai-ask__count">سؤال ' + fa(i + 1) + ' از ' + fa(qs.length) + '</span>' +
+        '<span class="ai-ask__dots" aria-hidden="true">' + qs.map(function (_, k) {
+          return '<i class="' + (k < i ? 'is-done' : (k === i ? 'is-on' : '')) + '"></i>';
+        }).join('') + '</span></div>' +
+      '<div class="ai-ask__body' + (animate && !reduce.matches ? ' is-swap' : '') + '">' +
+        '<p class="ai-ask__text" id="aiAskText">' + esc(q.text) + '</p>' +
+        '<div class="ai-ask__opts" role="group" aria-labelledby="aiAskText">' + (q.options || []).map(function (o) {
+          return '<button type="button" class="ai-opt' + (picked === o ? ' is-on' : '') + '" data-val="' + esc(o) + '">' + esc(o) + '</button>';
+        }).join('') + '</div>' +
+        '<div class="ai-ask__row">' +
+          '<input type="text" id="aiFree" maxlength="200" autocomplete="off" placeholder="یا پاسخ را بنویسید…" aria-label="پاسخ دلخواه" value="' + esc(typed) + '">' +
+          '<button type="button" class="btn btn--primary btn--sm ai-ask__next">' + (last ? 'ارسال پاسخ‌ها' : 'بعدی') + '</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="ai-ask__foot">' +
+        (i > 0 ? '<button type="button" class="ai-link ai-ask__back">سؤال قبلی</button>' : '') +
+        '<button type="button" class="ai-link ai-ask__skip">' + DONT_KNOW + '</button>' +
+      '</div>';
 
-    if (d.safety_note) h += '<p class="am__safety" role="alert">' + esc(d.safety_note) + '</p>';
-    if (d.stage === 'result' && d.diagnosis) {
-      h += '<div class="am__diag"><b>تشخیص محتمل</b><p>' + esc(d.diagnosis) + '</p></div>';
-    } else if (d.summary) {
-      h += '<p class="am__text">' + esc(d.summary) + '</p>';
-    }
-
-    if (d.hypotheses && d.hypotheses.length) {
-      h += '<div class="am__hyp"><span class="am__label">' +
-        (d.stage === 'result' ? 'علت‌های بررسی‌شده' : 'احتمالات') + '</span>';
-      d.hypotheses.forEach(function (x) {
-        var p = clamp(x.likelihood);
-        h += '<details class="hyp"><summary>' +
-          '<span class="hyp__cause">' + esc(x.cause) + (x.known ? '<em class="hyp__known">رایج در این مدل</em>' : '') + '</span>' +
-          '<span class="hyp__pct">٪' + fa(p) + '</span>' +
-          '<span class="hyp__bar"><i style="width:' + Math.max(3, p) + '%"></i></span>' +
-          '</summary>' + (x.reason ? '<p class="hyp__why">' + esc(x.reason) + '</p>' : '') + '</details>';
-      });
-      h += '</div>';
-    }
-
-    if (d.stage !== 'result' && d.questions && d.questions.length) {
-      h += '<div class="am__qs">';
-      d.questions.forEach(function (q, qi) {
-        h += '<div class="q" data-q="' + qi + '"><p class="q__text">' + esc(q.text) + '</p><div class="q__opts">' +
-          (q.options || []).map(function (o) {
-            return '<button type="button" class="q__opt" aria-pressed="false" data-val="' + esc(o) + '">' + esc(o) + '</button>';
-          }).join('') + '</div></div>';
-      });
-      h += '<span class="am__round">مرحله‌ی ' + fa(meta.round || 1) + ' از ' + fa(meta.max_rounds || MAX_ROUNDS) + '</span></div>';
-    }
-
-    if (d.stage === 'result') {
-      if (d.recommendations && d.recommendations.length) {
-        h += '<div class="am__recs"><span class="am__label">قطعه‌های پیشنهادی</span>';
-        d.recommendations.forEach(function (r) {
-          var p = CATALOG[r.product_id];
-          if (!p) return;
-          h += '<article class="rec">' +
-            '<span class="rec__img"><img src="assets/img/products/' + esc(r.product_id) + '.png" alt="" loading="lazy"></span>' +
-            '<div class="rec__body"><b class="rec__name">' + esc(p.name) + '</b>' +
-            (r.reason ? '<span class="rec__why">' + esc(r.reason) + '</span>' : '') +
-            '<span class="rec__foot"><span class="rec__price">' + toman(p.price) + ' <small>تومان</small></span>' +
-            '<span class="rec__conf">اطمینان ٪' + fa(clamp(r.confidence)) + '</span>' +
-            '<a class="rec__go" href="#newest" data-go="' + esc(r.product_id) + '">مشاهده</a></span></div></article>';
-        });
-        h += '</div>';
-      }
-      if (d.no_match_note) {
-        h += '<div class="am__nomatch"><p>' + esc(d.no_match_note) + '</p>' +
-          '<a class="btn btn--primary btn--sm" href="#request">ثبت درخواست قطعه</a></div>';
-      }
-      if (d.next_steps && d.next_steps.length) {
-        h += '<details class="am__steps"><summary>قدم‌های بعدی</summary><ol>' +
-          d.next_steps.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol></details>';
-      }
-      h += '<div class="am__end"><button type="button" class="btn btn--line btn--sm am__restart">بررسی مشکل دیگر</button>' +
-        '<span class="am__disc">این نتیجه جایگزین معاینه‌ی مکانیک نیست.</span></div>';
-    }
-
-    m.innerHTML = h;
-    wire(m);
-    return m;
-  }
-
-  function wire(m) {
-    m.querySelectorAll('.q').forEach(function (qn) {
-      qn.querySelectorAll('.q__opt').forEach(function (b) {
-        b.addEventListener('click', function () {
-          if (b.disabled) return;
-          var on = b.getAttribute('aria-pressed') !== 'true';
-          qn.querySelectorAll('.q__opt').forEach(function (o) {
-            o.setAttribute('aria-pressed', 'false');
-            o.classList.remove('is-on');
-          });
-          b.setAttribute('aria-pressed', on ? 'true' : 'false');
-          b.classList.toggle('is-on', on);
-        });
-      });
+    var free = byId('aiFree');
+    var next = box.querySelector('.ai-ask__next');
+    box.querySelectorAll('.ai-opt').forEach(function (b) {
+      b.addEventListener('click', function () { choose(b.getAttribute('data-val'), b); });
     });
+    next.addEventListener('click', function () {
+      var val = free.value.trim() || state.picks[state.q] || '';
+      if (!val) {
+        free.classList.add('is-need');
+        focusQuiet(free);
+        setTimeout(function () { free.classList.remove('is-need'); }, 900);
+        return;
+      }
+      choose(val, null);
+    });
+    free.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); next.click(); }
+    });
+    box.querySelector('.ai-ask__skip').addEventListener('click', function () { choose(DONT_KNOW, null); });
+    var back = box.querySelector('.ai-ask__back');
+    if (back) back.addEventListener('click', function () {
+      if (state.picking || state.busy) return;
+      state.q = Math.max(0, state.q - 1);
+      renderAsk(true);
+    });
+    if (animate) focusQuiet(box.querySelector('.ai-opt') || free);
+  }
 
-    m.querySelectorAll('[data-go]').forEach(function (a) {
+  function choose(val, btn) {
+    if (state.picking || state.busy || state.view !== 'questions') return;
+    state.picking = true;
+    state.picks[state.q] = val;
+    if (btn) {
+      btn.parentNode.querySelectorAll('.ai-opt').forEach(function (o) { o.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+    }
+    var qs = state.data.questions || [];
+    var advance = function () {
+      if (state.q < qs.length - 1) {
+        state.q++;
+        renderAsk(true);
+      } else {
+        sendRound();
+      }
+    };
+    if (btn && !reduce.matches) setTimeout(advance, 180);
+    else advance();
+  }
+
+  function sendRound() {
+    var qs = (state.data && state.data.questions) || [];
+    var full = [];
+    var shown = [];
+    qs.forEach(function (q, k) {
+      var a = state.picks[k];
+      if (!a) return;
+      full.push('سؤال: ' + q.text + ' — پاسخ: ' + a);
+      if (a !== DONT_KNOW) shown.push(a);
+    });
+    if (!full.length) { state.picking = false; return; }
+    state.turns.push({ role: 'user', text: full.join('\n') });
+    shown.forEach(addAnswer);
+    if (window.__aiAuto) window.__aiAuto--;
+    ask();
+  }
+
+  function addAnswer(a) {
+    if (!ui.answers) return;
+    var li = document.createElement('li');
+    li.innerHTML = '<bdi>' + esc(a) + '</bdi>';
+    li.title = a;
+    ui.answers.appendChild(li);
+    while (ui.answers.children.length > 4) ui.answers.removeChild(ui.answers.firstChild);
+  }
+
+  /* ================= step 3: result ================= */
+  function showResult(d, meta) {
+    state.view = 'result';
+    setStep(3);
+    var parts = (d.recommendations || []).filter(function (r) { return CATALOG[r.product_id]; }).slice(0, 3);
+    var h = headHtml(d, meta);
+    if (d.diagnosis) h += '<div class="ai-diag"><b>تشخیص محتمل</b><p>' + esc(d.diagnosis) + '</p></div>';
+    h += hypsHtml(d.hypotheses, 'علت‌های بررسی‌شده');
+    if (parts.length) {
+      h += '<div class="ai-parts ai-parts--' + parts.length + '">' + parts.map(function (r) {
+        var p = CATALOG[r.product_id];
+        return '<article class="ai-part">' +
+          '<span class="ai-part__img"><img src="assets/img/products/' + esc(r.product_id) + '.png" alt="" loading="lazy"></span>' +
+          '<div class="ai-part__body">' +
+            '<b class="ai-part__name">' + esc(p.name) + '</b>' +
+            (r.reason ? '<span class="ai-part__why">' + esc(r.reason) + '</span>' : '') +
+            '<span class="ai-part__row"><span class="ai-part__price">' + toman(p.price) + ' <small>تومان</small></span>' +
+            '<span class="ai-part__conf">اطمینان ٪' + fa(clamp(r.confidence)) + '</span></span>' +
+            '<a class="ai-part__go" href="#newest" data-go="' + esc(r.product_id) + '">مشاهده محصول</a>' +
+          '</div></article>';
+      }).join('') + '</div>';
+    }
+    if (d.no_match_note) {
+      h += '<div class="ai-nomatch"><p>' + esc(d.no_match_note) + '</p>' +
+        '<a class="btn btn--primary btn--sm" href="#request">درخواست قطعه</a></div>';
+    }
+    h += '<div class="ai-res__foot">' +
+      (d.next_steps && d.next_steps.length
+        ? '<details class="ai-more"><summary>قدم‌های بعدی</summary><div class="ai-more__pop"><ol>' +
+          d.next_steps.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol></div></details>'
+        : '') +
+      '<button type="button" class="btn btn--line btn--sm ai-again">بررسی مشکل دیگر</button>' +
+      '<span class="ai-disc">جایگزین معاینه‌ی مکانیک نیست</span></div>';
+
+    showView('ai-res', h);
+    wireHyps();
+    ui.view.querySelectorAll('[data-go]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         var card = document.querySelector('#newest [data-id="' + a.getAttribute('data-go') + '"]');
         if (!card) return;
@@ -390,96 +518,42 @@
         card.classList.add('is-pulse');
       });
     });
-
-    var rs = m.querySelector('.am__restart');
-    if (rs) rs.addEventListener('click', restart);
+    ui.view.querySelector('.ai-again').addEventListener('click', restart);
   }
 
-  function renderError(msg) {
-    var m = document.createElement('div');
-    m.className = 'am am--bot am--error';
-    m.innerHTML = '<p role="alert">' + esc(msg) + '</p>' +
-      '<div class="am__end"><button type="button" class="btn btn--primary btn--sm am__retry">تلاش دوباره</button>' +
-      '<button type="button" class="btn btn--line btn--sm am__restart">شروع از نو</button></div>';
-    m.querySelector('.am__retry').addEventListener('click', function () {
-      if (state.busy) return;
-      m.remove();
-      ask();
-    });
-    m.querySelector('.am__restart').addEventListener('click', restart);
-    lock(true);
-    return m;
+  function showError(msg) {
+    state.view = 'error';
+    showView('ai-error',
+      '<span class="ai-error__icon" aria-hidden="true">!</span>' +
+      '<p role="alert">' + esc(msg) + '</p>' +
+      '<div class="ai-error__actions">' +
+        '<button type="button" class="btn btn--primary btn--sm ai-retry">تلاش دوباره</button>' +
+        '<button type="button" class="btn btn--line btn--sm ai-again">شروع از نو</button>' +
+      '</div>');
+    ui.view.querySelector('.ai-retry').addEventListener('click', function () { if (!state.busy) ask(); });
+    ui.view.querySelector('.ai-again').addEventListener('click', restart);
   }
 
-  /* ---------- composer ---------- */
-  function grow() {
-    ui.reply.style.height = 'auto';
-    ui.reply.style.height = Math.min(120, ui.reply.scrollHeight) + 'px';
-  }
-  ui.reply.addEventListener('input', grow);
-  ui.reply.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
-      e.preventDefault();
-      submitForm(ui.composer);
-    }
-  });
-
-  ui.composer.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (state.busy || !state.pending || !state.pendingEl) return;
-    var d = state.pending;
-    var box = state.pendingEl;
-    var full = [];
-    var shown = [];
-    box.querySelectorAll('.q').forEach(function (qn) {
-      var qi = Number(qn.getAttribute('data-q'));
-      var sel = qn.querySelector('.q__opt.is-on');
-      if (sel && d.questions[qi]) {
-        full.push('سؤال: ' + d.questions[qi].text + ' — پاسخ: ' + sel.getAttribute('data-val'));
-        shown.push(sel.getAttribute('data-val'));
-      }
-    });
-    var more = ui.reply.value.trim();
-    if (more) {
-      full.push(full.length ? 'توضیح بیشتر: ' + more : more);
-      shown.push(more);
-    }
-    if (!full.length) { hint('یکی از گزینه‌ها را انتخاب کنید یا پاسخ را بنویسید.'); return; }
-
-    box.classList.add('is-answered');
-    box.querySelectorAll('.q__opt').forEach(function (b) { b.disabled = true; });
-    ui.reply.value = '';
-    grow();
-    state.turns.push({ role: 'user', text: full.join('\n') });
-    state.pending = null;
-    state.pendingEl = null;
-    addUser(shown.join(' • '));
-    ask();
-  });
-
-  /* ---------- reset ---------- */
   function restart() {
     if (state.busy) return;
-    state.turns = [];
     state.vehicle = null;
-    state.pending = null;
-    state.pendingEl = null;
-    ui.log.innerHTML = '';
-    ui.log.hidden = true;
-    ui.composer.hidden = true;
-    ui.reset.hidden = true;
-    ui.badge.hidden = true;
-    ui.setup.hidden = false;
+    state.turns = [];
+    state.data = null;
+    state.meta = null;
+    state.q = 0;
+    state.picks = [];
+    state.picking = false;
+    ui.carCard.hidden = true;
+    ui.answers.innerHTML = '';
     ui.text.value = '';
     updateCount();
     root.querySelectorAll('[data-symptom].is-used').forEach(function (b) { b.classList.remove('is-used'); });
-    setStatus('آماده‌ی کمک', false);
-    ui.body.scrollTop = 0;
-    setTimeout(function () { ui.text.focus({ preventScroll: true }); }, 60);
+    showSetup();
+    setTimeout(function () { focusQuiet(ui.text); }, 60);
   }
-  ui.reset.addEventListener('click', restart);
+  if (ui.reset) ui.reset.addEventListener('click', restart);
 
-  /* ---------- wake the free-tier API before the visitor needs it ---------- */
+  /* ================= wake the free-tier API early ================= */
   var warmed = false;
   function warm() {
     if (warmed) return;
@@ -493,17 +567,23 @@
   } else {
     warm();
   }
+  /* while the assistant fills the screen, floating buttons (back-to-top) must not cover it */
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      document.body.classList.toggle('ai-in-view', entries[0].intersectionRatio >= 0.5);
+    }, { threshold: [0, 0.5, 1] }).observe(root);
+  }
   ui.make.addEventListener('focus', warm);
   ui.text.addEventListener('focus', warm);
 
-  /* ---------- entry points: header button, floating launcher ---------- */
+  /* ================= entry points: header button, floating launcher ================= */
   document.addEventListener('click', function (e) {
-    var a = e.target.closest ? e.target.closest('a[href="#aiWindow"], a[href="#diagnose"]') : null;
+    var a = e.target.closest ? e.target.closest('a[href="#diagnose"]') : null;
     if (!a) return;
     warm();
     setTimeout(function () {
-      var target = !ui.setup.hidden ? (ui.make.value ? ui.text : ui.make) : (!ui.composer.hidden ? ui.reply : null);
-      if (target && !target.disabled) target.focus({ preventScroll: true });
+      if (state.view === 'setup') focusQuiet(ui.make.value ? ui.text : ui.make);
+      else if (state.view === 'questions') focusQuiet(ui.view.querySelector('.ai-opt') || byId('aiFree'));
     }, reduce.matches ? 60 : 750);
   });
 
@@ -518,19 +598,19 @@
       new IntersectionObserver(function (entries) {
         inView = entries[0].isIntersecting;
         sync();
-      }, { threshold: 0.2 }).observe(root);
+      }, { threshold: 0.25 }).observe(root);
     }
     window.addEventListener('scroll', sync, { passive: true });
     sync();
   }
 
-  /* ---------- local test harness (localhost only) ----------
-     ?aisolo=1 &aimake=peugeot &aimodel=peugeot-206 &aiyear=1396 &aikm=... &ai=متن مشکل &aiauto=1 */
+  /* ================= local test harness (localhost only) =================
+     ?aisolo=1 &aimake=peugeot &aimodel=peugeot-206 &aiyear=1396 &aikm=... &ai=متن مشکل &aiauto=N */
   if (LOCAL) {
     var qs = new URLSearchParams(location.search);
     if (qs.get('aisolo')) {
       var st = document.createElement('style');
-      st.textContent = 'body>*:not(#diagnose):not(script){display:none!important}#diagnose{padding-top:24px}';
+      st.textContent = 'body>*:not(#diagnose):not(script){display:none!important}';
       document.head.appendChild(st);
     }
     if (qs.get('aimake')) {
@@ -543,21 +623,14 @@
     if (qs.get('ai')) {
       ui.text.value = qs.get('ai');
       updateCount();
-      var auto = Number(qs.get('aiauto')) || 0;
-      if (auto) {
-        new MutationObserver(function () {
-          setTimeout(function () {
-            var box = state.pendingEl;
-            if (!box || state.busy || auto <= 0 || box.classList.contains('is-auto')) return;
-            auto--;
-            box.classList.add('is-auto');
-            box.querySelectorAll('.q').forEach(function (qn) {
-              var b = qn.querySelector('.q__opt');
-              if (b) b.click();
-            });
-            setTimeout(function () { submitForm(ui.composer); }, 80);
-          }, 250);
-        }).observe(ui.log, { childList: true });
+      window.__aiAuto = Number(qs.get('aiauto')) || 0;
+      if (window.__aiAuto) {
+        setInterval(function () {
+          if (state.view !== 'questions' || state.busy || state.picking || !(window.__aiAuto > 0)) return;
+          var b = ui.view.querySelector('.ai-ask__opts .ai-opt');
+          if (b) b.click();
+          else { var s = ui.view.querySelector('.ai-ask__skip'); if (s) s.click(); }
+        }, 450);
       }
       setTimeout(function () { submitForm(ui.setup); }, 300);
     }

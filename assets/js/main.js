@@ -312,4 +312,19 @@
       if (history.replaceState) history.replaceState(null, '', '#' + id);
     });
   })();
+  /* ---------------------------------------------------------
+     ارتفاع واقعی هدر (روی موبایل ردیف منو هم دارد) → --head-h
+     هیرو و دستیار دقیقاً زیر هدر می‌نشینند.
+     --------------------------------------------------------- */
+  (function () {
+    var bar = document.getElementById('topbar');
+    if (!bar) return;
+    var set = function () {
+      document.documentElement.style.setProperty('--head-h', bar.offsetHeight + 'px');
+    };
+    set();
+    window.addEventListener('resize', set);
+    window.addEventListener('load', set);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(set);
+  })();
 })();

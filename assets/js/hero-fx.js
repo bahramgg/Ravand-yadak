@@ -23,6 +23,12 @@
   var GROUND = 0.86;        /* خط زمین برای پاشش */
   var EXHAUST_X = 0.055;    /* عقب خودرو در قاب — دود از اینجا بلند می‌شود */
   var EXHAUST_Y = 0.665;
+  /* phones show the scene as a band at the bottom (style.css, max-width 991px: background-size auto 44%,
+     position 5% 100%); smoke and splashes follow that band instead of the desktop frame */
+  var mobileScene = window.matchMedia('(max-width: 991px)');
+  var BAND = 0.44, BAND_X = 0.05, IMG_RATIO = 1584 / 672;
+  var EXHAUST_IMG_X = 0.107, EXHAUST_IMG_Y = 0.665;
+  var exX = 0, exY = 0, groundY = 0;
 
   var LAYERS = [
     { share: 0.44, speed: 800,  len: [10, 18], w: 0.8, a: 0.15, splash: false },
@@ -63,10 +69,26 @@
     }
   }
 
+  function placeScene() {
+    if (mobileScene.matches) {
+      var imgH = H * BAND;
+      var imgW = imgH * IMG_RATIO;
+      var offX = Math.max(0, imgW - W) * BAND_X;
+      exX = EXHAUST_IMG_X * imgW - offX;
+      exY = (H - imgH) + EXHAUST_IMG_Y * imgH;
+      groundY = H - imgH * 0.1;
+    } else {
+      exX = W * EXHAUST_X;
+      exY = H * EXHAUST_Y;
+      groundY = GROUND * H;
+    }
+  }
+
   function resize() {
     var r = hero.getBoundingClientRect();
     if (!r.width || !r.height) return;
     W = r.width; H = r.height; area = W * H;
+    placeScene();
     if (!ctx) return;
     DPR = Math.min(window.devicePixelRatio || 1, 1.75);
     canvas.width = Math.round(W * DPR);
@@ -103,9 +125,9 @@
       d = drops[i];
       d.y += d.sp * dt;
       d.x += d.sp * dt * WIND;
-      if (d.L.splash && d.y > H * GROUND) {
+      if (d.L.splash && d.y > groundY) {
         if (splashes.length < 50) {
-          splashes.push({ x: d.x, y: H * GROUND + rand(-4, 10), r: 1, max: rand(5, 14), t: 0, ttl: rand(0.35, 0.6) });
+          splashes.push({ x: d.x, y: groundY + rand(-4, 10), r: 1, max: rand(5, 14), t: 0, ttl: rand(0.35, 0.6) });
         }
         d.y = rand(-H * 0.35, -10);
         d.x = rand(-0.25 * W, 1.1 * W);
@@ -129,8 +151,8 @@
       puffClock -= 0.05;
       if (puffs.length < 85) {
         puffs.push({
-          x: W * EXHAUST_X + rand(-5, 5),
-          y: H * EXHAUST_Y + rand(-4, 4),
+          x: exX + rand(-5, 5),
+          y: exY + rand(-4, 4),
           r: rand(4, 8),
           vx: rand(-9, 2),            /* خودرو رو به راست است؛ دود عمدتا بالا می‌رود */
           vy: rand(-58, -34),

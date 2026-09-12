@@ -32,7 +32,7 @@
     </nav>
 
     <div class="tools">
-      <a class="btn-ai" href="#aiWindow" data-scroll-gap="16" aria-label="دستیار هوشمند عیب‌یابی"><i class="ai-spark" aria-hidden="true"></i><span>دستیار هوشمند</span></a>
+      <a class="btn-ai" href="#diagnose" aria-label="دستیار هوشمند عیب‌یابی"><i class="ai-spark" aria-hidden="true"></i><span>دستیار هوشمند</span></a>
       <a class="btn-request" href="#request">درخواست قطعه</a>
       <a class="tools__item tools__item--cart" href="#" aria-label="سبد خرید">
         <svg viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 10.4h9.9l2.1-7.4H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.4" cy="19" r="1.5" fill="currentColor"/><circle cx="16.6" cy="19" r="1.5" fill="currentColor"/></svg>
@@ -67,11 +67,6 @@
       <a class="btn btn--primary" href="#newest">مشاهده محصولات</a>
       <a class="btn btn--ghost" href="#finder">جستجوی قطعه</a>
     </div>
-    <ul class="hero__stats">
-      <li><b>+۱۲٬۰۰۰</b><span>قطعه موجود</span></li>
-      <li><b>+۸٬۵۰۰</b><span>مشتری راضی</span></li>
-      <li><b>۲۴ ساعته</b><span>پشتیبانی فنی</span></li>
-    </ul>
   </div>
 
   <a class="hero__scroll" href="#promos" aria-label="ادامه صفحه">
@@ -148,78 +143,69 @@
 
 <!-- ============ AI DIAGNOSIS ============ -->
 <section class="ai" id="diagnose">
-  <div class="container">
-    <header class="ai__head">
+  <div class="container ai__shell">
+    <aside class="ai__side">
       <span class="ai__kicker"><i class="ai-spark" aria-hidden="true"></i>دستیار هوشمند روند</span>
-      <h2 class="ai__title">مشکل خودرو را بگویید، علتش را پیدا می‌کنیم</h2>
-      <p class="ai__sub">خودرو را انتخاب کنید و علائم را شرح دهید؛ دستیار با شناخت ایرادهای رایج همان مدل چند سؤال دقیق می‌پرسد و قطعه‌ی مناسب را پیشنهاد می‌دهد.</p>
-    </header>
-
-    <div class="aiw" id="aiWindow">
-      <div class="aiw__bar">
-        <span class="aiw__avatar"><img src="assets/img/logo-mark.svg" alt=""></span>
-        <div class="aiw__who"><b>دستیار عیب‌یابی روند</b><span class="aiw__status" id="aiStatus">آماده‌ی کمک</span></div>
-        <span class="aiw__car" id="aiCarBadge" hidden></span>
-        <button class="aiw__reset" id="aiReset" type="button" aria-label="شروع دوباره" title="شروع دوباره" hidden>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4.4h4.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+      <h2 class="ai__title">عیب‌یابی هوشمند خودرو</h2>
+      <p class="ai__sub">خودرو را انتخاب کنید و مشکل را بگویید؛ به چند سؤال کوتاه جواب دهید و قطعه‌ی مناسب را ببینید.</p>
+      <ol class="ai-steps" id="aiSteps">
+        <li class="is-current" data-step="1" aria-current="step"><b>۱</b><span>خودرو و مشکل</span></li>
+        <li data-step="2"><b>۲</b><span>پرسش‌های دقیق</span></li>
+        <li data-step="3"><b>۳</b><span>تشخیص و قطعه</span></li>
+      </ol>
+      <div class="ai-car" id="aiCarCard" hidden>
+        <span class="ai-car__label">خودروی شما</span>
+        <b class="ai-car__name" id="aiCarName"></b>
+        <span class="ai-car__meta" id="aiCarMeta"></span>
+        <ul class="ai-car__answers" id="aiAnswers" aria-label="پاسخ‌های شما"></ul>
+        <button class="ai-car__reset" id="aiReset" type="button">شروع دوباره</button>
       </div>
+      <p class="ai__note">نتیجه جایگزین معاینه‌ی مکانیک نیست؛ پیش از خرید قطعه‌های گران، خودرو را به تعمیرگاه ببرید.</p>
+    </aside>
 
-      <div class="aiw__body" id="aiBody">
-        <form class="aiw__setup" id="aiStart" novalidate>
-          <p class="aiw__hello">سلام! برای تشخیص دقیق‌تر، اول خودرویتان را انتخاب کنید.</p>
-          <div class="aiw__grid">
-            <label class="ai-field"><span>برند</span><select id="aiMake"><option value="">انتخاب برند</option></select></label>
-            <label class="ai-field"><span>مدل</span><select id="aiModel" disabled><option value="">اول برند را انتخاب کنید</option></select></label>
-            <label class="ai-field ai-field--other" id="aiOtherWrap" hidden><span>نام خودرو</span><input id="aiOther" type="text" maxlength="60" autocomplete="off" placeholder="مثلاً هایما S7 توربو"></label>
-            <label class="ai-field"><span>سال ساخت</span><select id="aiYear"><option value="">نمی‌دانم</option></select></label>
-            <label class="ai-field"><span>کارکرد</span><select id="aiKm">
-              <option value="">نمی‌دانم</option>
-              <option value="کمتر از ۲۰ هزار کیلومتر">کمتر از ۲۰ هزار</option>
-              <option value="۲۰ تا ۶۰ هزار کیلومتر">۲۰ تا ۶۰ هزار</option>
-              <option value="۶۰ تا ۱۰۰ هزار کیلومتر">۶۰ تا ۱۰۰ هزار</option>
-              <option value="۱۰۰ تا ۱۵۰ هزار کیلومتر">۱۰۰ تا ۱۵۰ هزار</option>
-              <option value="۱۵۰ تا ۲۵۰ هزار کیلومتر">۱۵۰ تا ۲۵۰ هزار</option>
-              <option value="بیش از ۲۵۰ هزار کیلومتر">بیش از ۲۵۰ هزار</option>
-            </select></label>
-            <label class="ai-field"><span>سوخت</span><select id="aiFuel">
-              <option value="بنزینی">بنزینی</option>
-              <option value="دوگانه‌سوز (CNG)">دوگانه‌سوز</option>
-              <option value="هیبرید یا برقی">هیبرید یا برقی</option>
-              <option value="دیزل">دیزل</option>
-            </select></label>
-          </div>
-          <label class="ai-field ai-field--desc"><span>مشکل را شرح دهید</span>
-            <textarea id="aiText" rows="3" maxlength="1200" placeholder="مثلاً: موقع ترمز گرفتن فرمان می‌لرزد و از سمت چرخ جلو صدای جیغ می‌آید..."></textarea>
-          </label>
-          <div class="ai__chips" role="group" aria-label="افزودن علائم رایج">
-            <button type="button" data-symptom="صدای غیرعادی هنگام حرکت">صدای غیرعادی</button>
-            <button type="button" data-symptom="لرزش هنگام حرکت یا ترمز">لرزش</button>
-            <button type="button" data-symptom="ترمز ضعیف شده">ترمز ضعیف</button>
-            <button type="button" data-symptom="چراغ چک موتور روشن شده">چراغ چک</button>
-            <button type="button" data-symptom="موتور داغ می‌کند">داغ کردن</button>
-            <button type="button" data-symptom="خودرو دیر روشن می‌شود">مشکل استارت</button>
-          </div>
-          <div class="aiw__go">
-            <span class="ai__count" id="aiCount">۰ / ۱۲۰۰</span>
-            <button class="btn btn--primary" type="submit"><i class="ai-spark" aria-hidden="true"></i> شروع تحلیل</button>
-          </div>
-          <p class="aiw__err" id="aiErr" role="alert"></p>
-        </form>
-        <div class="aiw__log" id="aiThread" aria-live="polite" hidden></div>
-      </div>
-
-      <form class="aiw__composer" id="aiComposer" novalidate hidden>
-        <p class="aiw__hint" id="aiHint" aria-live="polite"></p>
-        <div class="aiw__row">
-          <textarea id="aiReply" rows="1" maxlength="600" placeholder="پاسخ یا توضیح بیشتر…" aria-label="پاسخ به دستیار"></textarea>
-          <button class="aiw__send" type="submit" aria-label="ارسال">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+    <div class="ai__stage" id="aiStage">
+      <form class="ai-view ai-setup" id="aiStart" novalidate>
+        <p class="ai-setup__hello">سلام! خودرویتان را انتخاب کنید و مشکل را بگویید.</p>
+        <div class="ai-grid">
+          <label class="ai-field"><span>برند</span><select id="aiMake"><option value="">انتخاب برند</option></select></label>
+          <label class="ai-field"><span>مدل</span><select id="aiModel" disabled><option value="">اول برند را انتخاب کنید</option></select></label>
+          <label class="ai-field ai-field--other" id="aiOtherWrap" hidden><span>نام خودرو</span><input id="aiOther" type="text" maxlength="60" autocomplete="off" placeholder="مثلاً هایما S7 توربو"></label>
+          <label class="ai-field"><span>سال ساخت</span><select id="aiYear"><option value="">نمی‌دانم</option></select></label>
+          <label class="ai-field"><span>کارکرد</span><select id="aiKm">
+            <option value="">نمی‌دانم</option>
+            <option value="کمتر از ۲۰ هزار کیلومتر">کمتر از ۲۰ هزار</option>
+            <option value="۲۰ تا ۶۰ هزار کیلومتر">۲۰ تا ۶۰ هزار</option>
+            <option value="۶۰ تا ۱۰۰ هزار کیلومتر">۶۰ تا ۱۰۰ هزار</option>
+            <option value="۱۰۰ تا ۱۵۰ هزار کیلومتر">۱۰۰ تا ۱۵۰ هزار</option>
+            <option value="۱۵۰ تا ۲۵۰ هزار کیلومتر">۱۵۰ تا ۲۵۰ هزار</option>
+            <option value="بیش از ۲۵۰ هزار کیلومتر">بیش از ۲۵۰ هزار</option>
+          </select></label>
+          <label class="ai-field"><span>سوخت</span><select id="aiFuel">
+            <option value="بنزینی">بنزینی</option>
+            <option value="دوگانه‌سوز (CNG)">دوگانه‌سوز</option>
+            <option value="هیبرید یا برقی">هیبرید یا برقی</option>
+            <option value="دیزل">دیزل</option>
+          </select></label>
+        </div>
+        <label class="ai-field ai-field--desc"><span>مشکل را شرح دهید</span>
+          <textarea id="aiText" rows="3" maxlength="1200" placeholder="مثلاً: موقع ترمز گرفتن فرمان می‌لرزد و از سمت چرخ جلو صدای جیغ می‌آید..."></textarea>
+        </label>
+        <div class="ai__chips" role="group" aria-label="افزودن علائم رایج">
+          <button type="button" data-symptom="صدای غیرعادی هنگام حرکت">صدای غیرعادی</button>
+          <button type="button" data-symptom="لرزش هنگام حرکت یا ترمز">لرزش</button>
+          <button type="button" data-symptom="ترمز ضعیف شده">ترمز ضعیف</button>
+          <button type="button" data-symptom="چراغ چک موتور روشن شده">چراغ چک</button>
+          <button type="button" data-symptom="موتور داغ می‌کند">داغ کردن</button>
+          <button type="button" data-symptom="خودرو دیر روشن می‌شود">مشکل استارت</button>
+        </div>
+        <div class="ai-setup__foot">
+          <span class="ai__count" id="aiCount">۰ از ۱۲۰۰</span>
+          <p class="ai-setup__err" id="aiErr" role="alert"></p>
+          <button class="btn btn--primary ai-setup__go" type="submit"><i class="ai-spark" aria-hidden="true"></i>شروع تحلیل</button>
         </div>
       </form>
+      <div class="ai-view" id="aiView" aria-live="polite" hidden></div>
     </div>
-    <p class="ai__note">نتیجه‌ی دستیار جایگزین معاینه‌ی مکانیک نیست؛ پیش از خرید قطعه‌های گران، خودرو را به تعمیرگاه ببرید.</p>
   </div>
 </section>
 
@@ -232,6 +218,24 @@
     </div>
 
     <div class="pgrid" id="newest"></div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="روند یدک در یک نگاه">
+  <div class="container stats__grid">
+    <div class="stat">
+      <span class="stat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 7.5L12 3.5l8.5 4v9L12 20.5l-8.5-4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 7.5L12 11.5l8.5-4M12 11.5v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+      <div><b>+۱۲٬۰۰۰</b><span>قطعه‌ی اصلی موجود</span></div>
+    </div>
+    <div class="stat">
+      <span class="stat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 13.5c.9 1.4 2.1 2.1 3.5 2.1s2.6-.7 3.5-2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9.3" cy="9.6" r="1.1" fill="currentColor"/><circle cx="14.7" cy="9.6" r="1.1" fill="currentColor"/></svg></span>
+      <div><b>+۸٬۵۰۰</b><span>مشتری راضی</span></div>
+    </div>
+    <div class="stat">
+      <span class="stat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13v-2a7 7 0 0 1 14 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.5" y="12" width="4" height="6.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="16.5" y="12" width="4" height="6.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      <div><b>۲۴ ساعته</b><span>پشتیبانی فنی</span></div>
+    </div>
   </div>
 </section>
 
@@ -440,7 +444,7 @@
   </div>
 </footer>
 
-<a class="ai-launch" id="aiLauncher" href="#aiWindow" data-scroll-gap="16" aria-label="دستیار هوشمند عیب‌یابی">
+<a class="ai-launch" id="aiLauncher" href="#diagnose" aria-label="دستیار هوشمند عیب‌یابی">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.6 4.7 1.8-4.7 1.8L12 16l-1.8-4.8-4.7-1.8 4.7-1.8z" fill="currentColor"/><path d="M19 14.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z" fill="currentColor"/></svg>
   <span>عیب‌یابی هوشمند</span>
 </a>
