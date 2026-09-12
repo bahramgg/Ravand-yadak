@@ -26,6 +26,11 @@ const MAX_ROUNDS = 5;
 const MAX_TEXT = 1200;
 const MAX_BODY = 24 * 1024;
 const UPSTREAM_TIMEOUT = 45000;
+/* USD always left untouched on the OpenRouter account. Read from OpenRouter itself, so it
+   survives restarts and sleeps on the free tier, unlike any in-memory counter. */
+const MIN_BALANCE = process.env.MIN_BALANCE != null && process.env.MIN_BALANCE !== ''
+  ? Number(process.env.MIN_BALANCE) : 0.30;
+const BALANCE_TTL = 60e3;
 
 if (!KEY) {
   console.error('OPENROUTER_API_KEY is not set — refusing to start');
@@ -101,6 +106,7 @@ const ERR = {
   rate_limited: [429, 'تعداد درخواست‌های شما در یک ساعت گذشته زیاد بوده است. کمی بعد دوباره تلاش کنید.'],
   daily_cap: [503, 'دستیار امروز به سقف استفاده رسیده است. لطفاً فردا دوباره امتحان کنید یا فرم درخواست قطعه را ثبت کنید.'],
   upstream: [502, 'پاسخی از دستیار دریافت نشد. چند لحظه بعد دوباره تلاش کنید.'],
+  low_balance: [503, 'دستیار موقتاً در دسترس نیست. لطفاً کمی بعد دوباره تلاش کنید یا فرم درخواست قطعه را ثبت کنید.'],
   not_found: [404, 'یافت نشد.'],
 };
 const bad = (code) => Object.assign(new Error(code), { code });
@@ -233,6 +239,26 @@ function normalize(raw, rounds) {
   return out;
 }
 
+/* ---------- spend floor: stop calling the model before the account runs dry ---------- */
+let balance = { at: 0, remaining: null };
+async function remainingCredit() {
+  if (Date.now() - balance.at < BALANCE_TTL) return balance.remaining;
+  try {
+    const r = await fetch('https://openrouter.ai/api/v1/credits', {
+      headers: { Authorization: `Bearer ${KEY}` },
+      signal: AbortSignal.timeout(8000),
+    });
+    const d = (await r.json()).data;
+    const left = d ? Number(d.total_credits) - Number(d.total_usage) : NaN;
+    balance = { at: Date.now(), remaining: Number.isFinite(left) ? left : null };
+  } catch (e) {
+    /* fail open: DAILY_CAP and PER_IP_HOURLY still bound the spend */
+    console.warn(`credit check failed: ${String((e && e.message) || e).slice(0, 120)}`);
+    balance = { at: Date.now(), remaining: null };
+  }
+  return balance.remaining;
+}
+
 /* ---------- abuse limits: per IP per hour, and a global daily cap ---------- */
 const hits = new Map();
 function clientIp(req) {
@@ -317,6 +343,11 @@ const server = http.createServer(async (req, res) => {
   } catch (e) {
     return fail(e.code || 'bad_request');
   }
+  const left = await remainingCredit();
+  if (left != null && left < MIN_BALANCE) {
+    console.warn(`refusing: OpenRouter balance ${left.toFixed(3)} is below the ${MIN_BALANCE} floor`);
+    return fail('low_balance');
+  }
   if (!allowDay()) return fail('daily_cap');
 
   const t0 = Date.now();
@@ -324,6 +355,7 @@ const server = http.createServer(async (req, res) => {
     try {
       const { content, cost } = await callModel(built.msgs);
       const data = normalize(parseJson(content), built.rounds);
+      if (balance.remaining != null && cost) balance.remaining -= Number(cost);
       console.log(`diagnose ok round=${built.rounds} stage=${data.stage} recs=${data.recommendations.length} ` +
         `ms=${Date.now() - t0} cost=${cost == null ? '?' : cost} attempt=${attempt}`);
       return send(200, { data, meta: { round: built.rounds, max_rounds: MAX_ROUNDS } });
@@ -336,5 +368,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`ravand-yadak-api on ${HOST}:${PORT} model=${MODEL} products=${Object.keys(CATALOG).length} origins=${ORIGINS.join(' ')}`);
+  console.log(`ravand-yadak-api on ${HOST}:${PORT} model=${MODEL} floor=$${MIN_BALANCE} products=${Object.keys(CATALOG).length} origins=${ORIGINS.join(' ')}`);
 });
