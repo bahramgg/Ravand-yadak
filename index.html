@@ -6,6 +6,7 @@
 <title>روند یدک | فروشگاه اینترنتی لوازم و قطعات یدکی خودرو</title>
 <meta name="description" content="خرید آنلاین انواع لوازم و قطعات یدکی خودرو؛ قطعات موتور، بدنه، جلوبندی، برقی و داخل کابین با گارانتی اصالت کالا و ارسال به تمام نقاط کشور.">
 <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+<meta name="ry-ai-api" content="https://ravand-yadak-api.onrender.com">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -141,6 +142,51 @@
       </a></li>
     </ul>
 
+  </div>
+</section>
+
+<!-- ============ AI DIAGNOSIS ============ -->
+<section class="ai" id="diagnose">
+  <div class="container ai__inner">
+    <div class="ai__intro">
+      <span class="ai__kicker"><i class="ai-spark" aria-hidden="true"></i>دستیار هوشمند روند</span>
+      <h2 class="ai__title">مشکل خودرو را بگویید،<br><em>قطعه‌ی درست را پیدا می‌کنیم</em></h2>
+      <p class="ai__sub">علائم خودرو را با زبان خودتان شرح دهید. دستیار علت‌های محتمل را بررسی می‌کند، چند سؤال دقیق می‌پرسد و بر اساس پاسخ‌ها، قطعه‌ی مناسب را از فروشگاه پیشنهاد می‌دهد.</p>
+      <ol class="ai__steps">
+        <li><b>۱</b><span><strong>شرح مشکل</strong>صدا، لرزش، چراغ هشدار یا هر علامت دیگر</span></li>
+        <li><b>۲</b><span><strong>بررسی احتمالات</strong>تحلیل علت‌ها و پرسش‌های دقیق</span></li>
+        <li><b>۳</b><span><strong>پیشنهاد قطعه</strong>قطعه‌ی مناسب از موجودی فروشگاه</span></li>
+      </ol>
+      <p class="ai__note">نتیجه‌ی دستیار جایگزین معاینه‌ی مکانیک نیست؛ پیش از خرید قطعه‌های گران، خودرو را به تعمیرگاه ببرید.</p>
+    </div>
+
+    <div class="ai__panel">
+      <form class="ai__start" id="aiStart" novalidate>
+        <div class="ai__car">
+          <label class="ai-field"><span>خودرو</span><input id="aiCar" type="text" maxlength="60" autocomplete="off" placeholder="مثلاً پژو ۲۰۶"></label>
+          <label class="ai-field"><span>سال ساخت</span><input id="aiYear" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="۱۳۹۸"></label>
+          <label class="ai-field"><span>کارکرد (کیلومتر)</span><input id="aiKm" type="text" inputmode="numeric" maxlength="7" autocomplete="off" placeholder="۸۵۰۰۰"></label>
+        </div>
+        <label class="ai-field ai-field--desc"><span>مشکل خودرو را شرح دهید</span>
+          <textarea id="aiText" rows="4" maxlength="1200" placeholder="مثلاً: موقع ترمز گرفتن فرمان می‌لرزد و از سمت چرخ جلو صدای جیغ می‌آید..."></textarea>
+        </label>
+        <div class="ai__chips" role="group" aria-label="افزودن علائم رایج">
+          <button type="button" data-symptom="صدای غیرعادی هنگام حرکت">صدای غیرعادی</button>
+          <button type="button" data-symptom="لرزش فرمان">لرزش فرمان</button>
+          <button type="button" data-symptom="ترمز ضعیف شده">ترمز ضعیف</button>
+          <button type="button" data-symptom="چراغ چک موتور روشن شده">چراغ چک روشن</button>
+          <button type="button" data-symptom="دود از اگزوز">دود از اگزوز</button>
+          <button type="button" data-symptom="موتور داغ می‌کند">داغ کردن موتور</button>
+          <button type="button" data-symptom="خودرو دیر روشن می‌شود">مشکل استارت</button>
+          <button type="button" data-symptom="کلاچ می‌دهد و دور موتور بی‌دلیل بالا می‌رود">کلاچ دادن</button>
+        </div>
+        <div class="ai__actions">
+          <span class="ai__count" id="aiCount">۰ / ۱۲۰۰</span>
+          <button class="btn btn--primary ai__go" type="submit"><i class="ai-spark" aria-hidden="true"></i>تحلیل مشکل</button>
+        </div>
+      </form>
+      <div class="ai__thread" id="aiThread" aria-live="polite" hidden></div>
+    </div>
   </div>
 </section>
 
@@ -361,11 +407,18 @@
   </div>
 </footer>
 
+<a class="ai-launch" id="aiLauncher" href="#diagnose" aria-label="دستیار هوشمند عیب‌یابی">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.6 4.7 1.8-4.7 1.8L12 16l-1.8-4.8-4.7-1.8 4.7-1.8z" fill="currentColor"/><path d="M19 14.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z" fill="currentColor"/></svg>
+  <span>عیب‌یابی هوشمند</span>
+</a>
+
 <button class="totop" id="totop" aria-label="بازگشت به بالا" type="button">
   <svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
+<script src="assets/data/catalog.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/hero-fx.js"></script>
+<script src="assets/js/ai.js"></script>
 </body>
 </html>
