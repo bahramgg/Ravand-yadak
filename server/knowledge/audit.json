@@ -3387,6 +3387,93 @@
    }
   ]
  },
+ "farda-sx5": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "CVT protective-mode fault: kept but explicitly marked as a single owner report; pressure sensor removed from parts (speculative).",
+   "Identity confirmed: Wikipedia places the Iranian SX5 in the 2nd-gen Jingyi X5 (4A92 1.6, CVT, assembled in Semnan and Borujerd); khodro45 confirms 123 hp / 154 Nm, 1.5T 150 hp / 200 Nm, CVT with 6 virtual gears for both, SX5 early 2021 and Plus winter 1401.",
+   "SX5 Plus gearbox field corrected to 'CVT with 6 virtual gears' per khodro45.",
+   "Diagnostic tips: removed horn/clock-spring tip and 'power loss with AC on' claim (not found in sources); added engine noise under acceleration (khodro45) and that owners report few faults.",
+   "Maintenance: 'production stopped' claim removed (Wikipedia lists 2021–present); added 65,000 km owner report of routine-only servicing.",
+   "Verdict weak: only one model-specific fault, itself a single owner report, survives."
+  ],
+  "removed_claims": [
+   "Horn not working: single owner report, fixed at the dealer, no pattern — not model-specific.",
+   "Seat covers fading: not found in the cited khodro45 review (its disadvantages list only mentions economy-grade interior materials).",
+   "Frequent software errors and clouded multimedia screen: not in khodro45; the forum only notes older units lack Android, which is not a fault.",
+   "Clock-spring (نوار کابلی) as horn cause: speculative, tied to the removed horn fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فردا SX5 (ساده – پلاس)؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/car-review/fmc-sx5/"
+   },
+   {
+    "id": 2,
+    "title": "مشکلات و معایب فردا SX5 — انجمن بچرخ",
+    "url": "https://becharkh.com/forum/car?brand=farda&model=sx5"
+   },
+   {
+    "id": 3,
+    "title": "Forthing Jingyi X5 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Forthing_Jingyi_X5"
+   },
+   {
+    "id": 4,
+    "title": "حقایقی درباره فردا SX5 — بچرخ",
+    "url": "https://becharkh.com/blogs/car/%D8%AD%D9%82%D8%A7%DB%8C%D9%82%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%81%D8%B1%D8%AF%D8%A7-sx5/ZRIvXYIsMz"
+   }
+  ]
+ },
+ "farda-t5": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Gearbox fault rewritten around the delayed reverse engagement that two otex owners (3–4 s, 1–2 s) and the becharkh blog report; confidence low→medium, severity medium→low (behaviour, no mechanical failure documented).",
+   "AC high-rpm cut-out: confidence medium→low — only one becharkh forum owner reports it; otex (cited) does not mention it; possible ECU compressor cut-off noted.",
+   "Reverse camera: kept low; multimedia brightness claim dropped (not found in sources).",
+   "Added brake squeal with factory pads (several otex owners), low confidence.",
+   "Engine code 4J15T, 156 hp / 230 Nm and 6AT torque converter confirmed by hamrah-mechanic.",
+   "Diagnostic tips: added reverse delay as a reported trait and a note that no documented mechanical fault pattern exists; maintenance: turbo oil sensitivity (gearbox-pekan), unverified 60,000 km warranty figure removed.",
+   "Verdict weak: only two faults have more than one owner report; the rest are single anecdotes, and no model-specific engine or gearbox failure is documented."
+  ],
+  "removed_claims": [
+   "Oil drips under a 1404 car at 3,300 km: a single anecdote with unknown leak location — not a model-specific fault.",
+   "Weak rear suspension: not listed among disadvantages in the cited hamrah-mechanic review; no other source.",
+   "Fuel filler door not opening: a single owner anecdote one week after delivery, cause unknown.",
+   "Multimedia screen brightness flicker: not found in the cited sources.",
+   "Not added: generic turbo/overheating/head-gasket/VVT items from the gearbox-pekan repair advert — written generically, without T5-specific evidence."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فردا T5 | بررسی جامع و مشخصات فنی FMC T5 — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/fmc-t5-review/"
+   },
+   {
+    "id": 2,
+    "title": "فردا T5 | نظرات کاربران و بررسی مشکلات و معایب — انجمن بچرخ",
+    "url": "https://becharkh.com/forum/car?s=1&brand=farda&model=t5"
+   },
+   {
+    "id": 3,
+    "title": "مزایا و معایب فردا T5 — آیا T5 فردا موتور ارزش خرید دارد؟ — بچرخ",
+    "url": "https://becharkh.com/blogs/car/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%88-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%81%D8%B1%D8%AF%D8%A7-t5-%D8%A8%D8%AE%D8%B1%DB%8C%D9%85-%DB%8C%D8%A7-%D9%86%D9%87-%DA%A9%D8%A7%D9%85%D9%84-%D8%AA%D8%B1%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-t5/aBQlpv2eA7"
+   },
+   {
+    "id": 4,
+    "title": "بررسی اجمالی فردا T5 و نظرات مردمی کاربران و مالکان — اُتکس",
+    "url": "https://otex.ir/blog/farda-t5-overview-and-popular-opinions-from-users-and-owners"
+   },
+   {
+    "id": 5,
+    "title": "راهنمای تخصصی تعمیر موتور FMC T5 — گیربکس پکان",
+    "url": "https://gearbox-pekan.com/fmc-t5/"
+   }
+  ]
+ },
  "kia-cerato": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4723,6 +4810,62 @@
     "id": 5,
     "title": "تعمیرگاه مجید — بررسی جامع گیربکس تویوتا کرولا",
     "url": "https://gearboxmajid.com/articles/85-toyota-corolla-gearbox"
+   }
+  ]
+ },
+ "toyota-yaris-hatchback-sedan": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Oil consumption: What Breaks supports worn piston rings in the 1NZ-FE (over 0.5 L/1000 km from about 160k km). Removed the unsupported valve-stem-seal cause and the attribution to 2NZ-FE; mileage corrected from 150–160k to about 160k. Moved to the top of the list.",
+   "Power-window master switch recalls: scope corrected to 12V-491 (2007–2009) and 15V-689 (2006–2010); cause reworded per NHTSA (inconsistent grease on sliding contacts, short circuit, melting).",
+   "Takata passenger inflator recalls: per-campaign years added (16V-340 2006–2011, 17V-006 2008, 19V-741 2008–2012); noted coverage of Iranian imports is unconfirmed.",
+   "Added fault: driver-airbag spiral cable (clockspring) damage, NHTSA recall 14V-168 for 2006–2010 Yaris, with the Iranian part name «فلت فرمان».",
+   "Timing chain: source mileage applies to the 1NZ-FE; confidence lowered from medium to low (engine-guide sites only, largely high-mileage wear).",
+   "VVT-i fault: reworded to the VVT-i unit or OCV blocked by oil deposits, per the source; removed the unsupported 'from 130k km' figure and the cold-start detail.",
+   "Identity: the 1.3 engine code stays marked as probable. Added that other markets used the 2SZ-FE for the XP90 1.3. The U340E gearbox code is now marked as unconfirmed for Iran; the Persian gearbox source confirms a 4-speed automatic on 2015–2018 cars.",
+   "Tips and maintenance: scoped the recall and ignition-switch items to the 2005–2011 generation, added a clockspring tip, replaced the pump-seal tip, and added a recall check by VIN. Gearbox maintenance now uses the Persian source's slipping and overheating symptoms instead of the unverified ATF WS claim."
+  ],
+  "removed_claims": [
+   "U340E front pump seal/bushing leak causing harsh or shuddering shifts: the cited rebuilder pages could not be fetched or confirmed, and the Iranian gearbox source lists only generic symptoms; not shown to be Yaris-specific.",
+   "U340E front planetary cracking that locks two planetaries and warps the reverse drum: single transmission-rebuilder source that could not be verified; a severe claim without reliable support.",
+   "Valve stem seals as a cause of oil consumption, and 2NZ-FE oil consumption: not in the verified source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "تویوتا یاریس صندوق دار ۲۰۰۵ تا ۲۰۱۱، مشخصات و قیمت (۱۲۹۹ سی‌سی، ۸۴ اسب، اتوماتیک ۴ سرعته، ایرتویوتا) — car.ir",
+    "url": "https://car.ir/633-toyota-yaris-sedan-2005-2011"
+   },
+   {
+    "id": 2,
+    "title": "مشخصات فنی تویوتا یاریس هاچ بک سال 2015 - 2016 (۱٫۵ لیتر، ۱۰۷ اسب، ۱۴۱ نیوتن‌متر، اتوماتیک ۴ سرعته) — باما",
+    "url": "https://bama.ir/car-reviews/toyota/yarishatchback-specs-1124-360"
+   },
+   {
+    "id": 3,
+    "title": "مشخصات فنی تویوتا یاریس صندوق دار 1.5 لیتر سال 2014 - 2016 — باما",
+    "url": "https://bama.ir/car-reviews/toyota/yaris-specs-1229-433-1.5liter"
+   },
+   {
+    "id": 4,
+    "title": "Toyota Yaris XP90 — All Engines, Problems & Buying Guide (2005–2011) — What Breaks",
+    "url": "https://what-breaks.com/toyota/yaris-xp90/"
+   },
+   {
+    "id": 5,
+    "title": "Toyota 2NZ-FE 1.3L Engine Specs, Problems, Reliability — MotorReviewer",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=171"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls API — 2008 Toyota Yaris (12V-491, 15V-689, 14V-168, 16V-340, 17V-006, 19V-741)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=toyota&model=yaris&modelYear=2008"
+   },
+   {
+    "id": 9,
+    "title": "بررسی انواع گیربکس تویوتا یاریس (۲۰۱۵ تا ۲۰۱۸ اتوماتیک ۴ سرعته) — گیربکس مجید",
+    "url": "https://gearboxmajid.com/articles/86-toyota-yaris-gearbox"
    }
   ]
  },
