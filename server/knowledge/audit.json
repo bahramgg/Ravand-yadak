@@ -50,6 +50,47 @@
    }
   ]
  },
+ "peugeot-roa": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine specs aligned with khodro45: 1.6 OHV 82 hp / 135 Nm Euro 2; OHVG2 1.7 L 88 hp / 140 Nm Euro 3 (dropped the hp/Nm ranges and exact 1598/1696 cc).",
+   "Driveshaft vibration: added that Roa Sal got a two-piece shaft to reduce it (khodro45); centre bearing scoped to Roa Sal.",
+   "Clutch fault: 'single-plate' wording replaced by 'Paykan clutch replaced with Peugeot disc/plate in Roa Sal', as khodro45 states.",
+   "Gearbox noise/hard shifting: rests on hamrah-mechanic owner complaints only; confidence medium -> low, source 2 dropped; moved below clutch fault.",
+   "Body water-leak cause and tips kept; tip on centre bearing scoped to Roa Sal."
+  ],
+  "removed_claims": [
+   "'Synchro (hamāhangi) problem fixed in Roa Sal per khodro45' — not found in either khodro45 article."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — فرزند پیکان و پژو را بهتر بشناسیم؛ بررسی پژو روآ سال",
+    "url": "https://khodro45.com/mag/peugeot-roa/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — پژو روآ (معمولی و سال)؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/car-review/peugeot-roa/"
+   },
+   {
+    "id": 3,
+    "title": "همراه مکانیک — پژو روآ، مشخصات و بررسی تخصصی (همراه با نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/carreview/irankhodro/roa/"
+   },
+   {
+    "id": 4,
+    "title": "پدال — معایب و محاسن روآ را بشناسیم",
+    "url": "https://www.pedal.ir/news/333812-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%85%D8%AD%D8%A7%D8%B3%D9%86-%D8%B1%D9%88%D8%A2/"
+   },
+   {
+    "id": 5,
+    "title": "تجهیز خودرو ثمین — مشخصات موتور پیکان OHV (انژکتوری)",
+    "url": "https://www.tajhizkhodro-samin.ir/education/site-news/93-ohv-arrow-motor-specifications"
+   }
+  ]
+ },
  "ikco-arisun-2": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -761,6 +802,55 @@
    }
   ]
  },
+ "ikco-reera": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed (khodro45 mag + car-review): EFP TC 1645 cc 160 hp / 240 Nm, 6AT by DAE, torsion-beam rear, launch autumn 1403; removed unverified 'variable valve timing' wording from engine text.",
+   "Gearbox fault: added delayed engagement and lazy calibration / repeated kickdown (khodro45 owners, bitrun calibration article); removed 'gearbox error shown on display' and 'TCU fault reported' (not found); cited bitrun.",
+   "Electrical fault: added blind-spot radar false alarms (bitrun test); cited bitrun electrical article; removed 'car creeps forward when auto-hold fails' detail (not found).",
+   "Suspension fault: added khodro45 car-review 'dry rear ride' as support.",
+   "Tips: fuel consumption figures aligned with owners (10-12 L city, official 7.4); removed unverified 'consumption drops after 4-5k km' and the Tara update claim; removed PCV tip.",
+   "Maintenance: replaced unsupported grille/radiator stone-chip note with warranty-registration note."
+  ],
+  "removed_claims": [
+   "Engine oil consumption via failed PCV check valve on EF7P valve cover — copied from Dena EF7P (naturally aspirated); no report for Reera or the EF7P-TC turbo engine, and its PCV layout is not shown to be the same.",
+   "Maintenance note on protecting radiator/condenser from stone chips behind the large grille — no source.",
+   "Source 3 (khodro45 EF7P engine article) — only supported the removed PCV fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بچرخ — ری را ایران خودرو؛ نظرات کاربران و بررسی مشکلات و معایب",
+    "url": "https://becharkh.com/forum/car?brand=iran-khodro&model=iran-khodro-reera&s=1"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — ریرا ایران خودرو؛ بررسی جامع و مشخصات فنی (همراه با نظرات مالکان)",
+    "url": "https://khodro45.com/mag/rira/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — بررسی و مشخصات فنی ریرا ایران خودرو",
+    "url": "https://khodro45.com/mag/car-review/rira/"
+   },
+   {
+    "id": 5,
+    "title": "وبلاگ کارنامه — معایب خودروی تارا (تقه گیربکس اتوماتیک DAE)",
+    "url": "https://karnameh.com/blog/disadvantages-tara/"
+   },
+   {
+    "id": 6,
+    "title": "بیت‌ران — مشکلات گیربکس ریرا و کالیبراسیون آن",
+    "url": "https://bitrun.info/1403/06/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B1%DB%8C%D8%B1%D8%A7-%D9%88-%DA%A9%D8%A7%D9%84%DB%8C%D8%A8%D8%B1%D8%A7%D8%B3%DB%8C%D9%88%D9%86/"
+   },
+   {
+    "id": 7,
+    "title": "بیت‌ران — مشکلات برقی ریرا چیست؟",
+    "url": "https://bitrun.info/1403/06/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%A8%D8%B1%D9%82%DB%8C-%D8%B1%DB%8C%D8%B1%D8%A7-%D9%BE%D9%84%D8%AA-%D9%81%D8%B1%D9%85-%D8%A8%D8%B1%D9%82/"
+   }
+  ]
+ },
  "saipa-pride": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1325,6 +1415,116 @@
     "id": 13,
     "title": "معرفی وانت نیسان جدید از سوی زامیاد (نیسان EX) — عصر ایران",
     "url": "https://www.asriran.com/fa/news/1068210"
+   }
+  ]
+ },
+ "zamyad-z24-diesel": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Gearbox: '5-speed (5+1)' was unsupported; bama lists a 6-speed manual with hydraulically adjusted single dry-plate clutch, so the gearbox is given as bama's figure with a note that some sources say 5-speed.",
+   "Engine: 93 hp / 225 Nm and natural aspiration per bama; dropped '8-valve' (not found); Euro 5 from winter 1398 (bama).",
+   "No-start fault: symptoms and causes aligned with the Nasicoelec notice and its comments (cold multi-crank starts, stalling once warm, glow control unit GCU blamed when plugs test good); dropped unsupported 'low compression' and 'ECU' as listed causes and the 'spray into air intake' detail.",
+   "Clutch fault: removed the unsupported claim that higher diesel torque accelerates clutch wear.",
+   "Differential seal fault: noted that the axle is shared with the petrol Z24 (kept at low confidence).",
+   "Maintenance: replaced the generic dusty-road air filter note with a pre-winter glow plug/battery check tied to the documented no-start fault; dropped fuel-in-oil tip."
+  ],
+  "removed_claims": [
+   "Fault 'black/white smoke, power loss, injector/pump deposits, fuel entering oil via injection pump seal' — sources (yazdipump, cargarage) are generic diesel pump/smoke articles with nothing specific to the Zamyad FAW engine; the pump-seal fuel-in-oil claim was not in any source. Generic diesel wear.",
+   "Tip 'if oil is thin and smells of diesel, check injection pump seal' — unsupported.",
+   "Sources 5 (yazdipump) and 6 (cargarage) — generic, no longer cited."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "ناسیکوتک — روشن نشدن نیسان زامیاد دیزل (اطلاعیه فنی سیستم سوخت و برق، همراه با پرسش کاربران)",
+    "url": "https://nasicoelec.ir/technical-documentation/technical-announcements/fuel-system/340-nissan-zamyad-diesel"
+   },
+   {
+    "id": 2,
+    "title": "باما — مشخصات فنی و نقاط ضعف زامیاد وانت نیسان دیزل",
+    "url": "https://bama.ir/car-reviews/zamyad/pickup-specs-1316-diesel"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی و نقاط ضعف زامیاد وانت نیسان بنزین",
+    "url": "https://bama.ir/car-reviews/zamyad/pickup-specs-1316-gas"
+   },
+   {
+    "id": 4,
+    "title": "کارشناسی نیسان وانت قبل از خرید؛ چک‌لیست کامل — وبلاگ کارنامه",
+    "url": "https://karnameh.com/blog/nissan-pickup-inspection/"
+   },
+   {
+    "id": 7,
+    "title": "نیسان وانت زامیاد — نظرات کاربران و مشکلات (بچرخ)",
+    "url": "https://becharkh.com/forum/car?s=1&brand=nissan&model=zamyad-pickup"
+   },
+   {
+    "id": 8,
+    "title": "کیان باتری — نقد و بررسی نیسان وانت زامیاد بنزینی، دیزل و دوگانه",
+    "url": "https://www.kianbattery.com/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%86%D8%AA-%D8%B2%D8%A7%D9%85%DB%8C%D8%A7%D8%AF/"
+   }
+  ]
+ },
+ "zamyad-padra": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Gearbox: draft said 5-speed with bama as outlier; both bama and imna list a 6-speed manual for Padra Plus, so the 5-speed claim was dropped and the 6-speed figure attributed to them.",
+   "Engine: imna lists Z24 95 hp / 175 Nm, bama M24 94 hp / 187 Nm; both recorded, with bama's 'unchanged powertrain' note. Dropped '8-valve' (not confirmed).",
+   "Cooling fault: confirmed as the most frequent Padra Plus owner complaint (finds); removed imna as support (imna has no overheating reports); added ground-wire effect on AC/battery.",
+   "Driveshaft fault: speed range corrected to ~50-70 km/h and up, worse under load; added the 12-13 cm longer driveshaft detail (persiankhodro via search); removed the Karun owner report (not in imna).",
+   "Gearbox fault: removed '1st-gear grinding noise' specifics not found; symptom rewritten on owner reports (hard, noisy engagement, dead gear, 3->4 weakness).",
+   "Body fault: confidence low -> medium (many owner reports of paint peeling and fragile bumper, plus bama build-quality weakness and persiankhodro).",
+   "CNG fault kept at low with bama 'unchanged powertrain' as the basis for carrying the Zamyad system over.",
+   "Maintenance: removed the unsupported '5,000 km oil change under heavy load' interval; fuel tip uses bama's 10.9 L official figure and owner reports of up to 17 L."
+  ],
+  "removed_claims": [
+   "Padra Plus gearbox '5-speed' — contradicted by bama and imna (6-speed).",
+   "Karun double-cab owners reporting the same vibration above 70 km/h — not found in the cited imna article.",
+   "Oil and filter every 5,000 km under heavy load — no source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فایندز — نظرات درباره وانت پادرا پلاس؛ چه معایب و مزایایی دارد؟",
+    "url": "https://www.finds.ir/comments/661919/"
+   },
+   {
+    "id": 2,
+    "title": "ایمنا — پادرا پلاس سایپا؛ بررسی، مشخصات، داخل کابین و قیمت",
+    "url": "https://www.imna.ir/news/502676/%D9%BE%D8%A7%D8%AF%D8%B1%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3-%D8%B3%D8%A7%DB%8C%D9%BE%D8%A7-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D8%AF%D8%A7%D8%AE%D9%84-%DA%A9%D8%A7%D8%A8%DB%8C%D9%86-%D9%88-%D9%82%DB%8C%D9%85%D8%AA-%D9%BE%D8%A7%D8%AF%D8%B1%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی و نقاط ضعف زامیاد پادرا پلاس بنزینی",
+    "url": "https://bama.ir/car-reviews/zamyad/padraplus-specs-1407-gas"
+   },
+   {
+    "id": 4,
+    "title": "کارشناسی نیسان وانت قبل از خرید؛ چک‌لیست کامل — وبلاگ کارنامه",
+    "url": "https://karnameh.com/blog/nissan-pickup-inspection/"
+   },
+   {
+    "id": 5,
+    "title": "دفترچه عیب یابی خودروی دوگانه سوز انژکتوری وانت نیسان زامیاد (سایپا یدک) — مکانیک خودرو",
+    "url": "https://mekanikekhodro.ir/دفترچه-عیب-یابی-خودروی-دوگانه-سوز-انژک/"
+   },
+   {
+    "id": 6,
+    "title": "نشتی گاز به آب رادیاتور در خودروهای دوگانه سوز — سایال",
+    "url": "https://www.sayalco.com/%D9%86%D8%B4%D8%AA%DB%8C-%DA%AF%D8%A7%D8%B2-%D8%A8%D9%87-%D8%A2%D8%A8-%D8%B1%D8%A7%D8%AF%DB%8C%D8%A7%D8%AA%D9%88%D8%B1/"
+   },
+   {
+    "id": 7,
+    "title": "باما — مشخصات فنی زامیاد کارون",
+    "url": "https://bama.ir/car-reviews/zamyad/karoon-specs-1416"
+   },
+   {
+    "id": 8,
+    "title": "پرشین خودرو — بررسی پادرا پلاس؛ پیکاپ جدید زامیاد که قرار است جایگزین نیسان آبی شود",
+    "url": "https://persiankhodro.com/show_news/121820/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%BE%D8%A7%D8%AF%D8%B1%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3%D8%9B-%D9%BE%DB%8C%DA%A9%D8%A7%D9%BE-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B2%D8%A7%D9%85%DB%8C%D8%A7%D8%AF-%DA%A9%D9%87-%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA-%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D8%A2%D8%A8%DB%8C-%D8%B4%D9%88%D8%AF"
    }
   ]
  },
@@ -2718,6 +2918,44 @@
    }
   ]
  },
+ "mvm-110": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Suspension fault: becharkh (several owners, incl. noise persisting after 4 new shocks and strong lateral jolts) and ahmadimba ('weak suspension') confirm; citation of hamrah-mechanic dropped because it does not mention suspension.",
+   "Engine noise fault confirmed by becharkh owners (noise above 3000 rpm) and hamrah-mechanic ('excessive engine noise into cabin'); kept at medium.",
+   "Clutch fault: only ahmadimba ('weak clutch plate') supports it; hamrah-mechanic citation removed, confidence stays low.",
+   "AC-overheating fault reworded to match becharkh owner reports (boiling with AC on); stays low confidence.",
+   "Engine descriptions: removed unverified DOHC/valve-count details for SQR372 and the torque figure for SQR472F; noted that 110S dropped the 4-cylinder (ahmadimba).",
+   "Maintenance: removed the manual-gearbox oil grade and 40,000 km interval (unverified); clutch and parts-sourcing notes kept."
+  ],
+  "removed_claims": [
+   "Manual gearbox whine / oil leak fault removed: only a repair-shop page and one vague owner remark ('gear makes a little noise'); generic wear, and the draft itself admitted no structural defect is documented.",
+   "Source 2 (z4car) and source 5 (noruzigearbox) removed: no remaining fault relies on them."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معایب ام وی ام ۱۱۰ و ۱۱۰S (به‌همراه نظرات کاربران)",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-mvm-110/"
+   },
+   {
+    "id": 3,
+    "title": "بچرخ — ام وی ام ۱۱۰، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=mvm&model=110"
+   },
+   {
+    "id": 4,
+    "title": "دنیای یدکی احمدی — بررسی ام وی ام ۱۱۰ و ۱۱۰S و مزایا و معایب (صفحه کلاچ ضعیف، تعلیق ضعیف، موتور ۱٫۰ سه سیلندر)",
+    "url": "https://ahmadimba.com/review-110-110s-sam-vm-advantages-and-disadvantages/"
+   },
+   {
+    "id": 6,
+    "title": "Wikipedia — Chery QQ3 (SQR372, SQR472F, SQR371F; MVM 110 in Iran)",
+    "url": "https://en.wikipedia.org/wiki/Chery_QQ3"
+   }
+  ]
+ },
  "mvm-315": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2790,6 +3028,51 @@
     "id": 11,
     "title": "تهران امداد کار — بررسی مشکلات رایج گیربکس اتومات MVM",
     "url": "https://www.tehranemdadcar.com/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-mvm/"
+   }
+  ]
+ },
+ "mvm-530": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Oil-warning-light fault: hamrah-mechanic has 3+ owners reporting it, so confidence raised from low to medium; added one owner's cause (damaged insulation on the oil-pressure switch wiring giving false warnings).",
+   "Suspension fault: hamrah-mechanic article itself calls the suspension dangerously soft and 3+ owners report front/rear shock wear and hitting on speed bumps; wording updated.",
+   "Heater/AC switch fault: this is an owner comment (2 owners), not an article statement; attribution fixed and confidence lowered from medium to low.",
+   "5th/reverse gear popping out: 2+ owners on hamrah-mechanic, repaired by machining the gears; cause and parts updated, confidence stays low.",
+   "550 variant engine code marked as unconfirmed (hamrah-mechanic gives 2.0 L 132 hp but no code; roster notes 1.6 vs 2.0 dispute).",
+   "Oil-light diagnostic tip now includes checking the switch wiring before replacing the oil pump."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — ام وی ام ۵۳۰ بخریم یا نه؟ مزایا و معایب (به‌همراه نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-mvm-530/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — ام وی ام ۵۳۰؛ بررسی جامع و مشخصات فنی (۲٫۰ لیتر، ۱۳۹ اسب، ۱۸۲ نیوتن‌متر، دستی ۵ سرعته)",
+    "url": "https://khodro45.com/mag/mvm-530/"
+   },
+   {
+    "id": 3,
+    "title": "همراه مکانیک — ام وی ام ۵۵۰ بخریم یا نه؟ مزایا و معایب (CVT نسل قدیم)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-mvm-550/"
+   },
+   {
+    "id": 4,
+    "title": "بچرخ — ام وی ام ۵۵۰، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=mvm&model=550"
+   },
+   {
+    "id": 5,
+    "title": "بچرخ — ام وی ام ۵۳۰، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=mvm&model=530"
+   },
+   {
+    "id": 6,
+    "title": "ChinaPEV — Chery ACTECO engine review (SQR484F)",
+    "url": "https://www.chinapev.com/chery/chery-engine-review-introduction-including-1-5l-1-5t-1-6l-2-0l-and-1-0l/"
    }
   ]
  },
