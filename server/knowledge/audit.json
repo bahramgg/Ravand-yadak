@@ -1,4 +1,117 @@
 {
+ "ikco-paykan": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: dual-fuel pickup engine renamed OHVG2 per bama (1.7 L, 86 hp, 140 Nm; the repair guide gives 150 Nm), no longer tied to Arisun; pickup years set to 1348-1393 (bama, Wikipedia 1969-2014).",
+   "Removed the unverified 1600 MPFI output figures (60 kW / 135 Nm / Euro 2); the repair guide conflicts (86 hp, Euro IV).",
+   "Automatic gearbox kept only as 'per Wikipedia' (not confirmed for Iranian production).",
+   "Diagnostic tip that tests the alternator by pulling a battery terminal with the engine running was removed; on the injection pickup this can damage electronics. Kept the voltmeter check.",
+   "Added bama design traits (engine noise, high fuel consumption) as a tip, not a fault.",
+   "Gearbox top-cover gasket leak kept at low confidence: the shop page could not be opened (DNS failure twice) but a search snippet confirmed the claim.",
+   "No gap faults added: Persian searches on engine, differential and leaf springs gave only generic articles, nothing specific to the Paykan."
+  ],
+  "removed_claims": [
+   "Gear crunch when engaging gears (clutch not releasing / brass synchro / bushings): generic manual-gearbox wear, only one repair-shop source.",
+   "Exhaust smoke and oil consumption: based on one hyperbolic owner comment; the drafted cause (valve seals, rings on a worn OHV) is generic wear.",
+   "Clogged catalytic converter on the injection pickup: generic, and the only source is a converter seller.",
+   "Source 3 (catalyst-one) and source 6 (generic Q&A on battery-terminal test) dropped with the claims they supported."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "گیربکس امیر — تعمیر گیربکس پیکان وانت (صدای درگیری دنده و نشتی روغن)",
+    "url": "https://gearboxamir.com/repairing-the-gearbox-of-pikan-van/"
+   },
+   {
+    "id": 2,
+    "title": "بچرخ — پیکان وانت؛ نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?brand=paykan&model=pickup&s=1"
+   },
+   {
+    "id": 4,
+    "title": "تجهیز خودرو ثمین — مشخصات موتور پیکان OHV (انژکتوری)",
+    "url": "https://www.tajhizkhodro-samin.ir/education/site-news/93-ohv-arrow-motor-specifications"
+   },
+   {
+    "id": 5,
+    "title": "مکانیک خودرو — راهنمای تعمیرات وانت پیکان (باردو)؛ مشخصات موتور و گیربکس",
+    "url": "https://car-mechanic.ir/peykan-pickup-repair-guide/"
+   },
+   {
+    "id": 7,
+    "title": "Wikipedia — Paykan (and Bardo)",
+    "url": "https://en.wikipedia.org/wiki/Paykan"
+   },
+   {
+    "id": 8,
+    "title": "باما — مشخصات فنی پیکان وانت دوگانه‌سوز ۱۳۴۸ تا ۱۳۹۳",
+    "url": "https://bama.ir/car-reviews/peykan/pickup-specs-1399-cng"
+   }
+  ]
+ },
+ "ikco-arisun-2": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Head gasket: Becharkh owners report head-gasket failure and overheating on CNG for Arisun 2 itself — source 3 moved first, symptom now mentions overheating on gas.",
+   "Gearbox/differential howl: Becharkh Arisun 2 owners confirm howl above 100 km/h and heating in cool weather — confidence low -> medium; '4000 rpm' moved to the engine-noise tip (it is engine noise).",
+   "Steering noise: Becharkh + Pedal/search summary say the dealer calls it a common Arisun 2 fault — confidence low -> medium; removed unverified 'pulls to one side' claim and the speculative CV-joint-load reasoning.",
+   "Engine mounts: only one khodro45 owner report (reversed lower mount, loose suspension bolts) — confidence medium -> low; removed unverified 'owners replaced mounts early' / 'upper mount cracked at 3000 km' details.",
+   "Identity: khodro45 confirms XU7P 97 hp, 146 Nm petrol / 137 Nm CNG, 5MT, 0W-20, 750 kg payload (roster note's 600 kg is wrong); removed unverified compression-ratio / rpm figures; Becharkh owners confirm Arisun 1 had a chain, Arisun 2 a belt.",
+   "Tip on chassis cracking reworded: owner reports of chassis/differential breaking point to the rear-drive Arisun 1.",
+   "Maintenance: removed the unverified '10k then 15k km oil change' figures.",
+   "Not verified: the ۱۴۰۵ multimedia variant (kept, low impact on diagnosis). No further well-sourced gaps found (single-owner ESC self-activation and poor factory brake pads/tyres not added)."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — آریسان ۲؛ بررسی جامع و مشخصات فنی (مقاله و نظرات مالکان)",
+    "url": "https://khodro45.com/mag/car-review/arisun-2/"
+   },
+   {
+    "id": 2,
+    "title": "پدال — بررسی وانت آریسان ۲ ایران خودرو؛ مزایا، معایب و مشخصات",
+    "url": "https://www.pedal.ir/ikco/586076-ikco-arisun-pickup-spec/"
+   },
+   {
+    "id": 3,
+    "title": "بچرخ — وانت آریسان؛ نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=pickup&model=arisan"
+   },
+   {
+    "id": 4,
+    "title": "فایندز — بررسی آریسان ۲ (تغییرات نسبت به آریسان ۱ و ویژگی‌ها)",
+    "url": "https://www.finds.ir/reviews/672331/"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — مزایا و معایب پژو پارس موتور XU7P (نظرات مالکان درباره واشر سرسیلندر)",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disadvantages-pars-xu7p/"
+   },
+   {
+    "id": 6,
+    "title": "همراه مکانیک — آیا موتور XU7P واشر می‌زند؟",
+    "url": "https://www.hamrah-mechanic.com/mag/burning-xu7p-engine-cylinder-head-gasket-cost/"
+   },
+   {
+    "id": 7,
+    "title": "CarGeek — دستورالعمل رفع صدای زوزه گیربکس BE3 پژو پارس، ۴۰۵ و سمند",
+    "url": "https://cargeek.live/d/eaJzy2jb"
+   },
+   {
+    "id": 8,
+    "title": "آموزش CNG — علت روی گاز نرفتن خودرو",
+    "url": "https://amoozeshcng.ir/the-reason-for-the-car-not-stepping-on-the-gas/"
+   },
+   {
+    "id": 9,
+    "title": "Wikipedia — IKCO Arisun",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Arisun"
+   }
+  ]
+ },
  "peugeot-405": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -585,6 +698,69 @@
    }
   ]
  },
+ "ikco-tara": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Manual gearbox hard shifting: confirmed by Karnameh article + owners, but only one other source (pedal) — confidence high -> medium; dropped source 2 (no gearbox mention).",
+   "EPS steering: Karnameh confirms stiffening when hot; the 'owner's manual says it shuts off at high temperature' claim could not be verified and was softened to 'most likely thermal protection'; added Asriran report of some owners needing steering-rack replacement (new source 9).",
+   "Automatic gearbox clunk: confirmed (Karnameh article + owners; Asriran reports delayed throttle response); added source 9, removed the single-owner confirmation detail.",
+   "Brake fault: Asriran/Farnam Khodro also report owner complaints of weak braking in emergencies — added source 9; kept medium.",
+   "Electrical multiplex: Tahlil Bazaar also names wipers and dashboard misbehaving — added to symptom.",
+   "Suspension: only Tahlil Bazaar supports the <10k km claim; removed unverified 'rear axle kicks sideways over bumps' detail and source 1 (no suspension mention).",
+   "Identity: Wikipedia confirms IKP1 (PF1), TU5P 115 PS / 144 Nm, 5MT at launch, 6MT added 2024, 6AT, V3/V4 in 2023, EFP-TC 150 hp / 215 Nm in 2025; V1 Plus years widened to ۱۴۰۲–۱۴۰۳; automatic delivery date clarified (mass production announced ۱۴۰۰/۰۸, deliveries ~۱۴۰۱).",
+   "Engine desc: removed unverified 'anti-wear pistons / variable oil pump' detail.",
+   "AC tip: removed the unverified '480 g refrigerant' figure."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "وبلاگ کارنامه — معایب خودروی تارا را قبل از خرید بشناسید (مقاله و نظرات مالکان)",
+    "url": "https://karnameh.com/blog/disadvantages-tara/"
+   },
+   {
+    "id": 2,
+    "title": "تحلیل بازار — چهار ضعف فنی تارا را بشناسید (مقاله و نظرات مالکان)",
+    "url": "https://www.tahlilbazaar.com/news/230433/%DA%86%D9%87%D8%A7%D8%B1-%D8%B6%D8%B9%D9%81-%D9%81%D9%86%DB%8C-%D8%AA%D8%A7%D8%B1%D8%A7-%D8%B1%D8%A7-%D8%A8%D8%B4%D9%86%D8%A7%D8%B3%DB%8C%D8%AF-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA-%D8%AF%D8%B1-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AC%D8%AF%DB%8C%D8%AF-%D9%88%D8%AC%D9%88%D8%AF-%D9%86%D8%AF%D8%A7%D8%B1%D8%AF"
+   },
+   {
+    "id": 3,
+    "title": "بیت‌ران — معایب تارا اتوماتیک از زبان مالک خودرو (کولر، ترمز، تقه گیربکس)",
+    "url": "https://bitrun.info/1403/03/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AA%D8%A7%D8%B1%D8%A7-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%A7%D8%B2-%D8%B2%D8%A8%D8%A7%D9%86-%D9%85%D8%A7%D9%84%DA%A9-%D8%AE%D9%88%D8%AF%D8%B1%D9%88/"
+   },
+   {
+    "id": 4,
+    "title": "پدال — معایب تارا اتوماتیک و دنده‌ای؛ هر آنچه باید قبل از خرید بدانید",
+    "url": "https://www.pedal.ir/ikco/618108-disadvantages-of-ikco-tara/"
+   },
+   {
+    "id": 5,
+    "title": "دیلی تک — گیربکس تارا اتوماتیک ساخت کجاست؟ (DAE چین)",
+    "url": "https://dailytec.ir/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AA%D8%A7%D8%B1%D8%A7-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D8%AC%D8%A7%D8%B3%D8%AA%D8%9F/"
+   },
+   {
+    "id": 6,
+    "title": "کانال تلگرام بیت‌ران — نقص در سیستم ترمز تارا V1 پلاس و نبودن فراخوان",
+    "url": "https://t.me/s/bitrun_ir/7741"
+   },
+   {
+    "id": 7,
+    "title": "Wikipedia — IKCO Tara",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Tara"
+   },
+   {
+    "id": 8,
+    "title": "بیت‌ران — تولید انبوه خودرو تارا اتوماتیک آغاز شد",
+    "url": "https://bitrun.info/1400/08/%D8%AA%D9%88%D9%84%DB%8C%D8%AF-%D8%A7%D9%86%D8%A8%D9%88%D9%87-%D8%AA%D8%A7%D8%B1%D8%A7-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%A2%D8%BA%D8%A7%D8%B2-%D8%B4%D8%AF/"
+   },
+   {
+    "id": 9,
+    "title": "عصر ایران — رایج‌ترین مشکلات مربوط به خودرو تارا",
+    "url": "https://www.asriran.com/fa/news/957851"
+   }
+  ]
+ },
  "saipa-pride": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -766,6 +942,63 @@
     "id": 14,
     "title": "اقتصادآنلاین — مهم‌ترین دلایل سفت شدن کلاچ ماشین / سیم کلاچ پراید و تیبا را چگونه تنظیم کنیم؟",
     "url": "https://www.eghtesadonline.com/fa/news/687951/%D9%85%D9%87%D9%85-%D8%AA%D8%B1%DB%8C%D9%86-%D8%AF%D9%84%D8%A7%DB%8C%D9%84-%D8%B3%D9%81%D8%AA-%D8%B4%D8%AF%D9%86-%DA%A9%D9%84%D8%A7%DA%86-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%B3%DB%8C%D9%85-%DA%A9%D9%84%D8%A7%DA%86-%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF-%D9%88-%D8%AA%DB%8C%D8%A8%D8%A7-%D8%B1%D8%A7-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%DA%A9%D9%86%DB%8C%D9%85"
+   }
+  ]
+ },
+ "saipa-atlas": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Hesitation fault: severity high -> medium; removed the unsupported 'stalls at intersections' wording (owners say it is worse with A/C on); added that 6 Atlas owners on becharkh say it persists after the B6 update and remaps, while hamrah-mechanic reports the 1403 update fixed start-off hesitation for some.",
+   "Electrical fault: confidence high -> medium (scattered owner reports plus one khodro45 remark); removed unverified 'trip meter resets'; symptom now leads with door-lock / false door-open warning (3 owners).",
+   "Hard-start fault: symptom widened to 'cranks but does not start' per Atlas and Sahand owners; Sahand source added.",
+   "Oil loss: confidence medium -> low (one Sahand owner plus one under-fill report); typical_km changed from 'under 5,000 km' to 'about 4,000 km in one report'.",
+   "Catalyst / O2 sensor fault: removed the unverified '15,000 km' detail.",
+   "Knock: rewritten from 'after a remap on one Atlas' to 2 Sahand owners + 1 Atlas owner reporting hammer-like tapping at high revs; cause still unknown, confidence low.",
+   "Identity: Atlas G manual gearbox no longer described as having a shift indicator (unverified); 6-step tiptronic detail and the unverified Sahand automatic variant removed; power 91 hp / 137 Nm confirmed by khodro45.",
+   "Tips: removed the rusty-plug-cap anecdote and the rear-sliding tip; added a door-microswitch tip for battery drain."
+  ],
+  "removed_claims": [
+   "Water/oil mixing with engine replaced at 4,800 km: a single anecdote with no known cause, not a model pattern.",
+   "CVT noise on hills / belt failure at 60-90k km: a generic CVT warning, with no documented Atlas-specific failures.",
+   "Rear end sliding in bends at 80-90 km/h (diagnostic tip): one Sahand owner, unresolved cause; the drafted checks (rear shocks, hub nut) were guesses.",
+   "Sahand E / Sahand Plus automatic CVT variant: not confirmed in the sources checked."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بچرخ — ماشین اطلس سایپا؛ نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=saipa&model=atlas"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — سایپا اطلس G؛ بررسی و مشخصات فنی (مقاله و نظرات)",
+    "url": "https://khodro45.com/mag/saipa-atlas/"
+   },
+   {
+    "id": 3,
+    "title": "آخرین خودرو — پیشرانه M15GSI سایپا؛ موتور جدید سهند و اطلس (مقاله و نظرات)",
+    "url": "https://akharinkhodro.ir/article/technical/saipa-m15gsi-engine/"
+   },
+   {
+    "id": 4,
+    "title": "همراه مکانیک — سهند بخریم یا نه؟ مزایا و معایب سهند سایپا (مقاله و نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/saipa-sahand-advantages-and-disadvantages/"
+   },
+   {
+    "id": 5,
+    "title": "بچرخ — سایپا سهند؛ نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?brand=saipa&model=sahand&s=1"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — اطلس E پلاس اتوماتیک؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/atlas-plus-automatic-review/"
+   },
+   {
+    "id": 7,
+    "title": "باما — بررسی اطلس اتومات پلاس سایپا (Atlas E CVT)",
+    "url": "https://bama.ir/news/23392/%D8%B3%D8%A7%DB%8C%D9%BE%D8%A7-%D8%A7%D8%B7%D9%84%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-2"
    }
   ]
  },
@@ -954,6 +1187,94 @@
    }
   ]
  },
+ "zamyad-z24": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Clutch fault: Becharkh owners' «دیسک و صفحه خرابه» means clutch disc/pressure plate — moved that evidence here; confidence low -> medium; sources [1,9].",
+   "Steering fault: Bama lists «خلاصی فرمان» as a weak point (confirmed); noted optional hydraulic power steering (Bama) instead of calling it purely mechanical.",
+   "Bearing fault: dropped unverified source 6; knock-at-low-rpm symptom per Karnameh; sources [1,9].",
+   "Gearbox fault: dropped unverified source 2 and unsupported 'overheating' symptom; sources [1,9].",
+   "Oil consumption: removed the unverified '2 L in first 4000 km' anecdote (khodro45 not confirmed); sources [7,9].",
+   "Differential fault reframed around pinion-seal oil leak (the part Karnameh actually supports); crownwheel wear kept only as consequence; confidence medium -> low; source 1 removed (no differential mention).",
+   "Cooling/head-gasket: only support is a generic English content site on the Nissan Z24 engine; confidence medium -> low; source 9 removed (not mentioned).",
+   "CNG troubleshooting fault: Saipa Yadak booklet not independently opened; confidence medium -> low.",
+   "Identity: Bama confirms 5-speed manual, 2.4 L, 100 hp / 190 Nm, rear drums; dual-fuel 90 hp / 180 Nm; added Zamyad building earlier Nissan Junior from ~1349 (critic note) and the Nissan EX dual-fuel successor variant (engine code not confirmed); dual-fuel start moved to the 1380s (car.ir lists 1383).",
+   "Faults reordered by how often Iranian sources raise them; added a clutch-vs-gearbox diagnostic tip; removed brake-overload wording and the spark-plug interval from tips/maintenance (unsupported).",
+   "Tier-1 gap search found no further well-sourced model-specific faults within budget."
+  ],
+  "removed_claims": [
+   "Brake fault (front pads/discs wear fast, 20–40k km): source 1's «دیسک و صفحه» refers to the clutch, not brakes; the rest is generic wear with no model-specific support.",
+   "Timing chain stretch / tensioner / guide fault: only a one-line FAQ mention on a generic content site, no Iranian or owner support."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "نیسان وانت زامیاد — نظرات کاربران و مشکلات (بچرخ)",
+    "url": "https://becharkh.com/forum/car?s=1&brand=nissan&model=zamyad-pickup"
+   },
+   {
+    "id": 2,
+    "title": "ثبت نام زامیاد؛ شرایط فروش وانت نیسان — خودرو۴۵ (نظرات مالکان)",
+    "url": "https://khodro45.com/mag/zamyad-sell/"
+   },
+   {
+    "id": 3,
+    "title": "موتور M24 پلاس وانت نیسان زامیاد چه تفاوتی با Z24 دارد؟ — بیت‌ران",
+    "url": "https://bitrun.info/1402/05/%D9%85%D9%88%D8%AA%D9%88%D8%B1-m24-%D9%BE%D9%84%D8%A7%D8%B3-%D9%88%D8%A7%D9%86%D8%AA-%D9%86%DB%8C%D8%B3%D8%A7%D9%86/"
+   },
+   {
+    "id": 4,
+    "title": "دفترچه عیب یابی خودروی دوگانه سوز انژکتوری وانت نیسان زامیاد (سایپا یدک) — مکانیک خودرو",
+    "url": "https://mekanikekhodro.ir/دفترچه-عیب-یابی-خودروی-دوگانه-سوز-انژک/"
+   },
+   {
+    "id": 5,
+    "title": "نقد و بررسی نیسان وانت زامیاد بنزینی، دیزل و دوگانه — کیان باتری",
+    "url": "https://www.kianbattery.com/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%86%D8%AA-%D8%B2%D8%A7%D9%85%DB%8C%D8%A7%D8%AF/"
+   },
+   {
+    "id": 6,
+    "title": "برنامه سرویس‌های دوره‌ای نیسان وانت (زامیاد) — رادیان پارت",
+    "url": "https://radianpart.ir/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AF%D9%88%D8%B1%D9%87-%D8%A7%DB%8C-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%86%D8%AA/"
+   },
+   {
+    "id": 7,
+    "title": "3 Common Nissan Z24 Engine Problems — Mechanics Pick",
+    "url": "https://mechanicspick.com/nissan-z24-engine-problems/"
+   },
+   {
+    "id": 8,
+    "title": "مشخصات فنی و نقاط ضعف زامیاد وانت نیسان بنزین — باما",
+    "url": "https://bama.ir/car-reviews/zamyad/pickup-specs-1316-gas"
+   },
+   {
+    "id": 9,
+    "title": "کارشناسی نیسان وانت قبل از خرید؛ چک‌لیست کامل — وبلاگ کارنامه",
+    "url": "https://karnameh.com/blog/nissan-pickup-inspection/"
+   },
+   {
+    "id": 10,
+    "title": "نشتی گاز به آب رادیاتور در خودروهای دوگانه سوز — سایال",
+    "url": "https://www.sayalco.com/%D9%86%D8%B4%D8%AA%DB%8C-%DA%AF%D8%A7%D8%B2-%D8%A8%D9%87-%D8%A2%D8%A8-%D8%B1%D8%A7%D8%AF%DB%8C%D8%A7%D8%AA%D9%88%D8%B1/"
+   },
+   {
+    "id": 11,
+    "title": "نیسان وانت — ویکی‌پدیا فارسی",
+    "url": "https://fa.wikipedia.org/wiki/%D9%86%DB%8C%D8%B3%D8%A7%D9%86_%D9%88%D8%A7%D9%86%D8%AA"
+   },
+   {
+    "id": 12,
+    "title": "Nissan Junior — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nissan_Junior"
+   },
+   {
+    "id": 13,
+    "title": "معرفی وانت نیسان جدید از سوی زامیاد (نیسان EX) — عصر ایران",
+    "url": "https://www.asriran.com/fa/news/1068210"
+   }
+  ]
+ },
  "nissan-maxima": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1099,6 +1420,51 @@
     "id": 6,
     "title": "کانال تخصصی برلیانس (H330-H320-C3) — تلگرام",
     "url": "https://t.me/s/brilliance300?before=922"
+   }
+  ]
+ },
+ "mazda-b2000": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: Kara 2000 engine no longer attributed to 'DAE' (khodro45 says a Mitsubishi-designed engine built in China; exact code unconfirmed); removed unverified alternate figures of 119 hp / 170 Nm. Kara 1700 = Paykan 1.7 OHV confirmed; removed its unverified 80 hp / 140 Nm figures.",
+   "Overheating: confidence low -> medium (7 CarGeek commenters report a high temperature gauge or coolant overflow); restricted to the old Mazda 2000 (B2000i); dropped the unconfirmed 'only above 100 km/h' detail; added radiator fan to parts; moved up to second place.",
+   "Differential/gearbox whine: confirmed by the karnameh article plus owner comments on karnameh, khodro45 and CarGeek (5 users: gearbox noise and vibration below 3000 rpm); wording tightened.",
+   "Front brake overheating: confidence medium -> low (one owner comment verified; the claim of 'no cooling slots' was dropped as unverified).",
+   "Body/paint/cabin noise: confidence high -> medium (article + owner comments; partly generic build quality).",
+   "Clutch wear and fuel pump: added CarGeek as a second source (clutch slip and fuel pump complaints).",
+   "Tips: added hard steering and stiff suspension (karnameh) as design traits; removed the tip built on the single axle-shaft anecdote and the list of one-off reports (rain no-start, odometer, blue smoke)."
+  ],
+  "removed_claims": [
+   "Rear wheel and axle shaft coming out of the housing after hitting a road shoulder: a single owner anecdote with no known cause, not a documented model pattern.",
+   "Front suspension squeaking even on new trucks: a single vague owner comment with no cause.",
+   "'DAE' as Kara 2000 engine maker and the 119 hp / 170 Nm figures: not confirmed by the sources checked."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "وبلاگ کارنامه — درباره معایب وانت کارا ۲۰۰۰ و هزینه‌های مصرفی آن (مقاله و نظرات مالکان)",
+    "url": "https://karnameh.com/blog/disadvantages-kara-pickup-2000/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — مشخصات فنی وانت کارا (بهمن موتور) (مقاله و نظرات مالکان)",
+    "url": "https://khodro45.com/mag/mazda2000-cara-bahman/"
+   },
+   {
+    "id": 3,
+    "title": "بی‌تووال — مقایسه کامل وانت مزدا و کارا؛ بررسی فنی، مزایا و معایب",
+    "url": "https://www.b2wall.com/blog/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-%D9%88%D8%A7%D9%86%D8%AA-%D9%85%D8%B2%D8%AF%D8%A7-%D9%88-%DA%A9%D8%A7%D8%B1%D8%A7/"
+   },
+   {
+    "id": 4,
+    "title": "هلدینگ محمدی (نمایندگی بهمن موتور شیراز) — تفاوت وانت مزدا با کارا",
+    "url": "https://mohammadiholding.com/cara-vs-mazda/"
+   },
+   {
+    "id": 5,
+    "title": "CarGeek — راهنمای تعمیرات وانت مزدا B2000i (نظرات کاربران)",
+    "url": "https://cargeek.live/d/a1by59wc"
    }
   ]
  },
@@ -1661,6 +2027,97 @@
    }
   ]
  },
+ "fownix-tiggo-7-pro": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Steering: Za Rulem puts rack knock from ~70k km on bad roads and tie rods/ends at 80–100k after a supplier change — typical_km corrected from '25–70k'; removed unverified '2nd tie-rod in 2.5 years' anecdote; confidence high -> medium.",
+   "Suspension: Za Rulem gives front struts + stabilizer bushings 40–70k and shock leaks 70–120k — typical_km and symptom refined; confidence high -> medium.",
+   "CVT25 internal wear: Za Rulem confirms input-shaft bushing 30–40k, pump pressure-reducing valve 100–120k, bearings 120–150k; removed unconfirmed belt-slip link and belt part.",
+   "ABS/ESP lights: Za Rulem confirms moisture in ABS unit connector and scattered lock/trunk-button/climate-display glitches; removed unverified '30–90k km'.",
+   "Body/paint: Becharkh owners (paint defects, wind/rattle noise at speed) + Za Rulem (easy deep chips, unplated tailgate-edge corrosion) — confidence medium -> high; faults reordered by Iranian owner frequency.",
+   "Knock + CVT delay: confirmed by Becharkh (knock is the top owner complaint), khodro45 (fuel sensitivity) and Iranian reviews (update reduces knock; CVT slow on hills) — kept high; added Becharkh to CVT sources.",
+   "Identity: khodro45 confirms Pro Max 1.6T 197 hp / 290 Nm with 7-speed DCT and domestic-fuel sensitivity; added tip that CVT25 faults do not apply to Pro Max and that Pro Max turbo lag below ~2500 rpm / early ESC intervention are normal; removed unverified Pro Max fuel-gauge claim.",
+   "Idle drop with AC kept at low confidence — single foreign owner source (Drom), not independently checked."
+  ],
+  "removed_claims": [
+   "Engine oil leak (front crank seal / valve cover gasket, 30–70k): only weak aggregator sources; Za Rulem rates both engines durable with no leak mention; Iranian owners do not report it.",
+   "AC compressor failure / refrigerant leak (40–80k): only weak aggregator sources; Iranian 'weak AC' complaints are generic and not a specific compressor fault.",
+   "GDI injector fouling / misfire (60–120k): generic direct-injection wear, low confidence, not in Za Rulem or Becharkh owner reports."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فونیکس تیگو 7 پرو — نظرات کاربران و مشکلات (بچرخ)",
+    "url": "https://becharkh.com/forum/car?brand=fownix&model=tiggo7pro"
+   },
+   {
+    "id": 2,
+    "title": "Chery Tiggo 7 Pro 1.5T CVT: 9 hidden defects (2025 analysis) — Virgin Auto",
+    "url": "https://virgin-auto.ru/chery-tiggo-7-pro-i-15t-cvt"
+   },
+   {
+    "id": 3,
+    "title": "معایب تیگو ۷ پرو چیست؟ — خودروم",
+    "url": "https://khodrom.ir/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AA%DB%8C%DA%AF%D9%88-%DB%B7-%D9%BE%D8%B1%D9%88-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B1%D8%A7-%D9%86%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A2%D9%86-%D8%B1%D8%A7-%D8%AE/"
+   },
+   {
+    "id": 4,
+    "title": "مشکلات رایج در ماشین چری تیگو 7 پرو — اکبر توکیو",
+    "url": "https://akbartokyo.com/cherry-tigo-7-pro-problems/"
+   },
+   {
+    "id": 5,
+    "title": "مشخصات فنی فونیکس تیگو 7 پرو اکسلنت — باما",
+    "url": "https://bama.ir/car-reviews/fownix/tiggo7pro-specs-1415-excellent"
+   },
+   {
+    "id": 6,
+    "title": "مشخصات فنی فونیکس تیگو ۷ پرو مکس — خودرو۴۵",
+    "url": "https://khodro45.com/mag/fownix-tiggo-7-pro-max/"
+   },
+   {
+    "id": 7,
+    "title": "بررسی فونیکس تیگو 7 پرو مکس: مزایا و معایب — پدال",
+    "url": "https://www.pedal.ir/fownix/569005-fownix-mvm-tiggo7promax-price-specification-photos/"
+   },
+   {
+    "id": 8,
+    "title": "فونیکس تیگو ۷ پرو پلاگین هیبرید e پلاس — خودرو۴۵",
+    "url": "https://khodro45.com/mag/fownix-tiggo7-pro-eplus/"
+   },
+   {
+    "id": 9,
+    "title": "تعمیر گیربکس تیگو ۷ پرو — تعمیرکار چری",
+    "url": "https://tamircarchery.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AA%DB%8C%DA%AF%D9%88-7-%D9%BE%D8%B1%D9%88-%D8%AF%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/"
+   },
+   {
+    "id": 10,
+    "title": "بررسی خودرو تیگو 7 پرو، مزایا و معایب — مدیران خودرو امداد",
+    "url": "https://www.modirankhodro-emdad.com/tiggo7pro/"
+   },
+   {
+    "id": 11,
+    "title": "Chery Tiggo 7 Pro: неисправности, ресурс агрегатов — За рулём",
+    "url": "https://www.zr.ru/content/articles/971154-chery-tiggo-7-pro-neispravnosti/"
+   },
+   {
+    "id": 12,
+    "title": "Chery Tiggo 7 Pro — owner-reported breakages — Drom.ru",
+    "url": "https://www.drom.ru/reviews/chery/tiggo_7_pro/5kopeek/?only=breakagies"
+   },
+   {
+    "id": 13,
+    "title": "Chery Tiggo 7 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chery_Tiggo_7"
+   },
+   {
+    "id": 14,
+    "title": "آپدیت موتور و گیربکس تیگو 7 پرو — NS Car",
+    "url": "https://ns-car.com/tiggo-7-pro-remap-update/"
+   }
+  ]
+ },
  "hyundai-sonata-yf": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1840,6 +2297,246 @@
     "id": 13,
     "title": "NHTSA recalls API — 2012 Hyundai Tucson (19V063, 14V245, 23V651)",
     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2012"
+   }
+  ]
+ },
+ "hyundai-santa-fe-dm-ix45": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Bearing fault: NHTSA 17V-226 covers only 2013–14 Santa Fe Sport/Sonata with US-built 2.0T/2.4 GDI engines (machining debris). Cause now says Korean-built Iranian imports are not in that recall, though Iranian sources widely report 2400 bearing failure. Added NHTSA 17V-226 report (source 20).",
+   "Oil pump + balancer fault: Persian Wikipedia says an oil pump defect causes bearing failure, and Iranian repairers advise replacing the pump/balancer in time. Confidence medium -> high; added sources 2 and 10.",
+   "Reverse-engagement delay: Bama lists «مکث جعبه‌دنده در معکوس‌ها» as a weak point of the Iranian 2016–18 ix45. Bama made the lead source; symptom wording adjusted.",
+   "Oil consumption: only aftermarket/blog sources support it. Confidence high -> medium.",
+   "GDI carbon/catalyst fault: single generic Theta II article, largely generic direct-injection wear. Confidence medium -> low.",
+   "ABS HECU fire recalls: noted these are US campaigns and coverage of Iranian imports is unconfirmed. Maintenance note rewritten so it no longer implies Iranian cars can be looked up in the NHTSA campaign.",
+   "Identity: Bama confirms 2.4 GDI at 188 hp / 245 Nm, 6-speed automatic with shift-lock, AWD with electronic lock, rare MPI version, and fewer options on Kerman Motor cars. Persian Wikipedia confirms the import-record status and mentions a 3.3 V6. Added a tip not to extend the 2.4 bearing/oil-pump faults to a 3.3.",
+   "Maintenance: added the Iranian-repairer warning about counterfeit or wrong-grade oil and preventive oil-pump/balancer replacement."
+  ],
+  "removed_claims": [
+   "Power window motor slow/failed: generic wear with a single low-confidence Iranian buyer-guide mention; not model-specific."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 2,
+    "title": "هیوندای سانتافه — ویکی‌پدیا فارسی",
+    "url": "https://fa.wikipedia.org/wiki/%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C_%D8%B3%D8%A7%D9%86%D8%AA%D8%A7%D9%81%D9%87"
+   },
+   {
+    "id": 3,
+    "title": "2013 Hyundai Santa Fe Sport Recalls — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe_Sport/2013/recalls/"
+   },
+   {
+    "id": 4,
+    "title": "2013 Hyundai Santa Fe Sport Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe_Sport/2013/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "2013 Hyundai Santa Fe Sport Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe_Sport/2013/"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Santa Fe Sport recalls and NHTSA complaint data (2013 to 2018) — RecallExplained",
+    "url": "https://recallexplained.com/hyundai/santa-fe-sport/"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA Part 573 Safety Recall Report 23V-651 (Hyundai HECU short circuit)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V651-6950.PDF"
+   },
+   {
+    "id": 8,
+    "title": "20-ST-001H Hyundai column-mounted MDPS component replacement — TSBSearch",
+    "url": "https://www.tsbsearch.com/Hyundai/20-ST-001H"
+   },
+   {
+    "id": 9,
+    "title": "علت یاتاقان زدن موتورهای 2400 سی سی کیا و هیوندای — اسب بخار",
+    "url": "https://asbe-bokhar.com/special/engine-bearing/"
+   },
+   {
+    "id": 10,
+    "title": "یاتاقان زدن سانتافه؛ علائم، علل، هزینه و پیشگیری — تهران کره",
+    "url": "https://tehrankorea.com/hyundai/%D8%AF%D9%84%DB%8C%D9%84-%DB%8C%D8%A7%D8%AA%D8%A7%D9%82%D8%A7%D9%86-%D8%B2%D8%AF%D9%86-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%B3%D8%A7%D9%86%D8%AA%D8%A7%D9%81%D9%87"
+   },
+   {
+    "id": 11,
+    "title": "Hyundai 2.4 Oil Consumption — Causes and Solutions — 8020 Automotive",
+    "url": "https://8020automotive.com/hyundai-2-4-oil-consumption/"
+   },
+   {
+    "id": 12,
+    "title": "Hyundai/Kia Theta II (2.0T and 2.4L) Common Problems — Apex Technation",
+    "url": "https://apextechnation.com/articles/hyundai-kia-theta-ii-common-problems"
+   },
+   {
+    "id": 13,
+    "title": "مشخصات فنی و نقاط ضعف هیوندای سانتافه ۴ سیلندر دو دیفرانسیل ۲۰۱۶ تا ۲۰۱۸ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/santafeix45-specs-1012-401-2400cc"
+   },
+   {
+    "id": 14,
+    "title": "مزایا و معایب خرید هیوندای سانتافه ix45 — بچرخ",
+    "url": "https://becharkh.com/blogs/car/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%88-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AE%D8%B1%DB%8C%D8%AF-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%B3%D8%A7%D9%86%D8%AA%D8%A7%D9%81%D9%87-ix45/HRsfv3"
+   },
+   {
+    "id": 15,
+    "title": "عیب یابی و تعمیر گیربکس سانتافه — جنیون پارت",
+    "url": "https://genuinepartshop.com/%D8%B9%DB%8C%D8%A8-%DB%8C%D8%A7%D8%A8%DB%8C-%D9%88-%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AA%D8%A7%D9%81%D9%87/"
+   },
+   {
+    "id": 16,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   },
+   {
+    "id": 17,
+    "title": "2013-2025 Santa Fe, Sorento, K5 & Santa Cruz Rear Differential: AWD Coupler Noises & Failures — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-kia-sorento-hyundai-santa-fe-hyundai-santa-cruz-2013-2025"
+   },
+   {
+    "id": 18,
+    "title": "AWD Problems: Viscous Coupler (DM Santa Fe Sport) — Hyundai Forums",
+    "url": "https://www.hyundai-forums.com/threads/awd-problems-viscous-coupler.658536/"
+   },
+   {
+    "id": 19,
+    "title": "Automatic transmission question (Santa Fe Sport 2.4 = A6MF2, 2.0T = A6LF2) — Hyundai Forums",
+    "url": "https://www.hyundai-forums.com/threads/automatic-transmisson-question.365769/"
+   },
+   {
+    "id": 20,
+    "title": "NHTSA Part 573 Safety Recall Report 17V-226 (2013–2014 Sonata / Santa Fe Sport Theta II GDI bearing wear)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2017/RCLRPT-17V226-8412.PDF"
+   }
+  ]
+ },
+ "kia-sportage-sl-3rd-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama confirms the Iranian Sportage SL as 2.4 MPI (176 hp / 227 Nm), 6-speed automatic, AWD; dropped the GDI aside; the 2.0 G4KD variant kept but marked unconfirmed for Iran with years unknown.",
+   "Rod-bearing fault: 20V750 re-described per the Part 573 report as a preventative engine-fire recall (2012 Sportage 2.4 MPI, Hwasung plant, May 2011-May 2012, cause undetermined; remedy inspection + KSDS + engine replacement if needed); the rod-bearing link now cites the KSDS/P1326 bulletins PI1803/PI2103.",
+   "Oil pan 19V101: added that it covers 2.4 engines from Hyundai's Ulsan plant and the remedy (oil pressure switch + oil pan inspection/replacement); build dates confirmed.",
+   "HECU fire: added recall 22V051 (2014-2016 Sportage, facelift) alongside 23V652 (2010-2013); fault moved up.",
+   "Solenoid fault: removed the unverified specific codes P0741/P0743/P0748 (TRA051 title only says 'multiple DTCs').",
+   "Oil consumption: confidence high -> medium (ENG222 is a generic diagnosis bulletin across four engine families, not a defect admission).",
+   "C-MDPS column: confidence high -> medium (CHA084 is a partial-repair bulletin), matching the verified ix35 profile.",
+   "Oil pump/balancer: confidence medium -> low and attributed to a single Iranian mechanic source.",
+   "Removed the unverified claim about domestically made blue 'Mobis' ATF gallons from cause and maintenance; removed the unverified 7.1 L / 50-60k km figures.",
+   "Checked 17V224 (bearing wear): it covers only the 2011-2013 Sportage 2.0 T-GDI, not sold in Iran, so it is correctly absent; 18V907 applies only to 17V224 engine replacements.",
+   "Maintenance recall check updated with campaign numbers; diagnostic tip on design traits now cites bama (harsher ride than Tucson LM, limited visibility).",
+   "No gap faults added: Persian searches (gspshop, irankoreacar) only gave generic complaints."
+  ],
+  "removed_claims": [
+   "Fuel canister fault (SC184): the campaign is a US voluntary emissions canister inspection; the drafted driver symptoms (noise, refuelling trouble, vapour leak) are not supported and relevance to Iranian imports is unshown.",
+   "'Con-rod can punch through the block, so Kia recalled Hwaseong-built 2012 Sportage' — 20V750 states no defect cause was identified; it is a preventative fire recall.",
+   "Specific DTCs P0741/P0743/P0748 for TRA051 — not in the bulletin title.",
+   "Blue domestically made 'Mobis' ATF gallons claim — not verified."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 2,
+    "title": "کیا اسپورتیج SL یا هیوندای توسان LM، دوقولوهای ناهمسان — خودرو۴۵",
+    "url": "https://khodro45.com/mag/sportagesl-vs-tucsonlm/"
+   },
+   {
+    "id": 3,
+    "title": "2012 Kia Sportage Recalls — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Sportage/2012/recalls/"
+   },
+   {
+    "id": 4,
+    "title": "2012 Kia Sportage Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Sportage/2012/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA Part 573 Safety Recall Report 19V-101 (2011-2012 Kia Sportage oil pan leak)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V101-5937.PDF"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA Part 573 Safety Recall Report 20V-750 (Kia engine compartment fire, 2012 Sportage 2.4 MPI)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V750-5519.PDF"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA Part 573 Safety Recall Report 23V-652 (Kia HECU short circuit)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V652-3815.PDF"
+   },
+   {
+    "id": 8,
+    "title": "علت یاتاقان زدن موتورهای 2400 سی سی کیا و هیوندای — اسب بخار",
+    "url": "https://asbe-bokhar.com/special/engine-bearing/"
+   },
+   {
+    "id": 9,
+    "title": "Hyundai & Kia 2.4 G4KE Engine Problems — Hyun Engines",
+    "url": "https://hyunengines.com.au/g4ke-engine-problems/"
+   },
+   {
+    "id": 10,
+    "title": "روغن گیربکس مناسب کیا اسپورتیج 2011-2016 مدل SL-2400 (A6MF2) — مای‌کارلوبس",
+    "url": "https://mycarlubs.com/car_details/388/category/3"
+   },
+   {
+    "id": 11,
+    "title": "تعمیر گیربکس کیا اسپورتیج — بررسی مشکلات و هزینه‌ها — یونیک گیربکس",
+    "url": "https://uniquegearbox.com/repairing/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%DA%A9%DB%8C%D8%A7-%D8%A7%D8%B3%D9%BE%D9%88%D8%B1%D8%AA%DB%8C%D8%AC/"
+   },
+   {
+    "id": 12,
+    "title": "مهم‌ترین مشکلات کیا اسپورتیج — تک مکانیک",
+    "url": "https://takmechanic.com/important-problems-of-kia-sportage/"
+   },
+   {
+    "id": 13,
+    "title": "2010-2015 Hyundai Tucson 4WD Issue (shared SL/LM AWD system) — Cars.com",
+    "url": "https://www.cars.com/articles/2010-2015-hyundai-tucson-4wd-issue-1420683067026/"
+   },
+   {
+    "id": 14,
+    "title": "Hyundai & Kia AWD Whining & Binding: 2010-2022 Rear Differential & Coupling — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-hyundai-tucson-kia-sportage-hyundai-ix35-2010-2022"
+   },
+   {
+    "id": 15,
+    "title": "مشخصات فنی و نقاط ضعف کیا اسپورتیج ۴ سیلندر — باما",
+    "url": "https://bama.ir/car-reviews/kia/sportage-specs-1052-basic"
+   },
+   {
+    "id": 16,
+    "title": "بررسی مشخصات کیا اسپورتیج SL 2400cc فول 2011-2015 — برآورد",
+    "url": "https://baravard.com/reviews/car/370/%DA%A9%DB%8C%D8%A7-%D8%A7%D8%B3%D9%BE%D9%88%D8%B1%D8%AA%DB%8C%D8%AC-sl-2400cc-%D9%81%D9%88%D9%84"
+   },
+   {
+    "id": 17,
+    "title": "کیا اسپورتیج — نظرات کاربران و مشکلات (بچرخ)",
+    "url": "https://becharkh.com/forum/car?s=1&brand=kia&model=sportage"
+   },
+   {
+    "id": 18,
+    "title": "NHTSA recalls API — 2012 Kia Sportage (19V101, 20V750, 23V652, 17V224, 18V907)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2012"
+   },
+   {
+    "id": 19,
+    "title": "NHTSA recalls API — 2014 Kia Sportage (22V051 HECU fuse)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2014"
    }
   ]
  },
