@@ -1,0 +1,590 @@
+{
+ "peugeot-206": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "تیپ‌ها بر اساس ویکی‌پدیا اصلاح شد: تیپ ۱ (TU3) و تیپ ۴ (TU5 + AL4، ۱۳۸۱ تا ۱۳۸۲) افزوده شد؛ تیپ ۵ فقط دستی و تیپ ۶ اتوماتیک AL4 با حالت دستی (۱۳۸۳ تا ۱۳۹۱) است، نه «دستی یا اتوماتیک بسته به نسخه».",
+   "۲۰۶ SD V2 و V10 به‌عنوان نسخه دوگانه‌سوز و ۲۰۷i صندوق‌دار (۱۳۹۶ تا ۱۳۹۹، عمدتاً AL4) به variants افزوده شد.",
+   "۲۰۷ دنده‌ای جدید با TU5P و گیربکس ۶ سرعته دستی (اعلام تیر ۱۴۰۲) افزوده شد؛ تغییر AL4 به ۶ سرعته چینی در ۲۰۷ اتوماتیک از ۱۴۰۱ (نه «حدود ۱۴۰۰») ثبت شد.",
+   "شرح TU5: «کیفیت پایین‌تر» NFS با «ضریب تراکم اندکی پایین‌تر» (طبق منبع) جایگزین شد؛ ادعای درب سوپاپ پلاستیکی TU5 حذف و به «درب سوپاپ فلزی فقط در TU3، کاور تزئینی فقط در TU5P» اصلاح شد.",
+   "شرح TU5P: پمپ روغن دبی متغیر و کویل مدادی تکی افزوده شد.",
+   "خرابی کویل: نوع کویل هر موتور (بوش سوکت طوسی، رانا، مدادی TU5P، کویل دوبل تیپ ۲) با نام بازار قطعه آمد؛ وایر شمع فقط برای کویل سوکت‌وسط تیپ ۲ است.",
+   "واشر سرسیلندر: علت «ضدیخ نامناسب» (بی‌منبع) با داغ کردن بر اثر فن یا کمبود آب جایگزین و confidence با منبع کارنامه تأیید شد.",
+   "اکسل عقب: نام بازاری «بلبرینگ ژامبون» افزوده، علامت کج ایستادن چرخ عقب اصلاح و confidence به high رسید (منبع انگلیسی + منابع ایرانی).",
+   "AL4: علامت حالت اضطراری (قفل روی دنده ۳ و چشمک چراغ‌های اسپرت و برف) افزوده، قطعات به سولنوئید تنظیم فشار و بلوک هیدرولیک اصلاح و confidence به high رسید؛ ۲۰۶ تیپ ۴ و ۶ و SD V9 مشخص شد.",
+   "مکث پدال گاز به کالیبراسیون یورو ۵ در ۲۰۷ TU5P نسبت داده شد (خودرو۴۵)؛ ادعای کلی TPS حذف شد.",
+   "ایراد ECU: عبارت بی‌منبع «ECU ایرانیزه» حذف و به خطاهای نرم‌افزاری/تنظیمات ECU (کارنامه) با confidence پایین تغییر کرد.",
+   "هوزینگ ترموستات: فقط یک منبع باز نشده دارد؛ confidence از medium به low کاهش یافت.",
+   "ترک بلوک TU3: جزئیات بی‌منبع «پشت پایه فیلتر روغن» حذف شد؛ confidence پایین ماند.",
+   "افزوده شد: سوختن واشر گلویی اگزوز TU5 (خودرو۴۵).",
+   "افزوده شد: ایراد سیم‌کشی و بلوک هیدرولیک گیربکس ۶ سرعته چینی ۲۰۷ اتوماتیک (خودرو۴۵، confidence پایین).",
+   "diagnostic_tips: نکته انتخاب نوع کویل، کویل مدادی TU5P، نوع گیربکس اتوماتیک و آزمایش جداگانه بنزین/گاز در SD V2/V10 افزوده شد؛ عددهای بی‌منبع فشار تست حذف شد.",
+   "maintenance: ظرفیت و درجه روغن و بازه ۲۰ هزار کیلومتری روغن گیربکس ۶ سرعته (بی‌منبع) حذف شد؛ نکات نشتی روغن روی تسمه، فن، گریس ژامبون و روغن AL4 افزوده شد."
+  ],
+  "removed_claims": [
+   "خرابی سنسور اکسیژن و کاتالیزور — ایراد عمومی همه خودروها، در منابع بررسی‌شده خاص ۲۰۶ نیامده است.",
+   "روغن‌سوزی TU5 در کارکرد بالا — فرسودگی عمومی، در منابع بررسی‌شده به‌عنوان ایراد خاص این مدل نیامده است.",
+   "همسانی TU5P با EC5 پژو — در هیچ منبع بررسی‌شده تأیید نشد.",
+   "فیلتر و پمپ گیربکس AL4 به‌عنوان علت رایج — منابع AL4 سولنوئید، بلوک هیدرولیک، داغی و روغن کهنه را ذکر می‌کنند.",
+   "ظرفیت ۳٫۲۵ لیتری روغن TU5 و بازه ۲۰ هزار کیلومتری روغن گیربکس ۶ سرعته — منبعی پیدا نشد.",
+   "منبع ۳ (پارت لوکس)، ۵ (همراه مکانیک پارس) و ۹ (خودرو۴۵ ۲۰۷ پانوراما) — دیگر ادعایی به آن‌ها ارجاع نمی‌دهد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — موتور TU5 را بهتر بشناسید؛ مشخصات، عملکرد و نکات فنی",
+    "url": "https://khodro45.com/mag/tu5-engine/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیرگاه تخصصی پژو کشیشیان (car206) — عیب‌یابی و تعمیر مشکلات موتور TU5",
+    "url": "https://car206.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-tu5/"
+   },
+   {
+    "id": 4,
+    "title": "همراه مکانیک — معایب پژو 206",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-peugeot-206/"
+   },
+   {
+    "id": 6,
+    "title": "RearAxle.co.uk — Rear axle in Peugeot 206: the most common issues",
+    "url": "https://rearaxle.co.uk/rear-axle-in-peugeot-206-most-common-issues/"
+   },
+   {
+    "id": 7,
+    "title": "گیربکس فیکس — معایب و ایرادات گیربکس AL4",
+    "url": "https://gearboxfix.com/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-al4/"
+   },
+   {
+    "id": 8,
+    "title": "یدک خواجه — بررسی موتور ۲۰۶ تیپ ۲",
+    "url": "https://yadakkhajeh.ir/engine-review-206-type-2/"
+   },
+   {
+    "id": 10,
+    "title": "ویکی‌پدیا فارسی — پژو ۲۰۶ (تیپ‌ها و نسخه‌های ایرانی، ۲۰۶ SD و ۲۰۷i)",
+    "url": "https://fa.wikipedia.org/wiki/%D9%BE%DA%98%D9%88_%DB%B2%DB%B0%DB%B6"
+   },
+   {
+    "id": 11,
+    "title": "خودرو۴۵ — پژو ۲۰۷ اتوماتیک (سقف فلز)؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/peugeot-207-at-hardtop/"
+   },
+   {
+    "id": 12,
+    "title": "کارنامه — مشخصات پژو ۲۰۷ جدید با موتور TU5P اعلام شد (گیربکس ۶ سرعته دستی)",
+    "url": "https://karnameh.com/blog/news-ikco-peugeot-207-6mt/amp/"
+   },
+   {
+    "id": 13,
+    "title": "کارنامه — شایع‌ترین ایرادات پژو ۲۰۶ و هزینه‌های نگهداری آن",
+    "url": "https://karnameh.com/blog/defects-peugeot-206/"
+   },
+   {
+    "id": 14,
+    "title": "لوازم یدکی خسروانی — انواع کویل در پژو 206 تیپ ۲ و ۵ بر اساس سال تولید و تیپ",
+    "url": "https://khosravanishop.com/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%DA%A9%D9%88%DB%8C%D9%84-%D8%AF%D8%B1-%D9%BE%DA%98%D9%88-206-%D8%AA%DB%8C%D9%BE-%DB%B2-%D9%88-%DB%B5-%D8%A8%D8%B1-%D8%A7%D8%B3%D8%A7%D8%B3-%D8%B3%D8%A7%D9%84-%D8%AA/"
+   },
+   {
+    "id": 15,
+    "title": "کلیک یدک — نشانه‌های مشکل در اکسل عقب 206",
+    "url": "https://clickyadak.com/rear-axle-206-signs-of-damage/"
+   },
+   {
+    "id": 16,
+    "title": "Carnews.nl — Automatic transmission problems with the Peugeot 206 (AL4)",
+    "url": "https://carnews.nl/en/car-problems/car-problems-peugeot/peugeot-206/automatic-transmission-problems-with-the-peugeot-206/"
+   },
+   {
+    "id": 17,
+    "title": "one.D'RIVE — AL4 Automatic Transmission: Pressure Regulation Fault",
+    "url": "http://ahw308.blogspot.com/2009/09/al4-automatic-transmission-pressure.html"
+   }
+  ]
+ },
+ "ikco-samand-ef7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "سال تیپ‌ها اصلاح شد: دوگانه‌سوز از ۱۳۸۸، EF7 بنزینی از حدود ۱۳۸۹–۱۳۹۰ (خودرو۴۵: ۱۳۹۰)، سورن ELX EF7 حدود ۱۳۸۸ تا ۱۳۹۹، سورن پلاس EF7 از پاییز ۱۳۹۹.",
+   "مشخصات EF7 تکمیل شد: حجم ۱۶۴۵ تا ۱۶۴۶ سی‌سی، نسبت تراکم ۱۱ به ۱، حدود ۱۰۳ اسب روی گاز.",
+   "خرابی جدید اضافه شد: صدای استکانی تایپیت هیدرولیک در ثانیه‌های اول استارت سرد (مهرپارسی و محمد برتر).",
+   "یاتاقان‌زدن: علائم و علت‌ها طبق خودرو۴۵ اصلاح شد (هشدار فشار روغن، صدای فلزی در استارت، ذرات فلزی در روغن، دنده مرده).",
+   "جلوبندی: ادعای «بلبرینگ چرخ جلو زودتر از خودروهای هم‌پلتفرم» به گزارش سورن پلاس محدود شد و وزن‌ها از منابع افزوده شد.",
+   "کویل: دسته‌سیم داغ‌شده، سوکت گشاد و کابل اتصال بدنه به علت‌ها و قطعات اضافه شد (همراه مکانیک، کارستان).",
+   "دمای بالا: آسیب گرما به دسته‌سیم‌ها از کارستان اضافه شد و استناد به مقاله EF7P (موتور دیگر) برداشته شد.",
+   "صدای CVVT: استناد به مهرپارسی برداشته شد چون آنجا درباره دنده CVVT چیزی نیامده؛ فقط محمد برتر پشتوانه است.",
+   "روغن‌ریزی اویل ماژول: اورینگ‌های ماژول هم به علت اضافه شد.",
+   "دسته موتور: روشن شد که گزارش‌ها بیشتر از دنا و سورن با همین موتور است؛ منبع همراه مکانیک اضافه شد.",
+   "نکات تشخیصی: تست آب سرد روی شیر برقی رگولاتور اضافه شد و نکته چراغ چک هنگام خالی شدن مخزن CNG محتاطانه‌تر شد.",
+   "نگهداری دوگانه‌سوز: توصیه بی‌منبع «مخزن CNG را کاملاً خالی نکنید» حذف شد."
+  ],
+  "removed_claims": [
+   "کلاچ (لرزش و خرابی زودرس دیسک و صفحه سمند EF7): فقط یک نظر مالک و یک جمله بی‌منبع ویکی‌پدیا پشتش بود؛ پشتوانه معتبر نداشت.",
+   "یاتاقان‌زدن زودتر در EF7TC توربو با روغن نامناسب: فقط به مقاله دنا پلاس توربو (خودرو و موتور دیگر) استناد داشت و تأیید نشد.",
+   "منبع ۹ (موتور EF7P) و منبع ۱۴ (دنا پلاس توربو): به موتور یا خودروی دیگری مربوط بودند و از فهرست منابع حذف شدند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "سمند ef7 بخریم یا نه؟ مزایا و معایب سمند ef7 (همراه مکانیک، همراه با نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-samand-ef7/"
+   },
+   {
+    "id": 2,
+    "title": "یاتاقان زدن سمند EF7؛ دلایل، علائم و راهکارها (خودرو۴۵)",
+    "url": "https://khodro45.com/mag/samand-ef7-engine-bearing-failure/"
+   },
+   {
+    "id": 3,
+    "title": "اشکالات موتور Ef7 و رفع آنها (مهرپارسی، همراه با نظرات مالکان)",
+    "url": "https://mehrparsi.ir/ef7-engine-problems-and-fix-them/"
+   },
+   {
+    "id": 4,
+    "title": "راهنمای جامع موتور EF7: هر آنچه صاحب سمند، سورن و دنا باید بداند! (تعمیرگاه محمد برتر)",
+    "url": "https://mohammadbartar.ir/complete-guide-ef7-engine/"
+   },
+   {
+    "id": 5,
+    "title": "اویل ماژول و نشانه‌های خرابی ماژول روغن موتور EF7 (جی آی اس پی)",
+    "url": "https://gisp.ir/%D8%A7%D9%88%DB%8C%D9%84-%D9%85%D8%A7%DA%98%D9%88%D9%84-%D9%88-%D9%86%D8%B4%D8%A7%D9%86%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D9%85%D8%A7%DA%98%D9%88%D9%84-%D8%B1%D9%88/"
+   },
+   {
+    "id": 6,
+    "title": "تعمیر و تعویض اویل ماژول سمند ef7 (دنا کار ایرانیان)",
+    "url": "https://denacareiranian.com/repair/oil-samand-ef7-module"
+   },
+   {
+    "id": 7,
+    "title": "راههای کاهش دمای موتور ای اف سون (EF7) سمند و دنا (کارستان)",
+    "url": "https://carstan.ir/27365/%D8%B1%D8%A7%D9%87%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D9%87%D8%B4-%D8%AF%D9%85%D8%A7%DB%8C-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%A7%DB%8C-%D8%A7%D9%81-%D8%B3%D9%88%D9%86-ef7-%D8%B3%D9%85%D9%86%D8%AF-%D9%88/"
+   },
+   {
+    "id": 8,
+    "title": "مهم ترین دلایل دیر روی گاز رفتن EF7 بعد از پر کردن مخزن (کارستان)",
+    "url": "https://carstan.ir/84562/%D9%85%D9%87%D9%85-%D8%AA%D8%B1%DB%8C%D9%86-%D8%AF%D9%84%D8%A7%DB%8C%D9%84-%D8%AF%DB%8C%D8%B1-%D8%B1%D9%88%DB%8C-%DA%AF%D8%A7%D8%B2-%D8%B1%D9%81%D8%AA%D9%86-ef7-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D9%BE/"
+   },
+   {
+    "id": 10,
+    "title": "معایب سمند EF7 بنزینی (Z4Car)",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%B3%D9%85%D9%86%D8%AF-ef7-%D8%A8%D9%86%D8%B2%DB%8C%D9%86%DB%8C"
+   },
+   {
+    "id": 11,
+    "title": "سمند Lx بخریم یا نه؟ بررسی مزایا و معایب سمند ال ایکس (همراه مکانیک)",
+    "url": "https://www.hamrah-mechanic.com/mag/why-purchase-samand-lx/"
+   },
+   {
+    "id": 12,
+    "title": "IKCO Soren (English Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Soren"
+   },
+   {
+    "id": 13,
+    "title": "IKCO Samand (English Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Samand"
+   },
+   {
+    "id": 15,
+    "title": "انواع مدل‌های سمند و تفاوت آن‌ها (خودرو۴۵) — سال‌های EF7 دوگانه‌سوز، بنزینی، سورن ELX، توربو و سورن پلاس",
+    "url": "https://khodro45.com/mag/samand-types/"
+   },
+   {
+    "id": 16,
+    "title": "موتورهای سری EF (ویکی‌پدیای فارسی) — حجم، نسبت تراکم و قدرت EF7",
+    "url": "https://fa.wikipedia.org/wiki/%D9%85%D9%88%D8%AA%D9%88%D8%B1%D9%87%D8%A7%DB%8C_%D8%B3%D8%B1%DB%8C_EF"
+   }
+  ]
+ },
+ "saipa-pride": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "شروع تولید وانت ۱۵۱ از ۱۳۹۲ به ۱۳۹۱ (ویکی‌پدیا) اصلاح شد؛ پراید سفری (استیشن، از ۱۳۷۹) به variants افزوده شد.",
+   "صبا اتوماتیک: کاربراتوری بودن و مکانیکی بودن گیربکس ۳ سرعته بدون ECU افزوده شد.",
+   "موتور B3: زمان انژکتوری شدن از «۱۳۸۳ تا ۱۳۸۴» به «از ۱۳۸۴» (ویکی‌پدیا) اصلاح شد؛ HP+ به ۱۴۱، ۱۳۱، ۱۳۲ و ۱۱۱ نسبت داده و ECU بوش آن افزوده شد.",
+   "M13 GS: ادعای بی‌منبع «نسبت تراکم بالاتر» و «تیپ SE از ۱۳۹۲» حذف و دور بیشینه توان و گشتاور (۵۵۰۰ و ۲۸۰۰) افزوده شد.",
+   "ترتیب ایرادها بر پایه منابع (شاسی، گیربکس، تایپیت) بازچینی شد.",
+   "صدای تایپیت: ادعای بی‌منبع «ساییدگی خود تایپیت کمتر علت است» حذف شد؛ منبع SKP خرابی تایپیت را هم علت می‌داند.",
+   "گاز خوردن در درجا: شیر برقی کنیستر طبق منبع SKP علت اصلی آمد؛ واشر منیفولد (بی‌منبع) از قطعات حذف شد.",
+   "مقاومت فن: ادعای «خطای موتور فن در ECU معمولاً از مقاومت فن است» (بی‌منبع) حذف شد.",
+   "واتر پمپ/تسمه تایم: بازه بی‌منبع «۵۰ تا ۱۰۰ هزار کیلومتر» حذف شد؛ زود فرسوده شدن تسمه با منبع خودرو۴۵ تأیید شد.",
+   "جلوبندی: جزئیات بی‌منبع «منحرف شدن فرمان در سرعت بالای ۵۰» حذف شد.",
+   "اینترکانکتور: جزئیات تأییدنشده «از کار افتادن هم‌زمان کیلومتر» و محل «کنار منبع انبساط» حذف شد.",
+   "افزوده شد: رله دوبل رگباری و روشن نشدن بر اثر ضعف اتصال بدنه روی گیربکس (SKP).",
+   "دوگانه‌سوز: سنسور فشار رگولاتور طبق گزارش مالکان در کارگیک به علت‌ها و قطعات افزوده شد.",
+   "diagnostic_tips: نکته تشخیص نوع موتور، اینترکانکتور و ارتباط پلوس بیرون‌زده با شاسی افزوده شد؛ روش بی‌منبع «بستن شیر مخزن و قطع باتری» در CNG با بررسی شیلنگ و سنسور و پاک کردن خطا جایگزین شد.",
+   "maintenance: درجه روغن 10W-40 و بازه ۵ هزار کیلومتری (بی‌منبع) با «روغن معتبر با گرانروی توصیه‌شده» جایگزین و عدد ۲۰۰ هزار کیلومتر گیربکس (همراه مکانیک) افزوده شد."
+  ],
+  "removed_claims": [
+   "نشتی روغن از اورینگ درپوش دلکو و محل سنسور میل بادمک — در منابع استناد‌شده (SKP، خودرو۴۵) نیامده؛ خودرو۴۵ فقط نشتی عمومی واشرها را ذکر می‌کند.",
+   "نکته «خطای عدم ارتباط با ICU در ECU زیمنس باگ نرم‌افزاری است» — در منبع SKP تأیید نشد.",
+   "توصیه «ضدیخ به‌جای آب خالی» در maintenance — نکته عمومی، خاص پراید نیست.",
+   "«شاسی‌بند» در قطعات ایراد شاسی — در منابع نیامده است."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — ایرادات و مشکلات اصلی پراید چیست؟",
+    "url": "https://khodro45.com/mag/pride-problems/"
+   },
+   {
+    "id": 2,
+    "title": "SKP (ثمین خودرو) — ایرادات شایع پراید + رفع عیب",
+    "url": "https://skppart.com/ایرادات-شایع-پراید-رفع-عیب-خرابی-پراید/"
+   },
+   {
+    "id": 3,
+    "title": "حمزه یدک — تشخیص خرابی و عیب‌یابی لوازم یدکی گیربکس پراید",
+    "url": "http://www.hmyadak.com/repairment/تشخیص-عیب-یابی-لوازم-یدکی-گیربکس-پراید/"
+   },
+   {
+    "id": 4,
+    "title": "ویکی‌پدیای فارسی — پراید",
+    "url": "https://fa.wikipedia.org/wiki/%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF"
+   },
+   {
+    "id": 5,
+    "title": "پرشین خودرو — ۱۱ مشکل که باعث گاز خوردن بی دلیل پراید می‌شوند",
+    "url": "https://www.persiankhodro.com/news/146141"
+   },
+   {
+    "id": 6,
+    "title": "ICTCar — علت جوش آوردن پراید و عیب‌یابی",
+    "url": "https://ictcar.com/blog/pride-overheating-troubleshooting-guide/"
+   },
+   {
+    "id": 7,
+    "title": "یدک پارت — راهنمای کامل واتر پمپ پراید",
+    "url": "https://yadakpart.com/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%DA%A9%D8%A7%D9%85%D9%84-%D9%88%D8%A7%D8%AA%D8%B1-%D9%BE%D9%85%D9%BE-%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF/"
+   },
+   {
+    "id": 8,
+    "title": "همراه مکانیک — راهنمای خرید پراید دست‌دوم",
+    "url": "https://www.hamrah-mechanic.com/mag/guidance-buying-used-pride/"
+   },
+   {
+    "id": 9,
+    "title": "سرویس تک — علل صدا افتادن سوپاپ‌ها در پراید یورو ۴",
+    "url": "https://www.servicetak.ir/%D8%B9%D9%84%D9%84-%D8%B5%D8%AF%D8%A7-%D8%A7%D9%81%D8%AA%D8%A7%D8%AF%D9%86-%D8%B3%D9%88%D9%BE%D8%A7%D9%BE-%D9%87%D8%A7-%D8%AF%D8%B1-%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF-%DB%8C%D9%88%D8%B1%D9%88-4/"
+   },
+   {
+    "id": 10,
+    "title": "کارگیک — راهنمای عیب‌یابی سیستم گازسوز CNG پراید (با گزارش مالکان)",
+    "url": "https://cargeek.live/d/S46HfGFt"
+   },
+   {
+    "id": 11,
+    "title": "ایران‌جیب — پراید با موتور HP، کاهش کیفیت، افزایش امنیت",
+    "url": "https://www.iranjib.ir/shownews/4806/%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF-%D8%A8%D8%A7-%D9%85%D9%88%D8%AA%D9%88%D8%B1-HP-,--%DA%A9%D8%A7%D9%87%D8%B4-%DA%A9%DB%8C%D9%81%DB%8C%D8%AA-%D8%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D8%A7%D9%85%D9%86%DB%8C%D8%AA/"
+   },
+   {
+    "id": 12,
+    "title": "خودرو۴۵ — بررسی مشخصات فنی پراید ۱۳۱",
+    "url": "https://khodro45.com/mag/pride131/"
+   },
+   {
+    "id": 13,
+    "title": "همراه مکانیک — پراید صبا، مشخصات و بررسی تخصصی",
+    "url": "https://www.hamrah-mechanic.com/carreview/saipa/pridesaba/"
+   }
+  ]
+ },
+ "jac-s5": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "سال شروع نسخه اتوماتیک ۲٫۰ توربو از ۱۳۹۳ به ۱۳۹۵ اصلاح شد (خودرو۴۵ و car.ir)؛ پایان نسخه فیس‌لیفت نامشخص و «از ۱۴۰۰» نوشته شد.",
+   "کد موتور فیس‌لیفت HFC4GC1.6D طبق صفحه مشخصات نمایندگی کرمان موتور افزوده شد و قدرت ۱۷۱ تا ۱۷۴ اسب ذکر شد.",
+   "کد خانواده HFC4GA3 برای موتور ۲٫۰ توربو افزوده شد (کاراکال تیونینگ و آگهی‌های قطعه؛ پسوند دقیق نامطمئن).",
+   "ایراد تاخیر دنده عقب با گزارش مالکان (۲ تا ۳ ثانیه)، کاراکال و بیمارستان خودرو تأیید و تکمیل شد؛ اطمینان به high رسید.",
+   "ایراد خنک‌کن روغن گیربکس با بیمارستان خودرو تأیید شد، علامت کندی و لرزش هنگام حرکت افزوده و اطمینان high شد.",
+   "ایراد «زوزه و عقب رفتن در سربالایی» بازنویسی شد به داغ شدن و سوختن کلاچ‌ها در ترافیک با چراغ هشدار و حرکت نکردن ماشین (بیمارستان خودرو، تهران گیربکس، مالکان)؛ شدت high و اطمینان medium شد.",
+   "ایراد ناک به نسخه ۲٫۰ توربو محدود شد (منبع کالیبراسیون ECU همین موتور را توضیح می‌دهد) و به خودرو۴۵ و کاراکال مستند و اطمینان medium شد.",
+   "ایراد تاخیر گاز به نسخه ۲٫۰ توربو محدود و اطمینان به low کاهش یافت چون تنها منبعش فروشنده ریمپ است.",
+   "نکات عیب‌یابی و نگهداری: تفکیک سال/تیپ، ECU متفاوت دو تیپ، فاصله تعویض ضدیخ، تعویض پیشگیرانه خنک‌کن، پرهیز از نیم‌کلاچ و تعویض بموقع روغن موتور برای توربو افزوده شد.",
+   "منابع ۷ تا ۹ افزوده شد و منبع ۴ با مقاله معایب جک S5 همراه مکانیک جایگزین شد."
+  ],
+  "removed_claims": [
+   "قید «تر» برای گیربکس دوکلاچه حذف شد: تهران گیربکس و بیمارستان خودرو (کلاچ خشک) متناقض‌اند.",
+   "سنسور پدال گاز از قطعات ایراد تاخیر گاز حذف شد: منبع علت را نرم‌افزاری می‌داند نه قطعه.",
+   "منبع ۴ قبلی (مقاله عمومی ناک همراه مکانیک) حذف شد: خاص این مدل نیست."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "JAC Refine S5 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/JAC_Refine_S5"
+   },
+   {
+    "id": 2,
+    "title": "تعمیر گیربکس جک S5 — تهران گیربکس",
+    "url": "https://tehran-gearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-s5/"
+   },
+   {
+    "id": 3,
+    "title": "ریمپ جک S5 — کاراکال تیونینگ",
+    "url": "https://caracaltuning.com/%D8%B1%DB%8C%D9%85%D9%BE-%D8%AC%DA%A9-s5-%D8%B1%DB%8C%D9%85%D9%BE-jac-s5/"
+   },
+   {
+    "id": 4,
+    "title": "معایب جک S5 (به‌همراه نظرات مالکان) — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-jac-s5/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیر موتور جک S5 — تک مکانیک (مشخصات موتور ۱٫۵ توربو)",
+    "url": "https://takmechanic.com/jac-s5-engine-repair/"
+   },
+   {
+    "id": 6,
+    "title": "مشکلات گیربکس جک S5 و هزینه تعمیر آن — تن پارت کالا",
+    "url": "https://tenpartkala.com/blog/jac-s5-gearbox-repair/"
+   },
+   {
+    "id": 7,
+    "title": "دو ایراد رایج گیربکس DCT جک S5 — بیمارستان خودرو",
+    "url": "https://carhospital.co/%D8%A7%DB%8C%D8%B1%D8%A7%D8%AF-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-dct-%D8%AF%D8%B1-%D8%AC%DA%A9-s5"
+   },
+   {
+    "id": 8,
+    "title": "مشخصات جک S5 فیس‌لیفت — نمایندگی کرمان موتور ۱۷۳۲",
+    "url": "https://kermanmotor1732.com/products/jac/125-jac-s5-turbo-gdi"
+   },
+   {
+    "id": 9,
+    "title": "جک S5؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/jac-s5/"
+   }
+  ]
+ },
+ "kmc-x5": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "هویت اصلاح شد: X5 همان سهول X6 / JAC JS6، بازطراحی ۲۰۲۲ جک S5 با جلو و کابین جدید است (پدال)، نه فقط S5 با جلوپنجره جدید.",
+   "کد موتور HFC4GC1.6D افزوده شد (بیت‌ران؛ پدال با نگارش 4GC16D).",
+   "گشتاور به «۲۵۱ یا ۲۸۰ نیوتن‌متر» تغییر کرد چون بیت‌ران ۲۵۱ و پدال ۲۸۰ گفته‌اند.",
+   "نوع کلاچ گیربکس از «تر» به «خشک طبق پدال و منابع مشخصات» اصلاح شد؛ صفحه خودرو۴۵ که مبنای «تر» بود از اینجا باز نشد.",
+   "ایراد تقه دنده یک با بیت‌ران و مالکان همراه مکانیک تأیید شد، مردد بودن و تعویض‌های پشت سر هم (پدال) افزوده و اطمینان high شد.",
+   "ایراد محدود شدن گیربکس در گرما با بیت‌ران، پدال و مالکان تأیید و اطمینان high شد؛ ست کلاچ به قطعات افزوده شد.",
+   "ایراد کمک فنر عقب با بیت‌ران و گزارش مالکان تأیید و اطمینان medium شد.",
+   "ایراد سوخت: ادعای رسوب انژکتور به حساسیت به اکتان و کیفیت بنزین تعدیل شد و گزارش مخالف مالکان ذکر شد.",
+   "ایراد خنک‌کن گیربکس: صریح شد که فقط برای جک S5 فیس‌لیفت با همین پیشرانه گزارش شده است (اطمینان low ماند).",
+   "قفل برقی درها به ایرادات الکترونیکی و کدر شدن رنگ زیر آفتاب به ایراد بدنه افزوده شد (همراه مکانیک).",
+   "نکته عیب‌یابی صدای عقب و نکته سرویس دوره‌ای طبق برنامه کرمان موتور افزوده شد؛ منابع ۶ و ۷ افزوده شد."
+  ],
+  "removed_claims": [
+   "بازه سرعت «۲۵ تا ۳۵ کیلومتر» برای ضربه گیربکس حذف شد: در منابع بازشده تأیید نشد.",
+   "«فرار عقب ماشین در سرعت بالا» و «محدود بودن امکان تنظیم زوایا» حذف شد: در گزارش مالکان همراه مکانیک دیده نشد.",
+   "«سنسور دمای گیربکس» از قطعات حذف شد: محدود شدن گیربکس محافظتی است نه خرابی سنسور.",
+   "ادعای «X5 همان بدنه S5 با جلوپنجره جدید» حذف شد: X5 جلو و کابین جدید دارد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کی ام سی ایکس ۵ (KMC X5)؛ بررسی و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/kmc-x-5/"
+   },
+   {
+    "id": 2,
+    "title": "کی ام سی X5 بخریم یا نه؟ مزایا و معایب — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disavantages-of-kmc-x5/"
+   },
+   {
+    "id": 3,
+    "title": "کی ام سی X5 تحت فشار بررسی شد — بیت‌ران",
+    "url": "https://bitrun.info/1404/02/kmc-x5-kerman-motor/"
+   },
+   {
+    "id": 4,
+    "title": "مشکلات گیربکس جک S5 و هزینه تعمیر آن — تن پارت کالا",
+    "url": "https://tenpartkala.com/blog/jac-s5-gearbox-repair/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیر گیربکس جک S5 — تهران گیربکس",
+    "url": "https://tehran-gearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-s5/"
+   },
+   {
+    "id": 6,
+    "title": "کی ام سی X5 (جک X5)، بررسی کامل مشخصات و راهنمای خرید — پدال",
+    "url": "https://www.pedal.ir/kmc/661092-kmc-x5-test-drive-review/"
+   },
+   {
+    "id": 7,
+    "title": "آشنایی با گارانتی و سرویس دوره‌ای کی ام سی X5 — امداد کرمان موتور",
+    "url": "https://emdad.kermanmotor.com/articles/%DA%AF%D8%A7%D8%B1%D8%A7%D9%86%D8%AA%DB%8C-%D9%88-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-%D8%AF%D9%88%D8%B1%D9%87-%D8%A7%DB%8C-KMC-X5"
+   }
+  ]
+ },
+ "hyundai-sonata-yf": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Pre-facelift variant years corrected from model 2010–2012 to 2011–2012 (Iranian sources: models 2011–2014 imported).",
+   "Engine entry for G4KE refined with Iranian spec (2359 cc, ~178 hp, 228 Nm) confirming the MPI version.",
+   "Rod-bearing fault: clarified that recall 20V-746 covered Theta II MPI in the Sonata Hybrid and 2012 Santa Fe (not the non-hybrid YF), added Iranian source naming bearings as the engine's common weakness; moved to position 2.",
+   "Shift-quality fault: replaced unsupported 'P0748 TSB' attribution with the verified bulletins SB-10-01-037 (software update) and 12-AT-012 (harsh/delayed shift); P0748 not in any bulletin.",
+   "Inhibitor switch fault: added verified codes P0705–P0707 and Iranian part name «سوئیچ مولتی‌فانکشن».",
+   "MDPS circuit-board and shift-cable recalls marked as US-built scope (Iranian imports were Korean-built), confidence kept medium.",
+   "KSDS/P1326 tip rewritten: the code only exists if the KSDS update is installed; removed GDI-only framing.",
+   "Added maintenance note on periodic bearing inspection (Iranian source) and new sources 13–15."
+  ],
+  "removed_claims": [
+   "Engine entry G4KJ (2.4 GDI) removed: Iranian-spec figures (178 hp / 228 Nm) match MPI G4KE, and no source shows GDI Sonata YF was sold in Iran.",
+   "Claim that Hyundai issued a TSB/TCM update specifically for DTC P0748 removed: not found in the Sonata TSB list."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 2,
+    "title": "بررسی هیوندای سوناتا YF — مجله یدک یار",
+    "url": "https://yadakyar.com/blog/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%B3%D9%88%D9%86%D8%A7%D8%AA%D8%A7-yf/"
+   },
+   {
+    "id": 3,
+    "title": "2011 Hyundai Sonata Recalls — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Sonata/2011/recalls/"
+   },
+   {
+    "id": 4,
+    "title": "2013 Hyundai Sonata Recalls — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Sonata/2013/recalls/"
+   },
+   {
+    "id": 5,
+    "title": "2011 Hyundai Sonata Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Sonata/2011/tsbs/"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA Part 573 Safety Recall Report 20V-746 (Hyundai, Theta II MPI connecting rod bearing)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V746-3838.PDF"
+   },
+   {
+    "id": 7,
+    "title": "Elantra & Sonata Steering Coupling Extended Warranty — Hyundai USA",
+    "url": "https://autoservice.hyundaiusa.com/TXX7"
+   },
+   {
+    "id": 8,
+    "title": "Extended Warranty for MDPS Rubber Coupling clicking/thud noise — Hyundai Forums",
+    "url": "https://www.hyundai-forums.com/threads/new-extended-warranty-for-mdps-rubber-coupling-clicking-thud-noise-elantra-sonata.549241/"
+   },
+   {
+    "id": 9,
+    "title": "تعمیر گیربکس اتوماتیک سوناتا YF — کارا گیربکس",
+    "url": "https://karagearbox.com/sonata-yf-gearbox-repair"
+   },
+   {
+    "id": 10,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   },
+   {
+    "id": 11,
+    "title": "Theta II 2.4 MPI (G4KE) Reliability Report — EngineScope",
+    "url": "https://enginescope.gr/engine/hk-theta2-mpi/"
+   },
+   {
+    "id": 12,
+    "title": "How To Tell if Your Hyundai or Kia Theta II Engine Might Fail — The Drive",
+    "url": "https://www.thedrive.com/guides-and-gear/how-to-tell-if-your-2011-2019-hyundai-or-kia-engine-might-fail"
+   },
+   {
+    "id": 13,
+    "title": "هیوندای سوناتا YF؛ مشخصات فنی + معرفی — آخرین خودرو",
+    "url": "https://akharinkhodro.ir/cars/hyundai/hyundai-sonata-yf/"
+   },
+   {
+    "id": 14,
+    "title": "Connecting Rod Bearing Issue Prompts Hyundai to Recall 129,000 Vehicles (20V-746) — autoevolution",
+    "url": "https://www.autoevolution.com/news/connecting-rod-bearings-issue-prompts-hyundai-to-recall-129000-vehicles-152623.html"
+   },
+   {
+    "id": 15,
+    "title": "ریمپ هیوندا سوناتا (شوک تعویض دنده و تأخیر گاز) — کاراکال تیونینگ",
+    "url": "https://caracaltuning.com/%D8%B1%DB%8C%D9%85%D9%BE-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7-%D8%B3%D9%88%D9%86%D8%A7%D8%AA%D8%A7/"
+   }
+  ]
+ },
+ "toyota-camry-xv50-incl-hybrid": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Torque converter shudder: T-SB-0086-12 is obsolete; cited its replacement T-SB-0034-14 and ZE5. Added the 25-50 mph (۴۰ تا ۸۰ km/h) light-throttle condition and the fix (new converter, extra pan magnets, ECM software LSC E03).",
+   "Hybrid brake booster: the draft's '2012-2015 Camry Hybrid recall' is wrong. Camry Hybrid coverage is warranty enhancement ZKK with TSB 0130-19 for 2012-2014, and no brake-booster recall appears in the NHTSA 2012/2013 Camry Hybrid lists. Filled in the full DTC list (C1252/C1253/C1256/C1391), dropped the unverified 'pump keeps running' symptom, and replaced a parts-store source.",
+   "HV battery fan: confirmed T-SB-0049-14 (2013-2014 Camry HV). Removed the unsupported 'higher fuel consumption' symptom, added a cell-failure differential and a Persian Iranian source.",
+   "A/C drain hose / airbag module (13V442000): confirmed for 2012-2013 Camry/Camry HV. Lowered confidence to medium because the recall covers US-market cars and Australian-built GCC/Iran units are not confirmed in scope.",
+   "Identity: GCC-spec XV50 (the usual import route to Iran) was sourced from Toyota Australia with 2AR-FE + 6-speed U760E; added source 9.",
+   "Renamed parts_fa to Iranian parts-shop terms (توربین گیربکس، یونیت ایربگ، شلنگ آب کولر…); symptom_fa reworded as drivers describe it.",
+   "maintenance_fa: removed the unsupported claim that generic Dexron makes the shudder worse; replaced the oil-level note (tied to a removed fault) with a coolant/water-pump check and an A/C drain-hose check.",
+   "diagnostic_tips_fa: removed the oil-consumption tip; added the speed range to the shudder tip."
+  ],
+  "removed_claims": [
+   "Oil consumption from low-tension rings on 2AR-FE: no reliable support. The cited 8020 article does not list it (one owner comment only); this is the 2AZ-FE (XV40) problem.",
+   "Musty A/C odor (T-SB-0142-13): a Toyota-wide HVAC bulletin, generic and not specific to this model.",
+   "EVAP P0441 from purge VSV / gas cap: generic OBD fault with no model-specific bulletin.",
+   "Claim of a safety recall for 2012-2015 Camry Hybrid brake booster: none found; replaced by ZKK / T-SB-0130-19 (2012-2014).",
+   "Go-Parts C1256 page as a source: a parts-store listing, not a fault source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Samarins — Toyota Camry 2012-2017: pros and cons, common problems",
+    "url": "https://www.samarins.com/reviews/camry_2012.html"
+   },
+   {
+    "id": 2,
+    "title": "CarComplaints — Toyota Brake Booster Pump Assembly Recall Inadequate: Lawsuit (ZKK / TSB 0130-19, 2012-2014 Camry Hybrid)",
+    "url": "https://www.carcomplaints.com/news/2020/toyota-brake-booster-pump-assembly-recall-lawsuit.shtml"
+   },
+   {
+    "id": 3,
+    "title": "Toyota T-SB-0049-14 Rev1 — 2013-2014 Camry HV P0A80/P0A7F HV battery cooling fan debris (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10096082-5448.pdf"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2012 Toyota Camry (13V442000 A/C drain hose / airbag control module)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=CAMRY&modelYear=2012"
+   },
+   {
+    "id": 5,
+    "title": "8020 Automotive — 3 Most Common Toyota 2AR-FE Engine Problems and Reliability",
+    "url": "https://8020automotive.com/the-3-most-common-toyota-2ar-fe-engine-problems/"
+   },
+   {
+    "id": 6,
+    "title": "Toyota T-SB-0034-14 — U760E torque converter shudder (supersedes T-SB-0086-12) (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10060723-2280.pdf"
+   },
+   {
+    "id": 7,
+    "title": "Import-Car — P0A80 or P0A7F Code: Toyota Camry Hybrid Battery Filter Clogged",
+    "url": "https://www.import-car.com/137049/"
+   },
+   {
+    "id": 8,
+    "title": "dot.report — Toyota Warranty Extension ZE5: Torque Converter Shudder on 2012-2014 Camry",
+    "url": "https://dot.report/bulletins/10131705"
+   },
+   {
+    "id": 9,
+    "title": "DriveArabia — Toyota Camry 2012 sedan revealed (GCC spec, 2.5-litre, sourced from Australia)",
+    "url": "https://www.drivearabia.com/news/2011/08/24/toyota-camry-2012-sedan-uae-saudi-qatar-gcc/"
+   },
+   {
+    "id": 10,
+    "title": "ایر تویولکس — پیام Check Hybrid System و کد خطای P0A80 باتری هیبرید",
+    "url": "http://irtoyolex.com/%D9%BE%DB%8C%D8%A7%D9%85-%D9%87%D8%B4%D8%AF%D8%A7%D8%B1-check-hybrid-system-%D9%88-%DA%A9%D8%AF-%D8%AE%D8%B7%D8%A7%DB%8C-p0a80/"
+   }
+  ]
+ }
+}
