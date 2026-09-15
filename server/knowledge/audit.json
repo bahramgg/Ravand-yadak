@@ -1,4 +1,99 @@
 {
+ "peugeot-405": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "variants طبق خودرو۴۵ بازسازی شد: پارس ELX در ۱۳۸۲ تا ۱۳۹۲ موتور ۱۶ سوپاپ XU7JP4/L4 (زانتیا) داشت و پارس ELX-XUM در ۱۳۹۲ تا ۱۳۹۶ ساخته شد؛ پارس LX/TU5 از حدود ۱۳۸۷ تا ۱۴۰۲، پارس سال ۱۳۷۹ تا حدود ۱۴۰۰ و پارس XU7P/سفارشی (XU7P یا TU5) ۱۴۰۱ تا ۱۴۰۲ ثبت شد.",
+   "موتور XU7JP4 (L4) به engines افزوده و شرح XUM به «نسخه اصلاح‌شده XU7 ساخت ایران خودرو، جایگزین موتور زانتیا» دقیق شد.",
+   "گیربکس نسخه‌های TU5 از «خانواده BE» (بی‌منبع) به «دستی ۵ سرعته، کد نامشخص» تغییر کرد.",
+   "کلاچ: علامت بی‌منبع «کلاچ سفت و دشوار» و «ناگهان گاز می‌گیرد» با پاتیناژ کلاچ جایگزین شد و منبع همراه مکانیک ۴۰۵ افزوده شد.",
+   "کویل TU5: شمع نامرغوب طبق همراه مکانیک به علت افزوده شد.",
+   "تسمه تایم: «گزارش شده» به «به‌راحتی بریده می‌شود» طبق همراه مکانیک دقیق شد.",
+   "سنسور اکسیژن: پاشش ضعیف انژکتور طبق همان منبع جایگزین «سوزن انژکتور کثیف» شد.",
+   "تأخیر گاز: ادعای بی‌منبع «با ریمپ ECU رفع می‌شود» حذف و پدال گاز برقی به قطعات افزوده شد.",
+   "نشت بنزین و آتش‌سوزی: طبق همراه مکانیک به تولیدات ۱۳۸۳ و ۱۳۸۴ محدود شد.",
+   "صدای داشبورد: عایق صوتی و آب‌بندی ضعیف طبق کارنامه افزوده شد.",
+   "افزوده شد: سخت جا رفتن دنده ۲ و ۳ و ناهماهنگی TU5 با گیربکس ۵ سرعته در پارس TU5 (نظرات مالکان همراه مکانیک، confidence پایین).",
+   "maintenance: روغن XU7P با منبع همراه مکانیک تأیید شد (0W-20 یا 5W-20 SN؛ 10W-40 و 20W-50 ممنوع) و بازه بی‌منبع ۸ هزار کیلومتر حذف شد.",
+   "diagnostic_tips: نوع موتورها با XU7/L4 و XUM و سال‌ها کامل شد؛ نکته زوزه BE3 با نکته بررسی کلاچ در پارس TU5 و نکته بازدید مسیر سوخت در ۴۰۵ مدل ۸۳ و ۸۴ جایگزین شد."
+  ],
+  "removed_claims": [
+   "صدای زوزه گیربکس BE3 با «دستورالعمل تعمیراتی ایران خودرو» — لینک CarGeek فقط صفحه فهرستی با جزوه آموزشی عمومی BE3 است، نه دستورالعمل رفع زوزه؛ هیچ منبع دیگری هم پیدا نشد (منبع ۱۱ حذف شد).",
+   "«طراحی سرسیلندر با دو سوپاپ دود کنار هم در وسط» به‌عنوان علت واشر سوزی — در منابع بازشده تأیید نشد و از cause_fa برداشته شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — تفاوت موتور XU7 با XU7P",
+    "url": "https://khodro45.com/mag/xu7-engine-vs-xu7p-engine/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — آیا موتور XU7P واشر می‌زند؟ + هزینه تعمیر واشر سرسیلندر",
+    "url": "https://www.hamrah-mechanic.com/mag/burning-xu7p-engine-cylinder-head-gasket-cost/"
+   },
+   {
+    "id": 3,
+    "title": "آلفا تیونینگ — راهنمای کامل جلوگیری از واشر زدن موتور XU7 در پژو پارس، 405 و سمند",
+    "url": "https://alphatuning.ir/prevent-xu7-head-gasket-failure/"
+   },
+   {
+    "id": 4,
+    "title": "همراه مکانیک — با شایع‌ترین ایرادات پژو 405 آشنا شوید",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-peugeot-405/"
+   },
+   {
+    "id": 5,
+    "title": "وبلاگ کارنامه — شایع‌ترین ایرادات پژو ۴۰۵ و هزینه‌های نگهداری آن",
+    "url": "https://karnameh.com/blog/defects-peugeot-405/"
+   },
+   {
+    "id": 6,
+    "title": "کیان باتری — نقد و بررسی فنی پژو 405، معایب GLX و SLX و دوگانه‌سوز",
+    "url": "https://www.kianbattery.com/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%BE%DA%98%D9%88-405/"
+   },
+   {
+    "id": 7,
+    "title": "همراه مکانیک — معایب پژو 405 SLX و 405 GLX",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-405/"
+   },
+   {
+    "id": 8,
+    "title": "همراه مکانیک — معایب پژو پارس TU5 (مقاله و نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-peugeot-pars-tu5/"
+   },
+   {
+    "id": 9,
+    "title": "خودرو۴۵ — موتور TU5 را بهتر بشناسید؛ مشخصات، عملکرد و نکات فنی",
+    "url": "https://khodro45.com/mag/tu5-engine/"
+   },
+   {
+    "id": 10,
+    "title": "تعمیرگاه تخصصی پژو کشیشیان (car206) — عیب‌یابی و تعمیر مشکلات موتور TU5",
+    "url": "https://car206.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-tu5/"
+   },
+   {
+    "id": 12,
+    "title": "آموزش CNG — علت روی گاز نرفتن خودرو",
+    "url": "https://amoozeshcng.ir/the-reason-for-the-car-not-stepping-on-the-gas/"
+   },
+   {
+    "id": 13,
+    "title": "خودرو۴۵ — بررسی انواع مدل و تیپ‌های پژو پارس (سال تولید و موتور هر تیپ)",
+    "url": "https://khodro45.com/mag/peugeot-pars-types/"
+   },
+   {
+    "id": 14,
+    "title": "همراه مکانیک — بهترین روغن موتور برای XU7 و XU7P",
+    "url": "https://www.hamrah-mechanic.com/mag/best-xu7-engine-oil/"
+   },
+   {
+    "id": 15,
+    "title": "Car.ir — معرفی پژو پارس جدید ELX با موتور XUM",
+    "url": "https://car.ir/news/5103-peugeot-pars-xum"
+   }
+  ]
+ },
  "peugeot-206": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -102,6 +197,199 @@
    }
   ]
  },
+ "ikco-runna": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "TU5P: همانندی با EC5 پژو با منابع خودرو۴۵ و همراه مکانیک تأیید و به «نسخه ایرانی‌شده EC5» دقیق شد؛ ۱۱۳ اسب و ۱۴۴ نیوتن‌متر افزوده شد؛ گیربکس ۶ دنده دستی و فرمان برقی پانوراما تأیید شد.",
+   "کویل: ادعای «خرابی در رانا پلاس نو پس از چند صد کیلومتر» در بیت‌ران یافت نشد و حذف شد؛ قطعات به نام بازاری «کویل رانا» و «کویل مدادی TU5P» اصلاح و «کویل دوبل» و «وایر شمع» (برای کویل رانا کاربرد ندارد) برداشته شد.",
+   "روغن‌ریزی (دستورالعمل ۱۵۲۴): گشتاور بی‌پشتوانه «کارتل ۸ نیوتن‌متر» حذف شد؛ الزام هم‌سازنده بودن قالپاق و واشر طبق باما دقیق شد.",
+   "گیربکس: علامت به «سخت جا رفتن دنده‌ها در سرما و دنده عقب در ۶ دنده» طبق بیت‌ران و نظرات کارنامه اصلاح شد؛ ادعاهای بی‌منبع «تق‌تق یا زوزه» و «بهتر شدن در مدل ۱۴۰۲» حذف شد.",
+   "چراغ: confidence از high به medium کاهش یافت (بخار گرفتگی با چند گزارش بیت‌ران تأیید شد؛ ضعف نور پایین فقط در منبع ۱ است که باز نشد).",
+   "جلوبندی و ترمز: به system ترمز منتقل و confidence به low کاهش یافت؛ ادعاهای «خرابی هر دو پلوس در ۱۰۰۰ کیلومتر»، «صدای اکسل عقب» و «با چند بار تعویض برطرف نشد» در بیت‌ران یافت نشد و حذف شد؛ پلوس از قطعات برداشته شد.",
+   "سنسور اکسیژن: confidence از high به low کاهش یافت؛ فقط برای TU5 پارس تأیید شد و منبع ۱ رانا باز نشد (دو بار قطع اتصال).",
+   "افزوده شد: بیرون‌زدگی قاب کیسه هوای سرنشین، رگلاژ نامناسب درها و صدای تق‌تق در رانا پلاس (بیت‌ران: «به یک اپیدمی تبدیل شده»).",
+   "افزوده شد: سوختن واشر سرسیلندر TU5 (خودرو۴۵ TU5 و همراه مکانیک پارس TU5، confidence متوسط در سطح خانواده موتور).",
+   "diagnostic_tips: نکته بی‌منبع «بالا رفتن آمپر پس از خاموشی طبیعی است»، نکته صدای جیرجیر تسمه در پلاس نو و نکته عیب‌یابی برقی حذف شد؛ نکته نوع کویل و نکته قاب کیسه هوا افزوده شد.",
+   "maintenance: درجه روغن 10W40/5W40 که برای TU5P تأیید نشد برداشته و به دفترچه ارجاع شد؛ گشتاورهای ۱۵۲۴ اصلاح شد."
+  ],
+  "removed_claims": [
+   "مشکلات برقی (دسته‌سیم ضعیف، لحیم سرد ECU، خاموش شدن و فعال شدن ایموبیلایزر) — آمار کارنامه فقط باتری را به‌عنوان ایراد جزئی آورده، منبع ۱ باز نشد و علائم عمومی و غیرخاص این مدل است.",
+   "سایش زودرس کلاچ «هر ۲۰ هزار کیلومتر در ترافیک تهران» و «تعویض در ۱۰۰۰ کیلومتر در رانا پلاس نو» — در کارنامه و بیت‌ران یافت نشد؛ فقط گزارش درگیری کلاچ در سرما ماند که به ایراد گیربکس ادغام شد.",
+   "منبع ۲ (همراه مکانیک رانا پلاس) و منبع ۸ (car206) — ادعای باقی‌مانده‌ای به آن‌ها وابسته نیست و باز نشدند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — رانا بخریم یا نه؟ بررسی مزایا و معایب رانا (مقاله و نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-runna/"
+   },
+   {
+    "id": 3,
+    "title": "وبلاگ کارنامه — معایب رانا؛ با ایرادات رانا قبل از خرید آن آشنا شوید (داده کارشناسی و نظرات)",
+    "url": "https://karnameh.com/blog/disadvantages-runna/"
+   },
+   {
+    "id": 4,
+    "title": "بیت‌ران — مشکلات رانا پلاس صفر کیلومتر چیست؟ (بررسی و نظرات مالکان)",
+    "url": "https://bitrun.info/1400/11/%D8%B1%D8%A7%D9%86%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3-%D8%B5%D9%81%D8%B1-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8/"
+   },
+   {
+    "id": 5,
+    "title": "باما — بررسی رانا پلاس اتوماتیک AMT6",
+    "url": "https://bama.ir/news/16922/ikco-runna-plus-amt"
+   },
+   {
+    "id": 6,
+    "title": "باما — حل مشکل روغن‌ریزی موتور TU5 ایران خودرو (بر پایه دستورالعمل فنی ۱۵۲۴ ایساکو)",
+    "url": "https://bama.ir/news/14562/%D8%AD%D9%84-%D9%85%D8%B4%DA%A9%D9%84-%D8%B1%D9%88%D8%BA%D9%86-%D8%B1%DB%8C%D8%B2%DB%8C-%D9%85%D9%88%D8%AA%D9%88%D8%B1-tu5-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%AE%D9%88%D8%AF%D8%B1%D9%88"
+   },
+   {
+    "id": 7,
+    "title": "خودرو۴۵ — موتور TU5 را بهتر بشناسید؛ مشخصات، عملکرد و نکات فنی",
+    "url": "https://khodro45.com/mag/tu5-engine/"
+   },
+   {
+    "id": 9,
+    "title": "همراه مکانیک — معایب پژو پارس TU5 (کویل ضعیف، سنسور اکسیژن، واشر سرسیلندر)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-peugeot-pars-tu5/"
+   },
+   {
+    "id": 10,
+    "title": "Wikipedia — IKCO Runna",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Runna"
+   },
+   {
+    "id": 11,
+    "title": "خودرو۴۵ — مشخصات فنی رانا پلاس TU5P ارتقایافته (TU5 پلاس، نسخه ایرانی‌شده EC5)",
+    "url": "https://khodro45.com/mag/runna-plus-tu5p-upgraded/"
+   },
+   {
+    "id": 12,
+    "title": "همراه مکانیک — مشخصات رانا پلاس پانوراما؛ فنی، آپشن‌ها و معایب (گیربکس ۶ دنده دستی، فرمان برقی)",
+    "url": "https://www.hamrah-mechanic.com/mag/ranaplus-panaroma/"
+   }
+  ]
+ },
+ "ikco-samand-xu7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "سال سمند LX XU7 طبق باما از «۱۳۸۳ تا حدود ۱۴۰۱» به «۱۳۸۲ تا ۱۴۰۱» اصلاح شد.",
+   "سمند سریر (املای درست به‌جای «سرین» در فهرست) طبق پدال بررسی شد: سمند کشیده ۳۰ سانتی‌متری با موتور ۱۶ سوپاپ پارس ELX (حدود ۱۱۰ اسب، ۱۵۶ نیوتن‌متر)، رونمایی ۱۳۸۳ و تولید اندک حدود ۱۳۸۷ تا ۱۳۹۰ بیشتر برای ارگان‌ها؛ چون همان بدنه و خانواده موتور XU7 است در این ردیف به‌عنوان تیپ کمیاب ماند و سال‌هایش اصلاح شد.",
+   "سورن پلاس XU7P: شروع ۱۴۰۲، ۹۸ اسب و ۱۴۶ نیوتن‌متر و روغن 0W-20 با خودرو۴۵ تأیید شد؛ فاصله تعویض بی‌منبع «هر ۸ هزار کیلومتر» به ارجاع به دفترچه تغییر کرد.",
+   "تیپ «سمند LX XU7 دوگانه‌سوز» اضافه شد (منابع: رایج بودن نسخه دوگانه LX و نام قطعه «سرسیلندر کامل دوگانه‌سوز سمند LX» در فروشگاه قطعات).",
+   "سال‌های سمند X7، EL، SE و سورن XU7 با منابع باز شده تأیید نشد و با برچسب «تأیید نشد» علامت خوردند؛ شروع X7 با ردیف فهرست (۱۳۸۱) هم‌راستا شد.",
+   "واشر سرسیلندر: جزئیات کارستان (راهگاه آب حدود ۳ میلی‌متری، پایین نشستن لبه بوش پس از واشر زدن‌های مکرر) افزوده شد؛ منبع ۵ (پارس) از این خرابی برداشته و منبع ۶ (خودرو۴۵ که بهبود XU7P را تأیید می‌کند) افزوده شد.",
+   "دوگانه‌سوز: اطمینان از medium به high افزایش یافت (کارستان و مقایسه همراه مکانیک هر دو تسریع فرسایش سرسیلندر با CNG را می‌گویند) و نام قطعه بازار افزوده شد.",
+   "کلاچ و گیربکس سورن پلاس: سفتی اولیه دنده‌ها طبق نظر مالک در خودرو۴۵ افزوده و علامت دقیق‌تر شد.",
+   "تنفس هوا در مدار: ادعای «XU7P برای رفع آن منبع انبساط جداگانه گرفته» از علت برداشته شد چون در منبع قابل‌دسترس تأیید نشد.",
+   "نکات تشخیصی: نکته سرسیلندر در سمند دوگانه‌سوز و نکته ذاتی بودن صدای موتور افزوده شد."
+  ],
+  "removed_claims": [
+   "«مصرف بنزین حدود ۱۰ لیتر» به‌عنوان خرابی: ویژگی ذاتی است نه خرابی؛ به نکات تشخیصی منتقل شد.",
+   "«صدای زیاد موتور در درجا و دور بالا» به‌عنوان خرابی: خودِ پیش‌نویس آن را ذاتی و غیرخرابی دانسته بود؛ به نکات تشخیصی منتقل شد.",
+   "«در تاکسی‌ها گاهی بیش از یک بار در سال» واشر زدن: در منابع باز شده تأیید نشد.",
+   "توصیه «در شهرهای گرم ترموستات با دمای پایین‌تر» و «تعویض پیشگیرانه هر ۶۰ هزار کیلومتر»: بی‌منبع بود و ترموستات دمای پایین‌تر روی عملکرد ECU اثر دارد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بررسی سرسیلندر موتور XU7 سمند ،پژو ۴۰۵ و پارس و دلایل خرابی آن ! (کارستان)",
+    "url": "https://carstan.ir/75270/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B3%D8%B1%D8%B3%DB%8C%D9%84%D9%86%D8%AF%D8%B1-%D9%85%D9%88%D8%AA%D9%88%D8%B1-xu7-%D8%B3%D9%85%D9%86%D8%AF-%D8%8C%D9%BE%DA%98%D9%88-%DB%B4%DB%B0%DB%B5-%D9%88-%D9%BE/"
+   },
+   {
+    "id": 2,
+    "title": "راه حل مشکل شایع سوختن واشر سرسیلندر پژو 405 و سمند چیست؟ (خودروبانک، همراه با نظرات)",
+    "url": "https://www.khodrobank.com/reviews/22426/%D8%B1%D8%A7%D9%87-%D8%AD%D9%84-%D9%85%D8%B4%DA%A9%D9%84-%D8%B4%D8%A7%DB%8C%D8%B9-%D8%B3%D9%88%D8%AE%D8%AA%D9%86-%D9%88%D8%A7%D8%B4%D8%B1-%D8%B3%D8%B1%D8%B3%DB%8C%D9%84%D9%86%D8%AF%D8%B1-%D9%BE%DA%98%D9%88-405-%D9%88-%D8%B3%D9%85%D9%86%D8%AF-%DA%86%DB%8C%D8%B3%D8%AA%D8%9F"
+   },
+   {
+    "id": 3,
+    "title": "آشنایی کامل با موتور XU7 | مزایا و معایب و حل مشکلات سرسیلندر (تعمیرگاه آهورا)",
+    "url": "https://ahoura-workshop.ir/post/1/%D9%86%D9%82%D8%B7%D9%87-%D8%B6%D8%B9%D9%81-%D9%85%D9%88%D8%AA%D9%88%D8%B1-xu7"
+   },
+   {
+    "id": 4,
+    "title": "آیا موتور xu7p واشر می‌زند؟ +هزینه تعمیر واشر سر سیلندر آن (همراه مکانیک)",
+    "url": "https://www.hamrah-mechanic.com/mag/burning-xu7p-engine-cylinder-head-gasket-cost/"
+   },
+   {
+    "id": 5,
+    "title": "مزایا و معایب پژو پارس موتور xu7p | بخریم یا نه؟ (همراه مکانیک، همراه با نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disadvantages-pars-xu7p/"
+   },
+   {
+    "id": 6,
+    "title": "سورن پلاس XU7P؛ بررسی جامع و مشخصات فنی (خودرو۴۵، همراه با نظرات مالکان)",
+    "url": "https://khodro45.com/mag/samand-soren-plus-xu7p/"
+   },
+   {
+    "id": 7,
+    "title": "مزایا و معایب سورن پلاس xu7p (ویکی شاپ، همراه با نظرات مالکان)",
+    "url": "https://wikishop.co/mag/advantages-and-disadvantages-of-suren-plus-xu7p/"
+   },
+   {
+    "id": 8,
+    "title": "سورن پلاس xu7p | نظرات کاربران + بررسی مشکلات و معایب (انجمن بچرخ)",
+    "url": "https://becharkh.com/forum/car?s=1&brand=samand&model=soren-plus-xu7p"
+   },
+   {
+    "id": 9,
+    "title": "سمند Lx بخریم یا نه؟ بررسی مزایا و معایب سمند ال ایکس (همراه مکانیک)",
+    "url": "https://www.hamrah-mechanic.com/mag/why-purchase-samand-lx/"
+   },
+   {
+    "id": 10,
+    "title": "معایب سمند LX و ۴ دلیل برای نخریدن! (Z4Car)",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%B3%D9%85%D9%86%D8%AF-lx-%D9%88-4-%D8%AF%D9%84%DB%8C%D9%84-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%86%D8%AE%D8%B1%DB%8C%D8%AF%D9%86"
+   },
+   {
+    "id": 11,
+    "title": "همه چیز درباره موتور xu7؛ بررسی تخصصی + مشخصات فنی (سپند خودرو)",
+    "url": "https://sepandkhodro.com/blog/xu7-engine/"
+   },
+   {
+    "id": 12,
+    "title": "سمند ef7 بخریم یا نه؟ مزایا و معایب سمند ef7 (همراه مکانیک، مقایسه با XU7 دوگانه‌سوز)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-samand-ef7/"
+   },
+   {
+    "id": 13,
+    "title": "انواع مدل های سمند در بازار (خودرو۴۵)",
+    "url": "https://khodro45.com/mag/samand-types/"
+   },
+   {
+    "id": 14,
+    "title": "معرفی انواع مدل‌ها و تیپ‌های خودرو سمند (وبلاگ کارنامه)",
+    "url": "https://karnameh.com/blog/samand-models/"
+   },
+   {
+    "id": 15,
+    "title": "سمند سریر، لیموزین ناکام ایران‌خودرو (پدال)",
+    "url": "https://www.pedal.ir/ikco/743865-samand-sarir/"
+   },
+   {
+    "id": 16,
+    "title": "IKCO Soren (English Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Soren"
+   },
+   {
+    "id": 17,
+    "title": "IKCO Samand (English Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Samand"
+   },
+   {
+    "id": 18,
+    "title": "مشخصات فنی سمند LX XU7 سال ۱۳۸۲ تا ۱۴۰۱ (باما)",
+    "url": "https://bama.ir/car-reviews/samand/lx-specs-1111-basic"
+   },
+   {
+    "id": 19,
+    "title": "سرسیلندر کامل دوگانه سوز سمند LX بشل (توربویدک — نام قطعه در بازار)",
+    "url": "https://turboyadak.com/product/r25-112012-bsl-1004"
+   }
+  ]
+ },
  "ikco-samand-ef7": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -197,6 +485,106 @@
    }
   ]
  },
+ "ikco-dena": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "مشخصات EF7P-TC طبق خودرو۴۵ و ویکی‌پدیای انگلیسی به حدود ۱۶۰ اسب (163 PS) و ۲۴۰ نیوتن‌متر اصلاح شد و نام نسخه به «دنا جوانان» تغییر کرد.",
+   "توضیح EF7P تکمیل شد: یورو ۵، دور آرام حدود ۶۵۰ و عدم اشتراک قطعات داخلی با EF7 (خودرو۴۵)؛ نکته تشخیصی تفکیک کد موتور هنگام خرید قطعه اضافه شد.",
+   "سال دنا پلاس توربو دنده‌ای: ادعای «از ۱۳۹۷» تأیید نشد و منابع ناهمخوان بودند؛ فقط شروع ۶ دنده از نیمه ۱۴۰۱ (خودرو۴۵) نگه داشته شد.",
+   "روغن‌سوزی: عبارت تأییدنشده «EF7P سایکلون ندارد» حذف و گزارش خالی شدن گیج حدود هر ۴ هزار کیلومتر (خودرو۴۵) اضافه شد.",
+   "گیربکس اتوماتیک DAE: اطمینان از medium به low کاهش یافت؛ منبع تحلیل بازار پیش‌بینی کارشناس درباره عمر کوتاه است نه گزارش مستند خرابی، و منابع دیگر نظر مالک یا تبلیغ تعمیرگاه‌اند.",
+   "فرمان برقی: وجود فرمان برقی حساس به سرعت در توربو تأیید شد ولی خرابی آن فقط در نظرات مالکان آمده؛ اطمینان از medium به low کاهش یافت.",
+   "توربو: یاتاقان‌زدن زودرس EF7TC و قطعه «یاتاقان ثابت و متحرک» از این خرابی حذف شد (در پروفایل تأییدشده سمند EF7 هم تأیید نشده بود)؛ حساسیت توربو به روغن طبق تحلیل بازار حفظ شد.",
+   "دنده CVVT: استناد به مهرپارسی برداشته شد چون در آن درباره دنده CVVT چیزی نیامده (همسو با پروفایل تأییدشده سمند EF7).",
+   "دمای بالا و ایرادهای برقی: گزارش خوانندگان تحلیل بازار و انتقاد ویکی‌پدیا از کیفیت ساخت به منابع افزوده شد.",
+   "کپ کردن: منابع تأییدشده EF7 (مهرپارسی، محمد برتر، همراه مکانیک) جایگزین استناد اصلی شد و بخش تأخیر توربو کلی‌تر بیان شد.",
+   "خرابی تازه اضافه شد: صدای استکانی تایپیت هیدرولیک در ثانیه‌های اول استارت سرد (مشترک EF7، مهرپارسی و محمد برتر).",
+   "نگهداری ترمز: ادعای «ترمز توربو تقویت نشده» به «کارشناسان کافی بودن ترمز را زیر سؤال برده‌اند» (تحلیل بازار) نرم شد."
+  ],
+  "removed_claims": [
+   "گیر کردن اهرم در P به‌خاطر میکروسوئیچ ترمز به‌عنوان خرابی شایع: فقط یک نظر مالک پشتش بود و سازوکار آن عمومی همه گیربکس‌های اتوماتیک است؛ فقط به‌صورت نکته تشخیصی ماند.",
+   "آزمون «مکش درب روغن» برای شیر PCV در EF7P: در منبع استنادشده نیامده بود.",
+   "منبع ۸ (یاتاقان‌زدن سمند EF7) و منبع ۱۰ (پدال) از فهرست حذف شدند چون پس از اصلاحات به هیچ ادعایی پشتوانه نمی‌دادند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "سمند ef7 بخریم یا نه؟ مزایا و معایب سمند ef7 (همراه مکانیک، همراه با نظرات مالکان سمند و دنا)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-samand-ef7/"
+   },
+   {
+    "id": 2,
+    "title": "اشکالات موتور Ef7 و رفع آنها (مهرپارسی، همراه با نظرات مالکان سمند و دنا)",
+    "url": "https://mehrparsi.ir/ef7-engine-problems-and-fix-them/"
+   },
+   {
+    "id": 3,
+    "title": "راهنمای جامع موتور EF7: هر آنچه صاحب سمند، سورن و دنا باید بداند! (تعمیرگاه محمد برتر)",
+    "url": "https://mohammadbartar.ir/complete-guide-ef7-engine/"
+   },
+   {
+    "id": 4,
+    "title": "اویل ماژول و نشانه‌های خرابی ماژول روغن موتور EF7 (جی آی اس پی)",
+    "url": "https://gisp.ir/%D8%A7%D9%88%DB%8C%D9%84-%D9%85%D8%A7%DA%98%D9%88%D9%84-%D9%88-%D9%86%D8%B4%D8%A7%D9%86%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D9%85%D8%A7%DA%98%D9%88%D9%84-%D8%B1%D9%88/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیر و تعویض اویل ماژول سمند ef7 (دنا کار ایرانیان)",
+    "url": "https://denacareiranian.com/repair/oil-samand-ef7-module"
+   },
+   {
+    "id": 6,
+    "title": "راههای کاهش دمای موتور ای اف سون (EF7) سمند و دنا (کارستان)",
+    "url": "https://carstan.ir/27365/%D8%B1%D8%A7%D9%87%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D9%87%D8%B4-%D8%AF%D9%85%D8%A7%DB%8C-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%A7%DB%8C-%D8%A7%D9%81-%D8%B3%D9%88%D9%86-ef7-%D8%B3%D9%85%D9%86%D8%AF-%D9%88/"
+   },
+   {
+    "id": 7,
+    "title": "موتور EF7 پلاس (EF7P)؛ بررسی و مشخصات فنی (خودرو۴۵، همراه با نظرات مالکان)",
+    "url": "https://khodro45.com/mag/ef7p-engine/"
+   },
+   {
+    "id": 9,
+    "title": "معایب دنا پلاس توربو ۶ دنده دستی (همراه مکانیک)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-dena-plus-turbo/"
+   },
+   {
+    "id": 11,
+    "title": "دنا پلاس توربو 6 دنده دستی؛ بررسی جامع و مشخصات فنی (خودرو۴۵)",
+    "url": "https://khodro45.com/mag/dena-plus-6mt/"
+   },
+   {
+    "id": 12,
+    "title": "نگاهی به ضعف‌های فنی «دنا پلاس» توربو اتوماتیک (تحلیل بازار، همراه با نظرات)",
+    "url": "https://www.tahlilbazaar.com/news/72377/%D9%86%DA%AF%D8%A7%D9%87%DB%8C-%D8%A8%D9%87-%D8%B6%D8%B9%D9%81-%D9%87%D8%A7%DB%8C-%D9%81%D9%86%DB%8C-%D8%AF%D9%86%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3-%D8%AA%D9%88%D8%B1%D8%A8%D9%88-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%DB%B5-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%D8%A7%DB%8C-%D8%AF%D8%B1"
+   },
+   {
+    "id": 13,
+    "title": "تعمیر گیربکس دنا پلاس توربو اتوماتیک (مدرن گیربکس)",
+    "url": "https://moderngearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AF%D9%86%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%AA%D9%88%D8%B1%D8%A8%D9%88/"
+   },
+   {
+    "id": 14,
+    "title": "امتیاز و نظر خریداران دنا پلاس توربو اتوماتیک (نظرکده)",
+    "url": "https://nazarkade.com/review/%D8%AF%D9%86%D8%A7-%D9%BE%D9%84%D8%A7%D8%B3-%D8%AA%D9%88%D8%B1%D8%A8%D9%88-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9"
+   },
+   {
+    "id": 15,
+    "title": "علائم خرابی توربو شارژ و نحوه تعویض آن در خودروهای دنا پلاس (ایران توربو)",
+    "url": "https://iranturbo1.com/turbocharger-replacement-dena-plus/"
+   },
+   {
+    "id": 16,
+    "title": "۱۵ مورد از معایب دنا پلاس توربو که باید بدانید (درجه)",
+    "url": "https://www.daraje.com/blog/53291-disadvantages-dena-plus-turbo/"
+   },
+   {
+    "id": 17,
+    "title": "IKCO Dena (English Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Dena"
+   }
+  ]
+ },
  "saipa-pride": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -288,6 +676,281 @@
     "id": 13,
     "title": "همراه مکانیک — پراید صبا، مشخصات و بررسی تخصصی",
     "url": "https://www.hamrah-mechanic.com/carreview/saipa/pridesaba/"
+   }
+  ]
+ },
+ "saipa-tiba": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "سال شروع تیبا ۲ طبق ویکی‌پدیای فارسی از ۱۳۹۲ به ۱۳۹۱ اصلاح شد؛ مشخصات M15 (۸۷ اسب در ۵۵۰۰ دور، ۱۲۸ نیوتن‌متر در ۴۰۰۰ دور، یورو ۵ از ۱۴۰۰) تأیید شد.",
+   "گیربکس CVT فقط به کوییک اتوماتیک نسبت داده شد (Z4Car: ساخت پانچ بلژیک)؛ خرابی داغ شدن CVT به کوییک اتوماتیک محدود شد و علامت «متوقف شدن و دوباره راه افتادن» به «کم یا قطع شدن کشش» که منبع پشتیبانی می‌کند نرم شد.",
+   "کلاچ: رقم «زیر ۳۰ هزار کیلومتر» حذف و اطمینان از high به medium کاهش یافت چون منبع اصلی (همراه مکانیک) باز نشد؛ سیم کلاچ به قطعات و منبع کلاچ سیمی تیبا (اقتصادآنلاین) افزوده شد.",
+   "گیربکس دستی: اطمینان از high به medium کاهش یافت و «شفت گیربکس» از قطعات برداشته شد؛ استناد به ویکی‌پدیا (که درباره گیربکس چیزی ندارد) حذف شد.",
+   "برقی (آپشن‌ها): Z4Car به‌عنوان منبع مستقل افزوده شد و روشن شدن بی‌دلیل چراغ چک به علامت اضافه شد.",
+   "فن خنک‌کننده: خرابی فیوز فن طبق Z4Car افزوده شد.",
+   "خاموش شدن موتور، لرزش فرمان در سرعت بالا و خرابی پلوس/بلبرینگ: اطمینان به low کاهش یافت (علت نامشخص یا نیمه‌عمومی و فقط گزارش پراکنده مالکان).",
+   "فراخوان دسته‌سیم رله باکس: با ویکی‌پدیای فارسی و عنوان دستورالعمل فراخوان در کارگیک تأیید شد؛ منبع ۱۲ (اقتصادآنلاین) که خطای ۴۰۴ داد حذف شد.",
+   "توضیح گیربکس دستی: ادعای بی‌منبع «دنده ۲ تغییر یافته و فنر کلاچ تقویت‌شده» به «برگرفته از پراید با کلاچ سیمی» تغییر کرد.",
+   "نسخه دوگانه‌سوز به «ساینا دوگانه‌سوز» (طبق ردیف فهرست) محدود شد؛ ویکی‌پدیا نسخه CNG برای تیبا ذکر نکرده است.",
+   "نگهداری: توصیه‌های بی‌منبع «هر ۱۰ هزار کیلومتر یا ۱۲ ماه» و «API SL» به ارجاع به دفترچه تغییر کرد؛ «بوستر ترمز» از علت و قطعات ترمز برداشته شد."
+  ],
+  "removed_claims": [
+   "شکستن شفت اصلی گیربکس: در ویکی‌پدیای فارسی (منبع استنادشده) چنین موردی نیامده و منبع دیگری پیدا نشد.",
+   "نسخه «ساینا اتوماتیک CVT»: تأیید نشد؛ در ردیف فهرست نیست و منبع CVT فقط درباره کوییک اتوماتیک است.",
+   "نسخه «تیبا دوگانه‌سوز کارخانه‌ای»: تأیید نشد (ویکی‌پدیا فقط بنزینی ذکر کرده).",
+   "ادعای ذاتی بودن صدای موتور «بالای ۳۵۰۰ دور» با عدد مشخص: فقط به‌صورت کلی (صدای موتور در دور بالا) در Z4Car تأیید شد و عدد برداشته شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معایب تیبا، ساینا و کوییک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-tiba-saina-and-quick/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — سایپا کوییک بخریم یا نه؟ مزایا و معایب (با نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-saipa-quick/"
+   },
+   {
+    "id": 3,
+    "title": "کارنامه — معایب کوییک؛ رایج‌ترین ایرادات (با نظرات مالکان)",
+    "url": "https://karnameh.com/blog/disadvantages-quick/"
+   },
+   {
+    "id": 4,
+    "title": "کارنامه — مقایسه تیبا، ساینا و کوییک (با نظرات مالکان)",
+    "url": "https://karnameh.com/blog/compare-tiba-saina-quick/"
+   },
+   {
+    "id": 5,
+    "title": "ویکی‌پدیای فارسی — سایپا تیبا (سال‌های تولید، مشخصات M15، فراخوان دسته‌سیم رله باکس)",
+    "url": "https://fa.wikipedia.org/wiki/سایپا_تیبا"
+   },
+   {
+    "id": 6,
+    "title": "Car.ir — معایب ساینا چیست؟ ۷ ایراد شایع ساینا از دید مالکان",
+    "url": "https://car.ir/news/6109-saina-porblems-customer"
+   },
+   {
+    "id": 7,
+    "title": "Z4Car — معایب کوییک اتوماتیک سایپا",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%B3%D8%A7%DB%8C%D9%BE%D8%A7-%DA%A9%D9%88%DB%8C%DB%8C%DA%A9-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-4-%D8%AF%D9%84%DB%8C%D9%84-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%86%D8%AE"
+   },
+   {
+    "id": 8,
+    "title": "کارلنت البرز — ایراد شایع در سیستم ترمز تیبا، کوییک و ساینا",
+    "url": "https://carlentalborz.com/%D8%A7%DB%8C%D8%B1%D8%A7%D8%AF-%D8%B4%D8%A7%DB%8C%D8%B9-%D8%AF%D8%B1-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%AA%D8%B1%D9%85%D8%B2/"
+   },
+   {
+    "id": 9,
+    "title": "همراه مکانیک — دلایل خاموش شدن موتور در حال حرکت (گزارش مالکان تیبا، ساینا و کوییک در نظرات)",
+    "url": "https://www.hamrah-mechanic.com/mag/car-engine-shutdown/"
+   },
+   {
+    "id": 10,
+    "title": "امگ — علت کار نکردن دور کند و دور تند فن پراید، تیبا و ساینا",
+    "url": "https://ameg.ir/%D9%81%D9%86-%D8%AE%D9%86%DA%A9-%DA%A9%D9%86%D9%86%D8%AF%D9%87/"
+   },
+   {
+    "id": 11,
+    "title": "کارگیک — دستورالعمل فراخوان اصلاح دسته‌سیم کنار رله باکس تیبا و ساینا",
+    "url": "https://cargeek.live/d/MKXabLWR"
+   },
+   {
+    "id": 13,
+    "title": "سرویس تک — علل صدا افتادن سوپاپ‌ها در پراید یورو ۴ (خانواده موتور مشترک)",
+    "url": "https://www.servicetak.ir/%D8%B9%D9%84%D9%84-%D8%B5%D8%AF%D8%A7-%D8%A7%D9%81%D8%AA%D8%A7%D8%AF%D9%86-%D8%B3%D9%88%D9%BE%D8%A7%D9%BE-%D9%87%D8%A7-%D8%AF%D8%B1-%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF-%DB%8C%D9%88%D8%B1%D9%88-4/"
+   },
+   {
+    "id": 14,
+    "title": "اقتصادآنلاین — مهم‌ترین دلایل سفت شدن کلاچ ماشین / سیم کلاچ پراید و تیبا را چگونه تنظیم کنیم؟",
+    "url": "https://www.eghtesadonline.com/fa/news/687951/%D9%85%D9%87%D9%85-%D8%AA%D8%B1%DB%8C%D9%86-%D8%AF%D9%84%D8%A7%DB%8C%D9%84-%D8%B3%D9%81%D8%AA-%D8%B4%D8%AF%D9%86-%DA%A9%D9%84%D8%A7%DA%86-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%B3%DB%8C%D9%85-%DA%A9%D9%84%D8%A7%DA%86-%D9%BE%D8%B1%D8%A7%DB%8C%D8%AF-%D9%88-%D8%AA%DB%8C%D8%A8%D8%A7-%D8%B1%D8%A7-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%DA%A9%D9%86%DB%8C%D9%85"
+   }
+  ]
+ },
+ "saipa-shahin": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine specs confirmed (hamrah-mechanic, pedal): M15TC 1497 cc (roster's 1503 cc is wrong), 8V SOHC turbo, 110 hp @5000, 178 Nm @2500, CR 9.5, Euro 5, 3.8 L oil with filter; SAIPA official CVT spec also 178 Nm, so bama's 150 Nm ignored. CVT has 7 simulated steps; CVT years 1402-present (bama).",
+   "Removed unverified 'same gearbox family as Saina' label for the manual gearbox.",
+   "Noise-insulation recall scoped to cars built through 1400 (car.ir: recall announced 24 Mordad 1401).",
+   "Electrical fault: dropped the unverified instrument-cluster claim, added trunk release (Karnameh 88-car inspection), confidence high -> medium.",
+   "Suspension: replaced the unverified '70-80k km car' comparison with the documented ~9,000 km rear-shock report.",
+   "Fuel/knock: dropped unverified 'dealers recommend premium fuel' claim and the fuel additive from parts; fuel sensitivity itself confirmed by hamrah-mechanic.",
+   "Oil leak: cause corrected to valve cover gasket and oil-filter base (owner report at 8,000 km, model 1402) plus one oil-cooler replacement; removed 'dealer calls oil cooler failure-prone' and unsupported turbo oil line / seal parts.",
+   "Transmission fault narrowed to CVT owner reports (knock, slip, delayed take-off), confidence medium -> low; removed unverified software-update claim.",
+   "Battery tip rewritten on documented battery weakness; Shahin Plus tip extended to CVT; dropped source 8 and added sources 9-10."
+  ],
+  "removed_claims": [
+   "Manual gearbox 'Saina-family gearbox too weak; hard 1st/reverse, knocks' — Karnameh's 88-car inspection found no major manual gearbox defects and no other support was found.",
+   "Cooling fault (water pump, fan, coolant temp sensor) — only isolated early-delivery owner anecdotes plus a generic parts-shop blog; not a documented model pattern.",
+   "Maintenance note 'powertrain warranty 60,000 km' — unverified and time-variable warranty terms."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کارنامه — رایج‌ترین معایب خودروی شاهین (کارشناسی ۸۸ خودرو و نظرات مالکان)",
+    "url": "https://karnameh.com/blog/disadvantages-shahin/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — مشخصات موتور شاهین از قدرت تا واقعیت‌های ناگفته",
+    "url": "https://www.hamrah-mechanic.com/mag/shahin-engine-specs/"
+   },
+   {
+    "id": 3,
+    "title": "کارشناسی خودرو عبادی — ایرادات فنی شاهین",
+    "url": "https://ebadicar.com/ایرادات-فنی-شاهین/"
+   },
+   {
+    "id": 4,
+    "title": "Car.ir — فراخوان سایپا برای رفع ایرادات خودروی شاهین (مرداد ۱۴۰۱)",
+    "url": "https://car.ir/news/24737-calling-saipa-to-fix-the-problems-of-shahin"
+   },
+   {
+    "id": 5,
+    "title": "دیجیاتو — فراخوان عمومی تمامی خودروهای شاهین برای نصب عایق صدا",
+    "url": "https://digiato.com/article/2022/08/16/calling-shahin-saipa-to-install-sound-insulation"
+   },
+   {
+    "id": 6,
+    "title": "دنیای خودرو — سه تغییر شاهین از اردیبهشت ۱۴۰۱",
+    "url": "https://www.donyayekhodro.com/news/241444"
+   },
+   {
+    "id": 7,
+    "title": "تعمیرگاه اتوکلینیک فورکی — رفع صدای توربو شاهین",
+    "url": "https://www.4kautoclinic.com/%D8%B1%D9%81%D8%B9-%D8%B5%D8%AF%D8%A7%DB%8C-%D8%AA%D9%88%D8%B1%D8%A8%D9%88-%D8%B4%D8%A7%D9%87%DB%8C%D9%86/"
+   },
+   {
+    "id": 9,
+    "title": "پدال — اعلام مشخصات رسمی اطلس و شاهین اتوماتیک (M15TC، ۱۴۹۷ سی‌سی، ۱۷۸ نیوتن‌متر، CVT هفت دنده مجازی)",
+    "url": "https://www.pedal.ir/saipa/578583-saipa-shahin-cvt-atlas-price-specification-photos/"
+   },
+   {
+    "id": 10,
+    "title": "باما — مشخصات فنی شاهین اتوماتیک CVT تیپ G سال ۱۴۰۲ تا ۱۴۰۵",
+    "url": "https://bama.ir/car-reviews/shahin/gautomatic-specs-1442-cvt"
+   }
+  ]
+ },
+ "renault-tondar-90": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "سال‌های تندر ۹۰ اتوماتیک طبق ویکی‌پدیای فارسی حدود ۱۳۹۲ تا ۱۳۹۸ (ایران خودرو) ثبت شد؛ سازنده پارس تندر و پیکاپ به سال‌ها افزوده شد.",
+   "سال‌های بی‌منبع E1 و E2 («حدود ۱۳۸۷ تا ۱۳۹۲/۱۳۹۶») خالی شد؛ گیربکس JHQ از ۱۳۹۶ برای E2 هم ثبت شد.",
+   "دسته موتور: confidence از high به medium کاهش یافت (فقط وبلاگ فروشگاه و تعمیرگاه) و typical_km بی‌منبع ۱۲۰ هزار حذف شد.",
+   "گردگیر پلوس سمت گیربکس: با گزارش ایران‌جیب («بزرگ‌ترین نقطه ضعف تندر۹۰»، بدون لایه دوم) confidence از medium به high رسید و به رتبه دوم آمد؛ ادعای بی‌منبع نشت کاسه‌نمد میل تعویض دنده حذف و symptom_fa به خیس بودن گردگیر و قفل کردن گیربکس اصلاح شد؛ ارجاع به کارنامه که این ایراد را ندارد برداشته شد.",
+   "رله فن: confidence از high به medium کاهش یافت (یک منبع فنی و یک وبلاگ فروشگاه).",
+   "گیربکس DP0: خطای DF049 با منابع رنو به‌عنوان خطای تنظیم فشار تأیید شد؛ علامت ماندن روی دنده ۳ بعد از استارت سرد و قطعات شیر برقی تنظیم فشار و EVLU افزوده شد؛ ادعای بی‌منبع «مبدل حرارتی کوچک» و typical_km بی‌منبع حذف شد.",
+   "صدای تایپت: ادعای خرابی «دنده دیشلی میل سوپاپ» حذف شد (K4M ایرانی منبعی برای آن ندارد) و قطعه آن از parts_fa برداشته شد.",
+   "diagnostic_tips: نکته تست تسمه دینام (مربوط به ایراد حذف‌شده، عمومی) و نکته کمک‌فنر با بازه بی‌منبع ۶۰ تا ۸۰ هزار حذف شد؛ نکته DF049 و استارت سرد تکمیل شد.",
+   "maintenance: تعویض پیشگیرانه بی‌منبع گردگیر هر ۳۰ هزار و تعویض روغن هیدرولیک هر ۴۰ تا ۵۰ هزار (مربوط به ایراد حذف‌شده) حذف شد."
+  ],
+  "removed_claims": [
+   "ضعف باتری و سر باتری — مصرفی عمومی؛ آمار کارنامه آن را کنار فندک، صندلی و آنتن آورده و ایراد خاص این مدل نیست.",
+   "روغن‌ریزی واشر درب سوپاپ و کاسه‌نمدهای K4M — فرسودگی عمومی موتور، در منابع بررسی‌شده به‌عنوان نقطه ضعف خاص تندر ۹۰ تأیید نشد.",
+   "صدای هرزگرد تسمه دینام و خرابی پمپ هیدرولیک فرمان — فرسودگی عمومی با یک منبع تعمیرگاهی و confidence پایین.",
+   "منبع ۱ (کارنامه) — فهرست آن فقط باتری، صندلی، فندک، آنتن و مانند آن است و هیچ ایراد باقی‌مانده‌ای به آن ارجاع نمی‌دهد؛ منبع ۱۶ (پمپ هیدرولیک) با حذف ایراد مربوط برداشته شد."
+  ],
+  "sources": [
+   {
+    "id": 2,
+    "title": "پدال — بررسی موتور K4M رنو؛ قلب تندر ۹۰ و ساندرو",
+    "url": "https://www.pedal.ir/renault/743572-renault-k4m-engine/"
+   },
+   {
+    "id": 3,
+    "title": "رنو وان — تعمیر موتور ال ۹۰ (عیب‌یابی موتور K4M)",
+    "url": "https://renoone.ir/repair-of-l90-car-engine"
+   },
+   {
+    "id": 4,
+    "title": "رنو وان — علل افزایش صدای موتور ال ۹۰ (با پرسش و پاسخ مالکان)",
+    "url": "https://renoone.ir/the-reasons-for-the-increased-sound-of-the-l90-engine"
+   },
+   {
+    "id": 5,
+    "title": "رنوساز — رایج‌ترین علائم خرابی جلوبندی ال ۹۰",
+    "url": "https://renosaz.com/%D8%B9%D9%84%D8%A7%D8%A6%D9%85_%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C_%D8%AC%D9%84%D9%88%D8%A8%D9%86%D8%AF%DB%8C_%D8%A7%D9%84_90/"
+   },
+   {
+    "id": 6,
+    "title": "یدک یار — علائم خرابی دسته موتور ال نود",
+    "url": "https://yadakyar.com/blog/%D8%B9%D9%84%D8%A7%D8%A6%D9%85-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%A7%D9%84-90/"
+   },
+   {
+    "id": 7,
+    "title": "AMEG — مدار فن خنک‌کننده L90 (رله دور کند/تند و مقاومت فن)",
+    "url": "https://www.ameg.ir/%D9%81%D9%86-%D8%AE%D9%86%DA%A9-%DA%A9%D9%86%D9%86%D8%AF%D9%87-l90/"
+   },
+   {
+    "id": 8,
+    "title": "بهفر یدک — علت سوختن مکرر رله فن (ال ۹۰)",
+    "url": "https://behfaryadak.ir/blog/25_%D8%B9%D9%84%D8%AA-%D8%B3%D9%88%D8%AE%D8%AA%D9%86-%D9%85%DA%A9%D8%B1%D8%B1-%D8%B1%D9%84%D9%87-%D9%81%D9%86-%DA%86%DB%8C%D8%B3%D8%AA.html"
+   },
+   {
+    "id": 9,
+    "title": "چرخان — دلایل نخریدن تندر ۹۰ (نظرات مالکان)",
+    "url": "https://charkhan.com/1052/some-reason-to-dont-buy-tondar-90/"
+   },
+   {
+    "id": 10,
+    "title": "گیربکس یار — علت تقه زدن گیربکس اتوماتیک ساندرو و ال ۹۰",
+    "url": "https://gearbox-repair.ir/%D8%B9%D9%84%D8%AA-%D8%AA%D9%82%D9%87-%D8%B2%D8%AF%D9%86-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88/"
+   },
+   {
+    "id": 11,
+    "title": "تعمیرکار پرو — تعمیر گیربکس اتوماتیک ساندرو DP2 (کدهای خطا و علل)",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88-%D9%87%D8%B1-%D8%A2%D9%86%DA%86%D9%87-%DA%A9%D9%87-%D8%A8%D8%A7/"
+   },
+   {
+    "id": 12,
+    "title": "گیربکس کارن — مشکلات گیربکس ساندرو اتوماتیک (AL4)",
+    "url": "https://gearbox-karen.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/"
+   },
+   {
+    "id": 13,
+    "title": "AutoHints — Renault 1.6 16V K4M: issues, DP0 automatic, manual gearbox leaks",
+    "url": "https://www.autohints.com/renault-k4m-16l-112hp-inline-4-cylinder-engine-13085"
+   },
+   {
+    "id": 14,
+    "title": "EngineCode — Renault K4M 848 specs and common issues",
+    "url": "https://www.enginecode.uk/renault/k4m-848-specs"
+   },
+   {
+    "id": 15,
+    "title": "ویکی‌پدیای فارسی — تندر ۹۰ (تیپ‌ها، موتور K4M، گیربکس JH3 و JHQ)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%AA%D9%86%D8%AF%D8%B1_%DB%B9%DB%B0"
+   },
+   {
+    "id": 17,
+    "title": "خودرو۴۵ — رنو ساندرو مونتاژ؛ بررسی و مشخصات فنی (جایگزینی JH3 با JHQ)",
+    "url": "https://khodro45.com/mag/renault-sandro-ir/"
+   },
+   {
+    "id": 18,
+    "title": "ایران‌جیب — مشکل از بزرگ‌ترین نقطه ضعف تندر۹۰ آغاز می‌شود (پارگی گردگیر پلوس و خالی شدن روغن گیربکس)",
+    "url": "https://www.iranjib.ir/shownews/7640/%D9%85%D8%B4%DA%A9%D9%84-%D8%A7%D8%B2-%D8%A8%D8%B2%D8%B1%DA%AF%E2%80%8C%D8%AA%D8%B1%DB%8C%D9%86-%D9%86%D9%82%D8%B7%D9%87-%D8%B6%D8%B9%D9%81-%D8%AA%D9%86%D8%AF%D8%B190-%D8%A2%D8%BA%D8%A7%D8%B2-%D9%85%DB%8C%E2%80%8C%D8%B4%D9%88%D8%AF/"
+   },
+   {
+    "id": 19,
+    "title": "رنو پلاس — نکاتی درباره گردگیر پلوس ال۹۰ و علائم خرابی آن",
+    "url": "https://renaultplus.net/%D9%86%DA%A9%D8%A7%D8%AA%DB%8C-%D8%AF%D8%B1%D9%85%D9%88%D8%B1%D8%AF-%DA%AF%D8%B1%D8%AF%DA%AF%DB%8C%D8%B1-%D9%BE%D9%84%D9%88%D8%B3-%D8%A7%D9%8490/"
+   },
+   {
+    "id": 20,
+    "title": "Stephens Engineering — Renault DPO gearbox fault (stuck in 3rd after cold start, pressure control)",
+    "url": "https://www.stephensengineering.co.uk/renault-dpo-gearbox-fault/"
+   },
+   {
+    "id": 21,
+    "title": "Renault DP0 (AL4) fault finding manual MR341 — DF049 pressure regulation fault",
+    "url": "https://www.scribd.com/doc/78931265/Renault-DP0-AL4-Fault-Finding-MR341LAGUNA2"
    }
   ]
  },
@@ -514,6 +1177,93 @@
    }
   ]
  },
+ "hyundai-tucson-ix35-lm": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: khodro45 says the Iranian ix35 is the 2.4 (177 hp / 228 Nm) with 6-speed automatic and AWD; the 2.0 G4KD is not confirmed for Iran and is now marked as possible in some imports only.",
+   "P1326 rod-bearing fault kept (several P1326 / rod-bearing TSBs for 2012 Tucson) but the claim that 2010-2013 Tucson 2.4 MPI got a 15-year warranty extension was removed; NHTSA lists no rod-bearing recall for 2012 Tucson.",
+   "Oil pan leak (19V063): remedy corrected to oil pan replacement plus updated oil pressure switch; symptom rewritten without unsupported burning / stall / fire wording.",
+   "ABS HECU recall 23V651: coverage corrected from 2010-2013 to 2010-2015 Tucson; cause worded per NHTSA (internal brake-fluid leak causing short).",
+   "Harsh/delayed shift: bulletin identified as 5NP-P5L7D-05 (shift engagement time); removed unverified 'solenoid duty adjusted for clutch wear' claim.",
+   "Shift-lock fault confidence medium -> high (TSB 5NP-F6W6P-05 confirmed); 20-AT-001H, 24-AT-002H, 15-TC-001 and 20-ST-001H confirmed and wording aligned to their titles.",
+   "Piston-ring oil consumption: confidence medium -> low (single engine-rebuilder source; no oil-consumption TSB listed for 2012 Tucson); removed 'most important fault of this engine' wording.",
+   "Added gap: driver airbag mounting bolts recall 14V245 (2011-2014 Tucson).",
+   "Faults reordered (engine rod bearing, 4WD and recalls moved up); added NHTSA recalls API as source 13 and recall-check maintenance note."
+  ],
+  "removed_claims": [
+   "'Hyundai extended the 15-year engine warranty to the 2010-2013 Tucson 2.4 MPI' — not confirmed; no rod-bearing recall exists for the 2012 Tucson in NHTSA data.",
+   "'Oil pan leak leads to stalling at speed or engine fire' — not stated in the NHTSA 19V063 summary (only engine damage from oil loss).",
+   "'Oil pan recall applies only to Korea-built Tucsons' — irrelevant / unsupported qualifier."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 2,
+    "title": "کیا اسپورتیج SL یا هیوندای توسان LM، دوقولوهای ناهمسان — خودرو۴۵",
+    "url": "https://khodro45.com/mag/sportagesl-vs-tucsonlm/"
+   },
+   {
+    "id": 3,
+    "title": "2012 Hyundai Tucson Recalls — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Tucson/2012/recalls/"
+   },
+   {
+    "id": 4,
+    "title": "2012 Hyundai Tucson Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Tucson/2012/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA Part 573 Safety Recall Report 19V-063 (2011-2013 Tucson engine oil leak)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V063-6690.PDF"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA Part 573 Safety Recall Report 23V-651 (Hyundai HECU short circuit)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V651-6950.PDF"
+   },
+   {
+    "id": 7,
+    "title": "20-ST-001H Hyundai column-mounted MDPS component replacement — TSBSearch",
+    "url": "https://www.tsbsearch.com/Hyundai/20-ST-001H"
+   },
+   {
+    "id": 8,
+    "title": "2010-2015 Hyundai Tucson 4WD Issue — Cars.com",
+    "url": "https://www.cars.com/articles/2010-2015-hyundai-tucson-4wd-issue-1420683067026/"
+   },
+   {
+    "id": 9,
+    "title": "Hyundai & Kia AWD Whining & Binding: 2010-2022 Rear Differential & Coupling — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-hyundai-tucson-kia-sportage-hyundai-ix35-2010-2022"
+   },
+   {
+    "id": 10,
+    "title": "تعمیر گیربکس هیوندای توسان ix35 — گیربکس کار ایرانیان",
+    "url": "https://www.gearboxcar.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%AA%D9%88%D8%B3%D8%A7%D9%86-ix35/"
+   },
+   {
+    "id": 11,
+    "title": "Hyundai & Kia 2.4 G4KE Engine Problems — Hyun Engines",
+    "url": "https://hyunengines.com.au/g4ke-engine-problems/"
+   },
+   {
+    "id": 12,
+    "title": "Theta II 2.4 MPI (G4KE) Reliability Report — EngineScope",
+    "url": "https://enginescope.gr/engine/hk-theta2-mpi/"
+   },
+   {
+    "id": 13,
+    "title": "NHTSA recalls API — 2012 Hyundai Tucson (19V063, 14V245, 23V651)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2012"
+   }
+  ]
+ },
  "toyota-camry-xv50-incl-hybrid": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -584,6 +1334,92 @@
     "id": 10,
     "title": "ایر تویولکس — پیام Check Hybrid System و کد خطای P0A80 باتری هیبرید",
     "url": "http://irtoyolex.com/%D9%BE%DB%8C%D8%A7%D9%85-%D9%87%D8%B4%D8%AF%D8%A7%D8%B1-check-hybrid-system-%D9%88-%DA%A9%D8%AF-%D8%AE%D8%B7%D8%A7%DB%8C-p0a80/"
+   }
+  ]
+ },
+ "renault-sandero": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Roster facts confirmed: K4M 1.6 16V 105 hp/140 Nm only engine; manual 5-speed JH3 replaced by JHQ from 1396 (khodro45); automatic is 4-speed AL4/DP2 (gearbox-karen, tamircar); Stepway AT 1395-1398 (bama); first-gen production ended 1398 (khodro45). Dropped the unsupported 'one source says 1399' note for the manual.",
+   "AL4 fault: symptom now uses the AT warning light (not the 206-style 'فنری' light); cause reworded with DF049 = oil-pressure regulation error and small heat exchanger instead of a dedicated cooler, both confirmed by tamircar.",
+   "Maintenance: AL4 fluid interval changed from 30-50k to 40-50k km (gearbox-karen); removed the unverified internal-filter claim; added cooling-system check tied to the AL4 heat-exchanger weakness.",
+   "Removed unused source 13."
+  ],
+  "removed_claims": [
+   "Engine oil leak from valve cover gasket / crank and cam seals — generic age-related wear, not specific to K4M/Sandero.",
+   "Front lower control arm bushing and ball joint wear (low confidence, single L90 shop blog) — generic suspension wear, not model-specific."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — رنو ساندرو مونتاژ؛ بررسی و مشخصات فنی (JH3 و JHQ، پایان تولید ۹۸)",
+    "url": "https://khodro45.com/mag/renault-sandro-ir/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — تفاوت ساندرو و ساندرو استپ‌وی",
+    "url": "https://www.hamrah-mechanic.com/mag/compare-sandero-and-sandero-step-way/"
+   },
+   {
+    "id": 3,
+    "title": "همراه مکانیک — رنو ساندرو بخریم یا نه؟ مزایا و معایب",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-renault-sandero/"
+   },
+   {
+    "id": 4,
+    "title": "باما — مشخصات فنی رنو ساندرو استپ‌وی اتوماتیک ۱۳۹۵ تا ۱۳۹۸",
+    "url": "https://bama.ir/car-reviews/renault/sanderostepway-specs-1102-349-at"
+   },
+   {
+    "id": 5,
+    "title": "تعمیرکار پرو — تعمیر گیربکس اتوماتیک ساندرو DP2 (کدهای خطا و علل)",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88-%D9%87%D8%B1-%D8%A2%D9%86%DA%86%D9%87-%DA%A9%D9%87-%D8%A8%D8%A7/"
+   },
+   {
+    "id": 6,
+    "title": "گیربکس یار — علت تقه زدن گیربکس ساندرو",
+    "url": "https://gearbox-repair.ir/%D8%B9%D9%84%D8%AA-%D8%AA%D9%82%D9%87-%D8%B2%D8%AF%D9%86-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88/"
+   },
+   {
+    "id": 7,
+    "title": "گیربکس کارن — مشکلات گیربکس ساندرو اتوماتیک (AL4)",
+    "url": "https://gearbox-karen.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/"
+   },
+   {
+    "id": 8,
+    "title": "AutoHints — Renault 1.6 16V K4M: issues, DP0 automatic, manual gearbox leaks",
+    "url": "https://www.autohints.com/renault-k4m-16l-112hp-inline-4-cylinder-engine-13085"
+   },
+   {
+    "id": 9,
+    "title": "پدال — بررسی موتور K4M رنو؛ قلب تندر ۹۰ و ساندرو",
+    "url": "https://www.pedal.ir/renault/743572-renault-k4m-engine/"
+   },
+   {
+    "id": 10,
+    "title": "رنو وان — تعمیر موتور ال ۹۰ (موتور K4M مشترک با ساندرو)",
+    "url": "https://renoone.ir/repair-of-l90-car-engine"
+   },
+   {
+    "id": 11,
+    "title": "EngineCode — Renault K4M 848 specs and common issues",
+    "url": "https://www.enginecode.uk/renault/k4m-848-specs"
+   },
+   {
+    "id": 12,
+    "title": "یدک یار — علائم خرابی دسته موتور ال نود",
+    "url": "https://yadakyar.com/blog/%D8%B9%D9%84%D8%A7%D8%A6%D9%85-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%A7%D9%84-90/"
+   },
+   {
+    "id": 14,
+    "title": "چرخان — دلایل نخریدن تندر ۹۰ (نظرات مالکان درباره گردگیر پلوس و روغن گیربکس)",
+    "url": "https://charkhan.com/1052/some-reason-to-dont-buy-tondar-90/"
+   },
+   {
+    "id": 15,
+    "title": "ویکی‌پدیای فارسی — تندر ۹۰ (جایگزینی JH3 با JHQ در ۱۳۹۶)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%AA%D9%86%D8%AF%D8%B1_%DB%B9%DB%B0"
    }
   ]
  }
