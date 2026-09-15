@@ -2334,6 +2334,46 @@
    }
   ]
  },
+ "jac-j3": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama and karnameh confirm the Mitsubishi-licensed 1.3 L (1299 cc) 4-cylinder, 93 hp, 114 Nm, 5-speed manual. No Iranian source names the engine code, so 4G13 is marked as coming from Wikipedia.",
+   "Sedan years set to 1391–1393: khodro45 says hatchback and sedan were both sold in that period.",
+   "Insulation fault: confidence lowered from high to medium. wikishop names both engine noise and heat; bama names only noise.",
+   "Parking sensor / lighter fault: wording adjusted to karnameh, which lists them after the battery without counts; confidence stays medium.",
+   "Brake fault: khodro45 names the brake system among J3's shortcomings without details, and bama confirms rear drums. Cause now says so; confidence stays low.",
+   "Diagnostic tip added that CVT faults from the J4 and J5 profiles do not apply to the manual-only J3."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کارنامه — رایج‌ترین معایب مدل‌های خودروی جک (بازدید کارشناسی ۱۱ دستگاه جک J3 هاچبک)",
+    "url": "https://karnameh.com/blog/disadvantages-jac/"
+   },
+   {
+    "id": 2,
+    "title": "باما — مشخصات فنی و نقاط ضعف جک J3 هاچبک ۱۳۹۱ تا ۱۳۹۳ (۱٫۳ میتسوبیشی، ۹۳ اسب، ۱۱۴ نیوتن‌متر، ترمز عقب کاسه‌ای)",
+    "url": "https://bama.ir/car-reviews/jac/j3hatchback-specs-1233"
+   },
+   {
+    "id": 3,
+    "title": "ویکی‌شاپ — مزایا و معایب جک J3 هاچبک",
+    "url": "https://wikishop.co/mag/advantages-and-disadvantages-of-jack-j3-hatchback/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — جک J3 کرمان موتور در ایران",
+    "url": "https://khodro45.com/%D8%AC%DA%A9-j3-%DA%A9%D8%B1%D9%85%D8%A7%D9%86-%D9%85%D9%88%D8%AA%D9%88%D8%B1/"
+   },
+   {
+    "id": 5,
+    "title": "Wikipedia — JAC Tongyue (J3; 1.3 L Mitsubishi 4G13, 5-speed manual or CVT)",
+    "url": "https://en.wikipedia.org/wiki/JAC_Tongyue"
+   }
+  ]
+ },
  "jac-j4": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -3761,6 +3801,115 @@
    }
   ]
  },
+ "fownix-arrizo-8": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed by bama: Arrizo 8 (Z8) Excellent, 4J20 2.0T 254 hp / 390 Nm, wet 7-speed DCT, FWD, 0-100 in about 7.6 s; cariso agrees (2.0T, 254 hp, 390 Nm, 7DCT).",
+   "Knock fault kept at medium: cariso says the engine is fuel-sensitive, and the same 4J20 is verified in the Tiggo 8 Pro profile. Replaced 'coil' with 'octane booster' in parts.",
+   "Suspension fault cut back to what cariso supports (ride harsher than rivals; an owner says ground clearance is very low); now cites cariso only.",
+   "7DCT fault kept at low confidence because it belongs to this car's actual gearbox (same wet 7DCT and 4J20 as Tiggo 8 Pro Max). No reliable Arrizo 8 report was found; a Persian search only returned an unverified mention of gearshift lag.",
+   "Verdict weak: only fuel knock and the design-level ride/clearance issue are backed by Arrizo 8 sources; the gearbox fault rests on sibling evidence."
+  ],
+  "removed_claims": [
+   "Interior rattles fault: its only source (wikishop 'comments about Arrizo 8 Pro') covers a 1.6T 197 hp Arrizo 8 Pro, not the Iranian 2.0T Fownix Arrizo 8, and only vaguely mentions 'unusual cabin noises'.",
+   "Owner reports of a front-suspension clunk: also from the 1.6T Arrizo 8 Pro article; not found for the Iranian car in opened sources.",
+   "Tip that owners report high city fuel use: from the same 1.6T Arrizo 8 Pro article; bama lists 6.8 L/100 km combined for the Iranian car.",
+   "Source 3 (wikishop Arrizo 8 Pro) removed: different variant (1.6T) from the Iranian Fownix Arrizo 8."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "باما — مشخصات فنی فونیکس آریزو ۸ (Z8) اکسلنت ۱۴۰۲ تا ۱۴۰۵ (4J20، ۲۵۴ اسب، ۳۹۰ نیوتن‌متر، دوکلاچه تر ۷ سرعته)",
+    "url": "https://bama.ir/car-reviews/fownix/arrizo8-specs-1497-excellent"
+   },
+   {
+    "id": 2,
+    "title": "کاریزو — بررسی مزایا و معایب فونیکس آریزو ۸ (پیشرانه حساس به بنزین، سواری خشن‌تر، ارتفاع کم)",
+    "url": "https://cariso.ir/review-of-fownix-arrizo-8/"
+   },
+   {
+    "id": 4,
+    "title": "ویکی‌شاپ — نظرات در مورد تیگو ۸ پرو مکس (همان موتور 4J20 و دوکلاچه)",
+    "url": "https://wikishop.co/mag/comments-about-tigo-8-pro-max/"
+   },
+   {
+    "id": 5,
+    "title": "اکبر توکیو — مشکلات چری تیگو ۸ پرو و راهکارهای رفع آن",
+    "url": "https://akbartokyo.com/cherry-tigo-8-pro-problems/"
+   },
+   {
+    "id": 6,
+    "title": "مدیران تیم — تعمیر گیربکس تیگو ۸ پرو و پرو مکس",
+    "url": "https://modiranteam.com/tiggo-8-gearbox-repair/"
+   },
+   {
+    "id": 7,
+    "title": "باما — مشخصات فنی فونیکس تیگو ۸ پرو مکس (F8) IE (4J20 و دوکلاچه تر)",
+    "url": "https://bama.ir/car-reviews/fownix/tiggo8promax-specs-1430-ie"
+   }
+  ]
+ },
+ "fownix-fx": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: removed the draft's 'multi-point injection (MPI)' claim for the FX Excellent 1.5T. Digiato confirms 1.5T 156 hp / 230 Nm with a 9-step CVT but gives no injection type or code; these figures match the direct-injection 1.5T in the verified Tiggo 7 Pro, so the code is marked unconfirmed.",
+   "Knock fault: wikishop FX says the turbo GDI engine is highly sensitive to Iranian fuel, and the same engines are verified 'high' in the Tiggo 7 Pro and Tiggo 8 Pro profiles. Kept high; replaced 'coil' with 'octane booster' in parts.",
+   "Gearbox fault: wikishop (inconsistent in reverse, weak tiptronic) and hamrah-mechanic (2 owners with drivetrain lag) confirm it. Removed the unsupported 'about one second' delay figure.",
+   "Body/rattle fault: supported by hamrah-mechanic (dry plastics, 2 owners with rattles). Added engine noise entering the cabin at high rpm (wikishop).",
+   "Electrical shutdown / cluster lag: wikishop plus 1 owner on hamrah-mechanic; added hamrah citation, low confidence kept.",
+   "P/N no-start: becharkh has only one unanswered owner question; wording now says the cause is unconfirmed.",
+   "Diagnostic tip: made clear that CVT25 internal-wear faults from the Tiggo 7 Pro must not be assumed for the FX Excellent (same CVT not confirmed); Premium's shared 4J16/7DCT with Tiggo 7 Pro Max and Tiggo 8 Pro kept.",
+   "Maintenance: removed the unsupported claim that FX bumpers and lights are expensive; kept the note that parts can be hard to find (hamrah owners)."
+  ],
+  "removed_claims": [
+   "'MPI' injection type for the FX Excellent 1.5T engine: no source; the published power and torque match Chery's 1.5 TGDI.",
+   "'About one second' launch delay: not found in any opened source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — فونیکس FX بخریم یا نه؟ مزایا و معایب (به‌همراه نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/fownix-fx-advantages-and-disadvantages/"
+   },
+   {
+    "id": 2,
+    "title": "باما — مشخصات فنی فونیکس FX پریمیوم FWD ۱۴۰۱ تا ۱۴۰۴ (4J16، ۱۹۷ اسب، ۲۹۰ نیوتن‌متر، دوکلاچه ۷ سرعته)",
+    "url": "https://bama.ir/car-reviews/fownix/fx-specs-1424-premium"
+   },
+   {
+    "id": 3,
+    "title": "بچرخ — مشکلات و معایب فونیکس FX پریمیوم (انجمن مالکان)",
+    "url": "https://becharkh.com/forum/car?brand=fownix&model=fx"
+   },
+   {
+    "id": 4,
+    "title": "ویکی‌شاپ — مزایا و معایب فونیکس FX (بیش از ۱۵ مورد)",
+    "url": "https://wikishop.co/mag/advantages-and-disadvantages-of-phoenix-fx/"
+   },
+   {
+    "id": 5,
+    "title": "مدیران تیم — تعمیر گیربکس فونیکس FX (دوکلاچه ۷ سرعته پریمیوم، CVT نه‌دنده‌ای اکسلنت)",
+    "url": "https://modiranteam.com/fownix-fx-gearbox-repair/"
+   },
+   {
+    "id": 6,
+    "title": "دیجیاتو — فونیکس FX اکسلنت با موتور ۱٫۵ لیتری توربو وارد بازار شد (۱۵۶ اسب، ۲۳۰ نیوتن‌متر، CVT نه‌دنده‌ای)",
+    "url": "https://digiato.com/article/2022/12/24/car-phoenix-fx-officially-unveiled-in-iran"
+   },
+   {
+    "id": 7,
+    "title": "خودرو۴۵ — مشخصات فنی فونیکس تیگو ۷ پرو مکس (موتور ۱٫۶ توربو 4J16 و حساسیت به بنزین)",
+    "url": "https://khodro45.com/mag/fownix-tiggo-7-pro-max/"
+   },
+   {
+    "id": 8,
+    "title": "ویکی‌شاپ — نظرات در مورد تیگو ۸ پرو مکس (توربو و کیفیت بنزین)",
+    "url": "https://wikishop.co/mag/comments-about-tigo-8-pro-max/"
+   }
+  ]
+ },
  "farda-sx5": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -4193,6 +4342,51 @@
    }
   ]
  },
+ "hyundai-elantra-hd": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "ABS fault: the 20V061 remedy is a relay fitted in the main junction box (not HECU replacement by default); cause and parts updated; recall does not require parking outside.",
+   "EPS fault: 15V100 remedy confirmed as ECU check plus software update; source ids now point at the NHTSA 2008 and 2010 pages that list it.",
+   "MDPS coupling: the extended warranty 5NP-F8M5G-03 is confirmed to cover 2007–2015 Elantra.",
+   "Fuel pump fault: 08V429 is confirmed limited to 2008 Elantra with the 2.0 Beta engine; 08V694 is the Puerto Rico/Caribbean duplicate.",
+   "Stop-lamp switch: confirmed 09V122 (2007 Elantra) and 13V113 (2007–10 Elantra).",
+   "Wording adjusted to Iranian usage (فرمان سفت می‌شود، داخل کاپوت، فشنگی چراغ ترمز)."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls API — 2007 Hyundai Elantra (20V061, 09V122, 13V113, 11V143, 11V179)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=ELANTRA&modelYear=2007"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2008 Hyundai Elantra (20V061, 15V100, 08V429, 08V694, 13V113)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=ELANTRA&modelYear=2008"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2010 Hyundai Elantra (20V061, 15V100, 13V113)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=ELANTRA&modelYear=2010"
+   },
+   {
+    "id": 4,
+    "title": "2009 Hyundai Elantra Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Elantra/2009/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "2007-2010 Hyundai Elantra Engine Problems & Reliability — The Weekly Driver",
+    "url": "https://theweeklydriver.com/reliability/hyundai/elantra/2007-2010/"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Tucson JM — All Engines, Problems & Buying Guide — What Breaks (G4GC timing belt, shared engine)",
+    "url": "https://what-breaks.com/hyundai/tucson-jm/"
+   }
+  ]
+ },
  "hyundai-elantra-md": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4306,6 +4500,57 @@
     "id": 6,
     "title": "معایب هیوندای النترا — مجله خودرو سوییچ",
     "url": "https://www.switch.ir/mag/bugs-of-elantra/"
+   }
+  ]
+ },
+ "hyundai-tucson-jm-1st-gen": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Reordered faults: stop-lamp switch recall first (two NHTSA recalls confirmed: 09V122 covers 2005–07, 13V113 covers 2006–11 Tucson).",
+   "Timing-belt fault: tensioner-bracket wear applies to both G4GC and G6BA per What-Breaks, not only the V6; wording made neutral.",
+   "Transmission fault: added the exact DTC ranges of TSB-09-AT-018 (P0740–P0770) and TSB-09-AT-013 (P0705/P0707/P0708), confirmed on CarComplaints.",
+   "ESP diagnostic tip: confirmed 05V119 and added the follow-up recall 05V177 (both 2005 Tucson, yaw-rate sensor / ESP reprogramming).",
+   "Symptom and part wording adjusted to Iranian usage (فشنگی چراغ ترمز، مولتی‌فانکشن گیربکس، ایسیو گیربکس، حالت امرجنسی)."
+  ],
+  "removed_claims": [
+   "Diagnostic tip claim that the fuse box differs between the 2.0 and 2.7 versions — no source supports it."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls API — 2005 Hyundai Tucson (09V122, 09V280, 05V119, 05V177, 05V315)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2005"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2007 Hyundai Tucson (13V113, 09V122)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2007"
+   },
+   {
+    "id": 3,
+    "title": "2007 Hyundai Tucson Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Tucson/2007/tsbs/"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Tucson JM — All Engines, Problems & Buying Guide (2004–2010) — What Breaks",
+    "url": "https://what-breaks.com/hyundai/tucson-jm/"
+   },
+   {
+    "id": 5,
+    "title": "Guide to the 2005-2009 Hyundai Tucson 2.7L V6 Engine Timing Belt Tensioner — Go-Parts",
+    "url": "https://www.go-parts.com/garage/ps-2005-2009-hyundai-tucson-engine-timing-belt-tensioner-hydraulic-assembly"
+   },
+   {
+    "id": 6,
+    "title": "2005-2009 Hyundai Tucson TCM: Programming, Problems, and Replacement Facts — Go-Parts",
+    "url": "https://www.go-parts.com/garage/transmission-control-module-hyundai-tucson-2005-2009"
+   },
+   {
+    "id": 7,
+    "title": "مقایسه کیا اسپورتیج ۲۷۰۰ سی‌سی با هیوندای توسان و سوزوکی گرند ویتارا — اتاق خبر دیوار",
+    "url": "https://divar.news/kia-sportage-2700cc-comparisons/"
    }
   ]
  },
@@ -4719,6 +4964,58 @@
     "id": 6,
     "title": "Hyundai Lambda engine — Wikipedia (G6DE 3.0 MPI 250 PS / 282 N·m; G6DG 3.0 GDI 266–270 PS)",
     "url": "https://en.wikipedia.org/wiki/Hyundai_Lambda_engine"
+   }
+  ]
+ },
+ "kia-sportage-km-2nd-gen": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Reordered faults: stop-lamp switch recall first (09V130 covers 2006–07, 13V114 covers 2007–11 Sportage; both confirmed on NHTSA).",
+   "ABS/HECU fault: added the build window of 16V815 (Aug 2007–May 2009, so 2008–09 models only) and the park-outside advice from the follow-up recall 22V800.",
+   "TPS fault: added the exact code from TSB-038 (P0123 throttle position sensor circuit high input).",
+   "Timing-belt fault: tensioner-bracket wear applies to both engines per What-Breaks; the V6-only bearing claim was made neutral.",
+   "05V212 tip: recall text is fuel leaking from an O-ring into the internal vapor chamber when the tank is full, causing stalling and fire risk; the unsupported 'tank hard to fill' symptom was replaced, and the 05V120 ESP yaw-sensor recall (2005) was added.",
+   "Wording adjusted to Iranian usage (فشنگی چراغ ترمز، داخل کاپوت، کوپلینگ فور ویل)."
+  ],
+  "removed_claims": [
+   "Diagnostic tip claim that the fuse box differs between the 2.0 and 2.7 versions — no source supports it."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls API — 2005 Kia Sportage (05V212, 05V120, 05V318)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2005"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2007 Kia Sportage (09V130, 13V114)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2007"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2009 Kia Sportage (16V815, 22V800, 13V114)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2009"
+   },
+   {
+    "id": 4,
+    "title": "2007 Kia Sportage Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Sportage/2007/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "Hyundai Tucson JM — All Engines, Problems & Buying Guide (2004–2010) — What Breaks (shared G4GC/G6BA engines)",
+    "url": "https://what-breaks.com/hyundai/tucson-jm/"
+   },
+   {
+    "id": 6,
+    "title": "Guide to the 2005-2009 Hyundai Tucson 2.7L V6 Engine Timing Belt Tensioner — Go-Parts (shared G6BA engine)",
+    "url": "https://www.go-parts.com/garage/ps-2005-2009-hyundai-tucson-engine-timing-belt-tensioner-hydraulic-assembly"
+   },
+   {
+    "id": 7,
+    "title": "مقایسه کیا اسپورتیج ۲۷۰۰ سی‌سی با هیوندای توسان و سوزوکی گرند ویتارا — اتاق خبر دیوار",
+    "url": "https://divar.news/kia-sportage-2700cc-comparisons/"
    }
   ]
  },
@@ -5220,6 +5517,47 @@
     "id": 9,
     "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
     "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   }
+  ]
+ },
+ "kia-cerato-ld-1st-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Tie-rod recall 05V183: the part is the steering tie rod (میل‌فرمان), not a stabilizer bar (میل تعادل); confidence lowered to medium because the recall covers US-market 2005 Spectra and its reach to Iranian imports is unknown.",
+   "Door-lock fault: KT-2008110606 attributes self-locking to door latch wear, not lock-switch contacts; cause and parts corrected.",
+   "Parking-lamp battery drain: the bulletin title gives no cause, so confidence lowered to medium and the cause wording made honest.",
+   "Engine G4GC: added 143 hp / 190 Nm, and the note that the 2.0 appeared mainly from the 2006 facelift, per pedal.ir.",
+   "Maintenance note no longer tells Iranian owners to check a US recall campaign; it now says to inspect the tie rods."
+  ],
+  "removed_claims": [
+   "Front-passenger occupant classification sensor (OCS) mat fault (WTY001 / TSB-BOD-130): a US-market advanced-airbag part (FMVSS 208) covered by a US warranty extension for 2007–09 Spectra; no evidence it was fitted to Cerato LD cars imported to Iran."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کیا سراتو — ویکی‌پدیا، دانشنامهٔ آزاد",
+    "url": "https://fa.wikipedia.org/wiki/%DA%A9%DB%8C%D8%A7_%D8%B3%D8%B1%D8%A7%D8%AA%D9%88"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2005 Kia Spectra (05V183, 11V256)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPECTRA&modelYear=2005"
+   },
+   {
+    "id": 3,
+    "title": "2007 Kia Spectra Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Spectra/2007/tsbs/"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Tucson JM — All Engines, Problems & Buying Guide — What Breaks (G4GC timing belt, shared engine)",
+    "url": "https://what-breaks.com/hyundai/tucson-jm/"
+   },
+   {
+    "id": 5,
+    "title": "راهنمای خرید کیا سراتو؛ کدام مدل بهتر است؟ — مجله پدال",
+    "url": "https://www.pedal.ir/kia/kia-cerato-generations-in-iran/"
    }
   ]
  },
