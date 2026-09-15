@@ -7279,6 +7279,149 @@
    }
   ]
  },
+ "mercedes-benz-c-class-w203": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "C280 transmission: V6 M272 cars could have the 7G-Tronic 722.9 from model year 2006 (Wikipedia); transmissions list updated",
+   "Added the M111 engine (C180 and C200 Kompressor 2000–2002) and the C320/C350 displacements to the engine descriptions",
+   "Intake manifold fault: the cause is a snapped plastic flap-actuator lever (P2004–P2006) with a repair kit available, not a whole-manifold-only fix limited to 'up to 2007'; confidence raised to high with two independent sources",
+   "Rust fault: confidence cut to low and cause softened, because the cited thread could not be checked (paywalled)",
+   "Added a diagnostic tip separating M112 (C240) from M272 (C280) faults"
+  ],
+  "removed_claims": [
+   "Cam magnet leak: removed the specific code P0020 and the '80,000 km or 4–5 years' interval — unsupported, and P0020 is not a standard code for this inline-4",
+   "Rust: removed the claim that bodies were not fully galvanised until Q2 2003 — could not be verified",
+   "SAM: removed the claim that pre-2004-facelift cars are more affected — unsupported"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "معرفی مشخصات و نقاط ضعف و قوت موتور M271 1.8L مرسدس بنز – لوکس یدک",
+    "url": "https://luxyadak.com/blog/161_%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%88-%D9%86%D9%82%D8%A7%D8%B7-%D8%B6%D8%B9%D9%81-%D9%88-%D9%82%D9%88%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-m271-18-l-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2.html"
+   },
+   {
+    "id": 2,
+    "title": "Leaking magnetic cam adjusters sensors – MBClub UK",
+    "url": "https://forums.mbclub.co.uk/threads/leaking-magnetic-cam-adjusters-sensors.303471/"
+   },
+   {
+    "id": 3,
+    "title": "Common problems with W203's – BenzWorld forum",
+    "url": "https://www.benzworld.org/threads/common-problems-with-w203s.1571244/"
+   },
+   {
+    "id": 4,
+    "title": "Preventive maintenance M271 engine, timing chain & camshaft adjuster sprockets – SLK World",
+    "url": "https://www.slkworld.com/threads/preventive-maintanence-m271-engine-timing-chain-camshaft-adjuster-sprockets.335506/"
+   },
+   {
+    "id": 5,
+    "title": "Mercedes W203 C-Class SAM Module Faults – GiantParts",
+    "url": "https://giantparts.eu/mercedes-w203-c-class-sam-module-faults-common-failures-and-repair-guide/"
+   },
+   {
+    "id": 6,
+    "title": "Mercedes-Benz balance shaft engine issues, how to check by VIN (M272/M273) – MB Medic",
+    "url": "https://www.mercedesmedic.com/check-my-mercedes-benz-for-balance-shaft-issue-by-vin-m272273/"
+   },
+   {
+    "id": 7,
+    "title": "معرفی، مشخصات، نقاط ضعف و قوت موتور M272 3.5L – لوکس یدک",
+    "url": "https://luxyadak.com/blog/144_%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%86%D9%82%D8%A7%D8%B7-%D8%B6%D8%B9%D9%81-%D9%88-%D9%82%D9%88%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-m272-35-l-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2.html"
+   },
+   {
+    "id": 8,
+    "title": "Mercedes P2004 Problem, DIY FIX – MB Medic",
+    "url": "https://www.mercedesmedic.com/mercedes-p2004-code-throttle-lever-flap/"
+   },
+   {
+    "id": 9,
+    "title": "Common Intake Manifold Issues on Mercedes-Benz M272 and M273 Engines – 603 Motorsport Tech",
+    "url": "https://www.603mtech.com/post/common-intake-manifold-issues-on-mercedes-benz-m272-and-m273-engines"
+   },
+   {
+    "id": 10,
+    "title": "Mercedes-Benz C-Class (W203) – Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W203)"
+   }
+  ]
+ },
+ "mercedes-benz-c-class-w204": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Rear subframe corrosion: confidence raised to high and severity to high — MBUSA extended the rear-subframe corrosion warranty to 20 years for the 2008–2015 C-Class (NHTSA bulletin)",
+   "M272 balance shaft: confirmed W204 chassis 204.054/056/081/987 are listed; limited to early (2007–2008) M272 engines, with M276 facelift cars excluded",
+   "722.9 conductor plate: noted it does not apply to pre-facelift 4-cylinders with the 722.6",
+   "CGI transmission: 722.6 before the facelift, 7G-Tronic Plus after the 2011 facelift",
+   "ELV: cause restated as failure of the internal motor, with a BenzWorld source added",
+   "M271 chain: added typical mileage (above ~80k miles ≈ 130k km, per specialist source)",
+   "Added a supported M272 fault the draft missed: intake-manifold flap lever breakage (P2004–P2006)"
+  ],
+  "removed_claims": [
+   "ELV: removed 'pre-2010 cars fail more often' and the specific 'motor brushes' cause — unsupported",
+   "Rear subframe: replaced the vague 'Mercedes issued a TSB' claim with the documented US warranty extension",
+   "722.9 maintenance: removed the specific '60–80k km instead of 125k km' interval — unsourced"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Mercedes C-Class W204 Common Faults & Problems (2007-2014) – Mercedes Specialist London",
+    "url": "https://mercedes-specialist.uk/blog/mercedes-c-class-w204-common-faults"
+   },
+   {
+    "id": 2,
+    "title": "Mercedes C-Class W204 Common Problems: A Specialist's Guide – Foreign Automotive",
+    "url": "https://foreignautomotive.ca/blogs/news/mercedes-c-class-w204-common-problems"
+   },
+   {
+    "id": 3,
+    "title": "معرفی مشخصات و نقاط ضعف و قوت موتور M271 1.8L مرسدس بنز – لوکس یدک",
+    "url": "https://luxyadak.com/blog/161_%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%88-%D9%86%D9%82%D8%A7%D8%B7-%D8%B6%D8%B9%D9%81-%D9%88-%D9%82%D9%88%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-m271-18-l-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2.html"
+   },
+   {
+    "id": 4,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 5,
+    "title": "Mercedes-Benz balance shaft engine issues, how to check by VIN (M272/M273) – MB Medic",
+    "url": "https://www.mercedesmedic.com/check-my-mercedes-benz-for-balance-shaft-issue-by-vin-m272273/"
+   },
+   {
+    "id": 6,
+    "title": "Common ESL (Electric Steering Lock) Failure in W204, W207, W212 and Others – BenzWorld",
+    "url": "https://www.benzworld.org/threads/common-esl-electric-steering-lock-failure-in-w204-w207-w212-and-others.3046041/"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes Subframe Extended Warranty Information – CarComplaints.com",
+    "url": "https://www.carcomplaints.com/news/2023/mercedes-subframe-extended-warranty-information.shtml"
+   },
+   {
+    "id": 8,
+    "title": "MBUSA rear subframe warranty extension bulletin MC-10233780-0001 – NHTSA",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10233780-0001.pdf"
+   },
+   {
+    "id": 9,
+    "title": "C class rear subframe corrosion W204 – 2024 update – MBClub UK",
+    "url": "https://forums.mbclub.co.uk/threads/c-class-rear-subframe-corrosion-w204-2024-update.300207/"
+   },
+   {
+    "id": 10,
+    "title": "Mercedes P2004 Problem, DIY FIX – MB Medic",
+    "url": "https://www.mercedesmedic.com/mercedes-p2004-code-throttle-lever-flap/"
+   },
+   {
+    "id": 11,
+    "title": "Common Intake Manifold Issues on Mercedes-Benz M272 and M273 Engines – 603 Motorsport Tech",
+    "url": "https://www.603mtech.com/post/common-intake-manifold-issues-on-mercedes-benz-m272-and-m273-engines"
+   }
+  ]
+ },
  "mercedes-benz-e-class-w210": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -7318,6 +7461,500 @@
     "id": 5,
     "title": "It's official. Harmonic Balancer Service Campaign released 4/5/05 – BenzWorld (campaign 2005020003: 163/202/208/210 with M112, MY1998–2001)",
     "url": "https://www.benzworld.org/threads/its-official-harmonic-balancer-service-campaign-released-4-5-05.1206075/"
+   }
+  ]
+ },
+ "mercedes-benz-e-class-w212": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Added supported gap: ELV/ESL electronic steering lock failure (shared W204/W207/W212 fault)",
+   "Added supported gap: rear subframe corrosion — MBUSA 20-year warranty extension explicitly lists 2010–2016 W/S212",
+   "Added supported gap: fuel filter flange cracking recall 12V557000 (2011 E350, US)",
+   "M274 camshaft fault: fixed the mix-up — Y49/1 and Y49/2 are camshaft solenoids, not adjusters; removed the garbled 'pre-2014 adjusters have revised part' wording",
+   "M271 EVO chain: replaced 'Mercedes replaced chain in a campaign' with 'replaced under warranty' (no campaign number found)",
+   "Engine mounts: confirmed by MB Medic W212 overview; dropped the unsupported 'two engine mounts plus gearbox mount' detail from the cause",
+   "722.9 fault: noted it does not apply to 722.6 5-speed variants",
+   "M272 note: W212 M272 engines are after the balance-shaft cutoff (so that W203/W164 fault is correctly absent)",
+   "Takata note verified via NHTSA (19V010000) and scoped to US-market cars; cited source 7 which existed but was not referenced"
+  ],
+  "removed_claims": [
+   "M271 EVO chain: removed typical_km '100–150 thousand km' — no source supports it",
+   "M274 thermostat kept only at low confidence: cited source returned 403 and 'most common fault of this engine' wording removed"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "معرفی مشخصات و نقاط ضعف و قوت موتور M271 1.8L مرسدس بنز – لوکس یدک",
+    "url": "https://luxyadak.com/blog/161_%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%88-%D9%86%D9%82%D8%A7%D8%B7-%D8%B6%D8%B9%D9%81-%D9%88-%D9%82%D9%88%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-m271-18-l-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2.html"
+   },
+   {
+    "id": 2,
+    "title": "Troubleshooting M271.860 (E200/E250 W212 & C200/C250 W204) – MBWorld forum",
+    "url": "https://mbworld.org/forums/e-class-w212/831449-troubleshooting-m271-860-e200-e250-w212-c200-c250-w204.html"
+   },
+   {
+    "id": 3,
+    "title": "Mercedes M274 Engine Problems: Causes, Failures and Solutions Guide",
+    "url": "https://autopartsmarketplace.lt/mercedes-benz-blog/post/mercedes-m274-engine-problems"
+   },
+   {
+    "id": 4,
+    "title": "M274 Engine Problems & Workshop Fault Guide – Mercedes Assistance",
+    "url": "https://en.mercedesassistance.com/m274-engine-mercedes/"
+   },
+   {
+    "id": 5,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 6,
+    "title": "Overview W212 E-Class Reliability, Common Problems – MB Medic",
+    "url": "https://www.mercedesmedic.com/overview-w212-e-class-reliability-common-problems/"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA recalls – 2011 Mercedes-Benz E350",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=E350&modelYear=2011"
+   },
+   {
+    "id": 8,
+    "title": "Common ESL (Electric Steering Lock) Failure in W204, W207, W212 and Others – BenzWorld",
+    "url": "https://www.benzworld.org/threads/common-esl-electric-steering-lock-failure-in-w204-w207-w212-and-others.3046041/"
+   },
+   {
+    "id": 9,
+    "title": "Mercedes Steering Lock (ESL/ELV) Failure: Symptoms & Fix Guide – Motronix",
+    "url": "https://motronix.net/blog/mercedes-steering-lock-esl-elv-failure/"
+   },
+   {
+    "id": 10,
+    "title": "Mercedes Subframe Extended Warranty Information – CarComplaints.com",
+    "url": "https://www.carcomplaints.com/news/2023/mercedes-subframe-extended-warranty-information.shtml"
+   },
+   {
+    "id": 11,
+    "title": "MBUSA rear subframe warranty extension bulletin MC-10233780-0001 – NHTSA",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10233780-0001.pdf"
+   }
+  ]
+ },
+ "mercedes-benz-m-class-w164": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: ML500 of MY2006–2007 used the M113 5.0 V8, not M273; M273 5.5 V8 only from MY2008 — added separate M113 variant and engine",
+   "Balance shaft / idler gear: scoped M273 idler-gear fault to 2008+ ML500 5.5 and excluded M113 cars; replaced unverified 'built until late 2007' with the serial-number cutoffs and listed W164 chassis numbers from MB Medic",
+   "Brake booster recall 22V-315: verified (292,287 ML/GL/R MY2006–2012) and added NHTSA Part 573 report as a source",
+   "Transfer case: symptom aligned with sources (thump from mid-vehicle on acceleration); added dealer-whole-unit vs chain-only repair note and BenzWorld source",
+   "Intake manifold: cause corrected to broken plastic flap-actuator lever (P2004–P2006) on M272 and M273, repair kit available, not whole-manifold-only 'up to 2007'; confidence raised to high",
+   "Airmatic: noted it only applies to cars with optional air suspension; removed unsourced typical_km"
+  ],
+  "removed_claims": [
+   "Camshaft magnet failure 'from old oil' on ML350 — only a weak listicle source (Engine Patrol), removed from the combined fault",
+   "Airmatic typical_km '100–110 thousand km' for air springs — unsupported",
+   "Engine description 'M272 engines built until late 2007' — cutoff is by engine serial, not a verified date"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 2,
+    "title": "6 Most Common Problems With Mercedes ML350 – Engine Patrol",
+    "url": "https://enginepatrol.com/mercedes-ml350-problems/"
+   },
+   {
+    "id": 3,
+    "title": "Mercedes-Benz balance shaft engine issues, how to check by VIN (M272/M273) – MB Medic",
+    "url": "https://www.mercedesmedic.com/check-my-mercedes-benz-for-balance-shaft-issue-by-vin-m272273/"
+   },
+   {
+    "id": 4,
+    "title": "Mercedes-Benz USA Announces Voluntary Stop Drive Recall Campaign for Certain Model Year 2006-2012 ML, GL and R-Class Vehicles – MBUSA",
+    "url": "https://media.mbusa.com/releases/mercedes-benz-usa-announces-voluntary-stop-drive-recall-campaign-for-certain-model-year-2006-2012-ml-gl-and-r-class-vehicles"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recall 22V-315 owner notification",
+    "url": "https://static.nhtsa.gov/odi/rcl/2022/RCMN-22V315-4738.pdf"
+   },
+   {
+    "id": 6,
+    "title": "Mercedes-Benz W164: ML Series Problems And Cures – Import Car",
+    "url": "https://www.import-car.com/mercedes-benz-w164-ml-series-common-problems-and-cures/"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes Benz Air Suspension Troubleshooting Guide (Airmatic) – MB Medic",
+    "url": "https://www.mercedesmedic.com/air-suspension-troubleshooting-airmatic-visit-workshop/"
+   },
+   {
+    "id": 8,
+    "title": "Mercedes ML, GL, GLE, GLS & R-Class Transfer Case Failure – Go-Parts",
+    "url": "https://www.go-parts.com/garage/transfer-case-assembly-mercedes-benz-gle-class-mercedes-benz-gl-class-mercedes-benz-gls-class-2006-2025"
+   },
+   {
+    "id": 9,
+    "title": "معرفی، مشخصات، نقاط ضعف و قوت موتور M272 3.5L – لوکس یدک",
+    "url": "https://luxyadak.com/blog/144_%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%86%D9%82%D8%A7%D8%B7-%D8%B6%D8%B9%D9%81-%D9%88-%D9%82%D9%88%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-m272-35-l-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2.html"
+   },
+   {
+    "id": 10,
+    "title": "Part 573 Safety Recall Report 22V-315 – NHTSA",
+    "url": "https://static.nhtsa.gov/odi/rcl/2022/RCLRPT-22V315-3653.PDF"
+   },
+   {
+    "id": 11,
+    "title": "W164 Transfer Case Chain repair – BenzWorld forum",
+    "url": "https://www.benzworld.org/threads/w164-transfer-case-chain-repair.3044341/"
+   },
+   {
+    "id": 12,
+    "title": "Mercedes P2004 Problem, DIY FIX – MB Medic",
+    "url": "https://www.mercedesmedic.com/mercedes-p2004-code-throttle-lever-flap/"
+   },
+   {
+    "id": 13,
+    "title": "Common Intake Manifold Issues on Mercedes-Benz M272 and M273 Engines – 603 Motorsport Tech",
+    "url": "https://www.603mtech.com/post/common-intake-manifold-issues-on-mercedes-benz-m272-and-m273-engines"
+   }
+  ]
+ },
+ "bmw-3-series-e90": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "325i engine code: N52B25 only on early cars; from about 2007 non-EU 325i used a 218 hp N52B30",
+   "Recall 23V-707 narrowed to a limited 2010–2012 batch with aluminium VANOS bolts (about 4,684 US cars), and its symptom corrected to safe mode / no restart",
+   "PCV heater recall: added the 22V-119 expansion and replaced the generic NHTSA API link with the recall PDF",
+   "N46 engine description: noted it was sold instead of N43 in high-sulphur fuel markets (fits Iran)",
+   "Added a VIN recall-check diagnostic tip; reworded the 6HP19 fluid-change note"
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "BMW N52 Common Problems: Symptoms, Causes, And Fixes — BMW Insights",
+    "url": "https://bmwinsights.com/bmw-n52-common-problems/"
+   },
+   {
+    "id": 2,
+    "title": "We Asked 97 BMW E90 Owners About Their Most Common Problems — The Driver Adviser",
+    "url": "https://thedriveradviser.com/common-problems-bmw-e90/"
+   },
+   {
+    "id": 3,
+    "title": "BMW Mechatronics Sealing Sleeves and Adapter Repair – ZF 6HP19",
+    "url": "https://bmwrepairguide.com/bmw-mechatronics-sealing-sleeve-and-adapter-replacement-zf-6hp19x/"
+   },
+   {
+    "id": 4,
+    "title": "E60 ZF 6HP19 auto transmission fluid / sleeve change — BimmerForums UK",
+    "url": "https://www.bimmerforums.co.uk/threads/e60-zf-6hp19-auto-transmission-fluid-sleeve-change.528409/"
+   },
+   {
+    "id": 5,
+    "title": "BMW N46B20B Engine Guide — specs and issues",
+    "url": "https://www.enginecode.uk/bmw/n46b20b-specs"
+   },
+   {
+    "id": 6,
+    "title": "E90 N46 320i – Burning oil badly — BimmerForums UK",
+    "url": "https://www.bimmerforums.co.uk/threads/e90-n46-320i-burning-oil-badly-help.353753/"
+   },
+   {
+    "id": 7,
+    "title": "رایج‌ترین مشکلات بی‌ام‌و سری ۵ (موتور N52 مشترک) — نیک یدک",
+    "url": "https://nikyadak.com/%D8%B1%D8%A7%DB%8C%D8%AC-%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88-%D8%B3%D8%B1%DB%8C-5/"
+   },
+   {
+    "id": 8,
+    "title": "بررسی و مشخصات بی‌ام‌و سری ۳ کد اتاق E90 — یدکدون",
+    "url": "https://yadakdoon.ir/series/3-e90"
+   },
+   {
+    "id": 9,
+    "title": "NHTSA Recall 17V-683: PCV valve heater (N51/N52, 2007–2011 3 Series)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2017/RCRIT-17V683-5875.pdf"
+   },
+   {
+    "id": 10,
+    "title": "Safety Recall 22V-119 PCV valve heater N51, N52, N52K engines 2006–2013",
+    "url": "https://bmw.oemdtc.com/1063/safety-recall-22v-119-positive-crankcase-ventilation-pcv-valve-heater-n51-n52-n52k-engines-2006-2013-bmw/"
+   },
+   {
+    "id": 11,
+    "title": "BMW recalls N52 vehicles over loose VANOS housing bolts (23V-707) — autoevolution",
+    "url": "https://www.autoevolution.com/news/bmw-recalls-155k-vehicles-equipped-with-n52-engine-over-loose-vanos-housing-bolts-224477.html"
+   },
+   {
+    "id": 12,
+    "title": "BMW N46 — Wikipedia (N46 kept for high-sulfur fuel markets instead of N43)",
+    "url": "https://en.wikipedia.org/wiki/BMW_N46"
+   }
+  ]
+ },
+ "bmw-3-series-f30": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Brake vacuum pump fault: removed the unconfirmed 'camshaft sealing disc lock ring' cause/part; cause now matches the recall text (insufficient lubrication); source 5 added",
+   "Fuel pump recall 15V-189: said the problem is nickel plating and listed the 320i/328i/335i scope",
+   "Timing chain: 'only pre-2015 production' softened to 'especially pre-2015'; fault-code source added and plastic fragments in the oil filter housing added as a diagnostic tip"
+  ],
+  "removed_claims": [
+   "Part 'رینگ قفلی دیسک آب‌بند میل‌سوپاپ' (camshaft sealing disc lock ring) for the vacuum pump fault — the recall documents do not name it and no source confirms it"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "BMW N20 Timing Chain Issues Explained — Carlsbad Auto Service",
+    "url": "https://carlsbadautoservice.com/bmw-n20-timing-chain-issues-explained/"
+   },
+   {
+    "id": 2,
+    "title": "BMW N20 Engine Common Problems & Reliability Issues — BMW Tuning",
+    "url": "https://bmwtuning.co/bmw-n20-engine-common-problems/"
+   },
+   {
+    "id": 3,
+    "title": "مشکلات رایج موتور N20 بی‌ام‌و، راهکارها و لوازم یدکی مورد نیاز — لوکس یدک",
+    "url": "https://luxyadak.com/blog/129_N20-issue.html"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls for BMW 320i 2014 (13V-454 / 14V-627 brake vacuum pump, 15V-189 fuel pump)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=320i&modelYear=2014"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls for BMW 328i 2013 (24V-608 electric water pump connector, 13V-454 / 14V-627)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=328i&modelYear=2013"
+   },
+   {
+    "id": 6,
+    "title": "How To Replace A BMW N20 & N26 Oil Filter Housing Gasket (BMW F30) — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-replace-a-bmw-n20-n26-oil-filter-housing-gasket-f30"
+   },
+   {
+    "id": 7,
+    "title": "Understanding Timing Chain Failure in BMW N20 (fault codes 2A67 / 2D55) — German Tech Motorworks",
+    "url": "https://www.germantechmotorworks.com/understanding-timing-chain-failure-in-bmw-n20-a-technical-overview"
+   }
+  ]
+ },
+ "bmw-5-series-e60": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "PCV heater recall years for E60 corrected from 2007–2011 to 2006–2010 (E60 production ended 2010); added the superseding recall 22V-119 and replaced the NHTSA API link",
+   "525i engine code: noted the de-tuned N52B30 used outside the EU from about 2007",
+   "Thrust arm fault: symptom narrowed to shake under light braking; hydraulic bushing leak named as the cause; km range widened; forum source added",
+   "VANOS diagnostic tip: said which code is intake and which is exhaust (2A82/2A87)",
+   "DISA fault: added the risk of flap fragments entering the engine"
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "موتور N52 بی‌ام‌و — لوازم یدکی بی‌ام‌و (bmwyadaki)",
+    "url": "https://bmwyadaki.com/%D9%85%D9%88%D8%AA%D9%88%D8%B1-n52-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88/"
+   },
+   {
+    "id": 2,
+    "title": "رایج‌ترین مشکلات بی‌ام‌و سری ۵ — نیک یدک",
+    "url": "https://nikyadak.com/%D8%B1%D8%A7%DB%8C%D8%AC-%D8%AA%D8%B1%DB%8C%D9%86-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88-%D8%B3%D8%B1%DB%8C-5/"
+   },
+   {
+    "id": 3,
+    "title": "BMW N52 Common Problems: Symptoms, Causes, And Fixes — BMW Insights",
+    "url": "https://bmwinsights.com/bmw-n52-common-problems/"
+   },
+   {
+    "id": 4,
+    "title": "The 5 Most Common BMW M54 Engine Problems — BMW Tuning",
+    "url": "https://bmwtuning.co/m54-engine-problems/"
+   },
+   {
+    "id": 5,
+    "title": "BMW Mechatronics Sealing Sleeves and Adapter Repair – ZF 6HP19",
+    "url": "https://bmwrepairguide.com/bmw-mechatronics-sealing-sleeve-and-adapter-replacement-zf-6hp19x/"
+   },
+   {
+    "id": 6,
+    "title": "E60 ZF 6HP19 auto transmission fluid / sleeve change — BimmerForums UK",
+    "url": "https://www.bimmerforums.co.uk/threads/e60-zf-6hp19-auto-transmission-fluid-sleeve-change.528409/"
+   },
+   {
+    "id": 7,
+    "title": "Opinion on 5 Series BMW and common problems — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/opinion-on-5-series-bmw-and-common-problems.177217/"
+   },
+   {
+    "id": 8,
+    "title": "BMW E60 5-Series DISA Valve Replacement (M54 6 Cylinder) — Pelican Parts",
+    "url": "https://www.pelicanparts.com/techarticles/BMW-E60/26-FUEL-M54_6_Cylinder_DISA_Valve_Replacement/26-FUEL-M54_6_Cylinder_DISA_Valve_Replacement.htm"
+   },
+   {
+    "id": 9,
+    "title": "BMW PCV valve recall 22V-119 (supersedes 17V-683; 2006–2010 525i/528i/530i) — CarComplaints",
+    "url": "https://www.carcomplaints.com/news/2022/bmw-pcv-valve-recall.shtml"
+   },
+   {
+    "id": 10,
+    "title": "Steering wheel shaking while braking (thrust arm bushings) — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/steering-wheel-shaking-while-braking-thrust-arm-bushings.558898/"
+   }
+  ]
+ },
+ "bmw-x3-e83": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Gearbox identity fixed: the petrol E83 automatics were not ZF — GM 5L40-E (5-speed, 2.5i/3.0i) and GM GA6L45R (6-speed, 2.5si/3.0si); variants and transmissions_fa rewritten",
+   "Added a GA6L45R fault (harsh shifts, EGS software, valve body / solenoids, loss of reverse), medium confidence",
+   "Transfer case actuator: 'kicking under acceleration' replaced by binding in tight turns; km corrected to 140–190k (90–120k miles)",
+   "PCV recall scope set to X3 3.0si/xDrive30i 2007–2010 and 22V-119 added",
+   "Suspension/steering fault: hydraulic bushing leak and steering whine added, with a second source",
+   "Added a diagnostic tip not to treat the gearbox as a ZF when ordering parts"
+  ],
+  "removed_claims": [
+   "Claim that the automatic gearbox was ZF (pre-facelift 'ZF' and facelift 'ZF 6HP') — petrol E83s used GM 5L40-E and GA6L45R"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "How To Repair A BMW Transfer Case Actuator (BMW X3, X5 & X6) — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-repair-a-bmw-transfer-case-actuator-bmw-x3-x5-x6"
+   },
+   {
+    "id": 2,
+    "title": "BMW X3 (E83) Transfer Case Motor (actuator) Replacement — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/bmw-x3-e83-transfer-case-motor-actuator-replacement.1458674/"
+   },
+   {
+    "id": 3,
+    "title": "Common Problems of BMW X3 E83 2.5si: A Comprehensive Guide — Euro Auto Pro",
+    "url": "https://www.euroautopro.com.au/post/common-problems-of-bmw-x3-e83-2-5si-a-comprehensive-guide"
+   },
+   {
+    "id": 4,
+    "title": "The 5 Most Common BMW M54 Engine Problems — BMW Tuning",
+    "url": "https://bmwtuning.co/m54-engine-problems/"
+   },
+   {
+    "id": 5,
+    "title": "موتور N52 بی‌ام‌و — لوازم یدکی بی‌ام‌و (bmwyadaki)",
+    "url": "https://bmwyadaki.com/%D9%85%D9%88%D8%AA%D9%88%D8%B1-n52-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88/"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls for BMW X3 2008 (17V-605 occupant detection mat, 17V-683 PCV valve heater)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=X3&modelYear=2008"
+   },
+   {
+    "id": 7,
+    "title": "BMW N52 Common Problems: Symptoms, Causes, And Fixes — BMW Insights",
+    "url": "https://bmwinsights.com/bmw-n52-common-problems/"
+   },
+   {
+    "id": 8,
+    "title": "BMW xDrive Transfer Case Guide: shudder, noises and 4x4 lights in X3, X5 — Go-Parts",
+    "url": "https://www.go-parts.com/garage/transfer-case-assembly-bmw-x5-bmw-x6-bmw-328i-1977-2020"
+   },
+   {
+    "id": 9,
+    "title": "US X3 Automatic Transmission / Fluid Facts (5L40-E 2003–2006, GA6L45R 2007–2010) — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/us-x3-automatic-transmission-fluid-facts.677311/"
+   },
+   {
+    "id": 10,
+    "title": "2007-2010 X3 Automatic Transmission Problem Master Thread — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/2007-2010-x3-automatic-transmission-problem-master-thread.262130/"
+   },
+   {
+    "id": 11,
+    "title": "BMW PCV valve recall 22V-119 (2007–2010 X3 3.0si / xDrive30i) — CarComplaints",
+    "url": "https://www.carcomplaints.com/news/2022/bmw-pcv-valve-recall.shtml"
+   },
+   {
+    "id": 12,
+    "title": "Common Repairs on the BMW X3 Series — E83 First Generation — BimmerShops",
+    "url": "https://www.bimmershops.com/e83-x3-series-common-problems"
+   }
+  ]
+ },
+ "bmw-x5-e70": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Variants: added xDrive30i (N52, 2009–2010) alongside 3.0si, and the xDrive48i name alongside 4.8i",
+   "N55 description fixed: one twin-scroll turbo (not 'single twin turbo'); Valvetronic added",
+   "Transfer case actuator: symptom now includes the clicking under the driver's seat after shutdown and binding in tight turns; km corrected to 140–190k (90–120k miles); 'the transfer case is usually fine' softened",
+   "PCV recall scope corrected to X5 3.0si and xDrive30i and 22V-119 added",
+   "Fuel pump fault: added recall 10V-518 (commutator wear, 2008 six-cylinder X5)",
+   "Front driveshaft fault: added the earlier recall 16V-311 and the exact variants from NHTSA data"
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "BMW E70 X5 — Every Known Problem and Fix — TempaDrive Forum",
+    "url": "https://forum.tempadrive.com/t/bmw-e70-x5-every-known-problem-and-fix"
+   },
+   {
+    "id": 2,
+    "title": "How To Repair A BMW Transfer Case Actuator (BMW X3, X5 & X6) — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-repair-a-bmw-transfer-case-actuator-bmw-x3-x5-x6"
+   },
+   {
+    "id": 3,
+    "title": "BMW N52 Common Problems: Symptoms, Causes, And Fixes — BMW Insights",
+    "url": "https://bmwinsights.com/bmw-n52-common-problems/"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls for BMW X5 2011 (16V-746 fuel pump, 16V-311/17V-138 front driveshaft, 17V-683 PCV heater)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=X5&modelYear=2011"
+   },
+   {
+    "id": 5,
+    "title": "Common issues with the N62 engine — BimmerFest",
+    "url": "https://www.bimmerfest.com/threads/common-issues-with-the-n62-engine-mods-consider-making-this-a-sticky.852056/"
+   },
+   {
+    "id": 6,
+    "title": "E70 Petrol N62 V8 engine common problems — XSeries-forum",
+    "url": "https://xseries-forum.com/forum/viewtopic.php?t=7603"
+   },
+   {
+    "id": 7,
+    "title": "BMW X5 E70 Reliability Guide — Euro Premium Parts",
+    "url": "https://europremiumparts.com/blogs/bmw-buying-guides/bmw-x5-e70-reliability-guide-everything-you-need-to-know-before-buying"
+   },
+   {
+    "id": 8,
+    "title": "موتور N52 بی‌ام‌و — لوازم یدکی بی‌ام‌و (bmwyadaki)",
+    "url": "https://bmwyadaki.com/%D9%85%D9%88%D8%AA%D9%88%D8%B1-n52-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88/"
+   },
+   {
+    "id": 9,
+    "title": "BMW xDrive Transfer Case Guide: shudder, noises and 4x4 lights in X3, X5 — Go-Parts",
+    "url": "https://www.go-parts.com/garage/transfer-case-assembly-bmw-x5-bmw-x6-bmw-328i-1977-2020"
+   },
+   {
+    "id": 10,
+    "title": "BMW PCV valve recall 22V-119 (2007–2010 X5 3.0si / xDrive30i) — CarComplaints",
+    "url": "https://www.carcomplaints.com/news/2022/bmw-pcv-valve-recall.shtml"
+   },
+   {
+    "id": 11,
+    "title": "NHTSA recalls for BMW X5 2008 (10V-518 fuel pump commutator wear, 16V-746)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=X5&modelYear=2008"
    }
   ]
  },
