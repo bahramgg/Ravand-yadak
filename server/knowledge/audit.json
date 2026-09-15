@@ -4872,6 +4872,56 @@
    }
   ]
  },
+ "hyundai-santa-fe-tm": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: eghtesadonline states the fourth-generation Santa Fe never entered the Iranian market because car imports were halted; this contradicts the roster row (limited Kerman Motor import 1396–1397). Any examples in Iran are few and likely unofficial, so the engine variant is unknown.",
+   "Engines: added G4KE (2.4 Theta II MPI, the Middle East / GCC version, alongside a 3.5 V6) next to G4KJ (2.4 GDI, US version); gearbox marked unconfirmed for the MPI version.",
+   "MDPS worm-bearing noise (22-ST-005H) kept; confidence lowered to medium because applicability to non-US cars is unconfirmed.",
+   "Power tailgate (20-01-022H-1) kept; confidence lowered to medium because the bulletin title gives no cause.",
+   "GDI rod-bearing and 8-speed items moved from common faults to conditional diagnostic tips that apply only after the engine code or gearbox is confirmed.",
+   "Wording adjusted to Iranian usage."
+  ],
+  "removed_claims": [
+   "Theta II GDI connecting-rod bearing wear (P1326, 22-01-033H, 22-EM-001H-1, KSDS 953) as a common fault — TSBs confirmed to cover only 2.0T and 2.4 GDI engines, while the Middle East TM (the likely source of Iranian examples) used the 2.4 MPI or 3.5 V6; moved to a conditional tip.",
+   "8-speed TCU flare / solenoid faults (20-AT-022H, 23-AT-003H) as a common fault — 8-speed only, and the gearbox of Iranian examples is unconfirmed; moved to a conditional tip.",
+   "Tow-hitch harness module fire (23V181) — US original or dealer-accessory trailer equipment, not relevant to cars in Iran.",
+   "Recalls 23V181 and 21V00M dropped from the maintenance note — 23V181 is US equipment, and 21V00M was not verified."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "سانتافه و انواع مدل‌های آن در ایران؛ مشخصات فنی، امکانات و سایر ویژگی‌ها — اقتصادآنلاین",
+    "url": "https://www.eghtesadonline.com/fa/news/567946/%D8%B3%D8%A7%D9%86%D8%AA%D8%A7%D9%81%D9%87-%D9%88-%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D9%85%D8%AF%D9%84%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%A2%D9%86-%D8%AF%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%81%D9%86%DB%8C-%D8%A7%D9%85%DA%A9%D8%A7%D9%86%D8%A7%D8%AA-%D9%88-%D8%B3%D8%A7%DB%8C%D8%B1-%D9%88%DB%8C%DA%98%DA%AF%DB%8C%E2%80%8C%D9%87%D8%A7"
+   },
+   {
+    "id": 2,
+    "title": "بررسی نسل‌های هیوندای سانتافه — خودرو۴۵",
+    "url": "https://khodro45.com/mag/hyundai-santafe-history/"
+   },
+   {
+    "id": 3,
+    "title": "2019 Hyundai Santa Fe Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe/2019/tsbs/"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2019 Hyundai Santa Fe (18V715, 23V181)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=SANTA%20FE&modelYear=2019"
+   },
+   {
+    "id": 5,
+    "title": "2011-2019 Kia Hyundai 2.0 and 2.4L GDI Settlements — The Center for Auto Safety",
+    "url": "https://www.autosafety.org/2011-19-kia-hyundai-two-and-two-4l-gdi-settlements/"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Santa Fe 2019 Price in KSA, Specs and Reviews — Drive Arabia (GCC engine options)",
+    "url": "https://www.drivearabia.com/carprices/ksa/hyundai/hyundai-santa-fe/2019/"
+   }
+  ]
+ },
  "hyundai-azera-grandeur-tg": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -5930,6 +5980,57 @@
    }
   ]
  },
+ "toyota-prius": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "HV battery fan/filter clogging: the draft said the TSB only covered 2004–2009 Prius; T-SB-0074-20 covers 2003–2020 Prius including XW50 — confidence low→high, cause text and sources updated",
+   "maintenance: added the bulletin's inspection (~5,000 mi) and cleaning (~20,000 mi) intervals",
+   "all four recalls labelled as US-market campaigns with Iranian/European coverage unverified",
+   "variants: added Hamrah Mechanic note that gen 4 is the only generation widely sold in Iran; engine desc adds ~121 hp system output"
+  ],
+  "removed_claims": [
+   "production date windows for 16V741000 (Mordad 1394–Mehr 1395) and 16V672000 (Azar 1394–Khordad 1395) — not confirmed in the NHTSA data checked",
+   "'damaged by vibration' detail in the inverter capacitor recall — not in the NHTSA summary"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls API — 2016 Toyota Prius (16V741000, 18V579000, 17V658000, 16V672000, 18V085000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=PRIUS&modelYear=2016"
+   },
+   {
+    "id": 2,
+    "title": "Toyota T-SB-0153-13 Rev2 — MIL ON DTC P0A80 or P0A7F due to dust or debris in the HV battery cooling fan (earlier Prius) (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169322-9999.pdf"
+   },
+   {
+    "id": 3,
+    "title": "ایر تویولکس — پیام Check Hybrid System و کد خطای P0A80 باتری هیبرید",
+    "url": "http://irtoyolex.com/%D9%BE%DB%8C%D8%A7%D9%85-%D9%87%D8%B4%D8%AF%D8%A7%D8%B1-check-hybrid-system-%D9%88-%DA%A9%D8%AF-%D8%AE%D8%B7%D8%A7%DB%8C-p0a80/"
+   },
+   {
+    "id": 4,
+    "title": "دنیای خودرو — ایرتویا شرایط فروش پریوس ۲۰۱۶ را اعلام کرد (اسفند ۱۳۹۴)",
+    "url": "http://www.donyayekhodro.com/news/160441/%D8%A7%DB%8C%D8%B1%D8%AA%D9%88%DB%8C%D8%A7-%D8%B4%D8%B1%D8%A7%DB%8C%D8%B7-%D9%81%D8%B1%D9%88%D8%B4-%D9%BE%D8%B1%DB%8C%D9%88%D8%B3-%DB%B2%DB%B0%DB%B1%DB%B6-%D8%B1%D8%A7-%D8%A7%D8%B9%D9%84%D8%A7%D9%85-%DA%A9%D8%B1%D8%AF"
+   },
+   {
+    "id": 5,
+    "title": "تویوتا پریوس — ویکی‌پدیا فارسی (عرضه ایرتویا در ۱۳۹۵ در سه تیپ)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7_%D9%BE%D8%B1%DB%8C%D9%88%D8%B3"
+   },
+   {
+    "id": 6,
+    "title": "Toyota T-SB-0074-20 (Aug 2020) — MIL ON with DTC P0A80 / P0A7F due to dust or debris in HV battery cooling fan/filter; applies to 2003–2020 Prius, Prius C, Prius V (NHTSA copy)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10179698-9999.pdf"
+   },
+   {
+    "id": 7,
+    "title": "همراه مکانیک — معایب تویوتا پریوس (نسل چهارم تنها نسل رایج در ایران)",
+    "url": "https://www.hamrah-mechanic.com/mag/toyota-prius-disadvantages/"
+   }
+  ]
+ },
  "toyota-rav4-xa30": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -6164,6 +6265,223 @@
    }
   ]
  },
+ "toyota-land-cruiser-j100": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "1FZ-FE head gasket: confidence medium→low and cause reworded, since the cited guide concerns the original gasket design (mainly 80-series engines); moved below the steering rack fault",
+   "2UZ-FE gearbox: 4-speed until 2002, 5-speed A750F from 2003",
+   "2UZ-FE timing belt interval corrected from ~160,000 km / 10 years to ~150,000 km (90,000 miles)",
+   "1FZ-FE engine note: 100-series ignition described as coilpack with crank/cam sensors, not interchangeable with 80 series",
+   "exhaust manifold fault and airbag recall reworded to flag V8-only / US-market scope"
+  ],
+  "removed_claims": [
+   "replacing water pump preventively as part of 1FZ-FE head-gasket protection — not supported by the cited source"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Cruiser Utes & Parts — 100 Series Land Cruiser Common Problems: Top 5 Issues & The Parts to Fix Them",
+    "url": "https://cruiserutesandparts.com.au/100-series-land-cruiser-common-problems-top-5-issues-the-parts-to-fix-them/"
+   },
+   {
+    "id": 2,
+    "title": "Over the Mountain Cruisers — 100 Series Land Cruiser Common Problems (2UZ-FE timing belt)",
+    "url": "https://otmcruisers.com/blog/100-series/land-cruiser-common-problems/"
+   },
+   {
+    "id": 3,
+    "title": "Land Cruiser Heaven — 1FZ-FE Engine Buyer's Guide (80 Series; notes 100-series coilpack version)",
+    "url": "https://www.landcruiserheaven.com/1fz-fe-engine-buyers-guide-toyota-land-cruiser-80-series/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — تویوتا لندکروزر اتاق ۱۰۰ (J100)؛ بررسی جامع و مشخصات فنی (تقریباً همه وارداتی‌های ایران ۴٫۵ لیتری I6)",
+    "url": "https://khodro45.com/mag/landcruiser-j100/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2003 Toyota Land Cruiser (16V065000 curtain airbag control module)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=LAND%20CRUISER&modelYear=2003"
+   }
+  ]
+ },
+ "toyota-land-cruiser-j200": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "variants: 3UR-FE VXR 5.7 existed in GCC already around 2010–2011 (not only from 2012); split the 1GR-FE, 2UZ-FE, 1UR-FE and 3UR-FE variants and matched each to its gearbox (5-speed for 1GR/2UZ, 6-speed for UR, 6/8-speed after 2016)",
+   "engines: 2UZ-FE marked as timing-belt interference engine (UR and 1GR have chains)",
+   "added brake booster pump/accumulator fault (C1252/C1256), shared with LX570",
+   "oil filter cap leak: removed unsupported 'small pipe on cap' and 'petrol and diesel' detail; confidence medium→low, severity high→medium (service-induced, single source)",
+   "water pump: limited to 3UR-FE (source is Tundra 3UR-FE), 1UR-FE only as possibility",
+   "accelerator-pedal recall 12V305000: system electrical→body, cause wording aligned with NHTSA (floor mat entrapment)",
+   "diagnostic tips: added engine-identification warning against Prado 2TR-FE and 1VD diesel faults; added C1252/C1256 tip",
+   "maintenance: added 2UZ-FE timing belt and brake fluid notes"
+  ],
+  "removed_claims": [
+   "claim that the oil filter cap has a small pipe that detaches — not in the cited source"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Unsealed 4X4 — Common Toyota LandCruiser 200 Series problems and how to fix them",
+    "url": "https://unsealed4x4.com.au/toyota-landcruiser-200-series-problems/"
+   },
+   {
+    "id": 2,
+    "title": "ReDriven — Used Toyota LandCruiser 200 Series review",
+    "url": "https://redriven.com/reviews/toyota/landcruiser/used-toyota-landcruiser-200-series-review/"
+   },
+   {
+    "id": 3,
+    "title": "1A Auto — 5.7 Liter Toyota Engine Problems: Common 3UR-FE Issues",
+    "url": "https://blog.1aauto.com/5-7-liter-toyota-engine-problems-common-issues-with-the-3ur-fe/"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2010 Toyota Land Cruiser (18V887000, 17V548000, 12V305000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=LAND%20CRUISER&modelYear=2010"
+   },
+   {
+    "id": 5,
+    "title": "آخرین خودرو — لندکروز اتاق ۲۰۰ بخریم یا نخریم؟ (قطعات گران و تقلبی در ایران)",
+    "url": "https://akharinkhodro.ir/car-news/domestic-car/%D9%84%D9%86%D8%AF%DA%A9%D8%B1%D9%88%D8%B2-%D8%A7%D8%AA%D8%A7%D9%82-200-%D8%A8%D8%AE%D8%B1%DB%8C%D9%85-%DB%8C%D8%A7-%D9%86%D8%AE%D8%B1%DB%8C%D9%85"
+   },
+   {
+    "id": 6,
+    "title": "IH8MUD Forum — Buzzing brake booster accumulator on LX570 (brake booster assembly replaced, C1256)",
+    "url": "https://forum.ih8mud.com/threads/buzzing-brake-booster-accumulator-on-lx570.1200231/"
+   },
+   {
+    "id": 7,
+    "title": "Go-Parts — OBD-II Code C1252: Brake Booster Pump Motor Running Too Long (Land Cruiser electro-hydraulic booster)",
+    "url": "https://www.go-parts.com/garage/obd-c1252"
+   },
+   {
+    "id": 8,
+    "title": "2CarPros — 2018 Toyota Landcruiser codes C1252 and C1256, ABS light on",
+    "url": "https://2carpros.com/questions/abs-light-on-93158563"
+   },
+   {
+    "id": 9,
+    "title": "Bullet Cars — 4.7L V8 2UZ-FE Land Cruiser 200 Series (2008-2011)",
+    "url": "https://bulletcars.com/vehicles/4-7l-v8-2uz-fe-land-cruiser-200-series/"
+   },
+   {
+    "id": 10,
+    "title": "Deal Cars UAE — Land Cruiser VXR 2011 (5.7L V8) GCC specs listing",
+    "url": "https://dealcars.ae/listing/%F0%9F%92%A5land-cruiser-vxr-2011-5-7l-v8-gcc-specs-%F0%9F%94%A5/"
+   }
+  ]
+ },
+ "toyota-fj-cruiser": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "inner fender apron: typical_km corrected from 30–65 to 17–64 thousand km (reports at 10,600–39,500 miles); added 2009 double-layer fix; confidence medium→high (multiple independent forums and complaint databases)",
+   "access-door seat belt recall 13V098000: confidence medium→high (NHTSA recall)",
+   "engine power corrected: ~240 hp early, ~260 hp from 2010",
+   "Iran years: import stop from 2013 per Hamrah Mechanic (2,500 cc import ban) added to variant note",
+   "diagnostic tip added: 2TR-FE Prado faults do not apply"
+  ],
+  "removed_claims": [
+   "'under the battery' as the specific crack location — sources place it at the apron crush zone near the firewall"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "CarProblemZoo — Toyota FJ Cruiser structure problems (inner fender apron cracking, paint chipping)",
+    "url": "https://www.carproblemzoo.com/toyota/fjcruiser/structure-problems.php"
+   },
+   {
+    "id": 2,
+    "title": "Toyota FJ Cruiser Forum — Some fender bulge/crack questions (apron braces 53744-35030 / 53743-35040)",
+    "url": "https://www.fjcruiserforums.com/threads/some-fender-bulge-crack-questions.112770/"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2010 Toyota FJ Cruiser (13V098000 access door panel / seat belt retractor)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=FJ%20CRUISER&modelYear=2010"
+   },
+   {
+    "id": 4,
+    "title": "MotorReviewer — Toyota 1GR-FE 4.0 V6 Engine Specs, Problems, Reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=128"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — تویوتا اف جی کروز؛ بررسی مشخصات فنی، مزایا و معایب (واردات شخصی از ۲۰۰۸، ایرتویا از ۲۰۱۱، توقف از ۲۰۱۳)",
+    "url": "https://www.hamrah-mechanic.com/mag/toyota-fj-cruiser-review/"
+   },
+   {
+    "id": 6,
+    "title": "IH8MUD Forum — Who has the famous inner fender crack?",
+    "url": "https://forum.ih8mud.com/threads/who-has-the-famous-inner-fender-crack.273310/"
+   }
+  ]
+ },
+ "lexus-lx570-j200": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "added brake booster pump/accumulator fault (C1252/C1256) reported by LX570 owners",
+   "AHC fault: confidence low→medium with several LX570 owner threads on failed accumulator globes; removed the unsupported 'slow leak from height control valve causes overnight rear sag' detail and added low/dirty AHC fluid as a cause",
+   "accelerator-pedal recall 11V113000: system electrical→body",
+   "variant years: Hamrah Mechanic says 2013 was the latest version commonly available in Iran, not 'mostly 2012 and 2013 models'",
+   "reordered faults (AHC and brake booster first); diagnostic tips and maintenance updated to match"
+  ],
+  "removed_claims": [
+   "AHC rear sagging overnight from height-control-valve / line leak — no supporting source found"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Unsealed 4X4 — Common Toyota LandCruiser 200 Series problems and how to fix them (airbox dust ingress, all engines)",
+    "url": "https://unsealed4x4.com.au/toyota-landcruiser-200-series-problems/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2009 Lexus LX570 (18V887000, 17V548000, 11V113000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=LX570&modelYear=2009"
+   },
+   {
+    "id": 3,
+    "title": "1A Auto — 5.7 Liter Toyota Engine Problems: Common 3UR-FE Issues",
+    "url": "https://blog.1aauto.com/5-7-liter-toyota-engine-problems-common-issues-with-the-3ur-fe/"
+   },
+   {
+    "id": 4,
+    "title": "همراه مکانیک — مزایا و معایب لکسوس LX 570 (مدل ۲۰۱۳ آخرین نسخه رایج در ایران، ۶ دنده اتوماتیک)",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disadvantages-of-lexus-lx570/"
+   },
+   {
+    "id": 5,
+    "title": "Go-Parts — 2008-2021 Land Cruiser & LX570 AHC Pump Failure: Symptoms, Costs, and Used Buying Tips",
+    "url": "https://www.go-parts.com/garage/suspension-self-leveling-pump-toyota-land-cruiser-lexus-lx570-2008-2021"
+   },
+   {
+    "id": 6,
+    "title": "IH8MUD Forum — LX570 AHC Globe/Accumulator failure",
+    "url": "https://forum.ih8mud.com/threads/lx570-ahc-globe-accumulator-failure.1188327/"
+   },
+   {
+    "id": 7,
+    "title": "IH8MUD Forum — LX 570 Super Bouncy Ride - No Fault Codes",
+    "url": "https://forum.ih8mud.com/threads/lx-570-super-bouncy-ride-no-fault-codes.1172220/"
+   },
+   {
+    "id": 8,
+    "title": "IH8MUD Forum — Buzzing brake booster accumulator on LX570 (brake booster assembly replaced, C1256)",
+    "url": "https://forum.ih8mud.com/threads/buzzing-brake-booster-accumulator-on-lx570.1200231/"
+   },
+   {
+    "id": 9,
+    "title": "Go-Parts — OBD-II Code C1252: Brake Booster Pump Motor Running Too Long",
+    "url": "https://www.go-parts.com/garage/obd-c1252"
+   }
+  ]
+ },
  "nissan-juke-f15": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -6328,6 +6646,173 @@
    }
   ]
  },
+ "nissan-qashqai-j11": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "JF016E applicability to Qashqai J11 (and X-Trail T32, Outlander GF) plus NS-3 fluid and 40k km interval confirmed on GearboxList; the extra part «خنک‌کن روغن گیربکس» dropped from the overheating fault (no source)",
+   "Bearing/noise fault: added GearboxList's belt grooving the pulleys from valve-body and software flaws",
+   "Child lock recall: car-recalls.eu gives a UK recall dated 14/08/2020 for 2015–2018 cars (reduced retention force of the child-lock switch); confidence lowered to low because it is a European campaign and coverage of the Middle-East/Asian MR20DD cars sold in Iran is not shown",
+   "Engine description: clarified the 1.2/1.6 turbo and dCi engines are European versions; the MR20DD is the Middle-East/Asia engine",
+   "maintenance_fa: removed the unsupported claim that the direct-injection MR20DD is especially sensitive to fuel quality"
+  ],
+  "removed_claims": [
+   "Rear oxygen sensor recall A12/0879/16 (build 24/04/2014–16/05/2016): a European recall whose listing says it depends on engine type; European J11s had no MR20DD, so it cannot be shown to apply to cars sold in Iran, and it has no driver-noticeable symptom",
+   "Source 4 (car-recalls.eu A12/0879/16) dropped with that fault"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF016E: applications (Qashqai J11, X-Trail T32, Outlander GF), NS-3 fluid, 40k km oil interval, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf016e/"
+   },
+   {
+    "id": 2,
+    "title": "AUTODOC Blog — Nissan Qashqai: common problems and faults (CVT jerks and overheating after 60–80k km)",
+    "url": "https://www.autodoc.co.uk/info/problems-with-the-nissan-qashqai"
+   },
+   {
+    "id": 3,
+    "title": "ClickMechanic — Common problems with Nissan Qashqai (CVT jerking, loss of power, grinding noises)",
+    "url": "https://www.clickmechanic.com/blog/common-problems-with-nissan-qashqai/"
+   },
+   {
+    "id": 5,
+    "title": "Car-Recalls.eu — Nissan Qashqai common problems and recalls (UK 14/08/2020: rear door child lock switch retention force, 2015–2018)",
+    "url": "https://car-recalls.eu/common-problems/nissan/qashqai/"
+   },
+   {
+    "id": 6,
+    "title": "کاظم — تعمیر گیربکس CVT نیسان (بیشتر خرابی‌ها از بی‌توجهی به روغن گیربکس)",
+    "url": "https://kaazem.com/nissan-cvt-transmission-repair/"
+   }
+  ]
+ },
+ "nissan-x-trail-t31": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "EPS recall R/2011/159: confirmed on car-recalls.co.uk that it covers both Qashqai and X-Trail (build 06/08/2010–12/08/2011); remedy is replacing the EPS control unit, so the separate EPS motor part was dropped",
+   "Radiator/CVT cooler fault: TorqueBot describes the transmission oil cooler inside the radiator cracking (2.0 petrol), so cause and parts were reworded to the radiator rather than a separate cooler; kept at low confidence",
+   "Timing chain fault: TorqueBot ties chain stretch on the T31 to the MR20DE, so the cause now names chain stretch in MR20DE and some QR25DE and cites source 9",
+   "diagnostic_tips_fa: noted that EGR faults in T31 write-ups belong to the M9R dCi diesel, not the Iranian petrol cars; Persian source 10 added"
+  ],
+  "removed_claims": [
+   "Part «موتور فرمان برقی» removed from the EPS recall fault: the recall remedy replaces the control unit, not the motor"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF011E: applications (Qashqai J10, X-Trail T31, Koleos HY), fluid, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf011e/"
+   },
+   {
+    "id": 2,
+    "title": "Sunbelt Valve Body Builders — Understanding the JF011E CVT transmission: common issues",
+    "url": "https://sunbeltvalvebodies.com/blogs/news/understanding-the-jf011e-cvt-transmission-common-issues-and-how-remanufactured-parts-can-help"
+   },
+   {
+    "id": 3,
+    "title": "Car Recalls UK — Nissan Qashqai & X-Trail: power steering assistance may fail (R/2011/159, build 06/08/2010–12/08/2011)",
+    "url": "https://car-recalls.co.uk/recall/nissan-qashqai-power-steering-assistance-may-fail/"
+   },
+   {
+    "id": 4,
+    "title": "AutoInsider — Recall R/2011/159 Nissan: power steering assistance may fail",
+    "url": "https://www.autoinsider.co.uk/recalls/r2011159-nissan-qashqai"
+   },
+   {
+    "id": 5,
+    "title": "کاظم — تعمیر گیربکس CVT نیسان (بیشتر خرابی‌ها از بی‌توجهی به روغن گیربکس)",
+    "url": "https://kaazem.com/nissan-cvt-transmission-repair/"
+   },
+   {
+    "id": 6,
+    "title": "Australian X-Trail Forum — Timing chain rattle T31 (QR25DE)",
+    "url": "https://baustralianxtrail.runboard.com/t134953"
+   },
+   {
+    "id": 7,
+    "title": "MyEngineSpecs — Nissan QR25DE engine problems",
+    "url": "https://myenginespecs.com/nissan/nissan-qr25de-engine-problems-what-you-need-to-know/"
+   },
+   {
+    "id": 8,
+    "title": "EngineCode.uk — Nissan MR20DE engine guide: specs, issues (CVTC solenoid, chain tensioner)",
+    "url": "https://www.enginecode.uk/nissan/mr20de-specs"
+   },
+   {
+    "id": 9,
+    "title": "TorqueBot — Nissan X-Trail common problems (T31 CVT failures, 2.0 petrol transmission cooler inside radiator cracking, MR20DE chain stretch)",
+    "url": "https://torquebot.io/cars/nissan-x-trail/common-problems"
+   },
+   {
+    "id": 10,
+    "title": "همراه مکانیک — معایب نیسان ایکس تریل (CVT، صدای موتور در دور بالا، خدمات پس از فروش محدود)",
+    "url": "https://www.hamrah-mechanic.com/mag/nissan-x-trail-disadvantages/"
+   }
+  ]
+ },
+ "nissan-murano-z51": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "CVT fault: Nissan's extension of the CVT warranty to 10 years/120,000 miles for 2003–2010 Murano (source 7) confirms a known weakness; confidence raised from medium to high",
+   "Added fault: electronic steering column lock (ESCL) no-start/steering won't unlock on the 2009+ Murano, from owner complaints and a forum (medium confidence); Nissan extended ESCL warranty for Maxima/Altima but not Murano",
+   "Recalls 18V916 (2009 ABS HCU) and 17V184 (2013–2014 power steering hose clamp) re-checked on the NHTSA API; wording confirmed",
+   "diagnostic_tips_fa: added an ESCL no-start check and a warning not to apply third-generation (2015+) Murano faults such as AWD fluid leaks and ABS actuator failure"
+  ],
+  "removed_claims": [
+   "No faults removed. The Persian gadgetnews article on Murano problems covers only the third generation (2015+) and was not used; NHTSA 09V393 TPMS nut corrosion was not added because it applies only in road-salt regions"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Go4Trans — JF010E / RE0F09A/B CVT: applications, fluid NS-2, typical problems",
+    "url": "https://shop.go4trans.com/transmissions-info/jf010e"
+   },
+   {
+    "id": 2,
+    "title": "Cobra Transmission — JF010E (RE0F09A/RE0F09B) CVT rebuild kit applications (incl. Murano)",
+    "url": "https://cobratransmission.com/re0f09b-jf010e-master-rebuild-kit-with-pistons-compatible-with-fits-jx35-qx60-presage-maxima-altima-pathfinder-quest-el-grand-evalia-teana-latitute-murano/"
+   },
+   {
+    "id": 3,
+    "title": "تویوکارا — راهنمای تعمیر گیربکس CVT نیسان مورانو و تیانا: مشکلات رایج و راه‌حل‌ها",
+    "url": "https://toyocara.com/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-cvt-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%85%D9%88%D8%B1%D8%A7%D9%86%D9%88-%D9%88-%D8%AA/"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2009 Nissan Murano (18V916: ABS hydraulic control unit valves)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=NISSAN&model=MURANO&modelYear=2009"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2014 Nissan Murano (17V184: power steering high-pressure hose clamp)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=NISSAN&model=MURANO&modelYear=2014"
+   },
+   {
+    "id": 6,
+    "title": "Crew Chief Wiki — Nissan Murano common problems (Z51: CVT shudder/P0868, VQ35DE timing chain rattle P0340/P0345)",
+    "url": "https://crewchief.cc/wiki/vehicle-problems/nissan-murano"
+   },
+   {
+    "id": 7,
+    "title": "Automotive Addicts — Nissan extends powertrain warranty on CVT to 10 years/120,000 miles (2003–2010 Murano and others)",
+    "url": "https://www.automotiveaddicts.com/8454/extended-powertrain-warranty-on-cvt-transmission-equipped-nissan-vehicles"
+   },
+   {
+    "id": 8,
+    "title": "CarComplaints — 2009 Nissan Murano: electronic steering column lock failed / steering lock won't release",
+    "url": "https://www.carcomplaints.com/Nissan/Murano/2009/electrical/electronic_steering_column_lock_failed_while_driving.shtml"
+   },
+   {
+    "id": 9,
+    "title": "NICOclub Nissan Forum — 2009 Murano steering column motor problem (owner reports)",
+    "url": "https://forums.nicoclub.com/2009-murano-steering-column-motor-problem-t498671.html"
+   }
+  ]
+ },
  "nissan-teana-j32": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -6457,6 +6942,105 @@
     "id": 9,
     "title": "گیربکس وان — تعمیر گیربکس میتسوبیشی ASX",
     "url": "https://gearboxone.com/repair/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-asx/"
+   }
+  ]
+ },
+ "mitsubishi-outlander-cw": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Recalls 14V562, 18V069, 15V232, 16V791, 17V461 and 14V366 checked against the NHTSA API; scope confirmed. 16V791 remedy is a new ball-joint boot and crank-arm inspection, so the boot was added to parts",
+   "Water pump fault: 1A Auto says the V6 pump sits behind the timing belt and the 4-cylinder pump is belt-driven; cause, parts and maintenance updated. Engine descriptions note that the 6B31 uses a timing belt",
+   "Added fault: NHTSA 14V365 transfer case oil seal (2007 and 2009 4WD), ATF enters transfer case causing poor shifting or no drive",
+   "Added fault: NHTSA 14V366 power steering pressure tube leak on the V6 6-speed (moved from diagnostic tips into a fault)",
+   "Added fault: NHTSA 15V233 blower motor failure (2009–2011)",
+   "Added fault: crank position sensor no-start (1A Auto, low confidence)",
+   "diagnostic_tips_fa: added a transfer case check; maintenance_fa: added the hidden external CVT filter behind the cooler (Persian search) and changing the water pump with the V6 timing belt"
+  ],
+  "removed_claims": [
+   "Not added: NHTSA 16V458 lower control arm/cross member and 20V279 cross member corrosion, because both are limited to US road-salt states and do not fit Iranian conditions"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "1A Auto — Problems with the Mitsubishi Outlander 2nd gen (2007–2013): CVT, crank position sensor, water pump (V6 behind timing belt, 4-cyl belt-driven)",
+    "url": "https://blog.1aauto.com/problems-with-the-mitsubishi-outlander-2nd-generation-2007-to-2013/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیرکار — تعمیر گیربکس میتسوبیشی اوتلندر (ایرادات CVT، روغن CVTF-J4، فیلتر داخلی و بیرونی)",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-%D8%A7%D9%88%D8%AA%D9%84%D9%86%D8%AF%D8%B1/"
+   },
+   {
+    "id": 3,
+    "title": "GearboxList — CVT Jatco JF011E: specifications, applications, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf011e/"
+   },
+   {
+    "id": 4,
+    "title": "Sunbelt Valve Body Builders — Understanding the JF011E CVT transmission: common issues",
+    "url": "https://sunbeltvalvebodies.com/blogs/news/understanding-the-jf011e-cvt-transmission-common-issues-and-how-remanufactured-parts-can-help"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2010 Mitsubishi Outlander (14V562 drive pulleys, 18V069 belt tensioner, 15V232 lighting/wiper ECU, 15V233 blower motor)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER&modelYear=2010"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls API — 2007 Mitsubishi Outlander (16V791 wiper linkage, 17V461 wiper motor, 14V366 6-speed power steering tube)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER&modelYear=2007"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA recalls API — 2009 Mitsubishi Outlander (14V365 4WD transfer case oil seal, 14V564 brake light switch)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER&modelYear=2009"
+   }
+  ]
+ },
+ "mitsubishi-outlander-gf": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "All five recalls (16V563, 17V609, 18V070, 20V741, 17V233) checked against the NHTSA API for 2016 and 2014; scope and wording confirmed. Source 4 now points to the 2014 list, because 17V609 is not listed under 2015 in what was checked",
+   "Identity: hamrah-mechanic confirms only the 2.4 CVT (170 hp, 232 Nm) for Iran, imported 2014–2018 (2014 model, Type 4 facelift, then Type 3/5 in 2015); the V6 in the roster note is not documented for Iran, and the engine description now says so",
+   "CVT fault: added GearboxList's belt grooving the pulleys from valve-body and software flaws",
+   "Added fault: NHTSA 25V507 and its 26V252 expansion, liftgate gas spring corrosion and rupture (2014–2020)",
+   "diagnostic_tips_fa: warns that CW-only faults (drive belt tensioner, transfer case seal, V6 power steering tube) do not apply; maintenance: CVT interval set to about 40k km per GearboxList, and CVTF-J4 noted as the counterpart of Nissan NS-3"
+  ],
+  "removed_claims": [
+   "No CW (JF011E / 4B12 drive belt, 6B31 V6) faults had leaked in; nothing removed"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF016E: applications (Outlander GF 2014–2022, Qashqai J11, X-Trail T32), NS-3 fluid, 40k km interval, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf016e/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیرکار — تعمیر گیربکس میتسوبیشی اوتلندر (ایرادات CVT، روغن CVTF-J4، فیلتر داخلی و بیرونی)",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-%D8%A7%D9%88%D8%AA%D9%84%D9%86%D8%AF%D8%B1/"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2016 Mitsubishi Outlander (16V563 CVT software, 17V609 relays, 18V070 and 20V741 parking brake, 17V233 door latch)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER&modelYear=2016"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2014 Mitsubishi Outlander (18V070 parking brake, 20V403 rear center seat belt buckle, 25V507 and 26V252 liftgate gas springs)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER&modelYear=2014"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — معایب میتسوبیشی اوتلندر (نسل سوم وارداتی ۲۰۱۴ تا ۲۰۱۸، موتور ۲٫۴ لیتری ۱۷۰ اسب و ۲۳۲ نیوتن‌متر، CVT، کندی شتاب اولیه)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-outlander/"
+   },
+   {
+    "id": 6,
+    "title": "MyMotorList — Mitsubishi Outlander engines (4B12 since 2006; 4J12 since 2013 on European, Chinese and American Outlanders)",
+    "url": "https://mymotorlist.com/models/mitsubishi-outlander/"
    }
   ]
  },
@@ -6692,6 +7276,48 @@
     "id": 6,
     "title": "What Car? — Used SsangYong Tivoli 2015-present reliability and recalls",
     "url": "https://www.whatcar.com/ssangyong/tivoli/hatchback/used-review/n17889/advice"
+   }
+  ]
+ },
+ "mercedes-benz-e-class-w210": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "E240 variant: M112 was 2.4 L until 2000 and 2.6 L after; added 2.6 L to the M112 description",
+   "E280/E320 M112 variant years set to model year 1998–2002 (the M104 carried through MY1997)",
+   "Added the 4-speed 722.4 automatic on some early cars; 722.6 5-speed from MY1997",
+   "Noted E200 Kompressor as a supercharged M111",
+   "Harmonic balancer fault: added the official campaign source (scope: 210 with M112, MY1998–2001) and raised it to three sources",
+   "Blower regulator: added the W140 regulator as a cheaper substitute (per KLB)"
+  ],
+  "removed_claims": [
+   "Spring perch fault: removed the unsourced claim that Mercedes issued no worldwide recall and repaired only some cars with riveted perches"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Mercedes E Class W210 Front Spring Perch Failure – Repair",
+    "url": "http://www.mercedes.gen.in/mercedes-e-class-w210-front-spring-perch-failure-repair/"
+   },
+   {
+    "id": 2,
+    "title": "Buying Advice Mercedes-Benz E-Class (W210) 1995-2002 Common Issues – KLB Productions",
+    "url": "https://klbproductions.org/index.php/2024/01/07/buying-advice-mercedes-benz-e-class-w210-1995-2002-common-issues-engines-inspection/"
+   },
+   {
+    "id": 3,
+    "title": "Common Problems W210 E Class – Mercedes Enthusiasts",
+    "url": "https://mercedes-enthusiasts.co.uk/common-problems-w210-e-class/"
+   },
+   {
+    "id": 4,
+    "title": "E320 Harmonic Balancer Recall – BenzWorld forum",
+    "url": "https://www.benzworld.org/threads/e320-harmonic-balancer-recall.1575764/"
+   },
+   {
+    "id": 5,
+    "title": "It's official. Harmonic Balancer Service Campaign released 4/5/05 – BenzWorld (campaign 2005020003: 163/202/208/210 with M112, MY1998–2001)",
+    "url": "https://www.benzworld.org/threads/its-official-harmonic-balancer-service-campaign-released-4-5-05.1206075/"
    }
   ]
  },
