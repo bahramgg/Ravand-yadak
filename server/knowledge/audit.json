@@ -1102,6 +1102,63 @@
    }
   ]
  },
+ "jac-j5": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: both variants dated 1392-1396 (hamrah-mechanic); 1.8 engine noted as Mitsubishi-derived; gearbox code F4A42 marked as unconfirmed (no opened source names it; Wikipedia lists a 5-speed automatic for China, while Iranian sources say 4-speed).",
+   "Merged the 'overheating / slipping / burning smell' and 'cold shift shock / check light' faults into one gearbox shift-quality fault, citing powergearbox, tenpartkala (TCU software update) and car.ir; confidence set to medium.",
+   "Reverse-gear fault kept (car.ir says it is especially frequent on J5); added the gearbox filter to parts.",
+   "Diagnostic tips: removed the F4A42 part-search advice; added a TCU software-update check before any teardown.",
+   "Noted the thin evidence: only one fault (reverse gear) is clearly J5-specific; the others are gearbox-family or design traits confirmed by Iranian sources."
+  ],
+  "removed_claims": [
+   "Engine oil consumption between services: a single owner report on becharkh; not a documented model-specific fault.",
+   "Interior trim squeaks and rattles after about 50k km: not in hamrah-mechanic's J5 weakness list and generic to most cars."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "با معایب جک J5 آشنا شوید — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problems-of-jac-j5/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیر گیربکس جک j5 — پاور گیربکس",
+    "url": "https://powergearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-j5/"
+   },
+   {
+    "id": 3,
+    "title": "مشکلات رایج گیربکس جک و نحوه رفع آن‌ها — car.ir",
+    "url": "https://car.ir/news/30336-common-jac-transmission-issues-solutions"
+   },
+   {
+    "id": 4,
+    "title": "جک J5 — نظرات کاربران و مشکلات — بچرخ",
+    "url": "https://becharkh.com/forum/car?brand=jac&model=j5&s=1"
+   },
+   {
+    "id": 5,
+    "title": "روغن گیربکس مناسب جک J5 اتومات 1.8AT — مای‌کارلوبس",
+    "url": "https://mycarlubs.com/car_details/46/category/3"
+   },
+   {
+    "id": 6,
+    "title": "تعویض روغن گیربکس جک j5 — تعمیرکار",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%88%DB%8C%D8%B6-%D8%B1%D9%88%D8%BA%D9%86-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/%D8%AA%D8%B9%D9%88%DB%8C%D8%B6-%D8%B1%D9%88%D8%BA%D9%86-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-j5/"
+   },
+   {
+    "id": 7,
+    "title": "JAC Heyue — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/JAC_Heyue"
+   },
+   {
+    "id": 8,
+    "title": "آپدیت گیربکس جک جی ۵ اتومات — تن پارت کالا",
+    "url": "https://www.tenpartkala.com/blog/%D8%A2%D9%BE%D8%AF%DB%8C%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-%D8%AC%DB%8C-5-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA/"
+   }
+  ]
+ },
  "jac-s3": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -1405,6 +1462,110 @@
     "id": 11,
     "title": "تهران امداد کار — بررسی مشکلات رایج گیربکس اتومات MVM",
     "url": "https://www.tehranemdadcar.com/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-mvm/"
+   }
+  ]
+ },
+ "mvm-x33": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "CVT fault: cause widened to belt/chain and pulley wear plus CVT oil-pump weakness (Iranian gearbox-shop sources); added oil pump to parts; added source 16.",
+   "X33 Cross fuel fault: trimmed to what owner reports support (check light and catalyst code after regular petrol, dealer requires super, ~70-day wait for catalyst); dropped octane booster and spark plugs from parts; added becharkh owner forum as source 17.",
+   "X33 Cross rear suspension: confidence high -> medium (only khodro45 could be confirmed; hamrah-mechanic page unreachable); reframed as a design trait that must be told apart from worn bushes and shock absorbers.",
+   "X33 New catalyst smell: confidence medium -> low; the khodrobank owner page was unreachable and search found only general catalyst complaints, not the smell itself.",
+   "X33 Cross automatic gearbox: '9 virtual gear CVT' changed to plain CVT (khodro45 states CVT only); power set to about 102 hp per khodro45.",
+   "Maintenance: CVT oil interval changed from 40-50k to 35-50k km to match Iranian service guidance; dropped the octane-booster advice.",
+   "Faults reordered, most common first."
+  ],
+  "removed_claims": [
+   "Trunk door rattle from the tailgate-mounted spare wheel: both cited pages (khodrobank, hamrah-mechanic) were unreachable, no independent support found, and it is close to generic.",
+   "X33 Cross 'knock uphill and in reverse' and 'turbo cuts in about 2 seconds late': not supported by the owner reports found; turbo lag is a characteristic, not a fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — ام وی ام X33 بخریم یا نه؟ مزایا و معایب (به‌همراه نظرات مالکان X33 کراس)",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-mvm-x33/"
+   },
+   {
+    "id": 2,
+    "title": "خودروبانک — ام وی ام X33 اتوماتیک (نیو) و نظرات بلندمدت مالکان ۱۳۹۳ تا ۱۴۰۴",
+    "url": "https://www.khodrobank.com/cars/%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85/281/%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-X33-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات و نقاط ضعف ام وی ام X33 اتوماتیک ۱۳۹۳ تا ۱۳۹۵",
+    "url": "https://bama.ir/car-reviews/mvm/x33-specs-1201-391-at"
+   },
+   {
+    "id": 4,
+    "title": "باما — مشخصات و نقاط ضعف ام وی ام X33S گیربکس CVT ۱۳۹۵ تا ۱۴۰۰",
+    "url": "https://bama.ir/car-reviews/mvm/x33s-specs-1216-atsport"
+   },
+   {
+    "id": 5,
+    "title": "باما — مشخصات ام وی ام X33S اتوماتیک ۵ سرعته ۱۳۹۹ تا ۱۴۰۱",
+    "url": "https://bama.ir/car-reviews/mvm/x33s-specs-1404-at5speed"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — ام وی ام X33 اسپرت (X33S)؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/mvm-x33-sport/"
+   },
+   {
+    "id": 7,
+    "title": "خودرو۴۵ — بررسی مشخصات ام وی ام X33S توربو",
+    "url": "https://khodro45.com/mag/mvm-x33s-turbo/"
+   },
+   {
+    "id": 8,
+    "title": "خودرو۴۵ — X33 کراس اتوماتیک؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/mvm-x33-cross/"
+   },
+   {
+    "id": 9,
+    "title": "خودرو (car.ir) — ام وی ام X33 دنده‌ای فیس قدیم، مشخصات",
+    "url": "https://car.ir/425-mvm-x33-manual"
+   },
+   {
+    "id": 10,
+    "title": "Wikipedia — Chery Tiggo 3 (MVM X33/X33S)",
+    "url": "https://en.wikipedia.org/wiki/Chery_Tiggo_3"
+   },
+   {
+    "id": 11,
+    "title": "ChinaPEV — Chery ACTECO engine review (SQR484F, SQRE4T15B)",
+    "url": "https://www.chinapev.com/chery/chery-engine-review-introduction-including-1-5l-1-5t-1-6l-2-0l-and-1-0l/"
+   },
+   {
+    "id": 12,
+    "title": "مای‌کارلوبس — روغن گیربکس ام وی ام X33S CVT (گیربکس QR019CHA)",
+    "url": "https://mycarlubs.com/car_details/203/category/3"
+   },
+   {
+    "id": 13,
+    "title": "تهران امداد کار — بررسی مشکلات رایج گیربکس اتومات MVM",
+    "url": "https://www.tehranemdadcar.com/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-mvm/"
+   },
+   {
+    "id": 14,
+    "title": "یداکار — تسمه تایم ام وی ام X33 هاچینسون HUT-173-AHP-25 (نام قطعه)",
+    "url": "https://yadacar.com/belt-time/1852-173-ahp-25-%D8%AA%D8%B3%D9%85%D9%87-%D8%AA%D8%A7%DB%8C%D9%85-mwm-x33-%D9%87%D8%A7%DA%86%DB%8C%D9%86%D8%B3%D9%88%D9%86.html"
+   },
+   {
+    "id": 15,
+    "title": "باغشنی — قیمت و مشخصات ام وی ام X33 جدید (New X33)",
+    "url": "https://baghshani.com/blog/car/mvm/new-x33"
+   },
+   {
+    "id": 16,
+    "title": "سامیت خودرو — تعمیر گیربکس ام وی ام X33، مدل‌های CVT و دنده‌ای",
+    "url": "https://summitkhodro.com/weblog/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-x33-%D8%B3%D8%B1%DB%8C-%D9%85%D8%AF%D9%84%D9%87%D8%A7%DB%8C-cvt-%D9%88-%D8%AF/"
+   },
+   {
+    "id": 17,
+    "title": "بچرخ — ام وی ام X33 کراس، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?s=1&brand=mvm&model=mvm-x33-cross"
    }
   ]
  },
@@ -2025,6 +2186,77 @@
     "id": 8,
     "title": "RAV4 World forum — Differential Coupling Warranty Enhancement",
     "url": "https://www.rav4world.com/threads/differential-coupling-warranty-enhancement.212361/"
+   }
+  ]
+ },
+ "toyota-land-cruiser-prado-j150": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Rear air suspension: limited to trims fitted with rear air suspension; GX 460 sibling source added; confidence stays medium.",
+   "Brake booster/master cylinder: noted that the Australian sources (Unsealed 4X4, Westside) date it to early 2009-2012 builds without tying it to an engine; not a recall.",
+   "Steering intermediate shaft: confirmed only by Westside Auto; Iranian part name changed to «میل هزارخاری فرمان».",
+   "1GR-FE water pump: added the timing-cover seal and the Toyota/Lexus water-pump leak service bulletin (source 11).",
+   "Added fault: early front lower control-arm and shock bush wear, clunk over bumps (Unsealed 4X4 for all engines, Haynes for GX 460).",
+   "Added fault: 2010 Prado VX/VX-L sales suspended in the UAE for control-unit reprogramming, the same remedy as NHTSA recall 10V159 (GX 460 VSC ECU software).",
+   "Diagnostic tips: removed the KDSS tip; head-gasket wording reduced to a separate check; added a recall-status check for 2010 UAE imports and a clunk-location tip.",
+   "Maintenance: dropped the oil-pump strainer claim; kept regular oil changes for 1GR-FE."
+  ],
+  "removed_claims": [
+   "Oil-pump pickup strainer clogged with sludge causing low oil pressure and bearing damage: only an Iranian workshop SEO page supports it; generic to any neglected engine.",
+   "1GR-FE head gasket failure at about 240k km: single engine-spec site; head-gasket reports concern early 1GR production and high mileage, not the J150.",
+   "KDSS cylinder or line leaks and mis-set KDSS after a lift: forum-only evidence, mostly an aftermarket-lift issue, and KDSS fitment on the GCC versions imported to Iran is not confirmed; source 7 dropped."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Unsealed 4X4 — Toyota Prado 150 problems: The good, bad & costly issues",
+    "url": "https://unsealed4x4.com.au/toyota-prado-150-problems/"
+   },
+   {
+    "id": 2,
+    "title": "Westside Auto — Toyota LandCruiser Prado 150 Series: A Buyer's Guide",
+    "url": "https://www.westsideauto.com.au/news/toyota-landcruiser-prado-150-series-a-buyers-guide"
+   },
+   {
+    "id": 3,
+    "title": "MotorReviewer — Toyota 1GR-FE 4.0 V6 Engine Specs, Problems, Reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=128"
+   },
+   {
+    "id": 4,
+    "title": "MotorReviewer — Toyota 2TR-FE 2.7L Engine Specs, Problems, Reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=125"
+   },
+   {
+    "id": 5,
+    "title": "شهر سرویس — تعمیرگاه تویوتا پرادو",
+    "url": "https://shahreservice-cars.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1%DA%AF%D8%A7%D9%87-%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%D9%BE%D8%B1%D8%A7%D8%AF%D9%88/"
+   },
+   {
+    "id": 8,
+    "title": "Vroomo — List Of Suspension Issues In The Toyota Prado",
+    "url": "https://vroomo.co.uk/toyota-prado-suspension-issues/"
+   },
+   {
+    "id": 9,
+    "title": "Gulf News — Al Futtaim suspends sales of two Prado SUV models (2010 VX / VX-L, control unit reprogramming)",
+    "url": "https://gulfnews.com/amp/story/business%2Fal-futtaim-suspends-sales-of-two-prado-suv-models-1.615319"
+   },
+   {
+    "id": 10,
+    "title": "NHTSA recall 10V159 — 2010 Lexus GX 460 vehicle stability control ECU software",
+    "url": "https://static.nhtsa.gov/odi/rcl/2010/RCONL-10V159-0123.pdf"
+   },
+   {
+    "id": 11,
+    "title": "Engine Patrol — 11 Most Common Lexus GX 460 Problems (air suspension leaks, water pump TSB)",
+    "url": "https://enginepatrol.com/lexus-gx-460-common-problems/"
+   },
+   {
+    "id": 12,
+    "title": "Haynes — 2010 Lexus GX460 Problems Breakdown (front lower control arm wear)",
+    "url": "https://us.haynes.com/blogs/tips-tutorials/2010-lexus-gx460-problems-breakdown"
    }
   ]
  },
