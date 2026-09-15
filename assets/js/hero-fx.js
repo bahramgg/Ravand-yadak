@@ -23,11 +23,11 @@
   var GROUND = 0.86;        /* خط زمین برای پاشش */
   var EXHAUST_X = 0.055;    /* عقب خودرو در قاب — دود از اینجا بلند می‌شود */
   var EXHAUST_Y = 0.665;
-  /* phones show the scene as a band at the bottom (style.css, max-width 991px: background-size auto 44%,
-     position 5% 100%); smoke and splashes follow that band instead of the desktop frame */
-  var mobileScene = window.matchMedia('(max-width: 991px)');
-  var BAND = 0.44, BAND_X = 0.05, IMG_RATIO = 1584 / 672;
-  var EXHAUST_IMG_X = 0.107, EXHAUST_IMG_Y = 0.665;
+  /* portrait phones show their own 9:16 frame (style.css: plate-mobile.jpg, 768x1376, cover, position 46% 100%);
+     smoke and splashes are placed in that frame's coordinates instead of the desktop scene */
+  var mobileScene = window.matchMedia('(max-width: 991px) and (orientation: portrait)');
+  var M_W = 768, M_H = 1376, M_POS_X = 0.46, M_POS_Y = 1;
+  var M_EXHAUST_X = 0.13, M_EXHAUST_Y = 0.715, M_GROUND_Y = 0.79;
   var exX = 0, exY = 0, groundY = 0;
 
   var LAYERS = [
@@ -71,12 +71,12 @@
 
   function placeScene() {
     if (mobileScene.matches) {
-      var imgH = H * BAND;
-      var imgW = imgH * IMG_RATIO;
-      var offX = Math.max(0, imgW - W) * BAND_X;
-      exX = EXHAUST_IMG_X * imgW - offX;
-      exY = (H - imgH) + EXHAUST_IMG_Y * imgH;
-      groundY = H - imgH * 0.1;
+      var s = Math.max(W / M_W, H / M_H);           /* background-size: cover */
+      var dw = M_W * s, dh = M_H * s;
+      var ox = (W - dw) * M_POS_X, oy = (H - dh) * M_POS_Y;
+      exX = ox + M_EXHAUST_X * dw;
+      exY = oy + M_EXHAUST_Y * dh;
+      groundY = oy + M_GROUND_Y * dh;
     } else {
       exX = W * EXHAUST_X;
       exY = H * EXHAUST_Y;
