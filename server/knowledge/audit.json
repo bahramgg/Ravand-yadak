@@ -1275,6 +1275,58 @@
    }
   ]
  },
+ "haima-s7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Added gap fault: gearbox oil leaks from seals and joints on both Powertech gearboxes (gearboxmajid; hamrah-mechanic owner comments; repair-shop search results linking low oil to burning smell and power loss) — placed first.",
+   "OTS sensor fault: futuregearbox confirms knocks on deceleration from a failed oil-temperature sensor in the turbo 6-speed; 'locks in one gear / limp mode' and reverse-gear knock not literally in the source — symptom narrowed.",
+   "5-speed solenoid / seal fault confirmed by futuregearbox (jerk at start, delayed engagement from worn seals and O-rings) — kept.",
+   "6-speed slipping: futuregearbox (weak pressure solenoids, worn clutch plates) and gearboxmajid (power loss, shift delay, early clutch wear in heavy traffic) — confidence low -> medium; traffic context added; unsourced 'wrong oil speeds it up' removed.",
+   "Brake-switch fault: mashinesoft confirms no-start and effect on gear engagement — 'gear stays in P' reworded as gear not engaging.",
+   "Identity: hamrah-mechanic confirms 1.8T 170 hp / 230 Nm with 6-speed automatic; futuregearbox and gearboxmajid confirm Korean Powertech 5- and 6-speed units.",
+   "Oil type: futuregearbox gives SP-III (5AT) / SP-IV (6AT) but gearboxmajid lists ATF SP-III MV and 5.8 L for both — maintenance now tells the mechanic to confirm the 6AT fluid; interval 50–70k (futuregearbox) / 60k or 4 years (gearboxmajid)."
+  ],
+  "removed_claims": [
+   "Turbo 6AT capacity '7.5 L SP-IV every ~55k km' — servicetak not opened and gearboxmajid gives 5.8 L; conflicting, removed.",
+   "Engine oil '5.1 L every 8,000 km' — from an unopened service page; replaced with generic turbo-rated oil advice.",
+   "Brake fluid DOT4 every 50k and power-steering fluid check — generic maintenance, not model-specific.",
+   "Using SP-III instead of SP-IV accelerates 6AT slipping — not stated in any opened source.",
+   "Gearbox locking into one gear (limp mode) as part of the OTS fault — not in the cited source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "راهنمای جامع تعمیر گیربکس اتوماتیک هایما S7 (توربو و ۲۰۰۰ سی‌سی) — فیوچر گیربکس",
+    "url": "https://futuregearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-s7/"
+   },
+   {
+    "id": 2,
+    "title": "مشکل میکرو سوئیچ ترمز و استارت نخوردن هایما S5-S7 — ماشین‌سافت",
+    "url": "https://mashinesoft.com/blog/17-%D9%85%D8%B4%DA%A9%D9%84-%D9%85%DB%8C%DA%A9%D8%B1%D9%88-%D8%B3%D9%88%D8%A6%DB%8C%DA%86-%D8%AA%D8%B1%D9%85%D8%B2-%D9%88-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA-%D9%86%D8%AE%D9%88%D8%B1%D8%AF%D9%86-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-s5-s7.html"
+   },
+   {
+    "id": 3,
+    "title": "هایما S7 توربو؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/haima-s7/"
+   },
+   {
+    "id": 4,
+    "title": "راهنمای سرویس هایما S7 توربو — سرویس تک",
+    "url": "https://www.servicetak.ir/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-s7-%D8%AA%D9%88%D8%B1%D8%A8%D9%88/"
+   },
+   {
+    "id": 5,
+    "title": "با معایب هایما S7 توربو آشنا شوید — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-haima-s7/"
+   },
+   {
+    "id": 6,
+    "title": "صفر تا ۱۰۰ گیربکس هایما S7 — تعمیرگاه مجید",
+    "url": "https://gearboxmajid.com/articles/68-haima-s7-gearbox-repair"
+   }
+  ]
+ },
  "haima-s5": {
   "verdict": "corrected",
   "duplicate_of": "",
