@@ -954,6 +954,99 @@
    }
   ]
  },
+ "nissan-maxima": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Automatic variant years: replaced vague 'after the manual' with the same 1380/1381–1391 range (no source dates the automatic separately).",
+   "Engine entry: added individual coil-on-plug ignition; noted A33 = fifth-generation Maxima (pedal.ir).",
+   "Automatic-gearbox fault: symptoms aligned with iranjapancar (1→2 clunk, delayed engagement from stop, whine at speed); noted Iranian sources rate the gearbox durable when serviced; Iranian buying guide added as a source.",
+   "Rear-suspension fault: moved to second place; bushings and stabilizer links added (iranjapancar); citations ordered.",
+   "Coil fault: second source added (Flagship One, 2001 Maxima); wording specifies coil-on-plug misfire.",
+   "Bearing fault: confidence medium→low and reframed as maintenance-driven (Iranian sources: poor oil / low oil / traffic heat), not a design flaw.",
+   "Crank/cam sensor fault: added P1336 and the damaged flywheel signal-plate cause; noted VQ30DE has two crank sensors; kept low confidence.",
+   "Head-gasket fault: cause now names tap water instead of coolant (iranjapancar).",
+   "Diagnostic tips: added coil-swap test and a note that recall 03V455 does not cover the Iranian VQ30DE Maxima; fuel-consumption baseline updated to ~10–11 L combined / 13 L city.",
+   "Maintenance: added genuine (Hitachi) coil and sensor advice; coolant instead of tap water."
+  ],
+  "removed_claims": [
+   "Fault 'high fuel consumption from clogged injectors / O2 / MAF sensor': generic causes on any car and consumption is inherent to this V6; kept only as a baseline tip.",
+   "Not added: iranjapancar's 'electric power steering pump leak' — A33 uses a hydraulic pump and the source describes generic wear after 100,000 miles.",
+   "Not added: NHTSA recall 03V455 (crank/cam sensor solder) — covers vehicles built April–June 2002 (2002–2003 models with other engines), not the VQ30DE A33."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "پدال — نیسان ماکسیما بخریم یا نه؟ (موتور VQ30DE، ۱۳۸۰ تا ۱۳۹۱، معایب)",
+    "url": "https://www.pedal.ir/buying-guide/629762-used-nissan-maxima-review/"
+   },
+   {
+    "id": 2,
+    "title": "Z4Car — معایب نیسان ماکسیما و ۵ دلیل برای نخریدن (سفیرو A33، ۱۳۸۱ تا ۱۳۹۱)",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%85%D8%A7%DA%A9%D8%B3%DB%8C%D9%85%D8%A7"
+   },
+   {
+    "id": 3,
+    "title": "همراه مکانیک — با معایب ماکسیما آشنا شوید",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-nissan-maxima/"
+   },
+   {
+    "id": 4,
+    "title": "ایران ژاپن کار — ۶ مورد از خرابی‌های خودرو ماکسیما",
+    "url": "https://iranjapancar.com/fa/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/6-%D9%85%D9%88%D8%B1%D8%AF-%D8%A7%D8%B2-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D9%87%D8%A7%DB%8C-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D9%85%D8%A7%DA%A9%D8%B3%DB%8C%D9%85%D8%A7"
+   },
+   {
+    "id": 5,
+    "title": "CarsGuide — 2000 Nissan Maxima problems (coil packs)",
+    "url": "https://www.carsguide.com.au/nissan/maxima/problems/2000"
+   },
+   {
+    "id": 6,
+    "title": "Maxima.org forums — Starting issues related to camshaft/crankshaft sensors (2000-2003)",
+    "url": "https://maxima.org/forums/5th-generation-maxima-2000-2003/613541-starting-issues-related-camshaft-crankshaft-sensors.html"
+   },
+   {
+    "id": 7,
+    "title": "JustAnswer — Nissan Maxima transmission issues (RE4F04B solenoids / valve body)",
+    "url": "https://www.justanswer.com/nissan/tnjpx-nissan-maxima-starting-third-gear-od-off.html"
+   },
+   {
+    "id": 8,
+    "title": "AltimaForums — 4-speed transmission info thread (RE4F04B flare complaints)",
+    "url": "https://www.altimaforums.net/threads/4spd-transmission-info-thread-re4f04b.6041/"
+   },
+   {
+    "id": 9,
+    "title": "MotorReviewer — Nissan 3.0L VQ30DE engine specs and reliability (timing chain)",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=59"
+   },
+   {
+    "id": 10,
+    "title": "The Weekly Driver — 2000-2003 Nissan Maxima reliability (engine, electrical, cooling complaints)",
+    "url": "https://theweeklydriver.com/reliability/nissan/maxima/2000-2003/"
+   },
+   {
+    "id": 11,
+    "title": "2001 Nissan Maxima Problems & Reliability — Flagship One",
+    "url": "https://www.fs1inc.com/blog/2001-nissan-maxima-problems-reliability/"
+   },
+   {
+    "id": 12,
+    "title": "Nissan recall 03V455 crank/cam position sensor — 2002 Maxima — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Nissan/Maxima/2002/recalls/nissan-crank-cam-position-sensor-weld-03v455000.shtml"
+   },
+   {
+    "id": 13,
+    "title": "DTC P1336 crankshaft position sensor fix on 2000 5th-gen Maxima — my4dsc",
+    "url": "https://www.my4dsc.com/dtc-p1336-crankshaft-position-sensor-fix-on-2000-5thgen-nissan-maxima/"
+   },
+   {
+    "id": 14,
+    "title": "راهنمای خرید نیسان ماکسیما کارکرده — دیجیاتو",
+    "url": "https://digiato.com/article/2018/10/18/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AE%D8%B1%DB%8C%D8%AF-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%85%D8%A7%DA%A9%D8%B3%DB%8C%D9%85%D8%A7-%DA%A9%D8%A7%D8%B1%DA%A9%D8%B1%D8%AF%D9%87"
+   }
+  ]
+ },
  "brilliance-h330": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1675,6 +1768,85 @@
     "id": 13,
     "title": "دسته موتور گیربکس کیا اپتیما TF موتور MPi — کالا یدک",
     "url": "https://kalayadak24.com/product/9-%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%DA%A9%DB%8C%D8%A7-%D8%A7%D8%A8%D8%AA%DB%8C%D9%85%D8%A7-%DA%A9%D8%AF-%D8%A7%D8%AA%D8%A7%D9%82-tf-%D8%A8/"
+   }
+  ]
+ },
+ "toyota-camry-xv40": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Variants: Iranian sources say only GL and GLX (2.4 2AZ-FE, 5-speed automatic) were imported; the 2010–2011 facelift is listed by Iranian parts shops as GLX 2400 automatic, so '2AZ-FE or 2AR-FE' was corrected to 2AZ-FE.",
+   "Engine: added Iranian-spec output (~158 hp / 218 Nm) and marked 2AZ-FE as the only engine of Iranian imports.",
+   "Transmissions: reduced to 5-speed automatic U250E.",
+   "Oil-consumption fault: added typical onset (~100,000 km) and the 2007 model as the worst year (Persian source); kept high confidence (ZE7 program + TSB + several sources).",
+   "Water-pump fault: restricted to 2AZ-FE and Persian source added; symptom rewritten in Iranian driver wording.",
+   "Power-window switch fault: confirmed on the NHTSA recall list and in the Middle East (Gulf News: UAE Camrys sold 2006–2010 recalled).",
+   "Rear O2 sensor P0138: confidence medium→low (single source, fairly generic).",
+   "Diagnostic tips: added a note that V6 and US 2.5 faults do not apply (with a fallback check if a rare V6 turns up), a water-pump check, and that US pedal recalls exclude Japan-built Denso-pedal cars; ECU reflash wording for the 2007–2009 hesitation.",
+   "Maintenance: removed the V6 oil-line purchase note; ATF WS tied to U250E; warned against tap water in the cooling system."
+  ],
+  "removed_claims": [
+   "Variant 'Camry V6 3500 (2GR-FE, U660E)' and the 5-speed manual: no Iranian source shows them imported (Iranian sources: only GL/GLX 2.4 automatic).",
+   "Fault 'VVT-i rubber oil line rupture' (2GR-FE only): applies to a V6 not sold through Iran's import channel; kept only as a one-line fallback tip.",
+   "Fault '2GR-FE coil failure P0351–P0356': V6-only.",
+   "Fault 'sticking accelerator pedal' (recalls 10V017000 / 09V388000): the pedal recall covered CTS pedals on US/Canada-built cars (Japan-built J-VIN cars with Denso pedals excluded) and the floor-mat recall concerns US all-weather mats — neither fits the Japan-built GCC-spec Camrys imported to Iran.",
+   "Not verified: the ZE7 PDF could not be parsed; the program scope is kept from the draft's other sources (Car Tips Daily, Samarins) and Iranian reports."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Toyota Warranty Policy Bulletin POL14-12 — Warranty Enhancement Program ZE7 Phase 2 (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10091611-5448.pdf"
+   },
+   {
+    "id": 2,
+    "title": "Samarins — Toyota Camry 2007-2011: pros and cons, common problems",
+    "url": "https://www.samarins.com/reviews/camry_07.html"
+   },
+   {
+    "id": 3,
+    "title": "Car Tips Daily — 2AZ-FE Engine Problems",
+    "url": "https://cartipsdaily.com/2az-fe-engine-problems"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2008 Toyota Camry (12V491000, 10V017000, 09V388000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=CAMRY&modelYear=2008"
+   },
+   {
+    "id": 5,
+    "title": "Express Auto Service — The 2GR-FE VVT-i Oil Line Problem Every Owner Should Know",
+    "url": "https://expressautoservice.com/toyota-lexus-v6-oil-leak-the-2gr-fe-vvt-i-oil-line-problem-every-owner-should-know/"
+   },
+   {
+    "id": 6,
+    "title": "Toyota USA Newsroom — Limited Service Campaign for VVT-i Oil Line",
+    "url": "https://pressroom.toyota.com/limited-service-campaign-for-vvt-i-oil-line/"
+   },
+   {
+    "id": 7,
+    "title": "تست و بررسی تویوتا کمری GL — خودرو (car.ir)",
+    "url": "https://car.ir/news/28027-toyota-camry-gl-review"
+   },
+   {
+    "id": 8,
+    "title": "تویوتا کمری 2010-2011 GLX 2400 اتوماتیک — روالی نو",
+    "url": "https://revalyno.com/carmodel/173/%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%DA%A9%D9%85%D8%B1%DB%8C/"
+   },
+   {
+    "id": 9,
+    "title": "Toyota recalls more than 65,000 vehicles in UAE (power window switch) — Gulf News",
+    "url": "https://gulfnews.com/business/toyota-recalls-more-than-65000-vehicles-in-uae-1.1087418"
+   },
+   {
+    "id": 10,
+    "title": "How to tell if your Toyota is affected by the recent recalls (J-VIN Denso pedals excluded) — Consumer Reports",
+    "url": "https://www.consumerreports.org/cro/news/2010/01/how-to-tell-if-your-toyota-is-affected-by-the-recent-recalls/index.htm"
+   },
+   {
+    "id": 11,
+    "title": "مشکلات رایج تویوتا کمری — دیدبان ایران",
+    "url": "https://www.didbaniran.ir/%D8%A8%D8%AE%D8%B4-%D8%A8%D8%A7%D8%B2%D8%B1%DA%AF%D8%A7%D9%86%DB%8C-108/138316-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%DA%A9%D9%85%D8%B1%DB%8C"
    }
   ]
  },
