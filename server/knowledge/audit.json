@@ -3695,6 +3695,50 @@
    }
   ]
  },
+ "toyota-corolla-e170": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed from bama: Iranian XLi/GLi 2014–2016 is the 2.0 L, 143 hp / 187 Nm engine (3ZR-FE) with a 4-speed automatic; engine desc notes that the code is inferred from those specs. CVT and facelift engine remain unconfirmed for Iran.",
+   "All Samarins-sourced faults re-checked on the 2014–2019 page. Samarins describes the US 1.8 2ZR-FE/2ZR-FAE, so these are ZR-family issues rather than issues confirmed on the Iranian 3ZR engine.",
+   "Oil consumption: confidence lowered from medium to low. Samarins only says the engine 'might consume some amount' at high mileage; blue-smoke symptom removed as unsupported.",
+   "Fuel filler neck T-SB-0086-16 (2014–2016) confirmed; caveat reworded to cover Iranian imports.",
+   "Door speaker fault: cause refined per Samarins (water pooling in the connector).",
+   "20V-024 airbag ECU recall scope (Corolla 2011–2019) confirmed via NHTSA; maintenance note now also mentions the seat-belt pretensioner.",
+   "Faults reordered, and the alternator fault moved to a diagnostic tip."
+  ],
+  "removed_claims": [
+   "Alternator failure removed as a common fault. It is generic wear, not specific to this model, and Samarins mentions it only in passing; it survives as a diagnostic tip.",
+   "Blue smoke at start-up in the oil-consumption fault removed: not supported for this generation."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Samarins — Toyota Corolla sedan 2014-2019: pros and cons, common problems",
+    "url": "https://www.samarins.com/reviews/corolla.html"
+   },
+   {
+    "id": 2,
+    "title": "باما — مشخصات فنی تویوتا کرولا ۲٫۰ لیتر XLI ۲۰۱۴ تا ۲۰۱۶",
+    "url": "https://bama.ir/car-reviews/toyota/corolla-specs-1126-xli"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2015 Toyota Corolla",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=COROLLA&modelYear=2015"
+   },
+   {
+    "id": 4,
+    "title": "8020 Automotive — The 3 Most Common Toyota 2ZR-FE Engine Problems",
+    "url": "https://8020automotive.com/the-3-most-common-toyota-2zr-fe-engine-problems/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیرگاه مجید — بررسی جامع گیربکس تویوتا کرولا",
+    "url": "https://gearboxmajid.com/articles/85-toyota-corolla-gearbox"
+   }
+  ]
+ },
  "toyota-rav4-xa30": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -3752,6 +3796,53 @@
     "id": 8,
     "title": "RAV4 World forum — Differential Coupling Warranty Enhancement",
     "url": "https://www.rav4world.com/threads/differential-coupling-warranty-enhancement.212361/"
+   }
+  ]
+ },
+ "toyota-rav4-xa40": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed: 2.5 2AR-FE with 6-speed automatic U760 (Samarins, pedal.ir 2014 review); 2.0 3ZR/CVT still unconfirmed for Iran; power figure aligned to 176 hp; pedal.ir added as source 6.",
+   "All recalls confirmed via NHTSA API: 15V-144 EPS ECU (2014–2015), 23V-734 replacement battery fit (2013–2018), 16V-198 ABS actuator O-ring; 16V-198 production window (30 Oct 2015 – 3 Feb 2016) added.",
+   "ZH1 torque-converter shudder (2013–2015) and U760E/U760F reverse valve-body wear confirmed on Samarins; gearbox code refined.",
+   "Water pump: confidence lowered from medium to low — Samarins only reports 'a few' failures (no TSB or second source).",
+   "Diagnostic tip reworded: removed the unsourced claim that Iranian RAV4s mostly came from Middle-East markets; kept the advice to check US recalls by VIN.",
+   "Faults reordered by evidence (EPS recall moved above valve-body wear). No gap faults added: Persian gearbox-shop sources describe the U760 as generally reliable and name no additional model-specific fault."
+  ],
+  "removed_claims": [
+   "Unsourced claim that RAV4 XA40 imports to Iran came mainly from Middle-East markets (diagnostic tip)."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Samarins — Buying the 2013-2018 Toyota RAV4: Pros and Cons, Problems",
+    "url": "https://www.samarins.com/reviews/rav4-xa40.html"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2015 Toyota RAV4",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=RAV4&modelYear=2015"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2016 Toyota RAV4",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=RAV4&modelYear=2016"
+   },
+   {
+    "id": 4,
+    "title": "باما — مشخصات فنی تویوتا راوفور ۲٫۵ لیتر دودیفرانسیل ۲۰۱۶ تا ۲۰۱۸",
+    "url": "https://bama.ir/car-reviews/toyota/rav4-specs-1121-358-4wd"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — تویوتا راوفور XA40؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/%D9%86%D8%B3%D9%84-%DA%86%D9%87%D8%A7%D8%B1%D9%85-%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%D8%B1%D8%A7%D9%88%D9%81%D9%88%D8%B1/"
+   },
+   {
+    "id": 6,
+    "title": "پدال — بررسی تویوتا راو فور دو دیفرانسیل مدل ۲۰۱۴",
+    "url": "https://www.pedal.ir/toyota/85307-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%D8%B1%D8%A7%D9%88-%D9%81%D9%88%D8%B1-awd-%D9%85%D8%AF%D9%84-%DB%B2%DB%B0%DB%B1%DB%B4/"
    }
   ]
  },
@@ -3996,6 +4087,64 @@
    }
   ]
  },
+ "mitsubishi-asx": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Recalls confirmed on NHTSA for Outlander Sport: 18V-103 wiper linkage (2011–2016; cause is water entering between hood and windshield), 16V-792 wiper motor (2011–2015, production Aug 2010 – Jan 2015), 18V-070 parking brake shaft corrosion (2013–2016). Scope details added.",
+   "CVT whine/judder fault: pulley wear and a free-revving 'slipping' symptom added from the Persian search; Iranian gearbox shop gearboxone added (source 9).",
+   "Catalyst ceramic dust scoring the cylinders confirmed on MotorReviewer; kept at low confidence (one source).",
+   "Diagnostic tip on warm-up knock: MotorReviewer says timing-chain stretch affects pre-2009 engines, so the tip now calls it less likely on the ASX (2010 on). Wiper tip now tells the linkage apart from the motor. Added a catalyst tip.",
+   "Maintenance: CVT fluid and filter interval set to 55–60k km, per the Persian service source; salt-belt subframe recall note replaced with a catalyst check.",
+   "Source 8 (MyEngineSpecs) dropped because its only fault was removed."
+  ],
+  "removed_claims": [
+   "4B11 oil consumption / weak oil pump (low confidence, MyEngineSpecs only): MotorReviewer's 4B11 page does not list it, and no reliable second source was found.",
+   "Maintenance reference to recall 20V-279 (front cross-member corrosion) for 'humid and coastal regions': NHTSA limits it to US road-salt states, so it does not apply to Iran."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — مشخصات فنی میتسوبیشی ASX",
+    "url": "https://www.hamrah-mechanic.com/mag/specification-of-asx/"
+   },
+   {
+    "id": 2,
+    "title": "تهران پلاس — تعمیر گیربکس میتسوبیشی ASX",
+    "url": "https://tehranplus.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-asx/"
+   },
+   {
+    "id": 3,
+    "title": "GearboxList — CVT Jatco JF011E: specifications, gear ratios, oil",
+    "url": "https://gearboxlist.com/jatco/jf011e/"
+   },
+   {
+    "id": 4,
+    "title": "Sunbelt Valve Body Builders — Understanding the JF011E CVT Transmission: Common Issues",
+    "url": "https://sunbeltvalvebodies.com/blogs/news/understanding-the-jf011e-cvt-transmission-common-issues-and-how-remanufactured-parts-can-help"
+   },
+   {
+    "id": 5,
+    "title": "Auto-ABC — Mitsubishi ASX 2016 2.0 petrol service information and maintenance intervals",
+    "url": "https://www.auto-abc.eu/Mitsubishi-ASX/v18019-2016/service"
+   },
+   {
+    "id": 6,
+    "title": "MotorReviewer — Mitsubishi 4B11/4B11T 2.0L Engine Specs, Problems, Reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=124"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA recalls API — 2013 Mitsubishi Outlander Sport",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MITSUBISHI&model=OUTLANDER%20SPORT&modelYear=2013"
+   },
+   {
+    "id": 9,
+    "title": "گیربکس وان — تعمیر گیربکس میتسوبیشی ASX",
+    "url": "https://gearboxone.com/repair/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-asx/"
+   }
+  ]
+ },
  "renault-koleos-hy-1st-gen": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4122,6 +4271,112 @@
     "id": 11,
     "title": "ProductReview.com.au — Renault Koleos owner reviews (CVT shudder from about 40 km/h, repeated warranty returns)",
     "url": "https://www.productreview.com.au/listings/renault-koleos"
+   }
+  ]
+ },
+ "renault-captur": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: EDC specified as the 6-speed dry dual-clutch DC4 (Getrag 6DCT250) with electric clutch actuators, matching the roster note (1.2 TCe H5Ft 120 hp, EDC not CVT).",
+   "Oil consumption: affected production narrowed to about 2012–2016 (pre-2018); class action given as about 400,000 Renault-Nissan cars; confidence stays high.",
+   "Timing chain: 80–100k km stretch with weak tensioner and plastic guides confirmed; source list moved to Tritella and Pro Renault Spares, because ClickMechanic could not be opened.",
+   "EDC shudder: cause reworded to dry-clutch wear, lost clutch bite point (DF1111/DF1112) and TCU software; typical 50–80k km added; the 'gearbox oil neglect' cause dropped as the main driver.",
+   "Check Gearbox fault: the hydraulic/oil cause from Rokna replaced with the TCU or clutch actuator motors (P1743/P1744, DF490), because DC4 uses electric actuators; actuator motor added to parts.",
+   "Brake-hose recall R/2015/067 confirmed (AutoInsider / ITV): build window 1 Jan 2013 – 31 Mar 2015 and the 'Braking system fault' warning added; confidence raised to high (recall).",
+   "Maintenance: replaced the vague EDC oil-check note with clutch bite-point relearn and software update after clutch or TCU work; added sources 7–9."
+  ],
+  "removed_claims": [
+   "Battery drain on keyless-entry versions: only a low-confidence mention on ClickMechanic (page came back empty), and no other source was found.",
+   "'Hydraulic system / degraded gearbox oil' as the cause of the Check Gearbox message: the DC4 EDC is a dry dual-clutch with electric actuators, so this generic cause does not fit."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "رکنا — بررسی جامع خطاهای متداول رنو کپچر؛ از هشدار گیربکس تا چراغ سرویس",
+    "url": "https://www.rokna.net/%D8%A8%D8%AE%D8%B4-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-69/1129677-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%AC%D8%A7%D9%85%D8%B9-%D8%AE%D8%B7%D8%A7%D9%87%D8%A7%DB%8C-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-%D8%B1%D9%86%D9%88-%DA%A9%D9%BE%DA%86%D8%B1-%D8%A7%D8%B2-%D9%87%D8%B4%D8%AF%D8%A7%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AA%D8%A7-%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3"
+   },
+   {
+    "id": 2,
+    "title": "ClickMechanic — Common Problems with Renault Captur",
+    "url": "https://www.clickmechanic.com/blog/common-problems-with-renault-captur/"
+   },
+   {
+    "id": 3,
+    "title": "تهران پلاس — تعمیر گیربکس رنو کپچر (EDC)",
+    "url": "https://tehranplus.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B1%D9%86%D9%88-%DA%A9%D9%BE%DA%86%D8%B1/"
+   },
+   {
+    "id": 4,
+    "title": "Autoricambi Tritella — 1.2 TCe (H5Ft) engine: oil consumption, timing chain and solutions",
+    "url": "https://autoricambitritella.it/en/blogs/problematiche-e-guasti-delle-vetture/motore-1-2-tce-h5ft-problemi-consumo-olio-catena"
+   },
+   {
+    "id": 5,
+    "title": "Pro Renault Spares — Renault Captur Problems (2013–2019)",
+    "url": "https://www.prorenaultspares.co.za/blog/renault-captur-problems/"
+   },
+   {
+    "id": 6,
+    "title": "دیجی برد — تعمیر کامپیوتر گیربکس TCU رنو کپچر",
+    "url": "https://www.digi-board.ir/%D9%86%D9%85%D9%88%D9%86%D9%87%20%DA%A9%D8%A7%D8%B1/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-tcu-%D8%B1%D9%86%D9%88-%DA%A9%D9%BE%DA%86%D8%B1-tcm/"
+   },
+   {
+    "id": 7,
+    "title": "AutoInsider — Recall R/2015/067: Renault Captur loss of braking efficiency",
+    "url": "https://www.autoinsider.co.uk/recalls/r2015067-renault-captur"
+   },
+   {
+    "id": 8,
+    "title": "Actronics — Continental Getrag Renault DPS6 DC4/EDC (DCT250) TCU repair",
+    "url": "https://www.actronics.co.uk/tcu/continental-getrag-renault-dps6-dc4-edc-dct250"
+   },
+   {
+    "id": 9,
+    "title": "EngineScope — Renault TCe 1.2 (H5F) reliability",
+    "url": "https://enginescope.gr/engine/renault-tce-12/"
+   }
+  ]
+ },
+ "ssangyong-tivoli": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: 128 hp / 160 Nm G16DF and importer Ramak Khodro confirmed (hamrah-mechanic); Aisin 6-speed automatic per Digikala Mag; Armour facelift import flagged as unconfirmed.",
+   "Fuel-leak fault confirmed by Car-Recalls.eu (EU 2019 and 2021, UK 2018, 2019 and 2020, builds 2015–2020). What Car? search excerpt lists recalls from Oct 2016 (hoses), Nov 2018 (pipes) and 2019 (supply connection). Hose and supply-connection causes and the lack-of-power symptom added; noted that sources do not split petrol from diesel. What Car? added as source 6.",
+   "Maintenance: MyMotorList describes the thermostat/pump/oil-filter module only as expensive, not leak-prone, so the note is now about cost and availability; oil capacity 4 L 5W-30 confirmed.",
+   "Diagnostic tips: gearbox tip rewritten to say no documented model-specific gearbox fault was found.",
+   "Verdict weak: only one supportable model-specific fault remains. The Persian source (hamrah-mechanic) lists design and comfort weaknesses only, and two further owner and review pages could not be fetched."
+  ],
+  "removed_claims": [
+   "Aisin 6-speed gearbox hard 1→2 shift, erratic 3–4 shift and torque-converter judder: backed only by one Iranian gearbox-shop marketing page (alo-gearbox), and describes generic automatic-gearbox faults with no model-specific evidence; source 5 dropped.",
+   "Diagnostic tip that about 11 L/100 km in Tehran traffic is normal for owners: no source found in the checked pages."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معایب سانگ یانگ تیوولی",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-ssangyong-tivoli/"
+   },
+   {
+    "id": 2,
+    "title": "دیجی‌کالا مگ — خودروی جدید سانگ‌یانگ با نام تیوولی وارد بازار ایران شد (رامک خودرو، گیربکس ۶ سرعته آیسین)",
+    "url": "https://www.digikala.com/mag/%D8%AE%D9%88%D8%AF%D8%B1%D9%88%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B3%D8%A7%D9%86%DA%AF%E2%80%8C%DB%8C%D8%A7%D9%86%DA%AF-%D8%A8%D8%A7-%D9%86%D8%A7%D9%85-%D8%AA%DB%8C%D9%88%D9%88%D9%84%DB%8C/"
+   },
+   {
+    "id": 3,
+    "title": "Car-Recalls.eu — SsangYong Tivoli common problems and recalls (fuel line)",
+    "url": "https://car-recalls.eu/common-problems/ssangyong/tivoli/"
+   },
+   {
+    "id": 4,
+    "title": "MyMotorList — SsangYong G16DF engine specifications and issues",
+    "url": "https://mymotorlist.com/engines/ssangyong/g16df/"
+   },
+   {
+    "id": 6,
+    "title": "What Car? — Used SsangYong Tivoli 2015-present reliability and recalls",
+    "url": "https://www.whatcar.com/ssangyong/tivoli/hatchback/used-review/n17889/advice"
    }
   ]
  },
