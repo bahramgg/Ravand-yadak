@@ -1468,6 +1468,56 @@
    }
   ]
  },
+ "bahman-capra": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: added the Capra U facelift (from Ordibehesht 1404; 2.4 NA 160 hp / 220 Nm, 5-speed manual or 8-speed automatic, engine code unconfirmed) as a variant, engine and gearbox, from khodro45; the roster lists Capra U but the draft left it out.",
+   "Identity: 4G69 output widened to about 125-135 hp (achareh says about 135 hp) and about 205 Nm (khodro45); dropped the unverified 'made in China' detail.",
+   "4WD switch moisture fault: confidence high -> medium (both supporting articles are khodro45; achareh does not mention moisture); dropped achareh from its sources; limited to Capra 2.",
+   "Clutch wear: limited to Capra 1 under load, as achareh says.",
+   "4WD / transfer damage: confidence medium -> low (one blog, and it describes misuse of the part-time system rather than a design defect); added the tyre scrub and steering bind symptom on dry asphalt; moved to last place.",
+   "Cabin rattles: confidence high -> medium (khodro45 Capra 1 + achareh; the Capra 2 page only lists low material quality).",
+   "Timing belt: EngineCrux returned 403 and the forum was not re-fetched; kept at medium because the 4G69's interference design and balance-shaft belt are well known; symptom reworded.",
+   "Tips: fuel use corrected from about 13 to about 12 L/100 km (khodro45); added Capra U identity note; 4WD maintenance note tied to Capra 2."
+  ],
+  "removed_claims": [
+   "Oil burning (4G69): achareh only lists 'روغن‌سوزی' as a generic used-car inspection point, not as a Capra fault; the 'early 4G69 known for oil consumption' claim was not verifiable (EngineCrux 403).",
+   "Manual gearbox synchronizer and bearing wear: achareh does not mention synchronizers or bearings; its 'زوزه گیربکس' line is generic used-car inspection advice, not a Capra-specific fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — وانت کاپرا بهمن موتور؛ بررسی و مشخصات فنی",
+    "url": "https://khodro45.com/mag/capra-1-bahman/"
+   },
+   {
+    "id": 2,
+    "title": "مجله آچاره — بررسی کامل مزایا و معایب کاپرا",
+    "url": "https://achareh.co/blog/advantages-and-disadvantages-of-capra/"
+   },
+   {
+    "id": 3,
+    "title": "خودرو۴۵ — کاپرا ۲ بهمن موتور؛ بررسی جامع و مشخصات فنی (مقاله و نظرات مالکان)",
+    "url": "https://khodro45.com/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88%D8%A7%D9%86%D8%AA-%DA%A9%D8%A7%D9%BE%D8%B1%D8%A7/"
+   },
+   {
+    "id": 4,
+    "title": "Mitsubishi Forum — 4G69 timing and balance shaft belt tips and tricks",
+    "url": "https://mitsubishiforum.com/forum/mitsubishi-outlander-10/4g69-timing-balance-shaft-belt-tips-tricks-48051/"
+   },
+   {
+    "id": 5,
+    "title": "EngineCrux — Mitsubishi 4G69 2.4 L: specifications, reliability, problems",
+    "url": "https://enginecrux.com/mitsubishi-4g69-engine-overview-specs-and-reliability/"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — کاپرا U؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/capra-2-facelift/"
+   }
+  ]
+ },
  "jac-j5": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2024,6 +2074,114 @@
     "id": 14,
     "title": "چاینا یدک سنتر — علت ترکیدن رادیاتور بخاری ام وی ام X22",
     "url": "https://chinayadakcenter.ir/blog/%D8%B9%D9%84%D8%AA-%D8%AA%D8%B1%DA%A9%DB%8C%D8%AF%D9%86-%D8%B1%D8%A7%D8%AF%DB%8C%D8%A7%D8%AA%D9%88%D8%B1-%D8%A8%D8%AE%D8%A7%D8%B1%DB%8C-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-X22"
+   }
+  ]
+ },
+ "chery-tiggo-7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "duplicate_of left empty: Tiggo 7 1st gen (Chery badge, 6DCT, 1396–1402) and Fownix Tiggo 7 Pro (different generation, CVT25) are not the same car.",
+   "Engine code set to SQRE4T15B (147 hp / 210 Nm) to match the same engine in verified/draft sibling profiles (Arrizo 6 pre-facelift, X55 1st gen, X33S Turbo); removed the unverified 'AVL design / Bosch ME17' detail and the timing-chain claim from the engine description.",
+   "DCT judder: NS Car author plus several owners, a Becharkh owner (1st–2nd gear in traffic) and Gearboxsun confirm it — kept high; added the owner report at about 90k km; removed dead source 6.",
+   "2→1 downshift fault reworded: NS Car owner/admin tie it to the dealer update, and Gearboxsun lists delayed 2→1 shifting as a known symptom; added Gearboxsun support, kept low.",
+   "Brake weakness at high speed kept at low confidence: only NS Car (author note + one owner), and the page says software updates do not fix it.",
+   "Interior trim fault kept low: a single detailed Becharkh owner; noted that other owners on the same page report good durability.",
+   "Removed dead source 6 (carkits.ir now 301-redirects to an unrelated, broken azchinyadak.com URL) from all faults and the source list; maintenance note on DCT oil reworded to 'fluid specified for this gearbox'."
+  ],
+  "removed_claims": [
+   "Timing-chain rattle on cold start (chain, tensioner, guide): its only specific source (carkits) is dead, and a Persian search found only generic engine-noise articles, with no Tiggo 7 or SQRE4T15B-specific report."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "نکست استپ (NS Car) — آپدیت موتور و گیربکس چری تیگو ۷ به‌همراه مزایا و معایب و پرسش‌های مالکان",
+    "url": "https://ns-car.com/chery-tiggo-7-engine-and-gearbox-update/"
+   },
+   {
+    "id": 2,
+    "title": "گیربکس سان — تعمیر گیربکس اتوماتیک تیگو ۷ (داغ شدن گیربکس دوکلاچه در ترافیک، تأخیر ۲ به ۱)",
+    "url": "https://gearboxsun.com/automatic-gearbox-repair/tiggo/tiggo7-gearbox-repair/"
+   },
+   {
+    "id": 3,
+    "title": "بچرخ — چری تیگو ۷، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?brand=chery&model=tiggo7"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — بررسی مشخصات فنی چری تیگو ۷ (موتور مشترک با آریزو ۶ و ۵ توربو، گیربکس دوکلاچه)",
+    "url": "https://khodro45.com/mag/chery-tiggo7/"
+   },
+   {
+    "id": 5,
+    "title": "نسیم آنلاین — معایب تیگو ۷ چیست؟ بررسی ۵ مشکل اساسی",
+    "url": "https://www.nasim.news/%D8%A8%D8%AE%D8%B4-%D8%A8%D8%A7%D8%B2%D8%B1%DA%AF%D8%A7%D9%86%DB%8C-107/2379817-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AA%DB%8C%DA%AF%D9%88-%DA%86%DB%8C%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%DA%A9%D9%84-%D8%A7%D8%B3%D8%A7%D8%B3%DB%8C-%D9%85%D9%87%D9%85"
+   }
+  ]
+ },
+ "chery-arrizo-5": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: NA engine code filled in as SQRE4G15B (1.5 DVVT, 116 hp at 6150 rpm, 141 Nm, 5MT or CVT) from AutoCango/auto-data specs; turbo engine code set to SQRE4T15B (147 hp / 210 Nm) as in sibling profiles; FL Sport engine suffix left unconfirmed.",
+   "Identity: khodro45 gives Turbo TE 1396–1399 (CVT, 7 virtual gears) and IE from 1400 (9 virtual gears) — TE years corrected from 1396–1400; the roster note 'IE from 1399' is not supported. NA CVT virtual-gear count removed as unverified.",
+   "CVT fault: symptoms (late shifts, shift knock, judder, stuck-in-N feel) confirmed by owner Q&A on gearboxtehran, and khodro45 lists gearbox performance as a drawback; removed the 'total failure at 47,000 km' claim and the chain part; kept medium.",
+   "Knock fault: khodro45 turbo owners (super fuel advised, counterfeit oil kills the turbo) and a hamrah-mechanic owner (engine strains on regular fuel) confirm fuel sensitivity; removed the unverified 'from ~25,000 km' figure and the 'ECU update raised city consumption' clause.",
+   "HVAC: the hamrah-mechanic owner reports weak AC and engine overheating; wording no longer limits it to FL/Sport owners; unverified wikishop source dropped.",
+   "Electrical fault: Becharkh detail added (after ~30 min of driving, AC and engine keep running, temporarily cleared by restart or battery disconnect); kept low confidence, single owner.",
+   "Suspension fault reordered above knock; rear axle described as torsion beam.",
+   "Transmissions: removed the parts-seller claim that the CVT chain/valve body is shared with Tiggo 5 / X33 / 550 (2.0 NA CVT vs 1.5 CVT, unverified, risks wrong part orders)."
+  ],
+  "removed_claims": [
+   "Exhaust heat-shield rattle / sunroof noise (FL Sport): single unverified owner-opinion aggregator (wikishop), and a loose heat-shield clamp is generic, not model-specific.",
+   "Source 10 (tamircarchery Tiggo 5 page) and source 7 (wikishop) removed: no remaining fault relies on them, and the shared-CVT-parts claim was unverified."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معایب آریزو ۵ کدام‌اند؟ (به‌همراه نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-chery-arrizo-5/"
+   },
+   {
+    "id": 2,
+    "title": "باما — مشخصات فنی و نقاط ضعف چری آریزو ۵ دنده‌ای لاکچری ۱۳۹۵ تا ۱۳۹۹",
+    "url": "https://bama.ir/car-reviews/chery/arrizo5-specs-987-mt"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی و نقاط ضعف چری آریزو 5T اسپرت FL IE ۱۴۰۲ تا ۱۴۰۴",
+    "url": "https://bama.ir/car-reviews/chery/arrizo5tsport-specs-1436-ie"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — چری آریزو ۵ FL؛ بررسی جامع و مشخصات فنی (به‌همراه نظرات)",
+    "url": "https://khodro45.com/mag/mvm-arrizo5-sport/"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — مشخصات چری آریزو ۵ توربو TE و IE (به‌همراه نظرات مالکان درباره بنزین و روغن)",
+    "url": "https://khodro45.com/mag/chery-arrizo5-turbo/"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — چری آریزو ۵ تنفس طبیعی، بررسی و مشخصات",
+    "url": "https://khodro45.com/mag/chery-arrizo5/"
+   },
+   {
+    "id": 8,
+    "title": "گیربکس تهران — تعمیر گیربکس آریزو ۵ اتومات و توربو (به‌همراه پرسش‌های مالکان)",
+    "url": "https://gearboxtehran.com/repairing-arizo-5-gearbox/"
+   },
+   {
+    "id": 9,
+    "title": "بچرخ — چری آریزو ۵، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?brand=chery&model=arrizo5"
+   },
+   {
+    "id": 11,
+    "title": "AutoCango — 2017 Chery Arrizo 5 1.5L 116HP CVT specs (engine SQRE4G15B)",
+    "url": "https://www.autocango.com/carspecs-detail/Chery-Arrizo-5-XMX4A"
    }
   ]
  },
