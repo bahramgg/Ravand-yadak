@@ -954,6 +954,113 @@
    }
   ]
  },
+ "brilliance-h330": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine descriptions: removed unverified 'timing chain' wording; BM15L power range set to 103–105 hp; switch to BM16BL dated late 1396 per roster.",
+   "Variants: labelled the 1.65 row as H330/H320 hatchback and ended production at about 1399 (Wikipedia: Iran 2015–2020).",
+   "Steering fault: cause corrected from a single owner's bushing report to the steering box itself, which hamrah-mechanic names as very problematic; confidence low→medium.",
+   "Cooling-fan fault: cause corrected to fan fuse/relay burning from wiring resistance or fan-motor current draw (Brilliance specialist channel); confidence low→medium.",
+   "Radiator fault: added faulty radiator cap (poor circulation, air ingress) as a cause; dropped 'loose hose clamp' generic wording.",
+   "Added gap: weak water pump (hamrah-mechanic lists it among H330 weaknesses).",
+   "Brake-caliper fault: confidence low→medium (mechanic assessment, not just one owner); symptom made less specific.",
+   "Automatic gearbox fault: confidence medium→low (gearbox repair shops only; hamrah-mechanic rates the gearbox as robust); TCU replaced by sensors and torque converter per repair-shop sources.",
+   "Maintenance: ATF interval corrected from 30,000 km/yearly to about 60,000 km (repair shop), shortened for heavy use.",
+   "Low-power complaint moved from common_faults to diagnostic_tips_fa (a design trait, not a failure)."
+  ],
+  "removed_claims": [
+   "Fault 'weak acceleration / low power': a design characteristic, not a fault; kept as a diagnostic tip only.",
+   "Fault 'heat under the driver's seat from exhaust heat shield': single-owner anecdote, cited page could not be opened and no second source found.",
+   "Fault 'remote/alarm does not arm': single owner's report on one 1396 car, not a documented model pattern.",
+   "Maintenance claim 'both engines have timing chains, no belt service': not confirmed by any source checked.",
+   "Not added: iranjib's claim that the automatic is a PSA AL4 and that the engine is 'BM16LB 103 hp' — contradicts Wikipedia and other sources."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Brilliance H330 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brilliance_H330"
+   },
+   {
+    "id": 2,
+    "title": "برلیانس اچ۳۳۰ بخریم یا نه؟ مزایا و معایب — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-brilliance-h330/"
+   },
+   {
+    "id": 3,
+    "title": "بررسی معایب بزرگ برلیانس H330 — ایران‌جیب",
+    "url": "https://www.iranjib.ir/shownews/122001/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%A8%D8%B2%D8%B1%DA%AF-%D8%A8%D8%B1%D9%84%DB%8C%D8%A7%D9%86%D8%B3-H330/"
+   },
+   {
+    "id": 4,
+    "title": "تعمیر گیربکس برلیانس H330 — مدرن گیربکس",
+    "url": "https://moderngearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A8%D8%B1%D9%84%DB%8C%D8%A7%D9%86%D8%B3-h330/"
+   },
+   {
+    "id": 5,
+    "title": "گیربکس اتوماتیک برلیانس H330 — تعمیرگاه مجید",
+    "url": "https://gearboxmajid.com/articles/41-brelliance-h330-transmission-repair"
+   },
+   {
+    "id": 6,
+    "title": "کانال تخصصی برلیانس (H330-H320-C3) — تلگرام",
+    "url": "https://t.me/s/brilliance300?before=922"
+   }
+  ]
+ },
+ "jac-s3": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine entry: added the Chinese 1.5 code HFC4GB2.3E for reference and stated that the Iranian engine code and displacement remain unconfirmed (pedal.ir 1498 cc vs hamrah-mechanic 1590 cc).",
+   "Variants: S3 start year hedged to about 1396 (sources disagree); SR3 labelled as the facelift built from 2025 (Wikipedia).",
+   "CVT noise fault: moved to first place and broadened to whine/whistle/shudder from pulley and belt wear, sensitive to CVT fluid type and interval (star-gearbox + chinayadaki + owners); source 5 added.",
+   "CVT 'stops moving after braking' fault: confidence medium→low (owner reports on one page, no cause identified).",
+   "Battery detail specified as ~10 V on the original battery (hamrah-mechanic owner report), not 'non-genuine battery'.",
+   "Rear knocking fault reworded to match owner wording (کوبش, even on new cars).",
+   "Maintenance: CVT fluid interval set to about 40–50,000 km (repair shop).",
+   "Low-power complaint moved from common_faults to diagnostic_tips_fa; added tip separating S3 from SR3.",
+   "Verdict weak: the Iranian engine identity is unresolved and only one fault has medium confidence; the rest rest on owner reports."
+  ],
+  "removed_claims": [
+   "Fault 'headlights stay on all day (light sensor)': a single owner's forum comment, no second source.",
+   "Fault 'monitor goes black / rear-camera error': a single owner's comment about infotainment, not a documented model pattern.",
+   "Fault 'weak acceleration': a design trait, not a failure; kept as a diagnostic tip."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "JAC Refine S3 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/JAC_Refine_S3"
+   },
+   {
+    "id": 2,
+    "title": "راهنمای خرید جک S3 کارکرده؛ مزایا، معایب و مقایسه با رقبا — پدال",
+    "url": "https://www.pedal.ir/chinese/526498-jac-s3-specs-price-in-iran/"
+   },
+   {
+    "id": 3,
+    "title": "جک S3 — نظرات کاربران و مشکلات — بچرخ",
+    "url": "https://becharkh.com/forum/car?brand=jac&model=s3&s=1"
+   },
+   {
+    "id": 4,
+    "title": "بررسی مشخصات جک S3؛ آپشن‌ها، مزایا و معایب — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/why-dont-purchase-jac-s3/"
+   },
+   {
+    "id": 5,
+    "title": "مشکلات گیربکس جک S3 و روغن مناسب — استار گیربکس",
+    "url": "https://star-gearbox.com/answers-to-frequently-asked-questions-from-users-about-jac-s3-gearbox-repair/"
+   },
+   {
+    "id": 6,
+    "title": "مزایا و معایب جک S3 — چاینا یدکی",
+    "url": "https://chinayadaki.ir/advantages-and-disadvantages-jac-s3/"
+   }
+  ]
+ },
  "jac-s5": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1079,6 +1186,224 @@
     "id": 7,
     "title": "آشنایی با گارانتی و سرویس دوره‌ای کی ام سی X5 — امداد کرمان موتور",
     "url": "https://emdad.kermanmotor.com/articles/%DA%AF%D8%A7%D8%B1%D8%A7%D9%86%D8%AA%DB%8C-%D9%88-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-%D8%AF%D9%88%D8%B1%D9%87-%D8%A7%DB%8C-KMC-X5"
+   }
+  ]
+ },
+ "lifan-x60": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine: added intake-side VVT and Lifan 620 origin; power stated as 131–133 hp (Wikipedia 133 PS / 131 bhp).",
+   "CVT variant years hedged to 'about 1395' — start year not confirmed by any source checked.",
+   "Oil-burning fault: moved to first place, confidence low→medium (tehran-lifan + behrozkhodro both call it an LFB479Q weakness); valve guides added.",
+   "Clutch fault: added stiff pedal / hard engagement symptom from an Iranian repair shop; second source added.",
+   "CVT fault: cause corrected to steel belt/chain and pulley wear from wrong or overdue CVT fluid plus solenoids/oil pump/TCU; confidence low→medium (two repair shops).",
+   "Added gaps: engine mounts (mount under battery), electronic throttle body failure, VVT OCV solenoid cold-start noise, clogged catalytic converter from oil burning.",
+   "Maintenance: removed unverified 'no timing belt service' note; added weekly oil-level check and CVT fluid interval of about 45–50,000 km.",
+   "Diagnostic tips rewritten to separate idle vibration (mounts), cold-start diesel noise (VVT) and power loss (catalyst)."
+  ],
+  "removed_claims": [
+   "Head gasket as a cause of oil consumption and blue smoke: no source supports it for this engine.",
+   "'Timing chain — no periodic belt service' maintenance note: not confirmed as a stand-alone claim.",
+   "Not added: brake-pad squeal (generic wear) and 'cracked CVT input shaft' (search snippet only; repair shop mentions shaft wear only in generic terms)."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lifan X60 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lifan_X60"
+   },
+   {
+    "id": 2,
+    "title": "تعمیر موتور لیفان X60 و ۶۲۰ — تهران لیفان",
+    "url": "http://tehran-lifan.ir/Page/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x60-620"
+   },
+   {
+    "id": 3,
+    "title": "تعمیر گیربکس لیفان X60 اتوماتیک — آنلاین گیربکس",
+    "url": "https://onlinegearbox.com/lifan-x60-gearbox-repair/"
+   },
+   {
+    "id": 4,
+    "title": "مشخصات لیفان X60 همراه با قیمت + معایب — سورس یدک",
+    "url": "https://sourceyadak.com/blog/lifan-x60/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیرگاه تخصصی لیفان X60 — بهروز خودرو",
+    "url": "https://behrozkhodro.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1%DA%AF%D8%A7%D9%87%D9%87%D8%A7%DB%8C-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1%DA%AF%D8%A7%D9%87-%D9%84%DB%8C%D9%81%D8%A7%D9%86/x60%D9%84%DB%8C%D9%81%D8%A7%D9%86/"
+   },
+   {
+    "id": 6,
+    "title": "معایب لیفان X60 را قبل خرید بدانید — کارکیتس",
+    "url": "https://carkits.ir/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%88-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x60/"
+   }
+  ]
+ },
+ "mvm-315": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "315 Plus gearbox specified as conventional torque-converter 4-speed automatic (bama.ir and khodro45 agree; hamrah-mechanic's 'CVT' is an outlier).",
+   "Engine desc: removed unverified VVT claim; power point (107 hp at 6000 rpm, 140 Nm) confirmed by bama.ir.",
+   "Engine-mount fault confirmed by hamrah-mechanic and khodro45 owner reports; confidence raised to high and moved to position 2.",
+   "Brake fault: confidence lowered to medium (reviews describe a weak rear-drum design and early disc/pad wear, not a documented failure).",
+   "Manual gearbox fault reframed around the confirmed stiff shifting; whine kept only as an owner report, confidence lowered to low.",
+   "Suspension fault reworded to the confirmed soft/simple suspension with body roll; early shock-absorber failure not confirmed, confidence lowered to low.",
+   "315 Plus automatic fault: shift delay confirmed by bama.ir test, confidence raised to medium.",
+   "Maintenance note on timing belt rewritten as scheduled replacement without the unsupported 'repeated breakage' claim."
+  ],
+  "removed_claims": [
+   "Timing-belt breakage fault removed: not mentioned in hamrah-mechanic or khodro45; only support was a parts-shop listing and a generic search result.",
+   "Injector clogging / check-engine after refuelling removed: single owner comment about injector cleaning, generic to Iranian fuel quality rather than specific to the 315."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — ام وی ام ۳۱۵ بخریم یا نه؟ مزایا و معایب (به‌همراه نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/problems-of-mvm-315/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — ام وی ام ۳۱۵ پلاس؛ بررسی جامع و مشخصات فنی (به‌همراه نظرات مالکان)",
+    "url": "https://khodro45.com/mag/mvm315/"
+   },
+   {
+    "id": 3,
+    "title": "زوم‌فورکار — به این ۷ دلیل ام وی‌ام ۳۱۵ نخرید",
+    "url": "https://z4car.com/naghd/%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-7-%D8%AF%D9%84%DB%8C%D9%84-%D8%A7%D9%85-%D9%88%DB%8C-%E2%80%8C%D8%A7%D9%85-315-%D9%86%D8%AE%D8%B1%DB%8C%D8%AF"
+   },
+   {
+    "id": 4,
+    "title": "باما — مشخصات فنی و نقاط ضعف ام وی ام ۳۱۵ صندوق‌دار",
+    "url": "https://bama.ir/car-reviews/mvm/315sedan-specs-1198-basic"
+   },
+   {
+    "id": 5,
+    "title": "باما — تست و بررسی ام وی ام ۳۱۵ پلاس (۱۴۰۰)",
+    "url": "https://bama.ir/news/12875/%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-315-%D9%BE%D9%84%D8%A7%D8%B3"
+   },
+   {
+    "id": 6,
+    "title": "ویکی‌پدیای فارسی — چری ای۱۳ (ام وی ام ۳۱۵)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%A7%D9%85_%D9%88%DB%8C_%D8%A7%D9%85_%DB%B3%DB%B1%DB%B5"
+   },
+   {
+    "id": 7,
+    "title": "ChinaPEV — Chery ACTECO engine review (SQR477F on Fulwin 2)",
+    "url": "https://www.chinapev.com/chery/chery-engine-review-introduction-including-1-5l-1-5t-1-6l-2-0l-and-1-0l/"
+   },
+   {
+    "id": 8,
+    "title": "دنیای یدکی احمدی — بررسی ام وی ام ۳۱۵ و مزایا و معایب",
+    "url": "https://ahmadimba.com/review-of-mvm-315/"
+   },
+   {
+    "id": 9,
+    "title": "توس‌پارت — تسمه تایم ۳۱۵ کد فنی 477F-1007073 (نام و کد قطعه)",
+    "url": "https://tuspart.com/product/%D8%AA%D8%B3%D9%85%D9%87-%D8%AA%D8%A7%DB%8C%D9%85-315-%DA%A9%D8%AF%D9%81%D9%86%DB%8C-477f-1007073/"
+   },
+   {
+    "id": 10,
+    "title": "اتوکلاب — دسته موتور ام وی ام ۳۱۵ (نام قطعه)",
+    "url": "https://autopartclub.com/articles/%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-315-mvm-315-/b8404a7c-ff84-4869-206a-08da08f70047"
+   },
+   {
+    "id": 11,
+    "title": "تهران امداد کار — بررسی مشکلات رایج گیربکس اتومات MVM",
+    "url": "https://www.tehranemdadcar.com/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA-mvm/"
+   }
+  ]
+ },
+ "mvm-x22": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Cooling fault: confirmed by hamrah-mechanic (very high coolant temperature, repeated radiator replacement, fixed in Pro) and chinayadakcenter (thermostat opens ~105°C, fan ~107°C, hose swelling, bubbles in tank); added those details, confidence raised to high.",
+   "Heater-core leak: cause linked to high circuit temperature/pressure per chinayadakcenter; added fogged-glass symptom; sources updated.",
+   "Automatic gearbox: 4-speed conventional (not CVT) and ~100,000 km owner failure reports confirmed by khodro45 and hamrah-mechanic; noted manual version does not share the problem.",
+   "Rear suspension: reframed as confirmed stiff/harsh rear ride; the knocking noise is now a wear check rather than a documented fault; confidence lowered from high to medium.",
+   "X22 Pro 1.0T fuel sensitivity confirmed by digiato and hamrah-mechanic; engine output details added (102 hp @5500, 150 Nm @1750); confidence raised to medium.",
+   "Electrical fault narrowed to the confirmed power-window/central-locking complaints; BCM/ECU software claim dropped.",
+   "Cooling/maintenance notes updated (distilled water/premixed coolant, bleeding); unsupported fixed intervals for ATF/CVT/timing belt replaced with 'per service book'.",
+   "Diagnostic tips updated with the high normal operating temperature of the first-generation X22."
+  ],
+  "removed_claims": [
+   "Variant 'X22 Pro manual' with engine SQRE4G15C removed: no Iranian source found (digiato and khodro45 describe only the CVT X22 Pro), and the engine code was admittedly unconfirmed.",
+   "X22 Pro CVT launch-lag fault removed: described as inherent behaviour, not supported by any fetched source as a fault.",
+   "Diagnostic tips on fuel consumption and underbody tray scraping removed: not faults and not verified.",
+   "Fixed service intervals (ATF every 60,000 km/5 years, CVT every 40–60,000 km, timing belt every 60–80,000 km) removed: not confirmed by an official source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — ام وی ام X22 بخریم یا نه؟ مزایا و معایب (به‌همراه نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-mvm-x22/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — ام وی ام X22 اتوماتیک و دنده‌ای؛ بررسی جامع و مشخصات فنی (به‌همراه نظرات)",
+    "url": "https://khodro45.com/mag/mvm-x22/"
+   },
+   {
+    "id": 3,
+    "title": "خودرو۴۵ — ام‌وی‌ام X22 پرو اتومات؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/mvm-x22-pro/"
+   },
+   {
+    "id": 4,
+    "title": "دیجیاتو — بررسی ام وی ام X22 پرو با موتور سه سیلندر توربو",
+    "url": "https://digiato.com/car/everything-about-mvm-x22-pro"
+   },
+   {
+    "id": 5,
+    "title": "Wikipedia — Chery Tiggo 3x (MVM X22 / X22 Pro)",
+    "url": "https://en.wikipedia.org/wiki/Chery_Tiggo_3x"
+   },
+   {
+    "id": 6,
+    "title": "ChinaPEV — Chery ACTECO engine review (SQRD4G15B)",
+    "url": "https://www.chinapev.com/chery/chery-engine-review-introduction-including-1-5l-1-5t-1-6l-2-0l-and-1-0l/"
+   },
+   {
+    "id": 7,
+    "title": "مای‌کارلوبس — روغن گیربکس ام وی ام X22 اتومات 4AT (گیربکس QR416AHA)",
+    "url": "https://mycarlubs.com/car_details/196/category/3"
+   },
+   {
+    "id": 8,
+    "title": "آنلاین گیربکس — تعمیر گیربکس ام وی ام X22 اتوماتیک و دنده‌ای",
+    "url": "https://onlinegearbox.com/mvm-x22-gearbox-repair/"
+   },
+   {
+    "id": 9,
+    "title": "تهران گیربکس — تعمیر گیربکس اتوماتیک ام وی ام X22",
+    "url": "https://tehran-gearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-x22/"
+   },
+   {
+    "id": 10,
+    "title": "سامیت خودرو — تعمیرگاه ام وی ام X22",
+    "url": "https://summitkhodro.com/service/mvm-x22/"
+   },
+   {
+    "id": 11,
+    "title": "ویکی‌شاپ — معایب ام وی ام X22",
+    "url": "https://wikishop.co/mag/disadvantages-mvm-x22/"
+   },
+   {
+    "id": 12,
+    "title": "آریا پارت — ترموستات برقی ام وی ام X22 کد D4G15B-1306110 (نام و کد قطعه)",
+    "url": "https://ariyaparts.ir/product/thermostat-mvm-x22-oem-d4g15b"
+   },
+   {
+    "id": 13,
+    "title": "ماشین نو — نحوه هواگیری رادیاتور ام وی ام X22",
+    "url": "https://mashinno.com/blog/12709/how-to-bleed-radiator-mvm-x22/"
+   },
+   {
+    "id": 14,
+    "title": "چاینا یدک سنتر — علت ترکیدن رادیاتور بخاری ام وی ام X22",
+    "url": "https://chinayadakcenter.ir/blog/%D8%B9%D9%84%D8%AA-%D8%AA%D8%B1%DA%A9%DB%8C%D8%AF%D9%86-%D8%B1%D8%A7%D8%AF%DB%8C%D8%A7%D8%AA%D9%88%D8%B1-%D8%A8%D8%AE%D8%A7%D8%B1%DB%8C-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-X22"
    }
   ]
  },
@@ -1264,6 +1589,95 @@
    }
   ]
  },
+ "kia-optima-tf-k5-2nd-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Variant years given in Iranian calendar (۱۳۹۰–۱۳۹۴) alongside model years; engine desc updated with Iranian spec (car.ir ~170 hp / 224 Nm) and MPI confirmation from Iranian parts listings.",
+   "MDPS coupling: bulletin confirmed as CS1604 (2011–2014 Optima clicking noise); unverified 'CHA072' reference dropped; sources replaced with the actual TSB pages.",
+   "Transmission solenoid fault rewritten: TRA051 is the Damper Clutch solenoid with DTC P0741 (lock-up shudder/rpm flare), not a generic multi-DTC solenoid bulletin; confidence lowered to medium.",
+   "Rod-bearing fault: clarified 17V-224 covered only GDI/turbo Optima, not the Iranian MPI car; MPI evidence is Hyundai 20V-746; moved to position 2.",
+   "Brake-light switch: 13V-114 confirmed via NHTSA for model 2011 only.",
+   "HECU fire recall 23V-652 confirmed via NHTSA for 2011 and 2012 Optima; year range narrowed to what was verified; added ABS light to symptom.",
+   "Oil consumption: dropped unverified ENG222 citation, confidence lowered from high to medium (single rebuilder source).",
+   "Valve-body fault merged with harsh-shift symptoms and solenoid parts; diagnostic tips updated for P0741.",
+   "Added gap fault: airbag control unit short, recall 18V-363 (2011–2012 Optima, NHTSA).",
+   "NHTSA API and Iranian sources added (ids 2, 4, 5, 11–13); CarComplaints recall/TSB list pages replaced (not reachable)."
+  ],
+  "removed_claims": [
+   "TSB TRA049 (TCM adaptive values) citation removed: not found in any accessible Optima TSB list.",
+   "TSB ENG222 citation removed from oil-consumption fault: could not be confirmed.",
+   "Brake pedal stopper bulletin CHA092 removed from brake-light fault: not confirmed for Kia Optima (the pedal-stopper recall found earlier was Hyundai Sonata 15V-759).",
+   "Claim that the non-hybrid MPI Optima was also recalled for rod bearings removed: NHTSA lists no MPI bearing recall for 2011/2012 Optima."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 2,
+    "title": "کیا اپتیما TF، مشخصات و قیمت — car.ir",
+    "url": "https://car.ir/251-kia-optima-prefacelift-2-4-2010-2016"
+   },
+   {
+    "id": 3,
+    "title": "Kia TSB CS1604QA — 2011 Optima MDPS coupling — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Optima/2011/tsbs/tsb-cs1604qa.shtml"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2011 Kia Optima",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=kia&model=optima&modelYear=2011"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2012 Kia Optima",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=kia&model=optima&modelYear=2012"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA Part 573 Safety Recall Report 20V-746 (Hyundai, Theta II MPI connecting rod bearing)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V746-3838.PDF"
+   },
+   {
+    "id": 7,
+    "title": "Hyundai & Kia 2.4 G4KE Engine Problems — Hyun Engines",
+    "url": "https://hyunengines.com.au/g4ke-engine-problems/"
+   },
+   {
+    "id": 8,
+    "title": "تعمیر گیربکس اتوماتیک سوناتا YF (همان گیربکس A6MF) — کارا گیربکس",
+    "url": "https://karagearbox.com/sonata-yf-gearbox-repair"
+   },
+   {
+    "id": 9,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   },
+   {
+    "id": 10,
+    "title": "How To Tell if Your Hyundai or Kia Theta II Engine Might Fail — The Drive",
+    "url": "https://www.thedrive.com/guides-and-gear/how-to-tell-if-your-2011-2019-hyundai-or-kia-engine-might-fail"
+   },
+   {
+    "id": 11,
+    "title": "Kia TSB CS1604/WTY006 (NHTSA TSB document)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10090090-5448.pdf"
+   },
+   {
+    "id": 12,
+    "title": "2011 Kia Optima Technical Service Bulletins (TRA051 damper clutch solenoid P0741) — obd-codes.com",
+    "url": "https://www.obd-codes.com/tsb/2011/kia/optima/"
+   },
+   {
+    "id": 13,
+    "title": "دسته موتور گیربکس کیا اپتیما TF موتور MPi — کالا یدک",
+    "url": "https://kalayadak24.com/product/9-%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%DA%A9%DB%8C%D8%A7-%D8%A7%D8%A8%D8%AA%DB%8C%D9%85%D8%A7-%DA%A9%D8%AF-%D8%A7%D8%AA%D8%A7%D9%82-tf-%D8%A8/"
+   }
+  ]
+ },
  "toyota-camry-xv50-incl-hybrid": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1334,6 +1748,111 @@
     "id": 10,
     "title": "ایر تویولکس — پیام Check Hybrid System و کد خطای P0A80 باتری هیبرید",
     "url": "http://irtoyolex.com/%D9%BE%DB%8C%D8%A7%D9%85-%D9%87%D8%B4%D8%AF%D8%A7%D8%B1-check-hybrid-system-%D9%88-%DA%A9%D8%AF-%D8%AE%D8%B7%D8%A7%DB%8C-p0a80/"
+   }
+  ]
+ },
+ "toyota-corolla-e140-e150": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: noted that GLi/XLi trims are the Middle-East (GCC) E150 imports common in Iran (baravard, carencar list GLi/XLi 1.8 automatic 2008–2013).",
+   "Oil-consumption fault: removed reference to the ZE7 program (it covers the 2.4 2AZ-FE Corolla XRS, a US-only version never sold in Iran); Samarins confirms high-mileage oil use on the 1.8; generic 'engine oil' part removed.",
+   "VVT gear fault: clarified that T-SB-0087-09 applies to the 1.8 2ZR-FE (confirmed by Samarins).",
+   "Window-switch recalls: added model-year scope from NHTSA (12V-491: 2007–2009; 15V-689: 2009–2011).",
+   "Added gap fault: driver airbag spiral cable (clock spring) recall 14V-168 for 2009–2010 Corolla (NHTSA).",
+   "Maintenance: floor-mat recall 10V-023 kept as a maintenance note; Takata passenger-airbag note reworded without US zone-based campaign numbers; added Iranian gearbox-shop advice on 4-speed ATF quality.",
+   "Added Iranian sources (baravard, gearboxmajid)."
+  ],
+  "removed_claims": [
+   "Brake booster vacuum port freezing (recall 09V-338) removed: limited to 2009–2010 Corollas in cold US states; not relevant to Iranian-market GCC/Asian imports.",
+   "Sticky accelerator pedal assembly (recall 10V-017) removed as a fault: US/Canada campaign for North-American-market pedal assemblies, not shown to apply to Iranian imports; floor-mat part moved to maintenance.",
+   "ZE7 oil-consumption program for the 2AZ-FE Corolla XRS removed: engine never sold in Iran."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Samarins — Toyota Corolla 2009-2013: pros and cons, common problems",
+    "url": "https://www.samarins.com/reviews/corolla_09.html"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2009 Toyota Corolla",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=COROLLA&modelYear=2009"
+   },
+   {
+    "id": 3,
+    "title": "8020 Automotive — The 3 Most Common Toyota 2ZR-FE Engine Problems",
+    "url": "https://8020automotive.com/the-3-most-common-toyota-2zr-fe-engine-problems/"
+   },
+   {
+    "id": 4,
+    "title": "برآورد — مشخصات تویوتا کرولا GLI فیس‌لیفت ۱۸۰۰ (۲۰۰۸ تا ۲۰۱۳)",
+    "url": "https://baravard.com/reviews/car/238/%D8%AA%D9%88%DB%8C%D9%88%D8%AA%D8%A7-%DA%A9%D8%B1%D9%88%D9%84%D8%A7-gli-%D9%81%DB%8C%D8%B3-%D9%84%DB%8C%D9%81%D8%AA-1800"
+   },
+   {
+    "id": 5,
+    "title": "تعمیرگاه مجید — بررسی جامع گیربکس تویوتا کرولا",
+    "url": "https://gearboxmajid.com/articles/85-toyota-corolla-gearbox"
+   }
+  ]
+ },
+ "toyota-rav4-xa30": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "All cited recalls (12V-373, 13V-383, 16V-596, 12V-491, 15V-689, 11V-113) confirmed via NHTSA API for 2008 RAV4; the rear-suspension part renamed to the rear adjustable tie rod / lower arm («میل رابط تنظیم عقب») per recall wording, moved up the list.",
+   "Rear differential coupling bulletin number corrected from T-SB-0080-13 to SB0080-13R1 (cars.com); confidence raised to high (documented TSB, 2006–2012 4WD).",
+   "Steering intermediate-shaft fault: confidence lowered to medium; unverified claim of a Toyota service bulletin with a revised shaft and steering-rack replacement removed (Samarins gives no TSB).",
+   "Water pump: '2006–2008 especially' scope removed (not supported); confidence lowered to medium (single fetched source).",
+   "Head-bolt thread stripping: confidence raised from low to medium (confirmed by Samarins); symptom widened to coolant seepage at the head.",
+   "Oil-consumption fault: ZE7 scope (2006–2008 RAV4 2.4) confirmed by Samarins; generic oil-filter part removed; blue-smoke symptom added.",
+   "Added gap fault: driver airbag spiral cable (clock spring) damage, recall 14V-168 (NHTSA).",
+   "2AR-FE engine note: Iranian-market engine split could not be confirmed from Persian sources (hamrah-mechanic and fa.wikipedia cover only later generations); flagged in desc."
+  ],
+  "removed_claims": [
+   "Claim that Toyota issued a service bulletin with a revised intermediate shaft and that the steering rack was sometimes replaced: not confirmed; 'جعبه فرمان' removed from parts.",
+   "Claim that water-pump leaks concentrate on 2006–2008 models: no source supports the year split."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Toyota Warranty Policy Bulletin POL14-12 — Warranty Enhancement Program ZE7 Phase 2 (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10091611-5448.pdf"
+   },
+   {
+    "id": 2,
+    "title": "Samarins — 2006-2012 Toyota RAV4: problems, pros and cons",
+    "url": "https://www.samarins.com/reviews/rav4_06.html"
+   },
+   {
+    "id": 3,
+    "title": "Car Tips Daily — 2AZ-FE Engine Problems",
+    "url": "https://cartipsdaily.com/2az-fe-engine-problems"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2008 Toyota RAV4",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=TOYOTA&model=RAV4&modelYear=2008"
+   },
+   {
+    "id": 5,
+    "title": "RAV4 World forum — Steering Intermediate Shaft Clunk - SOLUTION",
+    "url": "https://www.rav4world.com/threads/steering-intermediate-shaft-clunk-solution.82616/"
+   },
+   {
+    "id": 6,
+    "title": "CarComplaints — 2007 Toyota RAV4 Clunking/Noise When Turning The Steering Wheel",
+    "url": "https://www.carcomplaints.com/Toyota/RAV4/2007/steering/clunking_noise_when_turning_the_steering_wheel.shtml"
+   },
+   {
+    "id": 7,
+    "title": "Cars.com — 2006-2012 Toyota RAV4 Coupling Issue (TSB SB0080-13R1)",
+    "url": "https://www.cars.com/articles/2006-2012-toyota-rav4-coupling-issue-1420688743307/"
+   },
+   {
+    "id": 8,
+    "title": "RAV4 World forum — Differential Coupling Warranty Enhancement",
+    "url": "https://www.rav4world.com/threads/differential-coupling-warranty-enhancement.212361/"
    }
   ]
  },
