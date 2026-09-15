@@ -1275,6 +1275,112 @@
    }
   ]
  },
+ "haima-s5": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama says the AT6 S5 (called S5 Plus) arrived in late 1400 with 148 hp / 210 Nm, down from the CVT version's 161 hp / 223 Nm — years changed from 'mid-1400' to 'late 1400' and engine desc split by gearbox; displacement 1497 cc from bimeh.",
+   "CVT sluggishness: bimeh (slow start, revs rise without matching speed on hills), bama (switch to AT6 for better performance) and repair-shop search results agree — kept high; added bama source.",
+   "Oil leak fault: gearboxmajid lists oil leaks for both CVT and 6AT; sshbco names seals, O-rings and wrong generic 'ATF-suitable' oil — cause extended, O-ring part added.",
+   "CVT vibration/knock fault rewritten: gearboxmajid lists vibration/knock during shifting and delay; sshbco names oil pressure, sensors, solenoids, control unit, bearings/bushings — belt and pulley wear dropped (see removed), confidence low -> medium.",
+   "Brake-switch fault: mashinesoft confirms no-start, 100% effect on gear engagement and, in the S5, doors not locking; bimeh owner comments mention lock failures — gear engagement added; door-lock motor part removed (the source ties the lock issue to the switch).",
+   "6AT shift-knock: gearboxmajid lists knocking during shifts; sshbco names solenoids/sensors/control unit and engine mounts for vibration — confidence low -> medium; unsupported 'clutch plate' cause removed.",
+   "Maintenance intervals (CVT 60k/4 yr, 6AT 80k/6 yr) confirmed by gearboxmajid; added sshbco warning against generic ATF."
+  ],
+  "removed_claims": [
+   "CVT steel belt and pulley wear followed by bearing failure — not stated in gearboxmajid (its cited source); only generic CVT repair-shop text links knocks to belt/pulleys.",
+   "6AT clutch-plate wear as a cause of shift knock — not in any opened source.",
+   "Door lock motor as a separate failed part — mashinesoft attributes S5 door-lock failure to the brake microswitch."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "گیربکس هایما S5؛ بررسی کامل و مقایسه مدل‌های CVT و AT — تعمیرگاه مجید",
+    "url": "https://gearboxmajid.com/articles/69-haima-s5-gearbox"
+   },
+   {
+    "id": 2,
+    "title": "هایما S5؛ مشخصات فنی، آپشن‌ها و معایب — بیمه‌دات‌کام",
+    "url": "https://bimeh.com/mag/haima-s5/"
+   },
+   {
+    "id": 3,
+    "title": "آشنایی با مشکلات رایج گیربکس هایما S5 — sshbco",
+    "url": "https://www.sshbco.com/%D8%A2%D8%B4%D9%86%D8%A7%DB%8C%DB%8C-%D8%A8%D8%A7-%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-s5/"
+   },
+   {
+    "id": 4,
+    "title": "مشکل میکرو سوئیچ ترمز و استارت نخوردن هایما S5-S7 — ماشین‌سافت",
+    "url": "https://mashinesoft.com/blog/17-%D9%85%D8%B4%DA%A9%D9%84-%D9%85%DB%8C%DA%A9%D8%B1%D9%88-%D8%B3%D9%88%D8%A6%DB%8C%DA%86-%D8%AA%D8%B1%D9%85%D8%B2-%D9%88-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA-%D9%86%D8%AE%D9%88%D8%B1%D8%AF%D9%86-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-s5-s7.html"
+   },
+   {
+    "id": 5,
+    "title": "بررسی هایما S5 با گیربکس ۶ سرعته اتوماتیک AT6 — باما",
+    "url": "https://bama.ir/news/15874/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%87%D8%A7%DB%8C%D9%85%D8%A7-%D8%A7%D8%B3-5-%D8%AA%D9%88%D8%B1%D8%A8%D9%88-%D9%BE%D9%84%D8%A7%D8%B3"
+   }
+  ]
+ },
+ "dongfeng-h30-cross": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Radiator fault: hamrah-mechanic (owner quote: radiator every 100k because it is shared with gearbox cooler), caracaltuning (undersized radiator) and gearbox-repair.ir (radiator narrower than 206 automatic, double heat load) confirm; typical_km reworded as owner report; sources changed to [2,3,8] (khodro45 page not opened).",
+   "Added gap fault: leaking gearbox-to-radiator ATF cooler lines and ATF/coolant mixing through a failed radiator (carhospital, gearbox-repair.ir).",
+   "Limp mode fault: carhospital confirms lock in 3rd gear with S warning light; gearboxsun confirms P0700 and 2500–3000 rpm limit; added carhospital source and sensors to cause.",
+   "Transmission identity: carhospital names the unit AW81-40LE (Aisin 4-speed) — added as repairers' code.",
+   "Knock / Euro 5 ECU calibration: only source is a remap seller (commercial interest) — confidence medium -> low, moved to end; ECU split clarified (ME7.4.4 Euro 4, ME7.8.8 Euro 5).",
+   "Ignition fault: kept TU5 coil (consistent with verified peugeot-206 TU5 profile, where coil failure is high confidence); removed oxygen sensor from this fault.",
+   "Head gasket, oil leaks, timing belt 60–70k: consistent with verified peugeot-206 TU5 findings; kept at medium.",
+   "Brake pads: hamrah-mechanic confirms single-clip retention and pads tearing out when thin; added uneven front pad wear; clarified front axle.",
+   "Diagnostics/maintenance: added ATF/coolant-mixing tip, oil-level check conditions and 30–40k old-oil shift-shock note from carhospital; ATF 6 L T-IV / Toyota WS confirmed by gearboxsun."
+  ],
+  "removed_claims": [
+   "Oxygen sensor failure as part of the ignition fault — generic across cars (also removed from the verified 206 TU5 profile); only a remap seller mentions second O2 sensor errors.",
+   "Draft year note 'some sources say production stopped in 1399' — roster and hamrah-mechanic give 1395–1398; replaced with the start-year uncertainty (1394/1395) from the roster."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "دانگ فنگ اچ سی کراس؛ مشخصات فنی و بررسی H30 Cross — خودرو۴۵",
+    "url": "https://khodro45.com/mag/dongfeng-h30-cross/"
+   },
+   {
+    "id": 2,
+    "title": "اچ سی کراس بخریم یا نه؟ مزایا و معایب H30 کراس — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-dongfeng-h30-cross/"
+   },
+   {
+    "id": 3,
+    "title": "ریمپ اچ سی کراس دانگ فنگ و رفع مشکلات — کاراکال تیونینگ",
+    "url": "https://caracaltuning.com/ریمپ-اچ-سی-کراس-دانگ-فنگ-ریمپ-ایسیو-h30-cross/"
+   },
+   {
+    "id": 4,
+    "title": "تعمیر گیربکس اتوماتیک H30 کراس — گیربکس سان",
+    "url": "https://gearboxsun.com/automatic-gearbox-repair/h30-cross-gearbox-repair/"
+   },
+   {
+    "id": 5,
+    "title": "موتور TU5؛ مشخصات و مشکلات — خودرو۴۵",
+    "url": "https://khodro45.com/mag/tu5-engine/"
+   },
+   {
+    "id": 6,
+    "title": "مشکلات موتور TU5 — car206",
+    "url": "https://car206.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%D9%85%D9%88%D8%AA%D9%88%D8%B1-tu5/"
+   },
+   {
+    "id": 7,
+    "title": "تعمیر گیربکس اچ سی کراس H30 Cross؛ مشکلات رایج — کار هاسپیتال",
+    "url": "https://carhospital.co/service/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%DA%86-%D8%B3%DB%8C-%DA%A9%D8%B1%D8%A7%D8%B3-h30cross"
+   },
+   {
+    "id": 8,
+    "title": "تعمیر گیربکس h30 cross و عیب‌یابی — gearbox-repair.ir",
+    "url": "https://gearbox-repair.ir/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-h30-cross-%D8%A7%DA%86-%D8%B3%DB%8C-%DA%A9%D8%B1%D8%A7%D8%B3/"
+   }
+  ]
+ },
  "nissan-maxima": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1368,6 +1474,56 @@
    }
   ]
  },
+ "brilliance-h230": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "گیربکس اتوماتیک طبق همراه مکانیک ۴ سرعته AMT ثبت شد؛ توقف زودتر نسخه اتوماتیک به‌خاطر ایرادها (یک منبع) به یادداشت گیربکس افزوده شد.",
+   "به ایراد تاخیر AMT، تاخیر دنده عقب و کندتر بودن شتاب نسبت به نسخه دنده‌ای (دنیای خودرو) و قطعه عملگر کلاچ اضافه شد؛ منبع ۴ (اتورسا) از این ایراد برداشته شد چون بازبینی نشد.",
+   "ایراد ترمز صراحتاً ارزیابی طراحی (ترمز عقب کاسه‌ای) و نه گزارش خرابی توصیف شد.",
+   "کد موتور با اشاره به نگارش BM15 در همراه مکانیک حفظ شد.",
+   "نکات نگهداری وابسته به ایرادهای حذف‌شده برداشته و نکته پرهیز از نیم‌کلاچ در AMT اضافه شد؛ منبع تعمیرگاه اتوکلینیک فورکی حذف و شماره منابع بازچینی شد.",
+   "حکم weak: فقط ایراد گیربکس AMT پشتوانه چندمنبعی دارد؛ ترمز یک ارزیابی تک‌منبعی و واتر پمپ از خواهر H330 است."
+  ],
+  "removed_claims": [
+   "ایراد «چراغ چک از خرابی سنسور اکسیژن/مپ و زنگ‌زدگی سوکت‌ها»: فقط متن عمومی یک تعمیرگاه، خاص این مدل نیست.",
+   "ایراد «لرزش دور آرام از انژکتور، سنسور میل‌لنگ یا وایر شمع»: فهرست عمومی علل لرزش در متن تعمیرگاه، خاص این مدل نیست.",
+   "نکته نگهداری «تعویض روغن گیربکس اتوماتیک هر ۴۵ هزار کیلومتر» و «فیلتر هوا زودتر از ۱۵ هزار و تمیز نگه داشتن سوکت‌ها»: فقط از همان تعمیرگاه، بازبینی نشد.",
+   "افزوده نشد: «تقه گیربکس فقط پس از گرم شدن» (مدرن گیربکس) — شرح آن (رقیق شدن روغن، شیر برقی، صفحات کلاچ داخلی) عمومی گیربکس اتوماتیک معمولی است و با AMT این مدل جور نیست."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "برلیانس H230، مشخصات و بررسی تخصصی — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/carreview/brilliance/h230parskhodro/"
+   },
+   {
+    "id": 2,
+    "title": "معایب برلیانس H230 و ۵ دلیل برای نخریدن — Z4Car",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%A8%D8%B1%D9%84%DB%8C%D8%A7%D9%86%D8%B3-h230"
+   },
+   {
+    "id": 3,
+    "title": "مشکلاتی که بعد از خرید برلیانس h230 ممکن است با آن مواجه شوید — دنیای خودرو",
+    "url": "https://www.donyayekhodro.com/news/223557/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA%DB%8C-%DA%A9%D9%87-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%A8%D8%B1%D9%84%DB%8C%D8%A7%D9%86%D8%B3-h230-%D9%85%D9%85%DA%A9%D9%86-%D8%A7%D8%B3%D8%AA-%D8%A8%D8%A7-%D8%A2%D9%86-%D9%85%D9%88%D8%A7%D8%AC%D9%87-%D8%B4%D9%88%DB%8C%D8%AF"
+   },
+   {
+    "id": 4,
+    "title": "ماشین برلیانس H230؛ انتخابی شیک برای رانندگی روزمره و شهری — اتورسا",
+    "url": "https://autorasa.com/blog/brilliance-h230-machine-review/"
+   },
+   {
+    "id": 5,
+    "title": "برلیانس اچ۳۳۰ بخریم یا نه؟ مزایا و معایب (همان موتور ۱٫۵) — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-brilliance-h330/"
+   },
+   {
+    "id": 6,
+    "title": "Brilliance H230 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brilliance_H230"
+   }
+  ]
+ },
  "brilliance-h330": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1420,6 +1576,56 @@
     "id": 6,
     "title": "کانال تخصصی برلیانس (H330-H320-C3) — تلگرام",
     "url": "https://t.me/s/brilliance300?before=922"
+   }
+  ]
+ },
+ "changan-cs35": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Radiator: neutral re-reads of Drom confirm 'radiator leaked at 45,000 km' and 'течет радиатор' as a recurring minus plus engine overheating; the draft's 'several consecutive radiator replacements' is not literally stated — softened; Autospot (not opened) dropped from its sources. A first Drom summary that echoed my prompt was discarded as unreliable.",
+   "Gearbox: Drom owners report the 1.6 AT shifting poorly and a gearbox failure at ~120k km; Iranian repair shops list delay, jerks and leaks — confidence low -> medium; symptom extended.",
+   "Gearbox identity: asayadak and the roster give 4-speed automatic; hamrah-mechanic's 'CVT (Aisin)' is treated as an error — tip kept and reworded.",
+   "Throttle-body oxidation, short fuel-pump life, alternator-belt tensioner wear, chain 200–250k and 3.6 L 5W-30 confirmed on otoba (single source); sources narrowed to otoba.",
+   "Added gap fault: weak / failing AC (asayadak Iranian owner complaints, Drom AC breakage) at low confidence.",
+   "Added tip separating inherent sluggish 4AT response on hills/overtaking (asayadak) from real gearbox faults; engine desc adds 123 hp figure some Iranian sources give.",
+   "Maintenance: removed the unsourced 50–60k gearbox-oil interval."
+  ],
+  "removed_claims": [
+   "Catalytic converter / oxygen sensor failure from poor fuel — generic to all cars (same claim removed from the verified 206 profile); otoba mentions it as a fuel-quality effect, not a design weakness.",
+   "Gearbox oil change every 50–60k km — no source found.",
+   "'Owners replaced the radiator several times in a row' — not literally in the opened Drom pages."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Changan CS35 1st generation — owner reviews, minuses — Drom.ru",
+    "url": "https://www.drom.ru/reviews/changan/cs35/generation1/5kopeek/"
+   },
+   {
+    "id": 2,
+    "title": "Changan CS35 — owner-reported breakages — Drom.ru",
+    "url": "https://www.drom.ru/reviews/changan/cs35/5kopeek/?only=breakagies"
+   },
+   {
+    "id": 3,
+    "title": "JL478QEE — двигатель Changan CS35 1.6 — Otoba.ru",
+    "url": "https://otoba.ru/dvigatel/changan/jl478qee.html"
+   },
+   {
+    "id": 4,
+    "title": "معایب چانگان CS35، کراس‌اووری زیبا که خالی از عیب نیست — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-changan-cs35/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیر گیربکس اتوماتیک چانگان CS35 — گیربکس بهروز",
+    "url": "https://gearboxbehrouz.com/changan/cs35/"
+   },
+   {
+    "id": 6,
+    "title": "چانگان CS35 بخریم؟ مزایا و معایب — آسا یدک",
+    "url": "https://asayadak.com/advantages-and-disadvantages-of-changan-cs35/"
    }
   ]
  },
@@ -1770,6 +1976,42 @@
    }
   ]
  },
+ "jac-j4": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "ایراد تقه P به D به اولویت اول رفت و اطمینان آن high شد (همراه مکانیک، خودرو۴۵ و تهران گیربکس)؛ اشاره شد که آپدیت برای برخی مالکان بدتر کرده است.",
+   "اطمینان ایراد خاموش شدن/لگد با کولر و ایراد سفت شدن پدال ترمز از low به medium رفت (همراه مکانیک و خودرو۴۵).",
+   "ایراد زوزه/داغی CVT با «زوزه در سرعت ۳۰ تا ۴۰» و «خلاص شدن» از تهران گیربکس دقیق‌تر و اطمینانش medium شد.",
+   "شرح تاخیر حرکت از ایست با نقل مالک خودرو۴۵ (دور بالا می‌رود و ماشین ناگهان می‌پرد) دقیق‌تر شد."
+  ],
+  "removed_claims": [
+   "قید «حالت اسپرت و برف» گیربکس CVT: در منابع بازشده تأیید نشد.",
+   "ادعای «آسیب زودهنگام سپر، گلگیر و چراغ عقب در ضربه‌های کوچک پارک» و قطعات آن از ایراد رنگ: در منابع بازشده دیده نشد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "جک j4 بخریم یا نه؟ مزایا و معایب جک j4 — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/jac-j4-advantages-and-disadvantages/"
+   },
+   {
+    "id": 2,
+    "title": "با معایب جک j4 آشنا شویم — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-jack-j4/"
+   },
+   {
+    "id": 3,
+    "title": "جک J4؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/jac-j4/"
+   },
+   {
+    "id": 4,
+    "title": "تعمیر گیربکس جک j4 و هزینه تعمیر — تهران گیربکس",
+    "url": "https://tehran-gearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DA%A9-j4/"
+   }
+  ]
+ },
  "jac-s3": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -1890,6 +2132,65 @@
    }
   ]
  },
+ "kmc-j7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "ایراد کمپرسور کولر سری اول (سوختن در حدود ۳ هزار کیلومتر، کمپرسور اصلاح‌شده) به‌عنوان ایراد تازه با منابع بچرخ و اُتکس اضافه شد و از فهرست کلی ایرادات برقی جدا شد.",
+   "اطمینان ایراد ترمز از low به medium رفت (بیش از ۶ گزارش مالک در بچرخ) و بازه حدود ۱۵ هزار کیلومتر اضافه شد.",
+   "اطمینان ایراد صدای باد و رنگ و ایراد کوبش تعلیق عقب از low به medium رفت (بچرخ، اُتکس، تست پدال).",
+   "به ایراد لگد گیربکس، تاخیر دنده عقب در سرازیری (پدال) افزوده شد؛ ادعای «آپدیت پس از حدود ۲۰ هزار کیلومتر» که در منابع بازشده دیده نشد حذف و به توصیه کلی آپدیت تبدیل شد.",
+   "به ایراد داغ کردن گیربکس، «خلاص گرفتن در حرکت» طبق مالکان افزوده شد.",
+   "منابع ۷ (اُتکس J7) و ۸ (پدال J7) اضافه شد و نکات تشخیصی و نگهداری کمپرسور کولر و دیسک ترمز افزوده شد."
+  ],
+  "removed_claims": [
+   "بازه «پس از حدود ۲۰ هزار کیلومتر» برای آپدیت نرم‌افزار گیربکس: در منابع بازشده تأیید نشد.",
+   "اشاره به «نیاز به کمی ناپایداری در سرعت بالا و پیچ تند» از ایراد تعلیق: در منابع بازشده تأیید نشد.",
+   "افزوده نشد: «آتش گرفتن موتور» — فقط اشاره پراکنده در خلاصه جستجو، بدون گزارش قابل پیگیری."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کی ام سی j7 بخریم یا نه؟ مزایا و معایب kmc j7 — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/kmc-j7-advantages-and-disadvantages/"
+   },
+   {
+    "id": 2,
+    "title": "کی ام سی J7؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/kmc-j7/"
+   },
+   {
+    "id": 3,
+    "title": "kmc j7 — نظرات کاربران و مشکلات — بچرخ",
+    "url": "https://becharkh.com/forum/car?s=1&brand=kmc&model=kmc-j7"
+   },
+   {
+    "id": 4,
+    "title": "کی ام سی X5 تحت فشار بررسی شد (همان موتور و گیربکس) — بیت‌ران",
+    "url": "https://bitrun.info/1404/02/kmc-x5-kerman-motor/"
+   },
+   {
+    "id": 5,
+    "title": "مشکلات گیربکس جک S5 و هزینه تعمیر آن (همان گیربکس) — تن پارت کالا",
+    "url": "https://tenpartkala.com/blog/jac-s5-gearbox-repair/"
+   },
+   {
+    "id": 6,
+    "title": "کی ام سی X5، بررسی کامل مشخصات و راهنمای خرید (کد موتور و نوع کلاچ) — پدال",
+    "url": "https://www.pedal.ir/kmc/661092-kmc-x5-test-drive-review/"
+   },
+   {
+    "id": 7,
+    "title": "خلاصه بررسی کی ام سی J7 و نظرات مردمی — اُتکس",
+    "url": "https://otex.ir/blog/summary-of-kmc-j7-reviews-and-popular-comments"
+   },
+   {
+    "id": 8,
+    "title": "بررسی تخصصی کی ام سی J7؛ نظرات کاربران و ویدیو رانندگی — پدال",
+    "url": "https://www.pedal.ir/kmc/594228-kmc-review-test-drive-j7/"
+   }
+  ]
+ },
  "kmc-x5": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1950,6 +2251,48 @@
    }
   ]
  },
+ "kmc-t8": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "کد موتور به HFC4GA3 کوتاه شد؛ پسوند 4D1 فقط در یک منبع تیونینگ بود (هم‌راستا با پروفایل تأییدشده جک S5).",
+   "سیستم دودیفرانسیل طبق خودرو۴۵ به سه‌حالته 2H/4H/4L با قفل دیفرانسیل عقب برقی اصلاح شد.",
+   "ایراد شمع به «حساسیت موتور توربو به کیفیت بنزین / ناک» بازنویسی و به سیستم fuel منتقل شد؛ ادعای «کیفیت پایین شمع‌ها» در منابع بازشده دیده نشد.",
+   "نکته نگهداری تسمه تایم (نه زنجیر) از خودرو۴۵ اضافه شد و منبع ۵ افزوده شد.",
+   "نکته تشخیصی «سرخ شدن کاتالیزور» به «تردید مالکان درباره دوام کاتالیزور» تعدیل شد؛ بیت‌ران آن را نگفته بود.",
+   "ایراد کندی دور پایین با گزارش مالکان بیت‌ران (نگه داشتن دور حدود ۳۰۰۰) دقیق‌تر شد؛ بلبرینگ کلاچ پمپی به قطعات ایراد پمپ کلاچ اضافه شد."
+  ],
+  "removed_claims": [
+   "ایراد «داغ شدن و سوختن توربو»: هیچ گزارش خرابی توربو برای T8 پیدا نشد؛ بیت‌ران فقط می‌گوید جک پس از دوره S5 واتر پمپ برقی اضافه کرد. به نکته نگهداری (خنک کردن توربو) تبدیل شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کی ام سی T8 پیکاپ چینی پرحاشیه این روزهای بازار خودرو / بررسی تخصصی — بیت‌ران",
+    "url": "https://bitrun.info/1402/05/%DA%A9%DB%8C-%D8%A7%D9%85-%D8%B3%DB%8C-t8/"
+   },
+   {
+    "id": 2,
+    "title": "بررسی اجمالی کی ام سی T8 و نظرات مردمی کاربران و مالکان — اُتکس",
+    "url": "https://otex.ir/blog/kmc-t8-overview-and-popular-opinions-from-users-and-owners"
+   },
+   {
+    "id": 3,
+    "title": "مزایا و معایب کی ام سی t8 (نقاط ضعف و قوت) — ویکی شاپ",
+    "url": "https://wikishop.co/mag/advantages-and-disadvantages-of-kmc-t8/"
+   },
+   {
+    "id": 4,
+    "title": "ریمپ جک T8 — همه چیز درباره ریمپ کی ام سی تی ۸ — کاراکال تیونینگ",
+    "url": "https://caracaltuning.com/%D8%B1%DB%8C%D9%85%D9%BE-%D8%AC%DA%A9-t8/"
+   },
+   {
+    "id": 5,
+    "title": "کی ام سی T8؛ بررسی جامع و مشخصات فنی KMC T8 — خودرو۴۵",
+    "url": "https://khodro45.com/mag/kmc-t8/"
+   }
+  ]
+ },
  "lifan-x60": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1998,6 +2341,50 @@
     "id": 6,
     "title": "معایب لیفان X60 را قبل خرید بدانید — کارکیتس",
     "url": "https://carkits.ir/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%88-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x60/"
+   }
+  ]
+ },
+ "lifan-x50": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "علت صدای زوزه طبق بیمارستان خودرو به خرابی بلبرینگ‌های کرانویل و پینیون اصلاح و اطمینان آن medium شد؛ تعمیرکار فقط متن عمومی CVT دارد.",
+   "ایراد سنسور فشار فقط به بیمارستان خودرو (منبع ۲) نسبت داده شد و «سنسور دمای روغن» و «TCU» از قطعات آن برداشته شد.",
+   "در ایراد بریدن شفت پولی خروجی، «گشاد شدن پوسته وسط» در هر دو نسخه A2 و A3 و اولویت تعمیر پوسته افزوده شد.",
+   "در ایراد تقه، «افت فشار پمپ روغن» از علل برداشته شد (در منابع بازشده نبود) و منبع ۳ برای علت والو بادی حفظ شد.",
+   "تعویض صافی گیربکس در هر تعویض روغن (بیمارستان خودرو) به نگهداری افزوده شد؛ نکته تشخیصی خلاص کردن برای جدا کردن صدای بلبرینگ چرخ اضافه شد."
+  ],
+  "removed_claims": [
+   "ایراد «گاز هرز خوردن از ساییدگی تسمه فلزی و پولی‌ها یا ضعف پمپ روغن»: فقط متن عمومی CVT در تعمیرکار، خاص X50 نیست؛ به نکته تشخیصی تبدیل شد.",
+   "جزئیات «در دیاگ مقدار سنسور فشار تغییر نمی‌کند»: در منابع بازشده تأیید نشد.",
+   "نکته تشخیصی «مصرف واقعی حدود ۹ لیتر» و «ضعف تعلیق در جذب ضربه»: تأیید نشد و یکی از مالکان همراه مکانیک تعلیق را سفت و راحت دانسته است.",
+   "نکته «X50 بر پایه سکوی لیفان ۵۳۰»: در منابع بازشده این بازبینی تأیید نشد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "با مزایا و معایب لیفان X50 آشنا شوید — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/benefits-and-problems-of-lifan-x50/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیر گیربکس لیفان X50 — تخصص CVT A2 و A3 — بیمارستان خودرو",
+    "url": "https://carhospital.co/service/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x50"
+   },
+   {
+    "id": 3,
+    "title": "تعمیر گیربکس لیفان X50 (CVT) — هزینه، علائم و رفع تقه — تعمیرکار",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x50-2/"
+   },
+   {
+    "id": 4,
+    "title": "معایب لیفان x50 و ۷ دلیل برای نخریدن — Z4Car",
+    "url": "https://z4car.com/naghd/%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-7-%D8%AF%D9%84%DB%8C%D9%84-%D9%84%DB%8C%D9%81%D8%A7%D9%86-x50-%D9%86%D8%AE%D8%B1%DB%8C%D8%AF"
+   },
+   {
+    "id": 5,
+    "title": "Lifan X50 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lifan_X50"
    }
   ]
  },
@@ -2683,6 +3070,81 @@
     "id": 14,
     "title": "آپدیت موتور و گیربکس تیگو 7 پرو — NS Car",
     "url": "https://ns-car.com/tiggo-7-pro-remap-update/"
+   }
+  ]
+ },
+ "fownix-tiggo-8-pro": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama confirms Pro Max = 2.0T 4J20, 254 hp / 390 Nm, wet 7DCT, AWD (Iranian market); hamrah-mechanic confirms Pro = 1.6T 197 hp / 290 Nm, 7DCT, FWD. Added drive layout to variants.",
+   "Identity: plug-in hybrid e-plus filled in — unveiled 1401, on sale 1402, 1.5T + two electric motors, DHT, 326 hp / 510 Nm, 19.27 kWh (khodro45/pedal/bama search results); Pro years changed from '1400–1402' to '1400 onward'.",
+   "No Tiggo 7 Pro leakage found: no CVT25 faults in this profile; tip extended to also exclude first-gen Tiggo 7 dry-DCT faults (Tiggo 8 Pro uses a wet DCT).",
+   "Knock: wikishop owner summary (turbo needs quality fuel or knocks) plus the verified Tiggo 7 Pro Max SQRF4J16 finding — kept high.",
+   "DCT: wikishop (poor in heavy traffic, failure-prone) and akbartokyo (heat on long/mountain drives, delayed and irregular shifts) — symptom extended; confidence medium kept; 'mechatronic' reworded to TCU.",
+   "Multimedia/ADAS: hamrah-mechanic and wikishop describe lag and delay, not outright failure — symptom corrected; instrument cluster part removed.",
+   "TPMS/tyres: Drom lists pressure-sensor breakages (3) and wikishop reports water inside a new factory tyre and steering shake at speed — merged tyre quality into symptom.",
+   "AC: Drom's largest breakage category is climate (4 reports) but no specific cause — cause rewritten, low confidence kept, moved up above suspension.",
+   "Suspension: only Drom (3 reports, mixed markets) — confidence medium -> low.",
+   "Water ingress: Drom report is from a 2.0 CVT (non-Iranian drivetrain) owner but concerns the shared body; kept low; added sunroof/dashboard noise from akbartokyo.",
+   "Maintenance: removed the '7-year warranty' tip text (unverified) and softened DCT oil interval (see removed claims)."
+  ],
+  "removed_claims": [
+   "HVAC cause 'ECU cuts AC compressor under heavy load' — not in any opened source.",
+   "Maintenance claim 'Iranian repairers recommend DCT oil every 20–30k km or two years' — not confirmed in opened sources and conflicts with the 50k interval in the verified Tiggo 7 Pro (Pro Max, same 7DCT) profile.",
+   "Tip 'this car has a 7-year warranty' — not confirmed in opened sources and not diagnostic.",
+   "Symptom 'ADAS features stop working' — sources report delay, not failure."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "تیگو 8 پرو بخریم یا نه؟ مزایا و معایب تیگو 8 پرو و پرو مکس — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/tiggo-8-pro-advantages-and-disadvantages/"
+   },
+   {
+    "id": 2,
+    "title": "نظرات در مورد تیگو 8 پرو مکس (نقاط ضعف و قوت) — ویکی شاپ",
+    "url": "https://wikishop.co/mag/comments-about-tigo-8-pro-max/"
+   },
+   {
+    "id": 3,
+    "title": "مشکلات چری تیگو 8 پرو و راهکارهای رفع آن — اکبر توکیو",
+    "url": "https://akbartokyo.com/cherry-tigo-8-pro-problems/"
+   },
+   {
+    "id": 4,
+    "title": "Chery Tiggo 8 Pro — owner-reported breakages — Drom.ru",
+    "url": "https://www.drom.ru/reviews/chery/tiggo_8_pro/5kopeek/breakages/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیر گیربکس تیگو 8 پرو و پرومکس — مدیران تیم",
+    "url": "https://modiranteam.com/tiggo-8-gearbox-repair/"
+   },
+   {
+    "id": 6,
+    "title": "Chery Tiggo 8 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chery_Tiggo_8"
+   },
+   {
+    "id": 7,
+    "title": "مشخصات فنی فونیکس تیگو ۷ پرو مکس (موتور ۱٫۶ توربو و حساسیت به بنزین) — خودرو۴۵",
+    "url": "https://khodro45.com/mag/fownix-tiggo-7-pro-max/"
+   },
+   {
+    "id": 8,
+    "title": "تعمیر تخصصی گیربکس دوکلاچه (DCT) — سعدی گیربکس",
+    "url": "https://saadigearbox.com/services/dct-gearbox-repair/"
+   },
+   {
+    "id": 9,
+    "title": "مشخصات فنی فونیکس تیگو 8 پرو مکس (F8) IE — باما",
+    "url": "https://bama.ir/car-reviews/fownix/tiggo8promax-specs-1430-ie"
+   },
+   {
+    "id": 10,
+    "title": "فونیکس تیگو ۸ پرو پلاگین هیبرید e پلاس؛ بررسی و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/fownix-tiggo8-pro-eplus/"
    }
   ]
  },
