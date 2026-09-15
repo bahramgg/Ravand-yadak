@@ -2118,6 +2118,68 @@
    }
   ]
  },
+ "hyundai-sonata-nf": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama lists 2.4 automatic (162 hp / 222 Nm MPI, 4-speed), 2.4 manual and 3.3 V6 automatic for 2006-2008; added the 2.4 manual as its own variant; facelift G4KE code marked as based on other markets (not confirmed by Iranian sources).",
+   "Gearbox codes added from an Iranian NF gearbox shop: 4-speed A4GF1/F4A51 and 5-speed A5GF1.",
+   "Solenoid/shift-shock fault: 5NP-B6E2P-10 re-described correctly as an informational bulletin (the TCM compensates for normal clutch wear), not a Hyundai fix for a defect; added Iranian workshop symptoms (cold-engine shock, 3rd-gear limp mode cleared by restart).",
+   "Stop-lamp switch recall 13V-113: scope corrected from '2008 Sonata' to 2006-2011 Sonata.",
+   "Torque converter shudder (08-AT-004): speed window confirmed as 38-42 mph; removed torque converter from parts since the fix is software only.",
+   "Inhibitor fault: added Iranian-reported selector board water damage after car wash.",
+   "Rear crossmember recall 13V-354: noted it covers 2006-2010 Sonata in US salt-belt states only; moved to last and applicability to Iran qualified.",
+   "Gaps added: water in ATF from a leaking gearbox cooler / clogged filter whine (Iranian workshop, low confidence) and erratic fuel gauge from the sender (TSB-13-FL-003, previously only a tip).",
+   "Sibling-leak check: the Iranian bearing-failure article names YF, Optima TF, Sportage and Santa Fe 2.4, not the NF, so no Theta II rod-bearing fault was added."
+  ],
+  "removed_claims": [
+   "Occupant classification (OCS) passenger airbag recall 08V-161: covers US-spec advanced air bag systems; no evidence Iranian-market NF imports have OCS.",
+   "Timing chain tensioner fault (SB-10-EM-006): the bulletin is only a revised replacement procedure with no engine named and no failure pattern; the cold-start rattle symptom was unsupported.",
+   "Torque converter listed as a part for the 08-AT-004 shudder: the bulletin remedy is an ECM/TCM software update."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2008 Hyundai Sonata Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Sonata/2008/tsbs/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2008 Hyundai Sonata (08V161, 13V113, 13V354)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=SONATA&modelYear=2008"
+   },
+   {
+    "id": 3,
+    "title": "مشخصات فنی هیوندای سوناتا ۲٫۴ لیتر اتوماتیک سال ۲۰۰۶ تا ۲۰۰۸ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/sonata-specs-1350-4cylautomatic"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 5,
+    "title": "تسمه دینام سوناتا ۲۰۰۸ تا ۲۰۱۱ NF-2400 گیربکس 5AT — مای‌کارلوبس",
+    "url": "https://mycarlubs.com/car_details/357/category/23"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Sonata Transmission Problems — Edmunds Car Forums",
+    "url": "https://forums.edmunds.com/discussion/8222/hyundai/sonata/hyundai-sonata-transmission-problems"
+   },
+   {
+    "id": 7,
+    "title": "تعمیر گیربکس اتوماتیک هیوندا سوناتا NF — کار هاسپیتال",
+    "url": "https://carhospital.co/service/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7-%D8%B3%D9%88%D9%86%D8%A7%D8%AA%D8%A7-nf"
+   },
+   {
+    "id": 8,
+    "title": "علت یاتاقان زدن موتورهای ۲۴۰۰ سی سی کیا و هیوندای — اسب بخار",
+    "url": "https://asbe-bokhar.com/special/engine-bearing/"
+   }
+  ]
+ },
  "hyundai-sonata-yf": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2213,6 +2275,122 @@
    }
   ]
  },
+ "hyundai-elantra-md": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Piston-slap fault: tied to the 1.8L Nu MPI warranty extension (TXXK, 2011-2016 Elantra, piston slap noise in the upper engine, mostly in cold weather); noted 22-EM-009H supersedes 21-EM-002H; added NHTSA TXXK document as source 8.",
+   "MDPS coupling: removed the unverified '2011-2016' year range (the 5NP-F8M5G-03 bulletin title gives a different range); wording kept to the bulletin.",
+   "ESC recall 15V-871: cause specified as yaw-rate/G sensor with HECU update (Hyundai campaign 137) and build window Oct 2010-Oct 2011 added; source 9 added.",
+   "ABS HECU recall 23V-651: coverage corrected from '2012 Elantra' to 2011-2015 Elantra; fault moved up.",
+   "Shift-lock fault confidence medium -> high (TSB 5NP-F6W6P-05 confirmed for 6-speed vehicles).",
+   "Clutch-slip fault: added the bulletin's >200 rpm slip criterion.",
+   "Gap added: steering rack noise (TSB 5NP-H6P9S-06, Elantra MD), previously only mentioned in a tip.",
+   "Diagnostic tips rewritten: removed the timing-chain distinction and the unsupported 'knock does not stop when warm' claim; added warranty-campaign and recall checks.",
+   "Iranian check: hamrah-mechanic lists only design and weak-engine complaints for the Iranian 1.8 MPI (147 hp / 176 Nm), no extra mechanical faults; bama/divar confirm the 1.8 engine."
+  ],
+  "removed_claims": [
+   "Timing chain guide breakage (P0016/P0340, no-start): only a parts-retailer blog supports it, with no TSB, recall or independent confirmation for the G4NB.",
+   "Claim that piston slap knock 'does not stop when fully warm': not supported; Hyundai describes the noise as mostly present in cold weather."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2012 Hyundai Elantra Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Elantra/2012/tsbs/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2012 Hyundai Elantra (15V871, 13V115, 20V393, 23V651)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=ELANTRA&modelYear=2012"
+   },
+   {
+    "id": 3,
+    "title": "Elantra & Sonata Steering Coupling Extended Warranty — Hyundai USA",
+    "url": "https://autoservice.hyundaiusa.com/TXX7"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Elantra Problems – 5th Generation (2011 to 2016) — 1A Auto",
+    "url": "https://blog.1aauto.com/hyundai-elantra-problems-2011-to-2016-5th-generation/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA Part 573 Safety Recall Report 23V-651 (Hyundai HECU short circuit)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V651-6950.PDF"
+   },
+   {
+    "id": 6,
+    "title": "معایب هیوندای النترا — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-hyundai-elantra/"
+   },
+   {
+    "id": 7,
+    "title": "مشخصات فنی هیوندای النترا ۱٫۸ لیتر سال ۲۰۱۴ تا ۲۰۱۶ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/elantra-specs-1013-320-1.8l"
+   },
+   {
+    "id": 8,
+    "title": "Hyundai 1.8L Nu engine warranty extension (TXXK) — NHTSA TSB document",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10186830-0001.pdf"
+   },
+   {
+    "id": 9,
+    "title": "Hyundai campaign 137 — Yaw rate/G sensor inspection and HECU update, 2011-2012 Elantra",
+    "url": "https://hyundai.oemdtc.com/89/137-yaw-rateg-sensor-inspection-and-hecu-update-2011-2012-hyundai-elantra"
+   }
+  ]
+ },
+ "hyundai-elantra-ad": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: hamrah-mechanic gives the Kerman Motor Elantra AD as 2.0 NA 16V, 152 hp / 196 Nm, 6-speed automatic, and no 1.6 for AD; engine figures corrected and the misleading 'some sources say G4NC' (G4NC is the 2.0 GDI) note removed; noted the US 2.0 is the Atkinson-cycle version, so US bulletins are applied cautiously.",
+   "Thermostat fault: confirmed 5NP-V2N3H-09, 5NP-D3F4K-09 and 5NP-R9D7V-01 (2017-2018 AD 2.0L); confidence high -> medium because the campaign engine scope is not stated and the Iranian 2.0 tune differs; fault moved to 2nd.",
+   "Transmission fault: added the >200 rpm clutch-slip criterion; 5NP-G7W3S-05 described as the harsh/delayed-shift diagnosis bulletin.",
+   "Misfire fault: 20-FL-001H confirmed as specific to the 2017 AD with 2.0L engine.",
+   "Shift-lock fault confidence medium -> high (TSB 5NP-F6W6P-05 confirmed for 6-speed vehicles).",
+   "MDPS worm-shaft bearing noise: wording aligned with the 22-ST-005H title (noise).",
+   "Diagnostic tips and maintenance rewritten after removing the recall faults; added the Iranian note on low production volume and scarce body parts (search of Iranian sources)."
+  ],
+  "removed_claims": [
+   "Brake booster failure recall 17V-063: limited to 33,803 2017 Elantras built at Hyundai Motor Manufacturing Alabama (Sep 2016-Jan 2017), not the Korean-sourced Kerman Motor cars.",
+   "MDPS connector recall 17V-213 as a common fault: covered only 100 vehicles, a batch defect that does not make it a model-typical fault.",
+   "Driver airbag recalls 16V-232 and 16V-956 as common faults: no symptom a driver can report, short US build windows, and no evidence they apply to Iranian cars."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2017 Hyundai Elantra Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Elantra/2017/tsbs/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2017 Hyundai Elantra (17V213, 16V956, 17V063, 16V232)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=ELANTRA&modelYear=2017"
+   },
+   {
+    "id": 3,
+    "title": "آشنایی با هیوندای النترا AD مونتاژ کرمان موتور — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/hiundai-elentra-ad/"
+   },
+   {
+    "id": 4,
+    "title": "بررسی هیوندای النترا ۱٫۶ لیتری کرمان موتور (نسل هفتم) — باما",
+    "url": "https://bama.ir/news/11437/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%86%D8%B3%D9%84-%D8%AC%D8%AF%DB%8C%D8%AF-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA Part 573 Safety Recall Report 17V-063 (2017 Elantra brake booster, HMMA Alabama builds)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2017/RCLRPT-17V063-8851.PDF"
+   },
+   {
+    "id": 6,
+    "title": "معایب هیوندای النترا — مجله خودرو سوییچ",
+    "url": "https://www.switch.ir/mag/bugs-of-elantra/"
+   }
+  ]
+ },
  "hyundai-tucson-ix35-lm": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2297,6 +2475,74 @@
     "id": 13,
     "title": "NHTSA recalls API — 2012 Hyundai Tucson (19V063, 14V245, 23V651)",
     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2012"
+   }
+  ]
+ },
+ "hyundai-tucson-tl": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: bama confirms the Iranian Tucson TL as 2.0 (155 hp / 192 Nm), 6-speed automatic, AWD, model years 2016-2018, which matches the Nu 2.0 MPI (G4NA); engine note now also excludes the 2.4 GDI.",
+   "ABS HECU recall 20V-543: cause worded as internal corrosion causing a short (per NHTSA) and noted that 2016-2018 models were added in the Dec 2020 expansion; fault moved up to 2nd.",
+   "Shift-lock fault confidence medium -> high (TSB 5NP-F6W6P-05 confirmed for 6-speed vehicles).",
+   "AWD coupling fault confidence medium -> low: only a parts-retailer article supports it and CarComplaints lists no AWD/coupling TSB for the 2017 Tucson.",
+   "A/C evaporator sensor campaign 5NP-D8E5P-03 confirmed but kept low, with a note that its coverage for the Iranian 2.0 MPI is unclear.",
+   "Added a diagnostic tip: Iranian articles repeat the 2016 Tucson's hesitation/lurch complaints, which belong to the 7-speed DCT of the 1.6 T-GDI that was never sold in Iran; extended the GDI-only exclusion tip to the KSDS/P1326 bulletins (listed for the 2.0 T-GDI and 2.4 GDI).",
+   "Shift-lock tip completed (brake light on points to the shift-lock mechanism); source 10 added for the Persian check."
+  ],
+  "removed_claims": [
+   "Headlamp/tail-lamp condensation (20-BD-014H): a generic multi-model lamp-moisture diagnosis bulletin, not a fault specific to this model."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2017 Hyundai Tucson Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Tucson/2017/tsbs/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2017 Hyundai Tucson (16V842, 21V727, 20V543)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=HYUNDAI&model=TUCSON&modelYear=2017"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA Part 573 Safety Recall Report 21V-727 (2017 Tucson Nu 2.0L GDI connecting rod bearing)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V727-2659.PDF"
+   },
+   {
+    "id": 4,
+    "title": "مشخصات فنی هیوندای توسان ۲٫۰ لیتر دودیفرانسیل سال ۲۰۱۶ تا ۲۰۱۸ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/tucsonix35-specs-1031-2.0l4wd"
+   },
+   {
+    "id": 5,
+    "title": "هیوندای توسان — ویکی‌پدیا فارسی",
+    "url": "https://fa.wikipedia.org/wiki/%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C_%D8%AA%D9%88%D8%B3%D8%A7%D9%86"
+   },
+   {
+    "id": 6,
+    "title": "تعمیر گیربکس هیوندای توسان ix35 (خانواده A6MF) — گیربکس کار ایرانیان",
+    "url": "https://www.gearboxcar.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%87%DB%8C%D9%88%D9%86%D8%AF%D8%A7%DB%8C-%D8%AA%D9%88%D8%B3%D8%A7%D9%86-ix35/"
+   },
+   {
+    "id": 7,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   },
+   {
+    "id": 8,
+    "title": "Hyundai & Kia AWD Whining & Binding: 2010-2022 Rear Differential & Coupling — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-hyundai-tucson-kia-sportage-hyundai-ix35-2010-2022"
+   },
+   {
+    "id": 9,
+    "title": "20-ST-001H Hyundai column-mounted MDPS component replacement — TSBSearch",
+    "url": "https://www.tsbsearch.com/Hyundai/20-ST-001H"
+   },
+   {
+    "id": 10,
+    "title": "رایج‌ترین مشکلات خودروهای هیوندای — لوازم یدکی GSP",
+    "url": "https://gspshop.net/blog/the-most-common-problems-of-hyundai-cars/"
    }
   ]
  },
@@ -2537,6 +2783,61 @@
     "id": 19,
     "title": "NHTSA recalls API — 2014 Kia Sportage (22V051 HECU fuse)",
     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2014"
+   }
+  ]
+ },
+ "kia-sportage-ql-4th-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed by bama: Iranian Sportage QL GT-Line is 2.4 GDI (181 hp / 237 Nm), 6-speed automatic with shift lock, AWD, model years 2017-2018.",
+   "Rod-bearing fault: PI1802 / PI1802WX / PI1802YZ confirmed for the 2.4 GDI and 2.0T; added Persian coverage (pedal.ir) of the Theta II GDI engine defect as source 7.",
+   "HECU recall 21V-137: scope corrected to 2017-2021 Sportage and wording aligned with NHTSA (short circuit, engine-compartment fire); fault moved up.",
+   "Shift-flare fault confidence medium -> high: TRA076 (2.4 GDI TCU logic) and TRA065/SA257 (2.0T/2.4 GDI TCU upgrade) confirmed.",
+   "Inhibitor switch fault confidence medium -> high: TRA072 / SA317 is a service campaign for 2017MY.",
+   "AWD fault rewritten to lead with the confirmed PS750 tire-circumference bulletin; coupling/bearing failure kept as the retailer-reported cause.",
+   "Oil consumption confidence medium -> low: ENG222 is a generic diagnosis bulletin across four engine families; removed the unsupported 'blue smoke on acceleration' symptom and moved the fault last.",
+   "Fuel-pipe recall 18V-907 moved from common_faults to a diagnostic tip and maintenance note (see removed_claims); added HECU and inhibitor tips and campaign checks."
+  ],
+  "removed_claims": [
+   "Fuel pipe leak as a common fault (18V-907): the recall covers only cars that had their engine replaced under US recall 17V-224, warranty or the KSDS campaign, not a factory fault of Iranian imports; kept only as an after-engine-swap check.",
+   "'Blue smoke on acceleration' in the oil-consumption symptom: not supported by ENG222 or any source checked."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2017 Kia Sportage Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Sportage/2017/tsbs/"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2017 Kia Sportage (18V907, 21V137, 16V862, 22V703)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=SPORTAGE&modelYear=2017"
+   },
+   {
+    "id": 3,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 4,
+    "title": "مشخصات فنی کیا اسپورتیج ۴ سیلندر GT لاین سال ۲۰۱۷ تا ۲۰۱۸ — باما",
+    "url": "https://bama.ir/car-reviews/kia/sportage-specs-1054-gtline"
+   },
+   {
+    "id": 5,
+    "title": "کیا اسپورتیج ۲۰۱۷؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/kia-sportage-2017/"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai & Kia AWD Whining & Binding: 2010-2022 Rear Differential & Coupling — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-hyundai-tucson-kia-sportage-hyundai-ix35-2010-2022"
+   },
+   {
+    "id": 7,
+    "title": "مشکلات فنی در موتور خودروهای هیوندای و کیا همچنان ادامه دارد — پدال",
+    "url": "https://www.pedal.ir/kia/550852-hyundai-kia-decade-troublesome-engines-continues/"
    }
   ]
  },
