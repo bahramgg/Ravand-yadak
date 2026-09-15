@@ -1069,6 +1069,59 @@
    }
   ]
  },
+ "saipa-shahin-plus": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Manual variant filled in: 5-speed manual, announced Shahrivar 1405 (pedal); transmission list updated.",
+   "Engine description: 111 hp @5800 and 150 Nm @4800, VVT and variable oil pump, MPI (pedal, hamrah-mechanic); dropped the exact 1587 cc and the 115 hp / 147 Nm range (pedal gives 1578 cc, so kept 'about 1.6 L').",
+   "Gearbox fault confirmed as same DAE 6AT as Tara (khodro45); added Shahin Plus-specific seizure/overheating report from khodro45.",
+   "Vibration at ~3000 rpm: it is one owner quote in hamrah-mechanic, not 'several owners'; confidence medium -> low.",
+   "Body noise fault: removed reference to the 1400 Shahin insulation recall (applies to M15TC cars built in 1400, not Shahin Plus built from 1403); symptom rewritten on Plus owner reports (engine noise at low speed, loose plastics, panel gaps).",
+   "Diagnostic tip on Tara update nuanced (update fixes reverse knock, not always 2->1 knock); fuel-consumption owner figure added."
+  ],
+  "removed_claims": [
+   "Engine displacement 'about 1587 cc' — sources disagree (pedal 1578 cc); replaced with 'about 1.6 L'.",
+   "Link between Shahin Plus cabin noise and SAIPA's 1401 insulation recall — recall scope was Shahin M15TC cars built in 1400."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — شاهین پلاس اتوماتیک ۶ سرعته؛ بررسی جامع و مشخصات فنی (همراه با نظرات مالکان)",
+    "url": "https://khodro45.com/mag/saipa-shahin-plus/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — مشخصات شاهین پلاس اتوماتیک از نظر فنی، ظاهری و ارزش خرید (همراه با نظرات مالکان)",
+    "url": "https://www.hamrah-mechanic.com/mag/shahin-plus-specs/"
+   },
+   {
+    "id": 3,
+    "title": "سپند خودرو — بررسی کامل عملکرد موتور ME16 سایپا؛ مزایا و معایب",
+    "url": "https://sepandkhodro.com/blog/me16-engine/"
+   },
+   {
+    "id": 4,
+    "title": "کارنامه — رایج‌ترین معایب خودروی شاهین (کارشناسی ۸۸ خودرو و نظرات مالکان)",
+    "url": "https://karnameh.com/blog/disadvantages-shahin/"
+   },
+   {
+    "id": 5,
+    "title": "وبلاگ کارنامه — معایب خودروی تارا (تقه گیربکس اتوماتیک DAE)",
+    "url": "https://karnameh.com/blog/disadvantages-tara/"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — شاهین پلاس دنده‌ای؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/shahin-plus-mt/"
+   },
+   {
+    "id": 7,
+    "title": "پدال — جزئیات فنی و رفاهی شاهین پلاس دنده‌ای منتشر شد (ME16، ۵ سرعته دستی)",
+    "url": "https://www.pedal.ir/news/746420-shahin-plus-manual-me16-5-speed/"
+   }
+  ]
+ },
  "renault-tondar-90": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2627,6 +2680,44 @@
    }
   ]
  },
+ "great-wall-voleex-c30": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Assembler confirmed (resolves critic note): khodro45 says Rayen (راین), a Kerman Motor subsidiary, brought it in to replace the Daewoo Cielo; iranjib says it was assembled by Kerman Motor at Bam; the zoomit product page is titled 'rayen-great-wall'.",
+   "Semi-automatic (AMT) start corrected from 1393 to about 1395 (khodro45: introduced 2016); CVT years changed from '1391–1393' to 'after the manual, exact years unconfirmed' (iranjib says only the manual was on sale at launch, CVT to follow).",
+   "Semi-automatic fault: typical AMT check points (clutch actuator, TCU) added to cause and diagnostic tip as generic guidance; actuator added to parts.",
+   "Removed the 0–100 of 12–13 s figure from tips (not found in sources checked).",
+   "Verdict weak: only one model-specific fault, with no named cause, is supported; oxygen-sensor, misfire, camshaft-sensor and AMT-shudder claims surfaced in a Persian search but could not be traced to a readable, reliable page (pedal.ir comments page empty, gearbox repair page HTTP 400)."
+  ],
+  "removed_claims": [
+   "CVT years 1391–1393 and 'limited run': not confirmed; contradicted in timing by iranjib (CVT announced as coming later).",
+   "0–100 km/h in 12–13 s: not found in checked sources.",
+   "Not added (no reliable source reachable): frequent oxygen-sensor burnout, misfire / check-engine light, camshaft sensor faults, AMT shudder and gearbox oil overheating."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "ولکس گریت وال C30؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/greatwall-voleex-c30/"
+   },
+   {
+    "id": 2,
+    "title": "معایب و محاسن خودروی ولیکس C30 — ایران‌جیب",
+    "url": "https://www.iranjib.ir/shownews/4926/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%88-%D9%85%D8%AD%D8%A7%D8%B3%D9%86-%D8%AE%D9%88%D8%AF%D8%B1%D9%88%DB%8C-%D9%88%D9%84%DB%8C%DA%A9%D8%B3-C30-/"
+   },
+   {
+    "id": 3,
+    "title": "Great Wall Voleex C30 — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Wall_Voleex_C30"
+   },
+   {
+    "id": 4,
+    "title": "مشخصات گریت وال ولکس C30 دنده‌ای (راین) — زومیت",
+    "url": "https://www.zoomit.ir/product/rayen-great-wall-voleex-c30-manual/"
+   }
+  ]
+ },
  "mvm-315": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -3474,6 +3565,51 @@
    }
   ]
  },
+ "lamari-eama": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine code filled in as 4A95TD (Wikipedia Forthing T5 Evo: 1.5 L 4A95TD, 197 PS / 285 Nm, 7-speed DCT); wet DCT supplier Magna per CoolCarsInChina, flagged as from foreign sources.",
+   "Launch Bahman 1400, wet 7-speed dual-clutch, no Tiptronic and long-term GDI concern confirmed on khodro45.",
+   "DCT launch-delay fault: now cites only becharkh (one owner, ~2 s delay); heat from creeping in traffic moved into cause and maintenance as DCT-use advice.",
+   "Reverse/jamming fault: 'locked in 4th gear' report added from becharkh comments; cause reworded as generic DCT possibilities; unverified repair-shop source removed from source_ids.",
+   "Multimedia fault: confirmed as one owner comment on khodro45; battery-drain diagnostic tip added.",
+   "Diagnostic tips: removed unverified 6.6 L official / 11–12 L real fuel-consumption figures; added T5 vs Eama distinction.",
+   "Verdict weak: three faults remain but all rest on one or two owner comments; no documented, model-specific mechanical failure pattern found."
+  ],
+  "removed_claims": [
+   "Fuel consumption figures (6.6 L official, 11–12 L owner): not re-verified within budget, removed from tips.",
+   "Sources yadaki.shop and tamircarchery.com (gearbox repair advert) dropped from source_ids: not opened in verification; alamdaricars and gearboxborhani pages could not be read (truncated / account suspended).",
+   "Not added: turbo failure and GDI carbon build-up as faults — sources only raise them as possible long-term concerns, no reported failures."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بررسی مشخصات لاماری ایما؛ فنی، آپشن‌ها، مزایا و معایب — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/lamari-eama-specs/"
+   },
+   {
+    "id": 2,
+    "title": "لاماری ایما؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%D9%81%D9%86%DB%8C-%D9%84%D8%A7%D9%85%D8%A7%D8%B1%DB%8C-%D8%A7%DB%8C%D9%85%D8%A7/"
+   },
+   {
+    "id": 3,
+    "title": "مزایا و معایب لاماری ایما - لاماری ایما بخریم یا نه؟ — بچرخ",
+    "url": "https://becharkh.com/blogs/car/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%88-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AE%D8%B1%DB%8C%D8%AF-%D9%84%D8%A7%D9%85%D8%A7%D8%B1%DB%8C-%D8%A7%DB%8C%D9%85%D8%A7-%D9%86%D8%B8%D8%B1%D8%A7%D8%AA-%D9%88%DB%8C%D8%AF%DB%8C%D9%88/J633VCyvW6"
+   },
+   {
+    "id": 4,
+    "title": "Forthing T5 Evo — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Forthing_T5_Evo"
+   },
+   {
+    "id": 5,
+    "title": "Forthing T5 EVO: A Cool Unknown Chinese SUV — CoolCarsInChina",
+    "url": "https://www.coolcarsinchina.com/2025/07/03/forthing-t5-evo-a-cool-unknown-chinese-suv/"
+   }
+  ]
+ },
  "kia-cerato": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4208,6 +4344,101 @@
    }
   ]
  },
+ "hyundai-azera-grandeur-tg": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Transmission fault: symptom and cause reworded to match 24-AT-002H ('incorrect ratio DTC — clutch slip'); dropped the unsupported 'harsh shift when cold' detail and added clutch-wear-compensation bulletin 5NP-B6E2P-10.",
+   "Range-switch fault: added the confirmed DTCs P0705/P0707/P0708.",
+   "ETC fault: added the confirmed DTCs P2135/P0638; removed the unverified claim that the same bulletins were issued for the Sonata NF.",
+   "16V-630 seat-switch recall: exact build dates, the ~128k-mile complaint figure and an Iranian-coverage caveat added.",
+   "Added gap fault: startup rattle from the hydraulic timing-chain tensioner (TSB SB-10-EM-006 on the 2008 Azera list).",
+   "Diagnostic tip: the Azera HG is no longer described as GDI (the HG verification found the Iranian 3.0 matches MPI G6DE)."
+  ],
+  "removed_claims": [
+   "Gearbox code 'A5GF1' for the Azera/NF 3.3 five-speed: sourced only to a repair-shop page not re-verified, and A5GF1 is usually the four-cylinder unit, so the code was dropped.",
+   "Sources 'Sonata 2008 TSBs' and the car-hospital NF gearbox page: no longer cited after the claims above were removed."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "مشخصات فنی هیوندای آزرا (گرنجور) ۶ سیلندر سال ۲۰۰۶ تا ۲۰۱۰ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/azera-specs-1009-6cylinder"
+   },
+   {
+    "id": 2,
+    "title": "2008 Hyundai Azera Technical Service Bulletins (09-FL-003, 10-FL-010, 24-AT-002H, 09-AT-013, 21-AT-006H, SB-10-EM-006) — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Azera/2008/tsbs/"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2008 Hyundai Azera (18V-026, 13V-113, 16V-630, 13V-354)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=hyundai&model=azera&modelYear=2008"
+   },
+   {
+    "id": 4,
+    "title": "2008 Hyundai Azera Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Azera/2008/"
+   },
+   {
+    "id": 5,
+    "title": "مشخصات فنی هیوندای آزرا (گرنجور) ۶ سیلندر سال ۲۰۱۱ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/azera-specs-1009-319-6cylinder"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Lambda engine — Wikipedia (G6DB 3.3 MPI in Azera/Grandeur TG)",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Lambda_engine"
+   }
+  ]
+ },
+ "hyundai-azera-grandeur-hg": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine identity: G6DG 3.0 GDI changed to G6DE 3.0 MPI. Bama's 250 hp / 282 Nm matches the G6DE exactly on Wikipedia, while the G6DG makes 266–270 PS; Bama does not state the injection type (the draft's Khodro45 GDI claim conflicts with these figures).",
+   "Transmission solenoid fault: confidence lowered high -> medium because all bulletins are for the US Azera with the 3.3 GDI; merged the shift-shock procedure bulletin 5NP-P5L7D-05 into it.",
+   "Timing-chain / startup-rattle fault: confidence lowered medium -> low; bulletin 19-EM-001H and the CarComplaints data are for the US Lambda 3.3 GDI, not the Iranian 3.0 MPI.",
+   "Steering fault: added that 5NP-B9V8T-09 names Azera HG explicitly and the ~65k-mile figure; dashboard fault: added ~30k miles (~50k km).",
+   "Diagnostic tip and maintenance note: removed GDI wording."
+  ],
+  "removed_claims": [
+   "Fuel-quality fault blamed on GDI injector deposits: the Iranian engine matches the MPI G6DE, and the remaining 'sensitive to fuel quality' remark is generic (kept only as a maintenance note).",
+   "Separate 'harsh/delayed engagement' fault (5NP-P5L7D-05): it is a generic diagnostic procedure bulletin, not a distinct fault; merged into the solenoid fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "مشخصات فنی هیوندای آزرا (گرنجور) ۶ سیلندر سال ۲۰۱۲ تا ۲۰۱۴ — باما",
+    "url": "https://bama.ir/car-reviews/hyundai/azera-specs-1010-6cylinder"
+   },
+   {
+    "id": 2,
+    "title": "مشخصات فنی هیوندای آزرا گرنجور ۲۰۱۵ — خودرو۴۵",
+    "url": "https://khodro45.com/hyundai-azera-grandeur2015/"
+   },
+   {
+    "id": 3,
+    "title": "2012 Hyundai Azera Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Azera/2012/"
+   },
+   {
+    "id": 4,
+    "title": "2012 Hyundai Azera Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Hyundai/Azera/2012/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2012 Hyundai Azera (23V-651, 13V-264)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=hyundai&model=azera&modelYear=2012"
+   },
+   {
+    "id": 6,
+    "title": "Hyundai Lambda engine — Wikipedia (G6DE 3.0 MPI 250 PS / 282 N·m; G6DG 3.0 GDI 266–270 PS)",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Lambda_engine"
+   }
+  ]
+ },
  "kia-sportage-sl-3rd-gen": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4483,6 +4714,83 @@
    }
   ]
  },
+ "kia-sorento-um-3rd-gen": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine: torque corrected to 241 Nm per Bama; removed the unsupported reason that the 3.3 V6 was banned by the 2,500cc import limit. Kept Bama's note that the 6-cylinder was dropped. The roster's 'Sorento 3300' variant is not supported for this generation in Iran.",
+   "Removed 'Atlas Khodro importer' from variant years: not in the cited sources.",
+   "Rod-bearing fault: noted that the 2016 Sorento has no NHTSA bearing recall (covered by the warranty extension, KSDS and the class action); added the CarComplaints ~94k-mile figure and the Pedal source.",
+   "Oil consumption: cause reworded as a likely cause; added the ~77k-mile figure.",
+   "AWD coupling fault: confidence lowered medium -> low (only a parts seller and a Santa Fe owner forum support it).",
+   "15V-089 accelerator pedal: added the exact short build window and that Iranian coverage is not confirmed; 22V-612 and 16V-480: added Iranian-coverage caveat."
+  ],
+  "removed_claims": [
+   "Claim that the 3.3 V6 was not imported because of Iran's ban on cars over 2,500cc: unsourced, and the timing does not match imports that began in 1394."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "مشخصات فنی کیا سورنتو ۴ سیلندر ساده سال ۲۰۱۵ تا ۲۰۱۷ — باما",
+    "url": "https://bama.ir/car-reviews/kia/sorento-specs-1051-basic"
+   },
+   {
+    "id": 2,
+    "title": "کیا سورنتو ۲۰۱۶ و ۲۰۱۷ چه مشخصاتی دارند؟ — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/kia-sorento-2016-and-2017/"
+   },
+   {
+    "id": 3,
+    "title": "How To Tell if Your Hyundai or Kia Theta II Engine Might Fail (2011–2019) — The Drive",
+    "url": "https://www.thedrive.com/guides-and-gear/how-to-tell-if-your-2011-2019-hyundai-or-kia-engine-might-fail"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 5,
+    "title": "علت یاتاقان زدن موتورهای 2400 سی سی کیا و هیوندای — اسب بخار",
+    "url": "https://asbe-bokhar.com/special/engine-bearing/"
+   },
+   {
+    "id": 6,
+    "title": "2016 Kia Sorento Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Sorento/2016/"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA recalls API — 2016 Kia Sorento (22V-612, 18V-907, 15V-089, 16V-480)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=kia&model=sorento&modelYear=2016"
+   },
+   {
+    "id": 8,
+    "title": "2013-2025 Santa Fe, Sorento, K5 & Santa Cruz Rear Differential: AWD Coupler Noises & Failures — Go-Parts",
+    "url": "https://www.go-parts.com/garage/differential-carrier-assembly-kia-sorento-hyundai-santa-fe-hyundai-santa-cruz-2013-2025"
+   },
+   {
+    "id": 9,
+    "title": "AWD Problems: Viscous Coupler (DM Santa Fe Sport) — Hyundai Forums",
+    "url": "https://www.hyundai-forums.com/threads/awd-problems-viscous-coupler.658536/"
+   },
+   {
+    "id": 10,
+    "title": "تعمیر گیربکس اتوماتیک سوناتا YF (خانواده A6MF) — کارا گیربکس",
+    "url": "https://karagearbox.com/sonata-yf-gearbox-repair"
+   },
+   {
+    "id": 11,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   },
+   {
+    "id": 12,
+    "title": "مشکلات فنی در موتور خودروهای هیوندای و کیا همچنان ادامه دارد (شکایت جمعی تتا ۲ شامل سورنتو ۲۰۱۶) — پدال",
+    "url": "https://www.pedal.ir/kia/550852-hyundai-kia-decade-troublesome-engines-continues/"
+   }
+  ]
+ },
  "kia-optima-tf-k5-2nd-gen": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -4569,6 +4877,138 @@
     "id": 13,
     "title": "دسته موتور گیربکس کیا اپتیما TF موتور MPi — کالا یدک",
     "url": "https://kalayadak24.com/product/9-%D8%AF%D8%B3%D8%AA%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%DA%A9%DB%8C%D8%A7-%D8%A7%D8%A8%D8%AA%DB%8C%D9%85%D8%A7-%DA%A9%D8%AF-%D8%A7%D8%AA%D8%A7%D9%82-tf-%D8%A8/"
+   }
+  ]
+ },
+ "kia-optima-jf": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine: kept GDI per Bama and Khodro45, but noted that 178 hp / 229 Nm matches the MPI G4KE rather than the US 2.4 GDI (185 hp); diagnostic tip now says to confirm the injection type on the car before ordering GDI parts.",
+   "Rod-bearing fault: noted that the 2016 Optima has no NHTSA bearing recall (only the 2011–2019 warranty extension and KSDS).",
+   "Oil consumption: cause reworded as a likely cause (the carbon-fouled rings are not stated by the source); added the ~73k-mile CarComplaints figure.",
+   "Driveshaft recall 16V-705: added the exact US build window and that it is a batch defect not confirmed for Iranian imports; confidence lowered high -> medium as a likely fault for this car.",
+   "Trunk latch 23V-594: added hybrid coverage and the note that Iranian coverage is not confirmed.",
+   "A6MF valve-body fault: added that CarComplaints lists few transmission complaints for the 2016 Optima."
+  ],
+  "removed_claims": [],
+  "sources": [
+   {
+    "id": 1,
+    "title": "مشخصات فنی کیا اپتیما ۴ سیلندر GT لاین سال ۲۰۱۶ تا ۲۰۱۷ — باما",
+    "url": "https://bama.ir/car-reviews/kia/optima-specs-1046-gtline"
+   },
+   {
+    "id": 2,
+    "title": "بررسی مشخصات کیا اپتیما JF — خودرو۴۵",
+    "url": "https://khodro45.com/mag/kia-optima-jf/"
+   },
+   {
+    "id": 3,
+    "title": "How To Tell if Your Hyundai or Kia Theta II Engine Might Fail (2011–2019) — The Drive",
+    "url": "https://www.thedrive.com/guides-and-gear/how-to-tell-if-your-2011-2019-hyundai-or-kia-engine-might-fail"
+   },
+   {
+    "id": 4,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 5,
+    "title": "علت یاتاقان زدن موتورهای 2400 سی سی کیا و هیوندای — اسب بخار",
+    "url": "https://asbe-bokhar.com/special/engine-bearing/"
+   },
+   {
+    "id": 6,
+    "title": "2016 Kia Optima Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Optima/2016/"
+   },
+   {
+    "id": 7,
+    "title": "NHTSA recalls API — 2016 Kia Optima (16V-705, 18V-907, 23V-594, 16V-231, 17V-007)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=kia&model=optima&modelYear=2016"
+   },
+   {
+    "id": 8,
+    "title": "تعمیر گیربکس اتوماتیک سوناتا YF (خانواده A6MF) — کارا گیربکس",
+    "url": "https://karagearbox.com/sonata-yf-gearbox-repair"
+   },
+   {
+    "id": 9,
+    "title": "TransGo A6MF1/2, A6LF1/2/3 Shift Kit — valve body complaints",
+    "url": "https://transgo.com/product-details/a6mf-shift-kit/"
+   }
+  ]
+ },
+ "kia-cerato-td-cerato-koup-imported": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Rod-bearing fault: PI2102 is titled 'Theta 2.4L MPI KSDS' and the 20V-750 Part 573 covers only the 2012–2013 Forte/Koup with the 2.4 MPI engine (and 2014–2015 2.0 Nu GDI of the next generation), not the 2.0 G4KD sold in Iran. Cause rewritten, confidence lowered medium -> low, and the fault moved to the end of the list.",
+   "Diagnostic tip: KSDS / P1326 now says it applies to the Theta 2.4, not the Iranian 2.0.",
+   "Transmission solenoid fault: confidence lowered high -> medium (the 2.0 sedan may have the 4-speed per Bama); added the A6MF1 gearbox code from an Iranian gearbox shop.",
+   "Strut creak: confidence raised low -> medium (top-2 CarComplaints problem, ~73k miles).",
+   "Bulletin numbers normalised to the titles confirmed on CarComplaints (TRA051, TRA049, TRA046, PS267, CHA084)."
+  ],
+  "removed_claims": [
+   "Claim that recall 20V-750 (engine fire / KSDS) covers the 2012–2013 Cerato in the Iranian 2.0 form: the Part 573 report limits it to 2.4 MPI Forte/Koup.",
+   "Claim that KSDS bulletin PI2102 covers the 2011 Cerato 2.0: its title is Theta 2.4L MPI only."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "مشخصات فنی کیا سراتو ۲٫۰ لیتر اتوماتیک سال ۲۰۱۰ تا ۲۰۱۳ — باما",
+    "url": "https://bama.ir/car-reviews/kia/cerato-specs-1336-2000"
+   },
+   {
+    "id": 2,
+    "title": "مشخصات فنی کیا سراتو کوپ سال ۲۰۱۰ تا ۲۰۱۳ — باما",
+    "url": "https://bama.ir/car-reviews/kia/ceratokoup-specs-1244"
+   },
+   {
+    "id": 3,
+    "title": "مشخصات فنی کیا سراتو ۱٫۶ لیتر اتوماتیک سال ۲۰۱۰ تا ۲۰۱۳ — باما",
+    "url": "https://bama.ir/car-reviews/kia/cerato-specs-1336-1600at"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls API — 2010 Kia Forte (18V-363, 13V-114, 23V-652)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=kia&model=forte&modelYear=2010"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls API — 2012 Kia Forte (20V-750, 17V-773, 18V-363, 23V-652)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=KIA&model=FORTE&modelYear=2012"
+   },
+   {
+    "id": 6,
+    "title": "2011 Kia Forte Technical Service Bulletins (PI2102 Theta 2.4 MPI KSDS, TRA051, TRA049, TRA046, PS267, CHA084) — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Forte/2011/tsbs/"
+   },
+   {
+    "id": 7,
+    "title": "2012 Kia Forte Technical Service Bulletins — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Forte/2012/tsbs/"
+   },
+   {
+    "id": 8,
+    "title": "2011 Kia Forte Problems — CarComplaints.com",
+    "url": "https://www.carcomplaints.com/Kia/Forte/2011/"
+   },
+   {
+    "id": 9,
+    "title": "Hyundai Theta engine — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hyundai_Theta_engine"
+   },
+   {
+    "id": 10,
+    "title": "مشخصات گیربکس اتوماتیک سراتو (A6MF1، مدل‌های ۲۰۱۱ تا ۲۰۱۸) — kia-gearbox.ir",
+    "url": "http://kia-gearbox.ir/Page/%D9%85%D8%B4%D8%AE%D8%B5%D8%A7%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%B3%D8%B1%D8%A7%D8%AA%D9%88"
+   },
+   {
+    "id": 11,
+    "title": "NHTSA Part 573 Safety Recall Report 20V-750 (2012–2013 Forte/Forte Koup 2.4L Theta II MPI only; 2014–2015 Forte 2.0 Nu GDI)",
+    "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V750-5519.PDF"
    }
   ]
  },
