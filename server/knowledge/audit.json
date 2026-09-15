@@ -1423,6 +1423,61 @@
    }
   ]
  },
+ "mazda-3": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: FS5A-EL maker corrected from Aisin to Jatco (uniquegearbox); 1.6 manual years 1392-1393 and Mazda 3 New 1389-1398 at 147 hp / 187 Nm confirmed by khodro45.",
+   "TCM fault: symptoms limited to what sources show (AT/check light, harsh or erratic shifting, U0100/U0101); cause restated as heat-cracked solder on the transmission-mounted TCM (CBM covers Mazda 3/5 2006-2015, Samarins non-Skyactiv automatics).",
+   "3rd/4th gear slip: cause corrected to wear of the gearbox rear cover (uniquegearbox fixes it by replacing the rear cover, not clutch plates); parts updated; confidence low -> medium (specialist gearbox shop).",
+   "EHPAS steering: recall scope stated exactly (MY2007-2009 Mazda3 built Apr 2007-Nov 2008; pump and lines replaced); no hot-climate limit; Persian search found no Mazda 3-specific Iranian report, so confidence stays medium.",
+   "Rear tyre cupping: narrowed to inner-edge cupping of rear tyres; parts replaced with tyre and rear alignment.",
+   "Oil change interval corrected from 40-60k km to 40k km or 2 years (uniquegearbox).",
+   "Tips: added rear-noise tip for tyre cupping and the pre-1395 low ground clearance note (asriran); added asriran as source 7."
+  ],
+  "removed_claims": [
+   "TCM fault: 'AT light flashes and gauges/other warning lights malfunction' — not in any cited source.",
+   "Suspension fault: leaking front/rear shocks and worn front lower control arms at high mileage — generic wear, not model-specific.",
+   "Tip: 'harsh ride on bumps is inherent in both generations' — no source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Samarins — Mazda 3 2010-2013: pros and cons, common problems",
+    "url": "https://www.samarins.com/reviews/mazda3_10.html"
+   },
+   {
+    "id": 2,
+    "title": "یونیک گیربکس — تعمیر گیربکس مزدا ۳ نیو (FS5A-EL)، رفع مشکل چراغ AT و خرابی TCM",
+    "url": "https://uniquegearbox.com/repairing/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D9%85%D8%B2%D8%AF%D8%A7-%DB%B3-%D9%86%DB%8C%D9%88/"
+   },
+   {
+    "id": 3,
+    "title": "Circuit Board Medics — Mazda TCM failure and solution",
+    "url": "https://circuitboardmedics.com/blog/mazda-tcm-failure-and-solution/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — مزدا ۳ نیو؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/mazda3-new/"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — مزدا ۳ (اتاق قدیم)؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/mazda3-2004/"
+   },
+   {
+    "id": 6,
+    "title": "Justia / NHTSA — Mazda3 2007 electric power assist steering recall, campaign 10V374000",
+    "url": "https://auto-recalls.justia.com/mazda/mazda3/2007/10v374000/"
+   },
+   {
+    "id": 7,
+    "title": "عصر ایران — مزدا ۳ نیو، معایب و مزایای سدان ژاپنی مونتاژ ایران",
+    "url": "https://www.asriran.com/fa/news/787638/"
+   }
+  ]
+ },
  "mazda-b2000": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -1515,6 +1570,146 @@
     "id": 6,
     "title": "خودرو۴۵ — کاپرا U؛ بررسی جامع و مشخصات فنی",
     "url": "https://khodro45.com/mag/capra-2-facelift/"
+   }
+  ]
+ },
+ "bahman-dignity": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: Prestige confirmed on the Fengon ix5 base with 2.0 turbo direct injection, 228 hp / 355 Nm, 6-speed AT (khodro45); Prime 148 hp / 220 Nm with Punch CVT (hamrah-mechanic). Prestige start year 1402 not found in sources, marked unconfirmed. An Iranian repair-shop page (onlinegearbox) calls the Prestige gearbox DCT, contradicting khodro45 and pedal; the AT listing was kept.",
+   "CVT fault: reframed as mostly a design trait (slow response, low pull for 1.6 t weight); added daraje's report of CVT pump and belt failures to causes and parts; added daraje as source 6.",
+   "Cabin noise: restricted to wind/engine/road noise (hamrah-mechanic, daraje); framed as a design weakness.",
+   "Rear instability in bends: daraje repeats switch's wording, so still low confidence; noted the two texts are near-identical.",
+   "Electrical: limited to the rear camera failing after washing, which Drom.ru confirms in 9 Fengon ix5 reviews (Russian market).",
+   "Verdict weak: no Iranian mechanic source documents concrete component failures for either trim; the surviving items are mainly design traits or foreign-market reports, and there is no Prestige-specific fault."
+  ],
+  "removed_claims": [
+   "Engine fault 'turbo loses pull or makes annoying noise from sensitivity to fuel and oil' — generic to all turbo engines, and the 'annoying noise' was in no source; kept only as a maintenance note.",
+   "Electrical: TPMS false warnings and intermittent wipers — not found on the cited Drom.ru page.",
+   "Body: glossy interior plastics scratching easily — cosmetic, not a fault a diagnosis assistant needs."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — دیگنیتی پرستیژ؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/digenity-prestige/"
+   },
+   {
+    "id": 2,
+    "title": "پدال — دیگنیتی پرستیژ بهمن موتور؛ بررسی مشخصات",
+    "url": "https://www.pedal.ir/bahman/501533-dignity-prestige-turbo/"
+   },
+   {
+    "id": 3,
+    "title": "همراه مکانیک — مزایا و معایب دیگنیتی پرایم",
+    "url": "https://www.hamrah-mechanic.com/mag/cons-and-pros-of-dignity-prime/"
+   },
+   {
+    "id": 4,
+    "title": "مجله سوییچ — معایب دیگنیتی پرایم",
+    "url": "https://www.switch.ir/mag/disadvantages-of-dignity/"
+   },
+   {
+    "id": 5,
+    "title": "Drom.ru — Dongfeng DFSK Fengon ix5 owner reviews: negative opinions",
+    "url": "https://www.drom.ru/reviews/dongfeng/fengon_ix5/5kopeek/negative-opinion/"
+   },
+   {
+    "id": 6,
+    "title": "درجه — معایب دیگنیتی پرایم که پیش از خرید باید بدانید",
+    "url": "https://www.daraje.com/blog/55340-dignity-prime-disadvantages/"
+   }
+  ]
+ },
+ "bahman-fidelity-prime": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: base model is the Jetour X70S per khodro45 (roster said X70); launch mid-1400 (roster said 1399); 4T15C 155 hp / 230 Nm and the dry-to-wet DCT switch in winter 1401 confirmed; Elite confirmed by khodro45 as a mechanically identical Prime facelift from late 1403 (1.5T, 6-speed wet DCT), so the roster's 'Prestige / Elite' grouping is wrong. Removed the unverified 'developed with AVL' note.",
+   "Overheating fault: merged the separate early clutch-wear fault into it (same dry-DCT heat mechanism; the hamrah-mechanic article describes overheating and degraded performance, not a separate wear finding); added launch shudder/jerks (khodro45 owners) and Bahman's instruction videos (borna).",
+   "Pressure sensor: owner reports several replacements within one year (hamrah-mechanic); wording fixed.",
+   "Electrical: added faulty parking/proximity sensors reported by khodro45 owners.",
+   "Knock: kept at low confidence; the verified Tiggo 7 Pro profile rates it high for the same SQRE4T15C engine, but there is still no Fidelity-specific report.",
+   "Tips: corrected the wrong claim that Elite has a different engine from Prime; added khodro45 Elite page as source 7."
+  ],
+  "removed_claims": [
+   "Separate fault 'early clutch plates wear quickly (hamrah-mechanic calls it the biggest disadvantage)' — not confirmed as a separate finding on re-reading; merged into the overheating fault.",
+   "Engine description 'developed with AVL' — not in any cited source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — فیدلیتی پرایم (گیربکس جدید و قدیم)؛ بررسی جامع و مشخصات فنی (مقاله و نظرات مالکان)",
+    "url": "https://khodro45.com/mag/fidelity-prime/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — فیدلیتی بخریم یا نه؟ مزایا و معایب فیدلیتی",
+    "url": "https://www.hamrah-mechanic.com/mag/fidelity-advantages-and-disadvantages/"
+   },
+   {
+    "id": 3,
+    "title": "نیوزین — گیربکس فیدلیتی پرایم به مدل دوکلاچه تر تبدیل خواهد شد",
+    "url": "https://newsin.ir/content/23327684/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%81%DB%8C%D8%AF%D9%84%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B1%D8%A7%DB%8C%D9%85-%D8%A8%D9%87-%D9%85%D8%AF%D9%84-%D8%AF%D9%88%DA%A9%D9%84%D8%A7%DA%86%D9%87-%D8%AA%D8%B1-%D8%AA%D8%A8%D8%AF%DB%8C%D9%84-%D8%AE%D9%88%D8%A7%D9%87%D8%AF-%D8%B4%D8%AF/"
+   },
+   {
+    "id": 4,
+    "title": "بچرخ — فونیکس تیگو ۷ پرو، نظرات کاربران و مشکلات (همان موتور SQRE4T15C)",
+    "url": "https://becharkh.com/forum/car?brand=fownix&model=tiggo7pro"
+   },
+   {
+    "id": 5,
+    "title": "NS Car — آپدیت موتور و گیربکس تیگو ۷ پرو (همان موتور SQRE4T15C)",
+    "url": "https://ns-car.com/tiggo-7-pro-remap-update/"
+   },
+   {
+    "id": 6,
+    "title": "خبرگزاری برنا — مشکلات گیربکس فیدلیتی بهمن موتور تمامی ندارد / این بار صداهای ناهنجار در حالت دنده عقب",
+    "url": "https://borna.news/fa/news/1343239/"
+   },
+   {
+    "id": 7,
+    "title": "خودرو۴۵ — فیدلیتی الیت؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/fidelity-elite/"
+   }
+  ]
+ },
+ "bahman-fidelity-prestige": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Duplicate check: not a duplicate of bahman-fidelity-prime. Khodro45 and hamrah-mechanic say the Prestige is based on the Jetour X70 Plus with a 1.6 TGDI (197 hp / 290 Nm) and 7-speed wet DCT; the Prime is the Jetour X70S with a 1.5T 4T15C and 6-speed DCT, so engine, gearbox and parts differ.",
+   "Identity: start year set to 1402 (khodro45; hamrah-mechanic had expected early 2024); gearbox confirmed as wet 7DCT by two sources.",
+   "Roster note: Fidelity Elite is a Prime facelift (khodro45 Elite page), so the roster label 'Prestige / Elite' is wrong; Elite should map to bahman-fidelity-prime.",
+   "Knock fault: confidence low/medium -> medium, now backed by khodro45 and hamrah-mechanic for the Prestige itself.",
+   "DCT wear fault: symptom rewritten to general wear signs; kept at low confidence on khodro45's single line.",
+   "Verdict weak: only 2 supportable model-specific faults; a Persian search and two more fetches found no further documented faults."
+  ],
+  "removed_claims": [
+   "DCT symptoms 'irregular shifting at low speed, noise, overheating in long or mountain driving' from the Akbar Tokyo Tiggo 8 Pro page — that page names no engine or gearbox and gives only generic owner hearsay; source 4 removed.",
+   "Candidate battery-drain / doors-won't-open fault (bitrun, Dey 1403) not added — a single incident, mainly an after-sales complaint."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — فیدلیتی پرستیژ؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/fidelity-prestige/"
+   },
+   {
+    "id": 2,
+    "title": "خودرو۴۵ — فیدلیتی الیت؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/fidelity-elite/"
+   },
+   {
+    "id": 3,
+    "title": "خودرو۴۵ — مشخصات فنی فونیکس تیگو ۷ پرو مکس (موتور ۱٫۶ توربو و دوکلاچه ۷ سرعته)",
+    "url": "https://khodro45.com/mag/fownix-tiggo-7-pro-max/"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — مشخصات فیدلیتی پرستیژ از نظر فنی، طراحی و آپشن",
+    "url": "https://www.hamrah-mechanic.com/mag/bahman-fidelity-prestige-review/"
    }
   ]
  },
@@ -2077,6 +2272,144 @@
    }
   ]
  },
+ "mvm-x55": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Roster note 'X55 with CVT' is wrong for the first generation: khodro45 and hamrah-mechanic confirm a 6-speed dry dual-clutch gearbox (1398-1400); CVT is only in the X55 Pro.",
+   "X55 Pro Premium gearbox changed from 'wet 6-speed DCT' to '6-speed DCT, wet or dry unconfirmed': khodro45 says only 'six-speed dual-clutch'.",
+   "Rear axle recall: crash location corrected to the Qom-Isfahan freeway (digiato); recall scope stated as all X55 Pro sold to date, with barcode-matched axles replaced free.",
+   "Gen-1 DCT fault: hamrah-mechanic states explicitly that the dry DCT overheats very quickly in traffic; confidence raised medium to high (hamrah, gearbox.cafe, the X55 owner on ns-car, same gearbox as Tiggo 7 gen 1) and symptom led by overheating.",
+   "Knock fault: confidence raised low to medium; hamrah-mechanic reports knock at higher rpm fixed in some cars by an ECU update at the 30k service; removed the anecdote of an owner with no knock on regular fuel.",
+   "Suspension fault: added hamrah-mechanic torsion-beam harshness and khodro45 understeer wording.",
+   "CVT fault (X55 Pro): kept at low confidence; noted it rests on one repair shop plus scattered reports of heat in hot climates.",
+   "Added gap fault: hot-soak no-restart until the fuel pump cools, reported by several X55 owners (one at about 85k km) per hamrah-mechanic, with a matching diagnostic tip.",
+   "Source 6 title updated to note the Chinese Tiggo 5X equivalent; source 10 (hamrah-mechanic) added."
+  ],
+  "removed_claims": [
+   "Claim that similar axle-separation crashes were reported abroad for X22 and FX: no support found in the recall coverage checked, and it concerns other models.",
+   "Owner anecdote 'no knock for several months on regular fuel' in the knock cause: contradicts and dilutes the documented knock reports, and is not a diagnostic fact.",
+   "X55 Pro Premium 'wet' dual-clutch detail: not stated in the cited khodro45 review."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "دیجیاتو — جزئیات فراخوان ام وی ام X55 پرو اعلام شد (اکسل عقب، ۱۸ اردیبهشت تا ۶ خرداد ۱۴۰۳)",
+    "url": "https://digiato.com/car-news/details-of-the-mvm-x55-pro-recall-announced"
+   },
+   {
+    "id": 2,
+    "title": "پدال — ماجرای اکسل ایکس ۵۵ پرو به کجا رسید؟ (ایراد کیفی جوش اکسل یکی از قطعه‌سازان چری)",
+    "url": "https://www.pedal.ir/news/accident-for-mvm-x55/"
+   },
+   {
+    "id": 3,
+    "title": "اسب بخار — ماجرای ایراد در اکسل عقب X55 و ضرورت فراخوان گسترده",
+    "url": "https://asbe-bokhar.com/article/news/x55-axle-problem/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — ام وی ام X55 پرو؛ بررسی و مشخصات فنی (۱۵۶ اسب، CVT، تورشن‌بیم، توقف فروش پس از در رفتن اکسل)",
+    "url": "https://khodro45.com/mag/mvm-x55-pro/"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — ام وی ام X55 پرو پریمیوم (دوکلاچه ۶ سرعته و مشکل پیشین جوش اکسل)",
+    "url": "https://khodro45.com/mag/mvm-x55-pro-premium/"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — ام وی ام X55 نسل اول؛ مشخصات فنی (۱٫۵ توربو و دوکلاچه ۶ سرعته، معادل تیگو 5X)",
+    "url": "https://khodro45.com/mag/mvm-x55/"
+   },
+   {
+    "id": 7,
+    "title": "کافه گیربکس — هزینه تعمیر گیربکس ام وی ام X55، مدل CVT و DCT (خرابی‌های رایج)",
+    "url": "https://gearbox.cafe/blog/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D9%85-%D9%88%DB%8C-%D8%A7%D9%85-x55-%D9%85%D8%AF%D9%84-cvt-%D9%88-dct/"
+   },
+   {
+    "id": 8,
+    "title": "مدیران خودرو امداد — بررسی ام وی ام X55 پرو، مزایا، معایب و مشکلات رایج",
+    "url": "https://modirankhodro-emdad.com/mvm-x55-pro/"
+   },
+   {
+    "id": 9,
+    "title": "نکست استپ (NS Car) — آپدیت موتور و گیربکس چری تیگو ۷ (همان موتور و دوکلاچه X55 نسل اول، به‌همراه نظر مالک X55)",
+    "url": "https://ns-car.com/chery-tiggo-7-engine-and-gearbox-update/"
+   },
+   {
+    "id": 10,
+    "title": "همراه مکانیک — ام وی ام X55 بخریم یا نه؟ مزایا و معایب (داغ شدن دوکلاچه خشک در ترافیک، پمپ بنزین، ناک)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-mvm-x55/"
+   }
+  ]
+ },
+ "chery-tiggo-5": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "Tiggo 5 Turbo years changed from a firm 1400 to 'about 1400': khodro45 only says it was a limited run announced on the eve of Modiran Khodro's 20th anniversary, with no date.",
+   "Engines: noted hydraulic steering on the 2.0 and electric steering on the turbo (khodro45); turbo power range attributed to the khodro45 vs bama difference.",
+   "Transmissions: removed the unverified claim that sellers offer Tiggo 5 CVT chain and valve body as shared with Arrizo 5, X33 and 550 (the Arrizo 5 check removed the same claim); roster note 'CVT or manual' not supported, since no source shows a manual Tiggo 5 in Iran.",
+   "CVT wear fault: typical_km framed as 'from about 100k km' (owner at 100k plus a single repair-shop figure); added becharkh owner reports and an extra repair-shop source.",
+   "CVT overheating / TCU adaptation fault: confidence lowered medium to low, since only generic gearbox repair-shop pages support it.",
+   "Low-torque fault: bama's 'poor hill-climbing' weak point added to support.",
+   "Multimedia lag fault: tied to the becharkh owner report of touchscreen climate-control lag.",
+   "Diagnostic tips: removed the unverified claim of long dealer waits for gearbox parts; motor-mount tip extended to the gearbox mount per the Saadi FAQ."
+  ],
+  "removed_claims": [
+   "Claim that Tiggo 5 CVT chain and valve body are sold as common parts with Arrizo 5, X33 and 550: unverified parts-seller claim, already removed from the sibling Arrizo 5 profile.",
+   "Diagnostic tip that Tiggo 5 gearbox parts are often scarce at dealers with long waits: not found in the owner forum or the other sources checked (owners cite repair cost, not waits).",
+   "Maintenance advice to shift N + handbrake before P: generic CVT habit with no Tiggo 5 source."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "تعمیرکار چری — تعمیر گیربکس تیگو ۵ در تهران (علائم خرابی، عمر زنجیر)",
+    "url": "https://tamircarchery.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AA%DB%8C%DA%AF%D9%88-5-%D8%AF%D8%B1-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/"
+   },
+   {
+    "id": 2,
+    "title": "گیربکس سعدی — پاسخ به سؤالات متداول گیربکس چری تیگو ۵",
+    "url": "https://saadigearbox.com/cherry-tiggo-5-faq/"
+   },
+   {
+    "id": 3,
+    "title": "گیربکس احمدی — علت کم‌جونی گیربکس تیگو ۵",
+    "url": "https://gearboxahmadii.com/2025/12/10/why-is-the-tiggo-5-gearbox-slow-%D8%B9%D9%84%D8%AA-%DA%A9%D9%85-%D8%AC%D9%88%D9%86%DB%8C-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AA%DB%8C%DA%AF%D9%88-%DB%B5/"
+   },
+   {
+    "id": 4,
+    "title": "بچرخ — چری تیگو ۵، نظرات کاربران و مشکلات",
+    "url": "https://becharkh.com/forum/car?brand=chery&model=tiggo5"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — چری تیگو ۵؛ بررسی جامع و مشخصات فنی (به‌همراه نظر مالک)",
+    "url": "https://khodro45.com/mag/chery-tiggo5/"
+   },
+   {
+    "id": 6,
+    "title": "خودرو۴۵ — بررسی و مشخصات تیگو ۵ توربو (کد موتورها SQR484F و SQRE4T15، فرمان هیدرولیک و برقی)",
+    "url": "https://khodro45.com/mag/chery-tiggo5-turbo/"
+   },
+   {
+    "id": 7,
+    "title": "باما — مشخصات فنی و نقاط ضعف چری تیگو ۵ TE ۱۳۹۶ تا ۱۴۰۰",
+    "url": "https://bama.ir/car-reviews/chery/tiggo5-specs-990-314-te"
+   },
+   {
+    "id": 8,
+    "title": "زوم‌فورکار — نقد و بررسی تیگو ۵ نیوفیس به‌همراه نظرات مالکان",
+    "url": "https://z4car.com/naghd/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%AA%DB%8C%DA%AF%D9%88-5-%D9%86%DB%8C%D9%88%D9%81%DB%8C%D8%B3-%D8%A8%D9%87-%D9%87%D9%85%D8%B1%D8%A7%D9%87-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87"
+   },
+   {
+    "id": 9,
+    "title": "اتوکلینیک ۲۴ — تعمیر گیربکس اتوماتیک تیگو ۵ (مشکلات رایج: پاره شدن تسمه، تقه، تأخیر، نشتی روغن)",
+    "url": "https://autoclinic24.com/tiggo-5-automatic-transmission-repair/"
+   }
+  ]
+ },
  "chery-tiggo-7": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2182,6 +2515,83 @@
     "id": 11,
     "title": "AutoCango — 2017 Chery Arrizo 5 1.5L 116HP CVT specs (engine SQRE4G15B)",
     "url": "https://www.autocango.com/carspecs-detail/Chery-Arrizo-5-XMX4A"
+   }
+  ]
+ },
+ "fownix-arrizo-6": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Arrizo 6 GT variant fixed: fa.wikipedia gives 1.6 turbo 197 hp / 290 Nm with 7-speed DCT (Chinese Arrizo 5 GT), not 'unconfirmed'; added SQRF4J16 engine entry (code matched from Tiggo 7 Pro Max specs) and 7DCT to transmissions, with a note that CVT faults do not apply to GT.",
+   "SQRE4T15C description: bama and khodro45 both give 147 hp / 210 Nm for Arrizo 6 Pro while fa.wikipedia and the roster note say 156 hp; the conflict is now stated instead of one figure asserted.",
+   "Arrizo 6 (1398-1401) identified as Chinese Arrizo GX per fa.wikipedia; diagnostic tip no longer treats it as the same car as the Pro (Arrizo 5 Plus facelift).",
+   "Knock fault: symptom reworded to Iranian driver language, sources now khodro45 ('constant knocking'), hamrah-mechanic and ns-car ECU update.",
+   "CVT heat fault: added gearbox warning light / limp mode and TCU codes, cited to Iranian Chery gearbox repair pages; CVT25 identification noted as repair-shop information.",
+   "Rear suspension fault: confidence lowered high to medium and framed as a design weakness (bama 'simple suspension', khodro45 torsion beam) rather than a failure.",
+   "Paint fault kept at low confidence with a link to the same assembler's Tiggo 7 Pro paint complaints.",
+   "Diagnostic tips: removed the unverified 3700 rpm noise figure and the bent-rim tip; maintenance text rewritten without the unverified owner anecdote."
+  ],
+  "removed_claims": [
+   "Factory Kavir tyres noisy / 17-inch rims bend causing steering shake: tyre choice and rim damage are generic, not a model fault.",
+   "Electric parking brake auto-hold noise: a single vague owner remark on an aggregator page; not reliable enough to use as a diagnostic prior.",
+   "Many sensors (blind-spot radar, 360 camera, parking sensors) fail after minor impacts: generic to any car with those options, speculative, and hamrah-mechanic reports blind-spot radar was removed from early Iranian Arrizo 6 production.",
+   "Claim that Arrizo 6 and 6 Pro share doors and most underbody with Arrizo 5 on M1X: not verified; softened to the Pro being the Arrizo 5 Plus facelift."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "اُتکس — بررسی اجمالی فونیکس آریزو ۶ پرو و نظرات کاربران و مالکان (باما، خودروبانک)",
+    "url": "https://otex.ir/blog/phoenix-arrizo-6-pro-overview-and-popular-opinions-from-users-and-owners"
+   },
+   {
+    "id": 2,
+    "title": "کاریزو — بررسی مزایا و معایب فونیکس آریزو ۶ پرو (به‌همراه نظر مالک)",
+    "url": "https://cariso.ir/review-fownix_arrizo-6-pro/"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی و نقاط ضعف فونیکس آریزو ۶ پرو ۱۴۰۱ تا ۱۴۰۴ (موتور 4T15C، ۱۴۷ اسب، ۲۱۰ نیوتن‌متر)",
+    "url": "https://bama.ir/car-reviews/fownix/arrizo6pro-specs-1426"
+   },
+   {
+    "id": 4,
+    "title": "کارکیتس — معایب آریزو ۶ پرو و تفاوت با آریزو ۶ معمولی (به‌همراه نظر مالکان)",
+    "url": "https://carkits.ir/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%A2%D8%B1%DB%8C%D8%B2%D9%88-6-%D9%BE%D8%B1%D9%88/"
+   },
+   {
+    "id": 5,
+    "title": "خودرو۴۵ — چری آریزو ۶ اکسلنت؛ بررسی جامع و مشخصات فنی (موتور 4T15B)",
+    "url": "https://khodro45.com/mag/chery-arrizo6-excellent/"
+   },
+   {
+    "id": 6,
+    "title": "ویکی‌پدیای فارسی — چری آریزو ۶ (آریزو ۶ پرو، آریزو ۶ GT با ۱٫۶ توربو و 7DCT)",
+    "url": "https://fa.wikipedia.org/wiki/%DA%86%D8%B1%DB%8C_%D8%A2%D8%B1%DB%8C%D8%B2%D9%88_%DB%B6"
+   },
+   {
+    "id": 7,
+    "title": "خودرو۴۵ — آریزو ۶ پرو؛ بررسی جامع و مشخصات فنی (ناک پیوسته با بنزین داخلی، تعلیق تورشن‌بیم)",
+    "url": "https://khodro45.com/mag/fownix-arrizo6-pro/"
+   },
+   {
+    "id": 8,
+    "title": "همراه مکانیک — معایب آریزو ۶؛ بررسی مشکلات چری آریزو ۶ (حساسیت موتور توربو به بنزین)",
+    "url": "https://www.hamrah-mechanic.com/mag/problem-of-arirzo-6-turbo/"
+   },
+   {
+    "id": 9,
+    "title": "نکست استپ (NS Car) — آپدیت موتور و گیربکس آریزو ۶ و آریزو ۶ پرو",
+    "url": "https://ns-car.com/arizo-6-update/"
+   },
+   {
+    "id": 10,
+    "title": "تعمیرکار چری — علت روشن شدن چراغ گیربکس آریزو ۶ پرو و اکسلنت",
+    "url": "https://tamircarchery.com/%D8%B9%D9%84%D8%AA-%D8%B1%D9%88%D8%B4%D9%86-%D8%B4%D8%AF%D9%86-%DA%86%D8%B1%D8%A7%D8%BA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A2%D8%B1%DB%8C%D8%B2%D9%88-6/"
+   },
+   {
+    "id": 11,
+    "title": "مستر ماشین‌باز — جلوگیری از خرابی گیربکس آریزو ۶ (حساسیت CVT25 به گرما و روغن)",
+    "url": "https://www.mrmashinbaz.com/how-to-prevent-arizzo-6-gearbox-failure/"
    }
   ]
  },
@@ -3413,6 +3823,305 @@
     "id": 12,
     "title": "Haynes — 2010 Lexus GX460 Problems Breakdown (front lower control arm wear)",
     "url": "https://us.haynes.com/blogs/tips-tutorials/2010-lexus-gx460-problems-breakdown"
+   }
+  ]
+ },
+ "nissan-qashqai-j10": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Variants: per hamrah-mechanic, LE came in both 2WD and 4WD (4WD only on LE); CVT only, no manual in Iran; noted that the 1.6 petrol and dCi were not sold in Iran",
+   "CVT judder fault: removed the torque-converter lock-up and oil-pump valve claims (no JF011E-specific support), added Persian CVT repair source 12 on fluid neglect, fluid named NS-2",
+   "EPS recall: added that it also covers the X-Trail, launched Jan 2012, and that coverage in Iran is not guaranteed",
+   "Steering wheel recall: corrected build dates to 27 Feb–16 May 2012 and scope (Qashqai, Qashqai+2, NV200, ~51,000 worldwide, supplier batch of weak steering wheels); remedy changed from 'replace steering assembly' to inspecting/replacing the steering wheel; confidence raised to high with independent sources 14 and 15",
+   "Rear shock absorbers: confidence raised from low to medium (several UK owner/repair sources, forum source 13 added) and moved up the list",
+   "Timing chain tensioner: confidence lowered to low (only engine-guide sites); the unsupported rough-idle/power-loss escalation was removed",
+   "CVTC solenoid fault: removed the unsupported 'knocking noise' symptom",
+   "diagnostic_tips_fa: dropped the oil-consumption measuring tip, added a rear shock check and production-date recall checks",
+   "maintenance_fa: removed the claim that fitting spark plugs on a hot engine cracks the MR20DE head (no source); removed the 5W-30 viscosity claim (not verified)"
+  ],
+  "removed_claims": [
+   "MR20DE oil consumption from pre-2010 piston ring design flaw: only EngineCode.uk (citing an unverifiable TSB number); J10 owner reports of oil burning relate mainly to the 1.6 petrol, not sold in Iran",
+   "Spark plug tightening on a hot engine cracks the cylinder head (maintenance): no source found"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF011E: applications (Qashqai J10, X-Trail T31, Koleos HY), fluid, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf011e/"
+   },
+   {
+    "id": 2,
+    "title": "Sunbelt Valve Body Builders — Understanding the JF011E CVT transmission: common issues",
+    "url": "https://sunbeltvalvebodies.com/blogs/news/understanding-the-jf011e-cvt-transmission-common-issues-and-how-remanufactured-parts-can-help"
+   },
+   {
+    "id": 3,
+    "title": "Car Recalls UK — Nissan Qashqai & X-Trail: power steering assistance may fail (R/2011/159, build 06/08/2010–12/08/2011)",
+    "url": "https://car-recalls.co.uk/recall/nissan-qashqai-power-steering-assistance-may-fail/"
+   },
+   {
+    "id": 4,
+    "title": "AutoInsider — Recall R/2011/159 Nissan Qashqai: power steering assistance may fail",
+    "url": "https://www.autoinsider.co.uk/recalls/r2011159-nissan-qashqai"
+   },
+   {
+    "id": 5,
+    "title": "EngineCode.uk — Nissan MR20DE engine guide: specs, issues (CVTC solenoid, chain tensioner)",
+    "url": "https://www.enginecode.uk/nissan/mr20de-specs"
+   },
+   {
+    "id": 6,
+    "title": "MotorReviewer — Nissan 2.0L MR20DE engine specs, problems, reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=16"
+   },
+   {
+    "id": 7,
+    "title": "BreakerLink — Nissan Qashqai common problems and recalls",
+    "url": "https://www.breakerlink.com/blog/buying-selling/dont-purchase-a-nissan-qashqai-before-youve-checked-our-list-of-common-problems/"
+   },
+   {
+    "id": 8,
+    "title": "ClickMechanic — Common problems with Nissan Qashqai (rear shock absorbers)",
+    "url": "https://www.clickmechanic.com/blog/common-problems-with-nissan-qashqai/"
+   },
+   {
+    "id": 9,
+    "title": "همراه مکانیک — نیسان قشقایی مونتاژ پارس خودرو، مشخصات و بررسی (SE و LE، ۱۳۹ اسب، فقط CVT، دودیفرانسیل فقط در LE)",
+    "url": "https://www.hamrah-mechanic.com/carreview/nissan/qashqaiparskhodro/"
+   },
+   {
+    "id": 10,
+    "title": "آخرین خودرو — نیسان قشقایی (مونتاژی پارس خودرو)؛ معرفی و مشخصات فنی",
+    "url": "https://akharinkhodro.ir/cars/nissan/nissan-qashqai-parskhodro/"
+   },
+   {
+    "id": 11,
+    "title": "Wikipedia — Nissan Qashqai (J10 engines, CVT, Pars Khodro Tehran production)",
+    "url": "https://en.wikipedia.org/wiki/Nissan_Qashqai"
+   },
+   {
+    "id": 12,
+    "title": "کاظم — تعمیر گیربکس CVT نیسان (بیشتر خرابی‌ها از بی‌توجهی به روغن گیربکس)",
+    "url": "https://kaazem.com/nissan-cvt-transmission-repair/"
+   },
+   {
+    "id": 13,
+    "title": "Nissan QashQai Forums — Shock absorbers (owner reports)",
+    "url": "https://www.qashqaiforums.co.uk/viewtopic.php?t=10186"
+   },
+   {
+    "id": 14,
+    "title": "Auto Express — Nissan Qashqai recall: steering wheel (build 27 Feb–16 May 2012)",
+    "url": "https://www.autoexpress.co.uk/nissan/qashqai/60259/nissan-qashqai-recall"
+   },
+   {
+    "id": 15,
+    "title": "AutoInsider — Recall R/2012/103 Nissan Qashqai: possible loss of steering",
+    "url": "https://www.autoinsider.co.uk/recalls/r2012103-nissan-qashqai"
+   }
+  ]
+ },
+ "nissan-teana-j32": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: per bama.ir, Pars Khodro assembled the Teana in Iran from 2009 after a brief import period (the roster says import only); stated 182 hp / 228 Nm and front-wheel drive",
+   "Gearbox: kept JF010E (RE0F09B) as the likely code, now citing the rebuild-kit applications (source 14), and advised reading the gearbox plate",
+   "CVT slip/judder fault: removed the unsupported burnt forward clutch claim; added Persian Teana CVT repair sources 11 and 13; replaced «بلوک سوپاپ» with the Iranian term «ساعت گیربکس»",
+   "CVT overheating limp mode: kept at low confidence, removed the step-motor part claim, and noted the sources are thin",
+   "diagnostic_tips_fa: added a warning against J31 and 2.0 faults, removed the whine-vs-wheel-bearing tip, and reworded the Takata tip to what the evidence shows (J31 2004–2008 only; no evidence J32 is covered)",
+   "maintenance_fa: removed the winter warm-up and engine-oil sensitivity tips (generic, unsupported)"
+  ],
+  "removed_claims": [
+   "CVT whine at 0–40 km/h: a single CarBase owner review, and that owner drives the 2.0 variant (not the V6 CVT sold in Iran)",
+   "Crank sensor / fuel pump relay no-start: the only source is a 2008 Teana 250XV (J31 generation), and the fault is generic",
+   "VQ25DE oil consumption and timing chain tensioner wear: the only cited source is a generic engine page (unreachable) with no Teana J32 evidence"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Go4Trans — JF010E / RE0F09A/B CVT: applications (incl. Teana), fluid NS-2, typical problems",
+    "url": "https://shop.go4trans.com/transmissions-info/jf010e"
+   },
+   {
+    "id": 2,
+    "title": "NICOclub forums — Teana (J32) 250XV V6 Thailand CVT slippage issue",
+    "url": "https://forums.nicoclub.com/teana-j32-250xv-v6-thailand-cvt-slippage-issue-t609106.html"
+   },
+   {
+    "id": 4,
+    "title": "Shenghai Auto Parts — Nissan CVT RE0F09A/RE0F09B/JF010E common error codes and repair measures",
+    "url": "https://www.shenghaiautoparts.com/nissan-cvt-re0f09a-re0f09b-jf010e-transmission-common-error-codes-and-repair-measure/"
+   },
+   {
+    "id": 5,
+    "title": "JustAnswer — Nissan Teana J32 CVT fluid, cooler and oil guidelines",
+    "url": "https://www.justanswer.com/nissan/8yyeg-teana-j32-altima-2500-i-m-man-thailand-use-nissan.html"
+   },
+   {
+    "id": 8,
+    "title": "باما — مشخصات فنی نیسان تی ینا (مونتاژ) XV سال ۱۳۸۹ تا ۱۳۹۲ (مونتاژ پارس خودرو از ۲۰۰۹، ۱۸۲ اسب، ۲۲۸ نیوتن‌متر، CVT، دیفرانسیل جلو)",
+    "url": "https://bama.ir/car-reviews/nissan/teanair-specs-1145-xv"
+   },
+   {
+    "id": 9,
+    "title": "مجله تخصصی خودرو — مزایا و معایب نیسان تیانا (پارس خودرو)",
+    "url": "https://magcars.ir/world-cars/nissan-tiana-2/"
+   },
+   {
+    "id": 10,
+    "title": "Nissan ASEAN newsroom — Nissan recalls select vehicles due to faulty Takata airbag inflators (Teana 2004–2008)",
+    "url": "https://asean.nissannews.com/en/releases/nissan-recalls-select-vehicles-due-to-faulty-takata-airbag-inflators"
+   },
+   {
+    "id": 11,
+    "title": "تک گیربکس — تعمیر گیربکس تیانا (CVT X-Tronic)",
+    "url": "https://takgearbox.com/tiana-gearbox-repair/"
+   },
+   {
+    "id": 12,
+    "title": "paultan.org — ETCM urges Nissan owners to inspect Takata airbags (Teana J31 units only in Malaysia)",
+    "url": "https://paultan.org/2015/09/21/etcm-urges-nissan-owners-inspect-takata-airbags-recall/"
+   },
+   {
+    "id": 13,
+    "title": "تویوکارا — راهنمای تعمیر گیربکس CVT نیسان مورانو و تیانا: مشکلات رایج و راه‌حل‌ها",
+    "url": "https://toyocara.com/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-cvt-%D9%86%DB%8C%D8%B3%D8%A7%D9%86-%D9%85%D9%88%D8%B1%D8%A7%D9%86%D9%88-%D9%88-%D8%AA/"
+   },
+   {
+    "id": 14,
+    "title": "Cobra Transmission — JF010E (RE0F09A/RE0F09B) CVT rebuild kit applications (incl. Teana)",
+    "url": "https://cobratransmission.com/re0f09b-jf010e-master-rebuild-kit-with-pistons-compatible-with-fits-jx35-qx60-presage-maxima-altima-pathfinder-quest-el-grand-evalia-teana-latitute-murano/"
+   }
+  ]
+ },
+ "renault-koleos-hy-1st-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "CVT judder fault: removed the torque converter lock-up claim and part (JF011E judder is put down to belt/pulley wear and degraded fluid); named the fluid NS-2 and used the Iranian term «ساعت گیربکس»",
+   "CVT solenoid/step motor fault: reworded around overheating-linked solenoid failure and added Iranian Renault specialist source 10",
+   "Suspension recall: added reference A12/0112/13 and noted it was a European campaign, with no guarantee it was carried out in Iran; dropped the vague second part «طبق پایین جلو»",
+   "Timing chain rattle: made the symptom specific (a few seconds on cold start), added the plastic guide rails and codes P0011/P0021, and added T31 owner forum source 11",
+   "Oil cooler fault: system changed from cooling to transmission; wording now says it rests on a single source",
+   "diagnostic_tips_fa and maintenance_fa: removed tips that relied on the removed faults (rear diff noise, oil consumption) and added wheel-bearing, VIN-recall and P0011/P0021 checks"
+  ],
+  "removed_claims": [
+   "Rear differential internal failure / cracked housing at 80–100k km: independent sources tie it to the 2.0 dCi diesel AWD Koleos, never sold in Iran",
+   "QR25DE oil consumption: only generic engine blogs, mostly about 2002–2008 QR25DE; no Koleos- or T31-specific support",
+   "Removed the torque-converter lock-up judder claim: no JF011E-specific support was found for it"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF011E: applications (Qashqai J10, X-Trail T31, Koleos HY), fluid, typical failures",
+    "url": "https://gearboxlist.com/jatco/jf011e/"
+   },
+   {
+    "id": 2,
+    "title": "Sunbelt Valve Body Builders — Understanding the JF011E CVT transmission: common issues",
+    "url": "https://sunbeltvalvebodies.com/blogs/news/understanding-the-jf011e-cvt-transmission-common-issues-and-how-remanufactured-parts-can-help"
+   },
+   {
+    "id": 3,
+    "title": "Technical Parameters — Renault Koleos faults (CVT judder 80–100k km, 2011 suspension arm recall)",
+    "url": "https://technicalparameters.eu/renault-koleos-faults/"
+   },
+   {
+    "id": 4,
+    "title": "Car-Recalls.eu — Recall A12/0112/13: Renault Koleos (Jan–Nov 2011) right front lower suspension arm",
+    "url": "https://car-recalls.eu/recall/renault-koleos-2011/"
+   },
+   {
+    "id": 5,
+    "title": "AUTODOC Blog — Renault Koleos: common problems and faults",
+    "url": "https://www.autodoc.co.uk/info/problems-with-the-renault-koleos"
+   },
+   {
+    "id": 6,
+    "title": "MyEngineSpecs — Nissan QR25DE engine problems",
+    "url": "https://myenginespecs.com/nissan/nissan-qr25de-engine-problems-what-you-need-to-know/"
+   },
+   {
+    "id": 7,
+    "title": "car.ir — رنو کولیوس نسل اول ۲۰۰۷ تا ۲۰۱۶، مشخصات (۲۴۸۸ سی‌سی، ۱۷۰ اسب، CVT، چهارچرخ محرک)",
+    "url": "https://car.ir/541-renault-koleos-automatic-2007-2016"
+   },
+   {
+    "id": 8,
+    "title": "خودرو۴۵ — محصولات پارس خودرو در بازار ایران (واردات رنو کولیوس)",
+    "url": "https://khodro45.com/mag/pars-khodro-cars/"
+   },
+   {
+    "id": 9,
+    "title": "ویکی‌پدیای فارسی — رنو کولئوس (موتورها و گیربکس‌های نسل اول)",
+    "url": "https://fa.wikipedia.org/wiki/رنو_کولئوس"
+   },
+   {
+    "id": 10,
+    "title": "رنو کرج — تعمیرگاه تخصصی رنو کولیوس (خرابی شیر برقی گیربکس CVT با داغی روغن، موتور ۲٫۵ و CVT نسخه ایران)",
+    "url": "https://renaultkaraj.com/renault-koleos-repair/"
+   },
+   {
+    "id": 11,
+    "title": "Australian X-Trail Forum — Timing chain rattle T31 (QR25DE)",
+    "url": "https://baustralianxtrail.runboard.com/t134953"
+   }
+  ]
+ },
+ "renault-koleos-hc-2nd-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity: importer Negin Khodro and 171 hp / 233 Nm confirmed in Persian (hamrah-mechanic); stated in the engine description",
+   "JF016E shocks/valve body fault: reworded to match GearboxList (debris spreads fast, the relief valve clogs first, a single solenoid failure means a new valve body); dropped the 'solenoid' part and the unverified 'enlarged lock-up range' mechanism; added the Australian owner shudder report (source 11)",
+   "Torque converter / pulley bearing fault: added that a failed bearing can damage its housing seat, per GearboxList",
+   "Steering column nut recall: confidence raised from medium to high (documented recall); added the UK recall date 03/08/2018 and noted it is not guaranteed for Iranian imports",
+   "diagnostic_tips_fa: removed the milky-fluid/oil cooler and Renault card tips (their faults were removed); VIN tip now says it was a UK recall",
+   "maintenance_fa: removed the coolant/oil cooler inspection and card battery tips; kept NS-3 every 40,000 km (confirmed by GearboxList)"
+  ],
+  "removed_claims": [
+   "CVT oil cooler coolant ingress at ~100k km: CarsGuide unreachable; the AUTODOC claim appears to come from the 1st-gen Koleos page; no 2nd-gen evidence found",
+   "Renault card (keyless card) battery failure: generic troubleshooting from a non-model-specific article, not a documented Koleos HC fault",
+   "QR25DE oil consumption and timing chain tensioner wear: generic engine blog, mainly about 2002–2008 QR25DE; later QR25DE got an improved chain and tensioner; no Koleos HC evidence",
+   "Sources 2 (CarsGuide), 3 (AUTODOC), 6 (renault-iran generic article) and 7 (MyEngineSpecs) dropped along with the faults they supported"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "GearboxList — CVT Jatco JF016E (RE0F10D, Renault FK0/FR8): Koleos 2 HC, NS-3 fluid every 40,000 km, disadvantages (torque converter, debris, relief valve, valve body, pulley bearings)",
+    "url": "https://gearboxlist.com/jatco/jf016e/"
+   },
+   {
+    "id": 4,
+    "title": "Car-Recalls.eu — Renault Koleos common problems and recalls (steering column mounting nut may become loose, 03/08/2018)",
+    "url": "https://car-recalls.eu/common-problems/renault/koleos/"
+   },
+   {
+    "id": 5,
+    "title": "RAC Drive — Renault Koleos [HC] (2016–2020) used car review (steering column nut recall)",
+    "url": "https://www.rac.co.uk/drive/car-reviews/renault/koleos/koleos-[hc]-2016-2020/"
+   },
+   {
+    "id": 8,
+    "title": "باما — مشخصات فنی رنو کولیوس سال ۲۰۱۷ تا ۲۰۱۸ (QR25DE، ۱۷۱ اسب، CVT X-TRONIC، تمام‌چرخ‌محرک ۳ حالته)",
+    "url": "https://bama.ir/car-reviews/renault/koleos-specs-1098"
+   },
+   {
+    "id": 9,
+    "title": "همراه مکانیک — با معایب رنو کولئوس آشنا شوید (نسل دوم، واردات نگین خودرو، ۲٫۵ لیتری ۱۷۱ اسب و CVT X-TRONIC)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-renault-koleos/"
+   },
+   {
+    "id": 10,
+    "title": "ویکی‌پدیای فارسی — رنو کولئوس (نسل دوم در ایران: ۲٫۵ لیتری ۱۶۸ اسب با CVT)",
+    "url": "https://fa.wikipedia.org/wiki/رنو_کولئوس"
+   },
+   {
+    "id": 11,
+    "title": "ProductReview.com.au — Renault Koleos owner reviews (CVT shudder from about 40 km/h, repeated warranty returns)",
+    "url": "https://www.productreview.com.au/listings/renault-koleos"
    }
   ]
  },
