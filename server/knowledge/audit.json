@@ -6421,6 +6421,166 @@
    }
   ]
  },
+ "lexus-rx-al10": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فراخوان 14V054000 با استعلام مستقیم از پایگاه NHTSA تأیید شد (RX350 مدل ۲۰۱۲ و ۲۰۱۳، رفع با نرم‌افزار Skid Control ECU)؛ confidence از medium به high تغییر کرد.",
+   "فراخوان 12V305000 با استعلام مستقیم از NHTSA تأیید شد و بازه تولید به شرح ایراد اضافه شد؛ confidence از medium به high تغییر کرد.",
+   "ایراد بوستر ترمز RX450h با منبع دوم (OEMDTC) و شرح برنامه پشتیبانی مشتری تأیید و شماره قطعه به مجموعه بوستر با سیلندر اصلی اصلاح شد.",
+   "سال‌های واردات مطابق ردیف روستر به ۱۳۸۸ تا ۱۳۹۴ اصلاح شد.",
+   "یک نکته عیب‌یابی اضافه شد که ایرادهای نسل دوم RX (لوله روغن VVT-i و داشبورد چسبنده) را به این نسل نسبت ندهند."
+  ],
+  "removed_claims": [
+   "ایراد ترکیدن لوله روغن VVT-i موتور 2GR-FE: کمپین LSC 9LH لکسوس فقط RX350 مدل ۲۰۰۷ تا ۲۰۰۹ (نسل دوم XU30) و ES350 مدل ۲۰۰۷ تا ۲۰۰۸ را شامل می‌شود؛ مربوط به نسل دیگری است و برای AL10 پشتوانه ندارد.",
+   "ایراد کندی و تعویض گیربکس U660E: تنها یک گزارش مالک و بدون پشتوانه فنی مستقل؛ U660E ایراد شناخته‌شده‌ای در این خودرو ندارد.",
+   "نکات نگهداری مربوط به تعویض لوله روغن VVT-i هم همراه ایراد حذف شد.",
+   "برنامه گارانتی داشبورد چسبنده (ZLD) بررسی شد ولی اضافه نشد: RX350 مدل ۲۰۰۷ تا ۲۰۰۹ را پوشش می‌دهد نه نسل سوم را."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lexus L-SB-0033-20 (Aug 2020) — ABS Warning Light On, 2010-2012 RX450h brake booster internal leak (NHTSA copy)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10179790-9999.pdf"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2013 Lexus RX350 (14V054000 brake actuator / skid control ECU, 2012-2013 RX350 and Tacoma)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=RX350&modelYear=2013"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2010 Lexus RX350 (12V305000 floor mat pedal entrapment, RX350/RX450h)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=RX350&modelYear=2010"
+   },
+   {
+    "id": 5,
+    "title": "پدال — راهنمای خرید لکسوس RX 350 کارکرده (نسل سوم، واردات ایران)",
+    "url": "https://www.pedal.ir/lexus/lexus-rx350-review/"
+   },
+   {
+    "id": 6,
+    "title": "OEMDTC — L-SB-0033-20 Brake Booster Assembly / Customer Support Program, 2010-2012 RX450h",
+    "url": "https://oemdtc.com/tsb/10179790/"
+   },
+   {
+    "id": 7,
+    "title": "Lexus USA Newsroom — Limited Service Campaign for VVT-i Oil Line (2007-2009 RX350, 2007-2008 ES350 only)",
+    "url": "https://pressroom.lexus.com/limited-service-campaign-for-vvt-i-oil-line/"
+   }
+  ]
+ },
+ "lexus-es-xv60": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فراخوان 15V728000 با استعلام مستقیم از NHTSA تأیید شد (ES350 و ES300h مدل ۲۰۱۳ تا ۲۰۱۵، تولید خرداد ۱۳۹۱ تا تیر ۱۳۹۴)؛ confidence از medium به high تغییر کرد.",
+   "برنامه 21LE03 با منبع مستقل تأیید شد: ES300h مدل ۲۰۱۷ و ۲۰۱۸ و NX300h مدل ۲۰۱۷، پوشش ثانویه ۱۰ سال یا ۱۵۰ هزار مایل؛ جزئیات پوشش به ایراد اضافه شد.",
+   "لرزش تورک کنورتور U760E از low به medium ارتقا یافت چون علاوه بر T-SB-0034-14 برنامه تمدید گارانتی ZE5 هم برای همین گیربکس وجود دارد (اعمال بر ES250 استنباطی است و در متن ذکر شد).",
+   "نشتی واتر پمپ 2AR-FE از low به medium ارتقا یافت و منبع دوم (Samarins) اضافه شد، هم‌راستا با پروفایل تأییدشده کمری XV50.",
+   "گیربکس ES350 از «اتوماتیک ۶ سرعته» به U660E مشخص شد و سال‌های ES250 به مدل ۲۰۱۳ تا ۲۰۱۵ تصحیح شد.",
+   "یک نکته عیب‌یابی اضافه شد که ایراد لوله روغن VVT-i نسل قبل ES (مدل ۲۰۰۷ و ۲۰۰۸) به این نسل نسبت داده نشود."
+  ],
+  "removed_claims": [
+   "هیچ ایرادی حذف نشد؛ هر پنج ایراد پشتوانه قابل قبول دارند.",
+   "ادعای ضمنی «بولتن ES برای لرزش گیربکس» حذف شد: بولتن T-SB-0034-14 برای کمری صادر شده و اعمال آن بر ES250 استنباط از هم‌گیربکس بودن است."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lexus Customer Support Program 21LE03 (Dec 2021) — Brake booster and pump coverage, 2017-2018 ES 300h and 2017 NX 300h (NHTSA copy)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10206525-9999.pdf"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2013 Lexus ES350 (15V728000 Pre-Collision System, 2013-2015 ES350/ES300h)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=ES350&modelYear=2013"
+   },
+   {
+    "id": 3,
+    "title": "NHTSA recalls API — 2013 Lexus ES300h (15V728000 Pre-Collision System)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=ES300H&modelYear=2013"
+   },
+   {
+    "id": 4,
+    "title": "8020 Automotive — 3 Most Common Toyota 2AR-FE Engine Problems and Reliability",
+    "url": "https://8020automotive.com/the-3-most-common-toyota-2ar-fe-engine-problems/"
+   },
+   {
+    "id": 5,
+    "title": "Toyota T-SB-0034-14 — U760E torque converter shudder (supersedes T-SB-0086-12) (NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10060723-2280.pdf"
+   },
+   {
+    "id": 6,
+    "title": "باما — مشخصات فنی لکسوس ES 250 سال ۲۰۱۳ تا ۲۰۱۶ (ورود به ایران عمدتاً مدل ۲۰۱۴ و ۲۰۱۵)",
+    "url": "https://bama.ir/car-reviews/lexus/es-specs-1055-250"
+   },
+   {
+    "id": 7,
+    "title": "Samarins — Toyota Camry 2012-2017: pros and cons, common problems (T-SB-0041-13 VVT gear, water pump)",
+    "url": "https://www.samarins.com/reviews/camry_2012.html"
+   },
+   {
+    "id": 8,
+    "title": "TOYO Headquarters — Customer Support Program 21TE03/21LE03 brake booster and pump assemblies coverage summary",
+    "url": "https://www.toyoheadquarters.com/threads/2011-2016-toyota-models-warranty-coverage-for-brake-booster-and-brake-booster-pump-assemblies-customer-support-program-21te03.2655/"
+   }
+  ]
+ },
+ "lexus-nx-az10": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فراخوان پمپ بنزین 20V012000 با استعلام مستقیم از NHTSA برای NX200t مدل ۲۰۱۵ تأیید شد؛ confidence از medium به high رفت و این ایراد به‌عنوان مهم‌ترین ایراد به ابتدای فهرست منتقل شد.",
+   "برنامه 21LE03 با منبع مستقل تأیید شد (NX300h مدل ۲۰۱۷ و ES300h مدل ۲۰۱۷ و ۲۰۱۸، پوشش ثانویه ۱۰ سال یا ۱۵۰ هزار مایل).",
+   "ضعف واتر پمپ برقی 8AR-FTS با منبع دوم (MotorReviewer) تأیید شد و در فهرست مهم‌ترین ایرادهای این موتور است.",
+   "شرح موتور 8AR-FTS اصلاح شد: این موتور تزریق ترکیبی D-4ST (مستقیم به‌همراه انژکتور ریلی) دارد.",
+   "ادعای رسوب کربن بازنویسی شد: به‌دلیل تزریق ترکیبی، رسوب کمتر و دیرتر از موتورهای تمام‌مستقیم است؛ بازه کیلومتر از «۶۰ تا ۱۰۰ هزار» به «بالای ۱۰۰ هزار» اصلاح و confidence روی low نگه داشته شد.",
+   "نام‌گذاری NX300 به‌عنوان نام NX200t پس از فیس‌لیفت دقیق‌تر شد."
+  ],
+  "removed_claims": [
+   "ایراد «لقی بازوی ویست‌گیت توربو» حذف شد: تنها یک منبع تجمیعی داشت و در منابع فنی دیگر این موتور تأیید نشد؛ به‌جای آن صدای استارت سرد ناشی از تأخیر روغن‌رسانی (که چند منبع به آن اشاره دارند) با confidence پایین جایگزین شد.",
+   "نکته عیب‌یابی مربوط به تشخیص صدای ویست‌گیت هم همراه ایراد حذف شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lexus Customer Support Program 21LE03 (Dec 2021) — Brake booster and pump coverage, 2017-2018 ES 300h and 2017 NX 300h (NHTSA copy)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10206525-9999.pdf"
+   },
+   {
+    "id": 2,
+    "title": "NHTSA recalls API — 2015 Lexus NX200t (20V012000 low-pressure fuel pump, stall risk)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=NX200T&modelYear=2015"
+   },
+   {
+    "id": 3,
+    "title": "EngineScope — Toyota 8AR-FTS reliability and known issues",
+    "url": "https://enginescope.gr/engine/toyota-8ar/"
+   },
+   {
+    "id": 4,
+    "title": "باما — مشخصات فنی لکسوس NX 200 توربو سال ۲۰۱۵ تا ۲۰۱۸",
+    "url": "https://bama.ir/car-reviews/lexus/nx-specs-1058-200t"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — مزایا و معایب لکسوس NX (نسخه‌های NX200t، NX300 و NX300h در ایران)",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disadvantages-of-lexus-nx/"
+   },
+   {
+    "id": 6,
+    "title": "TOYO Headquarters — Customer Support Program 21TE03/21LE03 brake booster and pump assemblies coverage summary",
+    "url": "https://www.toyoheadquarters.com/threads/2011-2016-toyota-models-warranty-coverage-for-brake-booster-and-brake-booster-pump-assemblies-customer-support-program-21te03.2655/"
+   },
+   {
+    "id": 7,
+    "title": "MotorReviewer — Toyota 8AR-FTS 2.0T engine specs, problems and reliability (water pump, cold-start noise, D-4ST injection)",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=139"
+   }
+  ]
+ },
  "lexus-lx570-j200": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -7422,6 +7582,68 @@
    }
   ]
  },
+ "mercedes-benz-c-class-w205": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "EPS software recall number corrected from 15V845000 to 16V438000 — the NHTSA list for the 2016 C300 shows 16V438000 as the power-steering software shutdown recall; 15V845000 could not be confirmed for this car",
+   "Steering rack (18V850000), starting current limiter (17V114000) and EPS welded contacts (17V243000) confirmed directly against NHTSA — kept at high confidence",
+   "Transmission fault rewritten: the conductor-plate / P0717 / P2767 story belongs mainly to the older 722.9 in W204 and W212, so it is no longer presented as the W205 cause; software version, fluid and adaptation are now the primary causes, severity lowered high → medium",
+   "Added four recall-backed faults the draft missed: ESP control unit damage disabling the electronic parking brake (16V603000), inadvertent driver airbag deployment from insufficient steering-column grounding (17V627000), fuel-rail particles causing fuel leakage (21V961000), and panoramic sunroof / roof panel detachment (16V087000, 21V197000, 23V854000)",
+   "Import years narrowed to about ۱۳۹۳–۱۳۹۶, since Iranian passenger-car imports stopped in late 1396",
+   "Variants split into C200 / C250 / C300 and a note added that C180 with the 1.6-litre M274 DE16 is rare in Iran; the draft wrongly assigned M274.920 to C180-style cars implicitly",
+   "Transmission list reordered: 7G-Tronic Plus marked as the gearbox in most Iranian imports, 9G-Tronic as the later one",
+   "Added a diagnostic tip explicitly ruling out previous-generation faults (ELV steering lock, M271 timing chain, W204 rear subframe corrosion) for this generation"
+  ],
+  "removed_claims": [
+   "Recall 15V845000 (2015 EPS software) — could not be verified in the NHTSA list for this vehicle; replaced by the confirmed 16V438000",
+   "Recall 15V138000 (fuel pump module, fuel-leak risk) — not present in the NHTSA list for this car; replaced by the confirmed fuel-rail recall 21V961000",
+   "7G-Tronic Plus conductor plate with codes P0717/P2767 as a W205 cause — evidence ties this to the earlier 722.9 generation, not to the W205; kept only as a warning not to assume it",
+   "Claim that the thermostat is 'the most common fault of this engine' — softened, the camshaft adjuster is the better-documented one"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls – 2016 Mercedes-Benz C300 (فهرست کامل فراخوان‌ها)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=C300&modelYear=2016"
+   },
+   {
+    "id": 2,
+    "title": "ایراد مرسدس بنز C کلاس که هر خریداری باید بداند – کارنوتر",
+    "url": "https://www.carnoter.com/mercedes-benz-c-class-problems/"
+   },
+   {
+    "id": 3,
+    "title": "Mercedes 2.0L M274/M264 Camshaft Adjuster Rattle & Failure (2014-2023) – Go-Parts",
+    "url": "https://www.go-parts.com/garage/engine-camshaft-mercedes-benz-c-class-mercedes-benz-e-class-mercedes-benz-glc-class-2014-2023"
+   },
+   {
+    "id": 4,
+    "title": "M274 Engine – MBClub UK forum",
+    "url": "https://forums.mbclub.co.uk/threads/m274-engine.302726/"
+   },
+   {
+    "id": 5,
+    "title": "M274 Engine Problems & Workshop Fault Guide – Mercedes Assistance",
+    "url": "https://en.mercedesassistance.com/m274-engine-mercedes/"
+   },
+   {
+    "id": 6,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes 9G-Tronic Transmission: Common Issues & Service – Motronix",
+    "url": "https://motronix.net/blog/mercedes-9g-tronic-transmission-problems-service-guide/"
+   },
+   {
+    "id": 8,
+    "title": "Mercedes W205 Problems: C-Class Engine, Electronics & Costs – Engine Finder",
+    "url": "https://www.enginefinder.co.za/blog/problems/mercedes-w205-problems/"
+   }
+  ]
+ },
  "mercedes-benz-e-class-w210": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -7540,6 +7762,174 @@
    }
   ]
  },
+ "mercedes-benz-e-class-w213": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "All six recalls cited by the draft verified directly against NHTSA for the 2017 E300: 17V714000, 17V574000, 17V241000 (EPS), 17V078000 (shift lever module), 16V758000 (fuel pump harness) and 17V114000 (starting current limiter)",
+   "Removed the E250 variant — the W213 line in Iran was E200 and E300; E250 was a market-specific badge and is not a meaningful Iranian variant",
+   "Import years narrowed to about ۱۳۹۵–۱۳۹۶, since Iranian passenger-car imports stopped in late 1396",
+   "Added four recall-backed faults the draft missed: instrument-cluster display blanking/resetting (17V245000), front passenger airbag and occupant-classification faults (17V076000, 17V176000, 17V080000), roof spoiler detachment (17V246000), and the starting current limiter promoted from a maintenance note to a fault (17V114000)",
+   "Air suspension tip kept but marked as optional equipment that is rare in Iran",
+   "Added a diagnostic tip explicitly ruling out previous-generation W212 faults (ELV steering lock, 722.9 conductor plate) — the W213 has neither part",
+   "Thermostat: softened the 'most common fault of this engine' wording, which is not supported"
+  ],
+  "removed_claims": [
+   "E250 (W213) variant — not part of the Iranian import mix for this generation",
+   "Import window of ۱۳۹۷ — outside the period when passenger cars could still be imported into Iran",
+   "Thermostat described as 'the most reported fault of the M274' — the camshaft adjuster is the better-documented failure"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "NHTSA recalls – 2017 Mercedes-Benz E300 (فهرست کامل فراخوان‌ها)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=E300&modelYear=2017"
+   },
+   {
+    "id": 2,
+    "title": "Mercedes 2.0L M274/M264 Camshaft Adjuster Rattle & Failure (2014-2023) – Go-Parts",
+    "url": "https://www.go-parts.com/garage/engine-camshaft-mercedes-benz-c-class-mercedes-benz-e-class-mercedes-benz-glc-class-2014-2023"
+   },
+   {
+    "id": 3,
+    "title": "M274 Engine – MBClub UK forum",
+    "url": "https://forums.mbclub.co.uk/threads/m274-engine.302726/"
+   },
+   {
+    "id": 4,
+    "title": "M274 Engine Problems & Workshop Fault Guide – Mercedes Assistance",
+    "url": "https://en.mercedesassistance.com/m274-engine-mercedes/"
+   },
+   {
+    "id": 5,
+    "title": "Mercedes 9G-Tronic Transmission: Common Issues & Service – Motronix",
+    "url": "https://motronix.net/blog/mercedes-9g-tronic-transmission-problems-service-guide/"
+   },
+   {
+    "id": 6,
+    "title": "Common Problems of Mercedes E-Class W213 E 300 – Euro Auto Pro",
+    "url": "https://www.euroautopro.com.au/post/common-problems-of-mercedes-e-class-w213-e-300-a-comprehensive-guide"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes E300 W213: Complete Guide – CarWikiHub",
+    "url": "https://carwikihub.com/mercedes-e300-w213-review-reliability-buyers-guide/"
+   }
+  ]
+ },
+ "mercedes-benz-s-class-w221": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Recall 12V557000 (fuel filter flange cracking at high temperature, fire risk) verified directly against NHTSA for the 2012 S550, and the Iranian-summer relevance of a heat-driven crack added",
+   "Split the merged M272/M273 fault into two separate faults — one for the S350's balance-shaft gear and one for the S500's timing-chain idler gear — since they are different engines, different symptoms and different serial cut-offs",
+   "Variants rebuilt into three rows (S350 pre-facelift M272, S350 facelift M276, S500) and a note added that the S500 is rarer in Iran because of the restriction on importing engines above 2500 cc",
+   "Engines list expanded to name M276 and M278 separately and state explicitly that they are NOT affected by the balance-shaft / idler-gear faults — the draft lumped them into one line",
+   "Airmatic: Persian parts naming corrected to «کمک فنر بادی» as used by Iranian suspension shops, and an Iranian source added confirming it is the headline cost risk of this car locally",
+   "Auxiliary battery: added that a weak aux battery produces misleading transmission and suspension fault codes, which is the practical diagnostic value of this entry",
+   "Added the confirmed TPMS recall 11V493000 as a maintenance warning not to trust the tyre-pressure light on this car",
+   "Added a diagnostic tip that the P0717/P2767 conductor-plate reading IS valid for this generation (unlike the newer W205/W213/W166 profiles), so the assistant does not over-correct here"
+  ],
+  "removed_claims": [
+   "Variant line implying S350 was imported from ۱۳۸۴ — the W221 only went on sale in 2006, so the Iranian window starts later; replaced with model-year ranges rather than an unverifiable import window",
+   "'M276 / M278' presented as a single engine entry — misleading, since the two share neither displacement, layout nor fault set",
+   "Implication that the fuel-filter flange recall covers S350 pre-facelift cars — the recall is for the 2011 and 2012 model years only"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Common Problems Mercedes-Benz 2006-2013 W221 – YOUCANIC",
+    "url": "https://youcanic.com/guide/mercedes-benz-s-class-w221-problems"
+   },
+   {
+    "id": 2,
+    "title": "Mercedes-Benz balance shaft engine issues, how to check by VIN (M272/M273) – MB Medic",
+    "url": "https://www.mercedesmedic.com/check-my-mercedes-benz-for-balance-shaft-issue-by-vin-m272273/"
+   },
+   {
+    "id": 3,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 4,
+    "title": "Mercedes Benz Air Suspension Troubleshooting Guide (Airmatic) – MB Medic",
+    "url": "https://www.mercedesmedic.com/air-suspension-troubleshooting-airmatic-visit-workshop/"
+   },
+   {
+    "id": 5,
+    "title": "Mercedes S-Class W221 Air Suspension Repair | Airmatic Faults & Costs – Mercedes Specialist London",
+    "url": "https://mercedes-specialist.uk/blog/mercedes-s-class-w221-air-suspension"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls – 2012 Mercedes-Benz S550 (فراخوان‌های 12V557000 و 11V493000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=S550&modelYear=2012"
+   },
+   {
+    "id": 7,
+    "title": "۵ دلیل برای خرید مرسدس بنز S کلاس قدیمی – بیت‌ران",
+    "url": "https://bitrun.info/1399/03/%DB%B5-%D8%AF%D9%84%DB%8C%D9%84-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AE%D8%B1%DB%8C%D8%AF-%D9%85%D8%B1%D8%B3%D8%AF%D8%B3-%D8%A8%D9%86%D8%B2-s-%DA%A9%D9%84%D8%A7%D8%B3-%D9%82%D8%AF%DB%8C%D9%85%DB%8C/"
+   }
+  ]
+ },
+ "mercedes-benz-s-class-w222": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Recalls 16V899000 (EPS soldered contacts), 21V197000 and 23V854000 (roof panel detachment) verified directly against NHTSA for the 2015 S550",
+   "Transmission fault rewritten: the conductor-plate / P0717 / P2767 story belongs to the earlier 722.9 generation (W221 era), not to the 7G-Tronic Plus in the W222; fluid, software and adaptation are now the primary causes. Severity lowered high → medium and confidence high → medium",
+   "Promoted the roof-panel / panoramic sunroof detachment from a maintenance footnote to a recall-backed fault with high severity",
+   "Added the airbag control-unit software recall 17V177000 as a fault",
+   "S500 marked as rare in Iran because of the restriction on importing engines above 2500 cc, so S400 should be the assistant's default assumption",
+   "Import window narrowed to about ۱۳۹۲–۱۳۹۶, since Iranian passenger-car imports stopped in late 1396",
+   "Airmatic parts renamed to «کمک فنر بادی» / «بلوک شیر (والو بلوک)» as Iranian suspension shops list them",
+   "Added diagnostic guards ruling out previous-generation W221 faults (M272 balance shaft, M273 idler gear, 722.9 conductor plate) and the post-2018 M256 / S450 facelift engine that never reached Iran"
+  ],
+  "removed_claims": [
+   "Claim that the EPS control unit fault carries a risk of overheating and fire — the recall describes loss of steering assist, not a fire hazard; the fire wording was removed",
+   "Claim that the soft-close door fault can let a door open while driving — unsupported; the symptom is a door that will not pull itself shut. Severity lowered medium → low",
+   "'Failure of the motor brushes (زغال)' as the stated cause of the soft-close actuator failure — no source supports that specific internal cause",
+   "Conductor plate presented as a confident W222 cause — kept only as something to prove by fault code"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Mercedes S-Class W222 Common Faults & Problems (2013-2020) – Mercedes Specialist London",
+    "url": "https://mercedes-specialist.uk/blog/mercedes-s-class-w222-common-faults"
+   },
+   {
+    "id": 2,
+    "title": "Mercedes W166 M-Class & GLE-Class Buyer's Guide (M278 timing assembly) – FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/mercedes-benz-m-class-gle-class-buyers-guide-w166"
+   },
+   {
+    "id": 3,
+    "title": "How to Diagnose Camshaft Adjuster Problems in the Mercedes M276 Engine – 603 M-Tech",
+    "url": "https://www.603mtech.com/post/mercedes-m276-cold-start-rattle-camshaft-adjuster-failure-fix-explained"
+   },
+   {
+    "id": 4,
+    "title": "Common Issues of the Mercedes-Benz M276 Engine: A Comprehensive Guide – 603 M-Tech",
+    "url": "https://www.603mtech.com/post/common-issues-of-the-mercedes-benz-m276-engine-a-comprehensive-guide"
+   },
+   {
+    "id": 5,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls – 2015 Mercedes-Benz S550 (فهرست کامل فراخوان‌ها)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=S550&modelYear=2015"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes S-Class W222: The Ultimate Buyer's Guide – CarWikiHub",
+    "url": "https://carwikihub.org/mercedes-s-class-w222-used-buyer-guide/"
+   }
+  ]
+ },
  "mercedes-benz-m-class-w164": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -7621,6 +8011,66 @@
     "id": 13,
     "title": "Common Intake Manifold Issues on Mercedes-Benz M272 and M273 Engines – 603 Motorsport Tech",
     "url": "https://www.603mtech.com/post/common-intake-manifold-issues-on-mercedes-benz-m272-and-m273-engines"
+   }
+  ]
+ },
+ "mercedes-benz-m-class-gle-w166": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Major identity fix: the draft claimed the facelift GLE400 uses the 9G-Tronic. Most W166 ML and GLE cars — including the GLE350 and a large share of GLE400s — keep the 7G-Tronic Plus (722.9); only part of the GLE400 range got the 9G-Tronic. Variants, transmission list and the diagnostic tip now say to read the gearbox code rather than infer it from the model year",
+   "Added the GLE350 4MATIC as a separate Iranian variant — the draft listed only ML350 and GLE400",
+   "Recall 22V955000 (water in the spare wheel well damaging the fuel pump control unit) verified directly against NHTSA for the 2016 GLE350",
+   "Transmission fault rewritten: conductor-plate codes P0717/P2767 are characteristic of the older 722.9 generation (W164 era), so they are no longer given as the W166 cause; fluid condition and adaptation come first. Severity lowered high → medium and confidence high → medium",
+   "Air suspension: noted explicitly that cars on conventional steel springs are not affected",
+   "Added guards to the diagnostic tips ruling out the diesel OM642/OM651 faults (these cars are petrol in Iran) and the previous-generation W164 M272 balance-shaft and intake-manifold faults",
+   "Cooling: added the Iranian heat angle for the plastic coolant parts, and the expansion tank to the parts list"
+  ],
+  "removed_claims": [
+   "'GLE400 = 9G-Tronic' as a blanket statement — contradicted by manufacturer specification data showing GLE400 4MATIC with 7G-Tronic Plus",
+   "Conductor plate (P0717 / P2767) presented as a confident W166 transmission cause — the evidence ties it to the earlier 722.9 generation; kept only as something to prove by fault code",
+   "'Permanent 4MATIC differential' wording implying a specific ML350-only drivetrain — simplified, since all Iranian W166 cars here are 4MATIC"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Mercedes W166 M-Class & GLE-Class Buyer's Guide – FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/mercedes-benz-m-class-gle-class-buyers-guide-w166"
+   },
+   {
+    "id": 2,
+    "title": "Common Issues of the Mercedes-Benz M276 Engine: A Comprehensive Guide – 603 M-Tech",
+    "url": "https://www.603mtech.com/post/common-issues-of-the-mercedes-benz-m276-engine-a-comprehensive-guide"
+   },
+   {
+    "id": 3,
+    "title": "How to Diagnose Camshaft Adjuster Problems in the Mercedes M276 Engine – 603 M-Tech",
+    "url": "https://www.603mtech.com/post/mercedes-m276-cold-start-rattle-camshaft-adjuster-failure-fix-explained"
+   },
+   {
+    "id": 4,
+    "title": "722.9 7G Tronic Automatic Transmission Problems and Solutions – MB Medic",
+    "url": "https://www.mercedesmedic.com/722-9-7g-tronic-automatic-transmission-problems-solutions/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls – 2016 Mercedes-Benz GLE350 (فراخوان 22V955000)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=MERCEDES-BENZ&model=GLE350&modelYear=2016"
+   },
+   {
+    "id": 6,
+    "title": "ML/GLE 350 Engine (M276) Cooling System Maintenance at 10 Years/100,000 Miles – MBWorld forum",
+    "url": "https://mbworld.org/forums/gle-class-w166/912580-ml-gle-350-engine-m276-cooling-system-maintenance-10-years-100-000-miles-advice.html"
+   },
+   {
+    "id": 7,
+    "title": "Mercedes Benz Air Suspension Troubleshooting Guide (Airmatic) – MB Medic",
+    "url": "https://www.mercedesmedic.com/air-suspension-troubleshooting-airmatic-visit-workshop/"
+   },
+   {
+    "id": 8,
+    "title": "Mercedes-Benz GLE 400 V6 4MATIC 7G-TRONIC PLUS – technical specs, auto-data.net",
+    "url": "https://www.auto-data.net/en/mercedes-benz-gle-suv-w166-gle-400-v6-333hp-4matic-7g-tronic-plus-22086"
    }
   ]
  },
