@@ -7613,6 +7613,60 @@
    }
   ]
  },
+ "suzuki-kizashi": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "ایراد اصلی CVT مستقلاً تأیید شد و دقیق‌تر نوشته شد: بولتن فنی سوزوکی، حالت ایمن (safe mode) در گرما و سربالایی، تعویض روغن هر ۳۰ هزار مایل (حدود ۵۰ هزار کیلومتر) و اصلاح کارتل عمیق‌تر و لوله مکش/گیج بلندتر برای جلوگیری از کف کردن روغن. اطمینان high تأیید شد.",
+   "علت ایراد دوم CVT اصلاح شد: مکانیزم مستند «کف کردن و هوا گرفتن روغن به دلیل سطح/نوع نادرست روغن» جایگزین ادعای بی‌پشتوانه «خرابی سولنوئید کنترل فشار» شد.",
+   "توان موتور J24B به صورت اسب بخار هم نوشته شد (۱۷۸ اسب بخار) و هم‌خانوادگی آن با گرند ویتارا ۲۴۰۰ تصریح شد.",
+   "نکته عیب‌یابی «نیم‌ساعت خاموش کردن خودرو برای خنک شدن CVT» که در منبع آمده به نکات افزوده شد.",
+   "منابع دقیق‌تر جایگزین شدند: صفحه گیربکس CarsGuide و تاپیک بولتن فنی Kizashi Club اضافه و منبع غیرقابل‌دسترس suzukiproblems.com حذف شد."
+  ],
+  "removed_claims": [
+   "ایراد «خرابی زودرس کمک‌فنر عقب به دلیل طراحی ضربه‌گیر که رطوبت و گل نگه می‌دارد» حذف شد: تنها منبع آن (suzukiproblems.com) قابل دسترس نبود (گواهی امنیتی منقضی) و صفحه ایرادهای CarsGuide چنین چیزی را گزارش نمی‌کند.",
+   "ادعای «ایراد سولنوئید کنترل فشار گیربکس» به‌عنوان علت لرزش حذف شد؛ منابع، ریشه را سطح/کیفیت روغن و کف کردن آن می‌دانند.",
+   "«سنسور دمای روغن گیربکس» از قطعات ایراد حالت اضطراری حذف شد؛ منبع فقط «یک سنسور معیوب» را بدون نام بردن قطعه ذکر می‌کند و اطمینان این ایراد low است.",
+   "منبع ۲ (suzukiproblems.com) و منبع ۶ (صفحه CVT همان سایت) به دلیل غیرقابل‌دسترس بودن حذف شدند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Suzuki Kizashi Problems & Reliability Issues — CarsGuide",
+    "url": "https://www.carsguide.com.au/suzuki/kizashi/problems"
+   },
+   {
+    "id": 3,
+    "title": "CVT Transmission… problems, problems, and more problems — Kizashi Club forum",
+    "url": "https://www.kizashiclub.com/forum/viewtopic.php?t=1356"
+   },
+   {
+    "id": 4,
+    "title": "Suzuki J24B Engine Guide — Specs, Issues, Models (enginecode.uk)",
+    "url": "https://www.enginecode.uk/suzuki/j24b-specs"
+   },
+   {
+    "id": 5,
+    "title": "Chain driven or Cambelt? 2012 Suzuki Kizashi GLXC 2.4 — Suzuki Forums",
+    "url": "https://www.suzuki-forums.com/threads/chain-driven-or-cambelt-2012-suzuki-kizashi-glxc-2-4.264355/"
+   },
+   {
+    "id": 6,
+    "title": "Suzuki Kizashi Gearbox & Transmission Problems (CVT safe mode, TSB, 50,000 km fluid change) — CarsGuide",
+    "url": "https://www.carsguide.com.au/suzuki/kizashi/problems/transmission"
+   },
+   {
+    "id": 7,
+    "title": "CVT Technical Service Bulletin — Kizashi Club forum (deeper pan, longer pickup, fluid level)",
+    "url": "https://www.kizashiclub.com/forum/viewtopic.php?t=4337"
+   },
+   {
+    "id": 8,
+    "title": "P0012 on Suzuki 2.4L J24B: Camshaft Timing Over-Retarded — Go-Parts",
+    "url": "https://www.go-parts.com/garage/obd-p0012-suzuki-grand-vitara-2009-2015-j24b-2-4l"
+   }
+  ]
+ },
  "honda-accord-cp-8th-gen": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -8163,6 +8217,112 @@
     "id": 5,
     "title": "مشخصات فنی سانگ یانگ نیو کوراندو — خودرو۴۵",
     "url": "https://khodro45.com/%D8%B3%D8%A7%D9%86%DA%AF-%DB%8C%D8%A7%D9%86%DA%AF-%D9%86%DB%8C%D9%88-%DA%A9%D9%88%D8%B1%D8%A7%D9%86%D8%AF%D9%88/"
+   }
+  ]
+ },
+ "ssangyong-kyron": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "اصلاح مهم هویتی: کایرون بازار ایران موتور ۳٫۲ شش سیلندر (G32D، ۲۲۰ اسب بخار) دارد، نه ۲٫۳ چهار سیلندر؛ منابع فارسی این خودرو را «کایرون ۳۲۰۰» می‌نامند و ویکی‌پدیای فارسی هم موتور ۲۲۰ اسب بخار برگرفته از مرسدس را ذکر می‌کند. ترتیب موتورها و متن ایرادها بر همین پایه عوض شد.",
+   "ادعای کلیدی «گیربکس ۷۲۲.۶ مرسدس» مستقلاً تأیید شد: ویکی‌پدیای انگلیسی کایرون صراحتاً 5G-Tronic (W722.6) را تنها گیربکس اتوماتیک این خودرو می‌داند.",
+   "مشخصات موتور ۲٫۳ دقیق‌تر شد (۱۵۰ اسب بخار، ۳۱۰ نیوتن‌متر، طرح M111) و به‌عنوان نسخه کمیاب در ایران علامت خورد.",
+   "ایراد گیربکس به رتبه اول آمد چون قوی‌ترین پشتوانه را دارد (کد گیربکس تأییدشده + ایراد مستند کاندکتور پلیت ۷۲۲.۶).",
+   "اطمینان ایراد جلوبندی و ایراد برقی از medium به low کاهش یافت؛ پشتوانه آن‌ها گزارش‌های مربوط به رکستونِ هم‌پلتفرم است نه خود کایرون.",
+   "علت ایراد زنجیر تایم دقیق‌تر شد (شکستن ریل راهنمای پلاستیکی خانواده M104).",
+   "یک نکته عیب‌یابی افزوده شد که پیش از تشخیص، کد موتور روی بلوک خوانده شود؛ دو موتور کاملاً متفاوت زیر یک نام فروخته شده‌اند."
+  ],
+  "removed_claims": [
+   "ادعای «G23D رایج‌ترین موتور کایرون و اکتیون در ایران است» حذف شد: منابع فارسی برعکس آن را نشان می‌دهند و کایرون ایران با موتور ۳٫۲ شناخته می‌شود.",
+   "گزینه «دستی ۵ سرعته در نمونه‌های معدود» از فهرست گیربکس‌ها حذف شد: ویکی‌پدیا برای کایرون فقط اتوماتیک ۵ سرعته 5G-Tronic را ثبت کرده و نمونه دستی در ایران تأیید نشد.",
+   "کد موتور قطعی برای اکتیون نوشته نشد؛ هیچ منبع قابل اتکایی نشان نداد اکتیون‌های ایران با کدام موتور آمده‌اند.",
+   "منبع ۵ پیشین (صفحه عمومی محصولات سانگ‌یانگ در همراه مکانیک) با منابع مشخص‌تر (car.ir کایرون ۳۲۰۰ و ویکی‌پدیای فارسی) جایگزین شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "SsangYong Rexton: common problems and faults — AUTODOC Blog (خانواده مشترک رکستون/کایرون)",
+    "url": "https://www.autodoc.co.uk/info/problems-with-the-ssangyong-rexton"
+   },
+   {
+    "id": 2,
+    "title": "راهنمای خرید سانگ یانگ رکستون دست دوم: مزایا، معایب و ارزش خرید — پدال",
+    "url": "https://www.pedal.ir/ssangyong/740880-ssangyong-rexton-review-iran/"
+   },
+   {
+    "id": 3,
+    "title": "SsangYong engines: G23D (لیسانس مرسدس M111) و G32D (لیسانس مرسدس M104) — MyMotorList",
+    "url": "https://mymotorlist.com/engines/ssangyong/"
+   },
+   {
+    "id": 4,
+    "title": "SsangYong Kyron — Wikipedia (موتور ۳٫۲ M104 و ۲٫۳ M111، گیربکس 5G-Tronic W722.6)",
+    "url": "https://en.wikipedia.org/wiki/SsangYong_Kyron"
+   },
+   {
+    "id": 5,
+    "title": "سانگ یانگ کایرون ۳۲۰۰ ۲۰۰۷-۲۰۱۴، مشخصات و قیمت — خودرو (car.ir)",
+    "url": "https://car.ir/612-ssang-yong-kyron-3-2l-2007-2014"
+   },
+   {
+    "id": 6,
+    "title": "سانگ‌یانگ کایرون — ویکی‌پدیای فارسی (موتور ۲۲۰ اسب بخار و گیربکس مرسدس‌بنز)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D9%86%DA%AF%E2%80%8C%DB%8C%D8%A7%D9%86%DA%AF_%DA%A9%D8%A7%DB%8C%D8%B1%D9%88%D9%86"
+   }
+  ]
+ },
+ "ssangyong-rexton-y200-y250": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "ادعای کلیدی «موتور و گیربکس برگرفته از مرسدس» مستقلاً تأیید شد: منابع فارسی موتور ۳۱۹۹ سی‌سی شش سیلندر بنزینی ۲۲۰ اسب بخار با منشأ مرسدس‌بنز را ذکر می‌کنند و ویکی‌پدیا و فهرست قطعات، گیربکس رکستون را همان ۷۲۲.۶ (5G-Tronic) مرسدس نشان می‌دهد.",
+   "مشخصات موتور دقیق‌تر شد: ۳۱۹۹ سی‌سی، ۲۲۰ اسب بخار، ۳۱۲ نیوتن‌متر و تصریح اینکه همه نمونه‌های ایران بنزینی‌اند.",
+   "سال‌های واریانت‌ها روشن‌تر شد: عرضه رسمی رامک خودرو از حدود ۱۳۸۹ تا ۱۳۹۰ آغاز شده و نمونه‌های پیش از آن واردات پراکنده‌اند.",
+   "ایراد جلوبندی به رتبه دوم آمد چون تنها ایرادی است که منبع فارسی ایرانی مستقیماً تأیید می‌کند (به‌همراه قیمت بالای توپی چرخ و کمک‌فنر).",
+   "اطمینان ایراد برقی از medium به low کاهش یافت (فقط یک منبع عمومی).",
+   "علت ایراد زنجیر تایم دقیق‌تر شد (شکستن ریل راهنمای پلاستیکی، ضعف شناخته‌شده M104) و در اطمینان low باقی ماند.",
+   "یک نکته عیب‌یابی افزوده شد که ایرادهای نسخه دیزل XDi 270 به نمونه‌های بنزینی ایران نسبت داده نشود؛ منابع ۷۲۲.۶ و همراه مکانیک به فهرست منابع اضافه شدند."
+  ],
+  "removed_claims": [
+   "موتور G23D (۲٫۳ چهار سیلندر طرح M111) از فهرست موتورها حذف شد: در رکستون‌های واردشده به ایران عرضه نشده و ماندنش باعث می‌شود دستیار، ایراد موتور دیگری را به راننده نسبت دهد.",
+   "عبارت «جعبه‌دنده کمکی با دیفرانسیل جلوی قابل انتخاب» ساده و اصلاح شد به حالت‌های 4H/4L شاسی‌دار.",
+   "منبع ۴ (همراه مکانیک، صفحه معایب) به دلیل باز نشدن صفحه با منبع همراه مکانیک «مزایای رکستون» که محتوایش تأیید شد جایگزین گردید."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "SsangYong Rexton: common problems and faults — AUTODOC Blog",
+    "url": "https://www.autodoc.co.uk/info/problems-with-the-ssangyong-rexton"
+   },
+   {
+    "id": 2,
+    "title": "راهنمای خرید سانگ یانگ رکستون دست دوم: بررسی مزایا، معایب و ارزش خرید — پدال",
+    "url": "https://www.pedal.ir/ssangyong/740880-ssangyong-rexton-review-iran/"
+   },
+   {
+    "id": 3,
+    "title": "SsangYong engines: G23D (Mercedes M111 licence) and G32D (Mercedes M104 licence) — MyMotorList",
+    "url": "https://mymotorlist.com/engines/ssangyong/"
+   },
+   {
+    "id": 5,
+    "title": "Used KGM/SsangYong Rexton 2003-2013 Reliability & Common Problems — What Car?",
+    "url": "https://www.whatcar.com/ssangyong/rexton/4x4/used-review/n625/reliability"
+   },
+   {
+    "id": 6,
+    "title": "Mercedes-Benz 5G-Tronic (722.6) transmission — Wikipedia (used by SsangYong)",
+    "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_5G-Tronic_transmission"
+   },
+   {
+    "id": 7,
+    "title": "Genuine SsangYong Rexton 722.6 5-speed automatic gearbox service kit (parts listing)",
+    "url": "https://www.ebay.com/itm/264845300578"
+   },
+   {
+    "id": 8,
+    "title": "مزایای سانگ یانگ رکستون — همراه مکانیک (موتور ۳۱۹۹ سی‌سی، ۲۲۰ اسب بخار، عرضه رامک خودرو)",
+    "url": "https://www.hamrah-mechanic.com/mag/ssangyong-rexton-advantages/"
    }
   ]
  },
