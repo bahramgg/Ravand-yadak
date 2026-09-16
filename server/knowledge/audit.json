@@ -91,6 +91,57 @@
    }
   ]
  },
+ "ikco-arisun": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "هویت تأیید شد: ویکی‌پدیای انگلیسی می‌گوید آریسان ۱ (۲۰۱۵ تا ۲۰۲۲) موتور OHVG2 ۱.۷ لیتری ۸ سوپاپ OHV و محرک عقب دارد و شاسی و موتورش با وانت پیکان مشترک است — یعنی مکانیک آن با آریسان ۲ (XU7P عرضی، محرک جلو، تسمه تایم) هیچ اشتراکی ندارد.",
+   "توان روی گاز از ۷۳ به ۷۸ اسب اصلاح شد (منبع ۶) و در تیپ تشخیصی هم اصلاح شد.",
+   "سال‌های تولید از «۱۳۹۳ تا ۱۳۹۹» به «۱۳۹۳ تا حدود ۱۴۰۱» اصلاح شد؛ تولید تا آمدن آریسان ۲ در ۲۰۲۲ ادامه داشت و علت توقف، استاندارد آلایندگی یورو ۵ بود.",
+   "ایراد شاسی تأیید شد و منبع چهارم (کیان باتری) جایگزین منبع تکراری شد: چند رسانه فارسی مستقل به ضعف شاسی نسخه‌های اولیه و شکستن بدنه دوتکه زیر بار اشاره دارند؛ confidence روی high ماند.",
+   "صدای دیفرانسیل عقب از medium به low کاهش یافت: تنها منبع، تاپیک بچرخ است که نظرات آریسان ۱ و ۲ را قاطی دارد؛ منبع زوم‌تک (۳) که اشتباهاً ذکر شده بود حذف شد و این ابهام در cause_fa نوشته شد.",
+   "ایراد موتور/واشر سرسیلندر نگه داشته شد (گزارش مالکان درباره سوختن واشر سرسیلندر و داغ کردن روی گاز) با confidence پایین.",
+   "ترتیب فاول‌ها عوض شد: ایراد موتور/گاز جلوتر از صدای دیفرانسیل قرار گرفت چون سند قوی‌تری دارد.",
+   "افزودن: اشاره به زنجیر تایم موتور OHV در برابر تسمه تایم آریسان ۲ برای جلوگیری از سفارش قطعه اشتباه."
+  ],
+  "removed_claims": [
+   "ارقام دقیق مصرف سوخت «۹٫۲ لیتر بنزین و ۹٫۹ مترمکعب گاز در صد کیلومتر» حذف شد — در منابعی که باز شد تأیید نشد.",
+   "استناد ایراد صدای دیفرانسیل به منبع زوم‌تک حذف شد — آن صفحه اصلاً از دیفرانسیل حرفی نمی‌زند.",
+   "عبارت «بخشی از خریداران از این وانت دست کشیدند» به شکل دقیق‌تر بازنویسی شد؛ ادعای کمّی قابل راستی‌آزمایی نبود."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "خودرو۴۵ — آریسان دوگانه‌سوز ایران خودرو؛ بررسی جامع و مشخصات فنی",
+    "url": "https://khodro45.com/mag/ikco-arisun/"
+   },
+   {
+    "id": 2,
+    "title": "بچرخ — وانت آریسان؛ نظرات کاربران و بررسی مشکلات و معایب",
+    "url": "https://becharkh.com/forum/car?brand=pickup&model=arisan&s=1"
+   },
+   {
+    "id": 3,
+    "title": "زوم تک — معایب وانت آریسان",
+    "url": "https://zoomtech.org/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%88%D8%A7%D9%86%D8%AA-%D8%A2%D8%B1%DB%8C%D8%B3%D8%A7%D9%86/"
+   },
+   {
+    "id": 4,
+    "title": "کیان باتری — نقد و بررسی مزایا و معایب وانت آریسان",
+    "url": "https://www.kianbattery.com/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88%D8%A7%D9%86%D8%AA-%D8%A2%D8%B1%DB%8C%D8%B3%D8%A7%D9%86/"
+   },
+   {
+    "id": 5,
+    "title": "آموزش CNG — علت روی گاز نرفتن خودرو",
+    "url": "https://amoozeshcng.ir/the-reason-for-the-car-not-stepping-on-the-gas/"
+   },
+   {
+    "id": 6,
+    "title": "Wikipedia — IKCO Arisun",
+    "url": "https://en.wikipedia.org/wiki/IKCO_Arisun"
+   }
+  ]
+ },
  "ikco-arisun-2": {
   "verdict": "ok",
   "duplicate_of": "",
@@ -1327,6 +1378,61 @@
     "id": 21,
     "title": "Renault DP0 (AL4) fault finding manual MR341 — DF049 pressure regulation fault",
     "url": "https://www.scribd.com/doc/78931265/Renault-DP0-AL4-Fault-Finding-MR341LAGUNA2"
+   }
+  ]
+ },
+ "pars-khodro-pars-nova": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "ادعای اصلی پیش‌نویس تأیید شد: پارس نوآ موتور ME16 سایپا، گیربکس دستی ۵ سرعته و فرمان برقی (EPS) دارد و فقط بدنه و تعلیق را از تندر ۹۰ گرفته — پس ایرادهای موتوری و گیربکسی تندر ۹۰ (کیت تسمه K4M، تایپت، کوئل، دریچه گاز، نشتی روغن گیربکس از گردگیر پلوس JH3، گیربکس اتوماتیک DP0) واقعاً به آن ربطی ندارد. بررسی فاول‌به‌فاول پروفایل تأییدشده تندر ۹۰ نشان داد از ۹ فاول آن فقط یکی (بوش و سیبک جلوبندی) به پارس نوآ منتقل می‌شود.",
+   "مشخصات دقیق شد (منبع ۳ باما): ۱۱۱ اسب و ۱۵۰ نیوتن‌متر به‌جای بازه «۱۱۱ تا ۱۱۵ اسب و ۱۴۷ تا ۱۵۰ نیوتن‌متر»؛ فرمان برقی، ABS/EBD/BA، ESC، ترمز عقب کاسه‌ای و مصرف حدود ۷ لیتر تأیید شد.",
+   "سال شروع از «حدود ۱۴۰۲» نوشته شد تا با یادداشت منتقد روستر (عرضه کادیلا در ۲۰۲۳) بخواند.",
+   "فاول سوم اضافه شد: ناتمیز بودن تعویض دنده و صدای گیربکس دستی، که رسانه‌های ایرانی از پکیج مشترک شاهین دنده‌ای (ME16 + گیربکس دستی) برای پارس نوآ پیش‌بینی کرده‌اند — با confidence پایین و هشدار صریح که استنتاج است.",
+   "در هر سه فاول صریح نوشته شد که پایه شواهد، قطعه مشترک یا خودروی هم‌پیشرانه است نه گزارش مالکان پارس نوآ.",
+   "تیپ تشخیصی تازه اضافه شد: چون سابقه میدانی این خودرو کم است، عیب‌یابی از پایه و کدخوانی مقدم بر تکیه بر فهرست ایرادهاست؛ نکته ترمز کاسه‌ای عقب و بی‌ربط بودن ایرادهای گیربکس اتوماتیک تندر ۹۰ هم اضافه شد.",
+   "verdict روی weak گذاشته شد: هیچ فاولی با گزارش میدانی اختصاصی پارس نوآ پشتیبانی نمی‌شود و هر سه فاول استنتاج از خودروهای هم‌قطعه‌اند؛ برای خودرویی به این تازگی این نتیجه پذیرفتنی است، ولی دستیار نباید این فاول‌ها را قوی فرض کند."
+  ],
+  "removed_claims": [
+   "کد گیربکس «5F18PE» حذف شد — در منابعی که باز شد تأیید نشد (باما فقط «۵ دنده دستی» می‌گوید و یک منبع دیگر برای شاهین دنده‌ای کد BMT5 آورده)؛ فقط «دستی ۵ سرعته هم‌خانواده شاهین» ماند.",
+   "نام «پارس آریا» از فهرست نام‌های قبلی حذف شد — تأیید نشد؛ کادیلا و P90 ماند.",
+   "عبارت «خریداران سری اول نقش آزمایش‌کننده کیفیت دارند» از شرح فنی فاول برداشته شد — قضاوت رسانه‌ای است نه علت فنی."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معرفی و بررسی مشخصات پارس نوآ: آیا ال ۹۰ ایرانی ارزش خرید دارد؟",
+    "url": "https://www.hamrah-mechanic.com/mag/pars-nova-review/"
+   },
+   {
+    "id": 2,
+    "title": "باما — بررسی پارس نوآ (سایپا کادیلا یا تندر P90 ایرانی): موتور ME16، گیربکس دستی و تعلیق ال ۹۰",
+    "url": "https://bama.ir/news/14107/%D8%AA%D9%86%D8%AF%D8%B1-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B3%D8%A7%DB%8C%D9%BE%D8%A7"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی پارس نوآ ۱٫۶ دنده‌ای (ME16، ۱۱۱ اسب، ۱۵۰ نیوتن‌متر، فرمان برقی، ABS/EBD/ESC، ترمز عقب کاسه‌ای)",
+    "url": "https://bama.ir/car-reviews/parsnoa/1.6liter-specs-1606-mt"
+   },
+   {
+    "id": 4,
+    "title": "فرارو — مقایسه پارس نوآ و شاهین؛ ال ۹۰ ایرانی ارزش خرید دارد؟",
+    "url": "https://fararu.com/fa/news/906028/"
+   },
+   {
+    "id": 5,
+    "title": "رنوساز — رایج‌ترین علائم خرابی جلوبندی ال ۹۰ (تعلیق مشترک با پارس نوآ)",
+    "url": "https://renosaz.com/%D8%B9%D9%84%D8%A7%D8%A6%D9%85_%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C_%D8%AC%D9%84%D9%88%D8%A8%D9%86%D8%AF%DB%8C_%D8%A7%D9%84_90/"
+   },
+   {
+    "id": 6,
+    "title": "ویکی‌پدیای فارسی — پارس نوآ",
+    "url": "https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B1%D8%B3_%D9%86%D9%88%D8%A2"
+   },
+   {
+    "id": 7,
+    "title": "سپند خودرو — بررسی کامل عملکرد موتور ME16 سایپا؛ مزایا و معایب",
+    "url": "https://sepandkhodro.com/blog/me16-engine/"
    }
   ]
  },
@@ -2983,6 +3089,84 @@
    }
   ]
  },
+ "faw-besturn-b30": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "کد موتور CA4GB16 و گشتاور ۱۵۵ نیوتن‌متر افزوده و توان به «۱۰۷ تا ۱۰۹ اسب بخار» اصلاح شد.",
+   "ایراد تعلیق از حالت مبهم «تنظیم تعلیق و استهلاک زودهنگام» به تصویر مستند تغییر کرد: تعلیق از کارخانه بیش از حد نرم است، پس غلتش بدنه در پیچ و کوبش روی دست‌انداز می‌دهد و قطعات جلوبندی زود مستهلک می‌شوند. هر دو منبع بازشده همین را می‌گویند و هیچ‌کدام تعلیق را «سفت» نخوانده‌اند.",
+   "نکته تشخیصی «منابع درباره سفتی یا نرمی تعلیق اختلاف نظر دارند» با نکته قطعی جایگزین شد: نرمی و غلتش ذاتی است، صدای تق‌تق در پیچ و ترمز نشانه خرابی جلوبندی است.",
+   "به ایراد گیربکس، علامت ضربه هنگام تعویض دنده و بازه عملی تعویض روغن (۴۰ تا ۶۰ هزار کیلومتر به توصیه تعمیرکار ایرانی) افزوده شد.",
+   "به ایراد موتور، بالا رفتن تدریجی مصرف سوخت و راه تفکیک «کم‌توانی ذاتی» از «ایراد سنسور/دریچه گاز» با دیاگ اضافه شد.",
+   "منبع فنی مشخصات (auto-data/ویکی‌پدیا) به فهرست منابع اضافه شد."
+  ],
+  "removed_claims": [
+   "ادعای «نور داخل صندلی عقب کم است» از ایراد چراغ حذف شد؛ فقط ضعف نور پایین در منبع آمده است.",
+   "هدج «صدای تعلیق را می‌توان هم به سفتی و هم به نرمی نسبت داد» حذف شد — منابع بازشده اختلافی ندارند و هر دو تعلیق را نرم توصیف می‌کنند؛ نگه داشتن این ابهام تشخیص را بی‌جهت باز می‌گذاشت.",
+   "فهرست کلیشه‌ای ترمز تعمیرگاه (سوت زدن لنت، لرزش پدال، پدال نرم یا سفت) اضافه نشد: متن قالبی و غیراختصاصی این مدل است.",
+   "ادعای «ضرایب کوتاه گیربکس» به‌عنوان علت تأخیر حذف شد؛ در منابع بازشده تأیید نشد و فقط نگاشت محافظه‌کارانه پشتیبانی می‌شود."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "با مزایا و معایب بسترن B30 آشنا شوید — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/advantages-and-disadvantages-of-besturn-b30/"
+   },
+   {
+    "id": 2,
+    "title": "مشکلات رایج در بسترن B30 — اکبر توکیو",
+    "url": "https://akbartokyo.com/bedside-b30-problems/"
+   },
+   {
+    "id": 3,
+    "title": "معایب بسترن B30 — Z4Car",
+    "url": "https://z4car.com/naghd/%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-4-%D8%AF%D9%84%DB%8C%D9%84-%D8%A8%D8%B3%D8%AA%D8%B1%D9%86-b30-%D9%86%D8%AE%D8%B1%DB%8C%D8%AF"
+   },
+   {
+    "id": 4,
+    "title": "Bestune B30 — Wikipedia / auto-data (1.6 CA4GB16, 109 hp, 155 Nm, 6AT)",
+    "url": "https://www.auto-data.net/en/faw-besturn-b30-1.6-109hp-34984"
+   }
+  ]
+ },
+ "faw-besturn-b50": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "اختلاف ۱٫۶ در برابر ۱٫۸ حل شد: هر دو درست‌اند ولی مربوط به دو نسخه‌اند — B50 اولیه موتور ۱٫۶ لیتری BWH (۱۰۲ تا ۱۰۳ اسب، ۱۴۵ نیوتن‌متر) و فیس‌لیفت B50F موتور ۱٫۸ لیتری ET3 (۱۴۲ اسب، ۱۷۲ نیوتن‌متر) دارد. هر دو نسخه در ایران عرضه شده‌اند، پس هر دو در فهرست variants و engines آمد.",
+   "دستور «حجم موتور را بپرسید» به پرسش دقیق‌تر و قابل پاسخ «B50 است یا B50F؟» تبدیل شد که خودش حجم موتور را مشخص می‌کند.",
+   "کدهای موتور BWH و ET3 و ریشه فولکس‌واگنی موتور ۱٫۶ افزوده شد.",
+   "گیربکس اتوماتیک صراحتاً «۶ سرعته آیسین» مشخص شد.",
+   "ادعای «توان موتور نسبت به وزن کم است» فقط برای نسخه ۱٫۶ معنا دارد و چون برای ۱٫۸ (۱۴۲ اسب) نادرست است، از توضیح موتور برداشته شد."
+  ],
+  "removed_claims": [
+   "«گیربکس دستی ۶ سرعته» از فهرست گیربکس‌ها حذف شد: ویکی‌پدیا برای این نسل دستی ۵ سرعته می‌گوید و نسخه ایرانی در منابع فقط اتوماتیک است؛ عدد ۶ سرعته دستی احتمالاً اشتباه مجله فارسی است.",
+   "«وزن حدود ۱۳۰۰ کیلوگرم» حذف شد — در منابع بازشده تأیید نشد.",
+   "ادعای کلی «توان کم موتور» به‌عنوان زمینه ایراد حذف شد چون به نسخه ۱٫۸ تعمیم‌پذیر نیست."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "با مزایا و معایب بسترن B50 آشنا شوید — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/problems-and-benefits-of-besturn-b50/"
+   },
+   {
+    "id": 2,
+    "title": "تعمیر گیربکس اتوماتیک بسترن B50 — تک گیربکس",
+    "url": "https://takgearbox.com/besturn-b50-gearbox-repair/"
+   },
+   {
+    "id": 3,
+    "title": "Bestune B50 — Wikipedia (engines 1.6 BWH و 1.8 ET3، گیربکس اتوماتیک ۶ سرعته آیسین)",
+    "url": "https://en.wikipedia.org/wiki/Bestune_B50"
+   },
+   {
+    "id": 4,
+    "title": "بسترن B50F، مشخصات و بررسی تخصصی — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/carreview/besturn/besturnb50f/"
+   }
+  ]
+ },
  "bahman-dignity": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -3120,6 +3304,55 @@
     "id": 5,
     "title": "همراه مکانیک — مشخصات فیدلیتی پرستیژ از نظر فنی، طراحی و آپشن",
     "url": "https://www.hamrah-mechanic.com/mag/bahman-fidelity-prestige-review/"
+   }
+  ]
+ },
+ "bahman-respect": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "گیربکس تأیید شد: ریسپکت پرایم گیربکس CVT با شبیه‌سازی ۹ نسبت دارد، نه دوکلاچه — پس ایرادهای دوکلاچه خشک فیدلیتی پرایم (لرزش و سوختن کلاچ) نباید به این خودرو تعمیم داده شود. توضیح transmissions_fa کامل‌تر شد.",
+   "توان موتور از «حدود ۱۵۵ اسب» به «۱۵۴ اسب در ۵۵۰۰ دور، ۲۳۰ نیوتن‌متر از ۱۷۵۰ تا ۴۰۰۰ دور» دقیق شد.",
+   "ایراد ناک تأیید و تقویت شد: در انجمن بچرخ پرتکرارترین شکایت مالکان است (سربالایی، کولر روشن، از دور ۵۰۰۰ به بالا، تشدید با بنزین بی‌کیفیت)؛ استناد به منبع ۱ حذف شد چون آن صفحه اصلاً از ناک حرف نمی‌زند.",
+   "ایراد صدای جلوبندی و سپر از low به medium ارتقا یافت — چند مالک مستقل آن را گزارش کرده‌اند.",
+   "ترتیب فاول‌ها عوض شد: صدای جلوبندی و ایرادهای برقی جلوتر از قفل شدن دسته دنده (که تنها یک گزارش دارد) آمدند.",
+   "تیپ تشخیصی مصرف سوخت با عدد کارخانه‌ای (حدود ۷٫۲ لیتر ترکیبی) مقایسه شد تا فاصله گزارش‌های مالکان معنا پیدا کند؛ صدای باد در سرعت بالا هم به تیپ اضافه شد.",
+   "یادداشت نگهداری CVT صریح‌تر شد (اشتباه نکردن روغن CVT با روغن دوکلاچه/اتوماتیک)."
+  ],
+  "removed_claims": [
+   "ایراد «روشن شدن مکرر چراغ EPC در حدود ۲۵ هزار کیلومتر» حذف شد — تنها منبعش صفحه همراه مکانیک بود و در متن آن صفحه هیچ اشاره‌ای به EPC نیست؛ پشتوانه مستقل هم پیدا نشد.",
+   "ادعای «شمع‌ها زودتر از موعد می‌سوزند» از شرح ناک حذف شد — در هیچ منبعی تأیید نشد (شمع در فهرست قطعات ماند)."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — ریسپکت بخریم یا نه؟ مزایا و معایب ریسپکت بهمن موتور",
+    "url": "https://www.hamrah-mechanic.com/mag/respect-advantages-and-disadvantages/"
+   },
+   {
+    "id": 2,
+    "title": "همراه مکانیک — مشخصات ریسپکت بهمن موتور از نظر فنی، طراحی و آپشن",
+    "url": "https://www.hamrah-mechanic.com/mag/respect-bahman/"
+   },
+   {
+    "id": 3,
+    "title": "خودرو۴۵ — مشخصات فنی ریسپکت بهمن موتور",
+    "url": "https://khodro45.com/%D8%B1%D8%B3%D9%BE%DA%A9%D8%AA-%D8%A8%D9%87%D9%85%D9%86-%D9%85%D9%88%D8%AA%D9%88%D8%B1/"
+   },
+   {
+    "id": 4,
+    "title": "بچرخ — ریسپکت پرایم تیپ ۲؛ نظرات کاربران و بررسی مشکلات و معایب",
+    "url": "https://becharkh.com/forum/car?s=1&brand=bahman-motor&model=bahman-respect-prime-tip2"
+   },
+   {
+    "id": 5,
+    "title": "آیتول — مشخصات ریسپکت ۲ (بررسی نظرات، مزایا و معایب)",
+    "url": "https://itoll.com/news/respect-prime2-spec/"
+   },
+   {
+    "id": 6,
+    "title": "NS Car — آپدیت موتور و گیربکس تیگو ۷ پرو (همان موتور SQRE4T15C)",
+    "url": "https://ns-car.com/tiggo-7-pro-remap-update/"
    }
   ]
  },
@@ -3740,6 +3973,45 @@
    }
   ]
  },
+ "lifan-520": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "ایراد گیربکس دستی به‌عنوان اصلی‌ترین ایراد این مدل افزوده و در صدر فهرست قرار گرفت؛ منابع ایرانی (صفحه تخصصی تعمیر گیربکس ۵۲۰، بررسی بهمن یدک و نظرات مالکان) همگی گیربکس را نقطه‌ضعف این خودرو می‌دانند.",
+   "دو ایراد تک‌منبعی (کویل و سیستم جرقه؛ ضعف سیستم خنک‌کاری) با اطمینان low و با تذکر صریح «فقط یک منبع دارد» افزوده شد.",
+   "توصیف موتور اصلاح شد: توان حدود ۱۰۵ اسب و اشاره به اینکه منابع ایرانی برای همین موتور روی لیفان ۶۲۰ عدد بالاتری گفته‌اند؛ ادعای استاندارد آلایندگی یورو ۳ که تأیید نشد حذف شد.",
+   "توصیف «۵۲۰i = نسخه اصلاح‌شده با گزینه اتوماتیک» به هدج صادقانه تبدیل شد: منابع بازشده فقط دستی ۵ سرعته را تأیید می‌کنند و روشن نیست ۵۲۰i دقیقاً چه نسخه‌ای است.",
+   "یک نکته تشخیصی در صدر افزوده شد که صراحتاً می‌گوید این پروفایل ضعیف است و نباید به‌عنوان فرض قوی به‌کار رود."
+  ],
+  "removed_claims": [
+   "ایراد «ضعف فرمان هیدرولیک و سنگینی آن در سرعت کم»: تنها منبعش (صفحه بررسی همراه مکانیک) در این بازبینی باز نشد و هیچ منبع دیگری آن را تکرار نکرد؛ یک قضاوت سلیقه‌ای درباره حس فرمان است نه ایراد فنی مستند.",
+   "ادعای «فراخوان کرمان موتور برای گیربکس لیفان ۵۲۰» در متن نیامد: فقط در خلاصه نتایج جستجو دیده شد و در هیچ صفحه بازشده‌ای تأیید نشد؛ ایراد گیربکس بدون ادعای فراخوان نوشته شد.",
+   "استاندارد آلایندگی «یورو ۳» از توضیح موتور حذف شد — تأیید نشد.",
+   "ایرادهای «استهلاک جلوبندی» و «خرابی قطعات برقی» از منبع فروشگاهی اضافه نشد: فهرست کلیشه‌ای قطعات فروشی است و اختصاصی این مدل نیست (همان معیار بازبینی‌های لیفان ۶۲۰ و X60)."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "لیفان ۵۲۰ — مشخصات و بررسی تخصصی — همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/carreview/lifan/520kermanmotor/"
+   },
+   {
+    "id": 2,
+    "title": "بررسی تعمیر گیربکس خودرو لیفان ۵۲۰ — سامیت خودرو",
+    "url": "https://summitkhodro.com/weblog/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D9%84%DB%8C%D9%81%D8%A7%D9%86-%DB%B5%DB%B2%DB%B0/"
+   },
+   {
+    "id": 3,
+    "title": "لیفان ۵۲۰ — نظرات کاربران و بررسی مشکلات و معایب — بچرخ",
+    "url": "https://becharkh.com/forum/car?s=1&brand=lifan&model=520"
+   },
+   {
+    "id": 4,
+    "title": "بررسی لیفان ۵۲۰ + مزایا و معایب — بهمن یدک",
+    "url": "https://bahmanmba.com/lifan-520-review/"
+   }
+  ]
+ },
  "lifan-620": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -3874,6 +4146,60 @@
     "id": 5,
     "title": "Lifan X50 — Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lifan_X50"
+   }
+  ]
+ },
+ "lifan-820": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "اختلاف حجم موتور حل شد: نسخه ایران فقط ۲٫۴ لیتری با اتوماتیک ۶ سرعته است (خودرو ۴۵ و car.ir و ویکی‌پدیا هم‌خوان‌اند)؛ دستور «حجم موتور را از مالک بپرسید» حذف شد.",
+   "گشتاور از ۲۳۱ به ۲۲۱ نیوتن‌متر در ۴۵۰۰ دور اصلاح شد (منابع ایرانی) و عدد چینی ۱۶۷ اسب / ۲۲۶ نیوتن‌متر به‌عنوان اختلاف استاندارد اندازه‌گیری ذکر شد.",
+   "ایراد تقه زدن گیربکس با علت مشخص‌تر (شیربرقی و والوبادی) و منبع سوم (تعمیرگاه تخصصی لیفان) تقویت شد.",
+   "ایراد داغ شدن گیربکس بازنویسی شد: علت اصلی افت سطح روغن بر اثر نشتی و روغن غیراستاندارد است و علامت لغزش دنده به آن افزوده شد؛ اطمینان از low به medium رسید.",
+   "ایراد «ناهماهنگی موتور و گیربکس» با گزارش مالکان در خودرو ۴۵ پشتیبانی شد و صراحتاً به‌عنوان رفتار ذاتی مدل (نه خرابی) علامت‌گذاری شد."
+  ],
+  "removed_claims": [
+   "موتورهای «۱٫۸ و ۲٫۰ توربو» از توضیح موتور حذف شد: نسخه ۱٫۸ فقط تنفس طبیعی و فقط در بازار چین بود و هیچ منبعی نسخه توربو برای ۸۲۰ تأیید نمی‌کند؛ در ایران هم فقط ۲٫۴ مونتاژ شد.",
+   "ایراد تعلیق («روی دست‌انداز ضربه را خوب جذب نمی‌کند»): نظر بررسی‌کننده است نه ایراد فنی مستند، و هم‌راستا با حذف همین ادعا در بازبینی لیفان X50 برداشته شد.",
+   "نکته تشخیصی «فرمان برقی در سرعت بالا سفت نمی‌شود» حذف شد — در منابع بازشده تأیید نشد.",
+   "ایرادهای فهرست کلیشه‌ای تعمیرگاه (نشتی روغن از کاسه‌نمد و واشر سرسیلندر، خرابی استارت و دینام) اضافه نشد: متن قالبی و غیراختصاصی این مدل است، مطابق همان معیاری که در بازبینی لیفان ۶۲۰ و X60 اعمال شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "معایب لیفان ۸۲۰ که شما را از خرید آن پشیمان می‌کند — مجله همراه مکانیک",
+    "url": "https://www.hamrah-mechanic.com/mag/pros-of-lifan-820/"
+   },
+   {
+    "id": 2,
+    "title": "بررسی لیفان ۸۲۰ + مزایا و معایب — دنیای یدکی احمدی",
+    "url": "https://ahmadimba.com/review-lifan-820-pros-and-cons/"
+   },
+   {
+    "id": 3,
+    "title": "تعمیر گیربکس لیفان ۸۲۰ و حل مشکل تقه زدن گیربکس — تعمیرگاه گیربکس اتوماتیک مرتضی",
+    "url": "https://gearboxautomaticmorteza.ir/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D9%84%DB%8C%D9%81%D8%A7%D9%86-820/"
+   },
+   {
+    "id": 4,
+    "title": "تعمیر گیربکس اتوماتیک لیفان ۸۲۰ — گیربکس بهروز",
+    "url": "https://gearboxbehrouz.com/lifan/lifan-820/"
+   },
+   {
+    "id": 5,
+    "title": "تعمیرگاه تخصصی لیفان ۸۲۰ — ایرادات رایج موتور، گیربکس، برق و جلوبندی",
+    "url": "https://chinesecarrepairshop.ir/lifan-820-repair-shop"
+   },
+   {
+    "id": 6,
+    "title": "لیفان ۸۲۰؛ بررسی و مشخصات فنی — خودرو ۴۵",
+    "url": "https://khodro45.com/mag/lifan-820/"
+   },
+   {
+    "id": 7,
+    "title": "Lifan 820 — Wikipedia (engine options 1.8 and 2.4, assembly in Iran)",
+    "url": "https://en.wikipedia.org/wiki/Lifan_820"
    }
   ]
  },
@@ -4057,6 +4383,47 @@
     "id": 4,
     "title": "Hyundai i20: solving common car problems — carnews.nl",
     "url": "https://carnews.nl/en/car-problems/car-problems-hyundai/hyundai-i20/"
+   }
+  ]
+ },
+ "daewoo-cielo": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "کد موتور G15MF و مشخصات درست (۷۵ اسب، ۱۲۴ نیوتن‌متر، SOHC 8 سوپاپ MPFI، نمونه‌های اولیه TBI) جایگزین «۷۵ تا ۸۰ اسب و ۱۲۷ نیوتن‌متر» شد.",
+   "ادعای «برای رسیدن به ترموستات باید تسمه تایم باز شود» حذف شد؛ به جای آن این واقعیت درست ذکر شد که واترپمپ با تسمه تایم می‌چرخد و باید هم‌زمان عوض شود.",
+   "ایراد دلکو به صدر فهرست منتقل و با منبع فنی انگلیسی (نقطه‌ضعف شناخته‌شده سنسور مغناطیسی دلکو) تقویت شد.",
+   "ایراد «مصرف سوخت بالا» بازنویسی شد تا علت مشخص (سنسور اکسیژن و انژکتور گرفته) و علائم قابل تشخیص (دور آرام ناپایدار، چراغ چک) داشته باشد، نه صرفاً شکایت خریدار.",
+   "ایراد نشتی روغن تفکیک شد: نشتی واشر درب سوپاپ و کارتل به‌عنوان ضعف مستند با اطمینان متوسط ماند و واشر سرسیلندر به یک احتمال ثانویه با شرط تست فشار تنزل یافت.",
+   "سه ایراد مستند اضافه شد: بازه ۶۰ هزار کیلومتری تسمه تایم و خم شدن سوپاپ در صورت پارگی، ساییدگی میل‌سوپاپ در اثر روغن بد، و استهلاک بالای جلوبندی (منبع ایرانی).",
+   "منبع مستقل fileon (منبع ۳ پیش‌نویس) با دو منبع معتبرتر ایرانی (پدال و Z4Car) و یک منبع فنی موتور جایگزین شد."
+  ],
+  "removed_claims": [
+   "«ترموستات و واترپمپ فقط با باز کردن تسمه تایم قابل دسترسی‌اند» — برای ترموستات پشتیبانی نشد؛ فقط واترپمپ با تسمه تایم درگیر است.",
+   "«سوختن واشر سرسیلندر و قاطی شدن آب و روغن» به‌عنوان ایراد مستقل با اطمینان پایین حذف و به احتمال ثانویه ذیل نشتی روغن تبدیل شد (تنها منبعش یک وبلاگ تبلیغاتی بود).",
+   "«گیربکس دستی پیچ تخلیه روغن ندارد و باید با مکش تخلیه شود» از نکات تشخیصی حذف شد — هیچ منبع قابل اتکایی این را برای سیلو تأیید نکرد.",
+   "توان «تا ۸۰ اسب بخار» و گشتاور «۱۲۷ نیوتن‌متر» — منابع ۷۵ اسب و ۱۲۴ نیوتن‌متر می‌گویند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "هر آنچه که باید راجع به دوو سیلو بدانید — چرخان",
+    "url": "https://charkhan.com/55859/%D9%87%D8%B1-%D8%A2%D9%86%DA%86%D9%87-%DA%A9%D9%87-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A8%D9%87-%D8%AF%D9%88%D9%88-%D8%B3%DB%8C%D9%84%D9%88%D9%88-%D8%A8%D8%AF%D8%A7%D9%86%DB%8C%D8%AF/"
+   },
+   {
+    "id": 2,
+    "title": "راهنمای خرید دوو سیلو دست دوم: مزایا و معایب — پدال",
+    "url": "https://www.pedal.ir/buying-guide/740793-daewoo-cielo-review-iran/"
+   },
+   {
+    "id": 3,
+    "title": "معایب دوو سیلو و ۶ دلیل برای نخریدن آن — Z4Car",
+    "url": "https://z4car.com/naghd/%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D8%AF%D9%88%D9%88-%D8%B3%DB%8C%D9%84%D9%88"
+   },
+   {
+    "id": 4,
+    "title": "Daewoo G15MF engine — specifications, weak points and reliability",
+    "url": "https://mymotorlist.com/engines/daewoo/g15mf/"
    }
   ]
  },
@@ -5050,6 +5417,55 @@
    }
   ]
  },
+ "xtrim-vx": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Roster critic note CONFIRMED: the row really does merge three different cars. VX/QX (large crossover), TXL/TX (mid-size) and LX/SX (compact) are separate models with different sizes and, for LX, a different powertrain. The menu must force the exact model before any engine or gearbox part is quoted.",
+   "LX powertrain is NO LONGER unverified: Mediran Khodro's own product page and Persian reviews give 1.6 turbo GDI, 197 hp / 290 Nm, 7-speed dual-clutch, AWD — different from the 2.0T/8AT of VX and TXL.",
+   "VX engine code added: SQRF4J20C, 261 hp @5500, 400 Nm @1750–4000 (khodro45).",
+   "TXL corrected: it shares the same 2.0T and the 8-speed Aisin torque-converter automatic with AWD (khodro45), so the draft's implication that all three have different engines is wrong — only LX differs.",
+   "Naming corrected: VX is sold as اکستریم QX since 1404, TXL also appears as TX, and LX is now marketed as اکستریم SX — all three renames are documented and matter for the parts menu.",
+   "VX years corrected to ۱۴۰۳ تا امروز (bama lists model years 1403–1405; deliveries as QX from 1404).",
+   "Drivetrain added: permanent AWD on VX/QX, AWD on TXL and on LX/SX.",
+   "Fuel-tank figure in the draft tip (۵۶ لیتر) corrected to ۶۵ لیتر per khodro45; the '360 km per tank' owner anecdote was dropped as it was built on the wrong tank size.",
+   "Both remaining faults demoted to low confidence — neither is a documented component failure, only a review caution and an owner impression."
+  ],
+  "removed_claims": [
+   "Touchscreen lag / no physical AC buttons / heated seat not working as an 'electrical fault': the touchscreen-only design is a documented design complaint, not a failure, and the seat heater was a single unverified anecdote. Moved to diagnostic tips.",
+   "Wind noise from the windscreen and paint/panel-gap complaints as a 'body fault': build-quality impressions from review blogs, not a defect pattern; no repair or recall evidence.",
+   "AEB (ترمز اضطراری خودکار) acting erratically: could not be confirmed in any source opened; removed from the tips.",
+   "Claim that Xtrim LX engine, gearbox and drivetrain are unknown: resolved (1.6T GDI, 7DCT, AWD).",
+   "Claim that TXL's transmission is an 8AT of unstated drive and different engine from VX: corrected — same SQRF4J20C 2.0T and the same Aisin 8AT AWD."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بررسی اجمالی اکستریم VX و نظرات مردمی کاربران و مالکان — اُتکس",
+    "url": "https://otex.ir/blog/xtrim-vx-overview-and-popular-opinions-from-users-and-owners"
+   },
+   {
+    "id": 2,
+    "title": "بررسی مزایا و معایب اکستریم VX — کاریزو",
+    "url": "https://cariso.ir/review-of-xtrim-vx/"
+   },
+   {
+    "id": 3,
+    "title": "اکستریم VX (اکستریم QX)؛ بررسی و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/xtrim-vx/"
+   },
+   {
+    "id": 4,
+    "title": "اکستریم TXL | بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/chery-exeed-txl/"
+   },
+   {
+    "id": 5,
+    "title": "اکستریم ال ایکس (XTRIM LX) — سایت رسمی مدیران خودرو / ام‌وی‌ام چری",
+    "url": "https://mvmchery.com/product/xtrim/lx/"
+   }
+  ]
+ },
  "farda-sx5": {
   "verdict": "weak",
   "duplicate_of": "",
@@ -5134,6 +5550,44 @@
     "id": 5,
     "title": "راهنمای تخصصی تعمیر موتور FMC T5 — گیربکس پکان",
     "url": "https://gearbox-pekan.com/fmc-t5/"
+   }
+  ]
+ },
+ "farda-suba-m4": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Engine code added: 4A95TD (1.5 turbo, Mitsubishi-derived), 195 hp / 285 Nm — confirmed by bama.ir spec page and khodro45.",
+   "Transmission confirmed and made definite: 7-speed WET dual-clutch (bama.ir + khodro45); draft said wet/dry unverified.",
+   "Years corrected to ۱۴۰۲ تا ۱۴۰۴ per bama.ir model-year listing (roster said 1401; no source supports a 1401 start).",
+   "Added a fifth fault: radiator failure at ~37,000 km with long parts wait (becharkh owner report), plus a cooling maintenance note.",
+   "DCT shifting fault confidence lowered medium→low: it is a single owner report and another owner in the same thread reports the gearbox as fine; khodro45 (source 2 of the draft) documents no faults at all, so it was removed from that fault's citations.",
+   "AC fault kept at medium: owner report plus the dealership's own statement that the AC is undersized for this cabin.",
+   "Turbo and electrical faults kept but re-cited to the forum only; the finds.ir source cited in the draft was dropped as it carries no independent evidence.",
+   "Parts lists cleaned (added فن کندانسور, لوله روغن‌رسانی توربو; dropped duplicate TCU/mechatronic vagueness).",
+   "Diagnostic tips now state explicitly that all evidence is single-owner anecdote from one forum."
+  ],
+  "removed_claims": [
+   "khodro45 as a source of fault evidence: the review lists only advantages and has an empty disadvantages section — it supports specs, not faults.",
+   "finds.ir 'معایب' page dropped as a source: aggregator content with no first-hand reports behind the claims.",
+   "'صدای ناک موتور' as a separate engine-knock claim: appears only as a vague aggregated complaint, not traceable to a specific owner report, so it was folded away rather than kept as a fault.",
+   "Claim that the DCT maker and wet/dry type are unknown: both now resolved (wet 7DCT)."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فردا سوبا M4 | نظرات کاربران و بررسی مشکلات و معایب — انجمن بچرخ",
+    "url": "https://becharkh.com/forum/car?brand=farda&model=m4&s=1"
+   },
+   {
+    "id": 2,
+    "title": "سوبا M4 فردا موتورز؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/fmc-suba-m4/"
+   },
+   {
+    "id": 3,
+    "title": "مشخصات فنی فردا سوبا M4 سال ۱۴۰۲ تا ۱۴۰۴ — باما",
+    "url": "https://bama.ir/car-reviews/farda/subam4-specs-1435"
    }
   ]
  },
@@ -5314,6 +5768,53 @@
     "id": 4,
     "title": "کاربلد — بررسی کامل بی وای دی F3 (گیربکس دوکلاچه خشک ۶ سرعته)",
     "url": "https://www.carbalad.com/a/541/"
+   }
+  ]
+ },
+ "byd-s6": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "گیربکس تأیید شد: همراه مکانیک برای نسخه ایرانی «اتوماتیک دوکلاچه ۶ سرعته» و محرک جلو آورده و ویکی‌پدیا هم DCT شش سرعته را در گزینه‌های S6 دارد — پس CVT نیست و ایرادهای CVT نباید به آن نسبت داده شود.",
+   "ادعای «دوکلاچه خشک» به «دوکلاچه ۶ سرعته» تعدیل شد: هیچ منبع ایرانی یا ویکی‌پدیا خشک یا تر بودن کلاچ این گیربکس را تصریح نکرده است؛ متن نگهداری هم متناسب اصلاح شد.",
+   "کد موتور 4G69S4N قطعی نیست: ویکی‌پدیا برای S6 هم موتور میتسوبیشی 4G69 و هم BYD488QA (۲٫۴) را فهرست کرده؛ کد به شکل محتاطانه «4G69 / BYD488QA» نوشته شد.",
+   "توان و گشتاور از بازه «۱۶۰ تا ۱۶۵ اسب / ۲۲۹ تا ۲۳۴ نیوتن‌متر» به عدد منبع ایرانی (۱۶۰ اسب و ۲۲۹ نیوتن‌متر) دقیق شد.",
+   "ایراد ترمز به‌کلی بازنویسی شد: آنچه مالکان گزارش کرده‌اند «خرابی ترمز دستی» است، نه ضعف عمومی ترمز؛ severity از high به medium آمد.",
+   "ایراد شیشه سمت شاگرد بازنویسی شد تا هم بالابر و هم آب‌بندی را پوشش دهد (گزارش مالک درباره آب‌بندی شیشه بود).",
+   "فاول جدید: از کار افتادن و تعویض مانیتور/سیستم چندرسانه‌ای که مالک S6 گزارش کرده است.",
+   "منبع ۲ (فایندز) از استناد فاول‌ها برداشته شد؛ ادعاهای فاول‌ها فقط با نظرات مالکان همراه مکانیک قابل ردیابی بود.",
+   "رقم مصرف از «حدود ۱۱ لیتر» به «حدود ۱۰ لیتر» طبق منبع اصلاح شد و نکته اشتراک فیلتر با تویوتا اضافه شد."
+  ],
+  "removed_claims": [
+   "«فاصله ترمزگیری زیاد و رفتار نامنظم پدال ترمز» حذف شد — هیچ منبعی چنین چیزی نگفته بود؛ گزارش واقعی درباره ترمز دستی بود.",
+   "ادعای «نبود کنترل پایداری ESP» حذف شد — تأیید نشد و S6 در سال ۲۰۱۲ پنج ستاره C-NCAP گرفته است.",
+   "عدد صفر تا صد «۱۳ تا ۱۴ ثانیه» و وزن «۱۷۰۰ کیلوگرم» از تیپ تشخیصی حذف شد — در منابعی که باز شد تأیید نشد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — بی وای دی S6؛ مشخصات و بررسی تخصصی به‌همراه نظرات مالکان",
+    "url": "https://www.hamrah-mechanic.com/carreview/byd/s6/"
+   },
+   {
+    "id": 2,
+    "title": "فایندز — همه چیز درباره بی وای دی S6؛ مشخصات فنی و معایب",
+    "url": "https://www.finds.ir/iran-news/Car-specifications-technical/BYD-S6-specification-photo-gallery-prices-review/21432"
+   },
+   {
+    "id": 3,
+    "title": "باما — مشخصات فنی بی وای دی S6 سال ۱۳۹۵ تا ۱۳۹۸",
+    "url": "https://bama.ir/car-reviews/byd/s6-specs-985"
+   },
+   {
+    "id": 4,
+    "title": "کارمانیا (نماینده رسمی BYD در ایران) — صفحه BYD S6",
+    "url": "https://karmaniamotors.ir/ProductDetails/22/BYD-S6.html"
+   },
+   {
+    "id": 5,
+    "title": "Wikipedia — BYD S6",
+    "url": "https://en.wikipedia.org/wiki/BYD_S6"
    }
   ]
  },
@@ -6463,6 +6964,56 @@
     "id": 8,
     "title": "مشخصات فنی هیوندای ولستر بازار ایران (۱٫۶ GDI تنفس طبیعی، ۱۳۸ اسب، ۱۶۷ نیوتن‌متر، دوکلاچه ۶ سرعته؛ نسخه توربو وارد ایران نشد) — خودرو۴۵ و همراه مکانیک",
     "url": "https://khodro45.com/mag/hyundai-veloster2016/"
+   }
+  ]
+ },
+ "hyundai-kona-os": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فراخوان تأیید شد: NHTSA 21V301000 دقیقاً النترا ۲۰۱۹–۲۰۲۰ و کونا و ولاستر ۲۰۱۹ تا ۲۰۲۱ با موتور ۲٫۰ Nu MPI را در بر می‌گیرد (۱۲۵٬۸۴۰ خودرو، بازرسی/تعویض موتور + نرم‌افزار PNSS) — همان چیزی که پیش‌نویس گفته بود؛ منبع مستقیم NHTSA/RepairPal به‌عنوان منبع ۶ اضافه شد و شرح مکانیزم خرابی (سختی زیاد رینگ، لب‌پریدگی، خط افتادن سیلندر) دقیق شد.",
+   "نکته مهم ایران اضافه شد: بیشتر کوناهای وارداتی ایران مدل ۲۰۱۸‌اند و بیرون از دامنه فراخوان‌اند؛ این هشدار هم در cause_fa و هم در تیپ تشخیصی صریح شد تا فاول به‌اشتباه به همه کوناها نسبت داده نشود.",
+   "توان موتور از «حدود ۱۵۰ اسب» به «حدود ۱۴۷ اسب» و نوع موتور به «Nu MPI اتکینسون» (طبق متن فراخوان) اصلاح شد.",
+   "کد گیربکس «خانواده A6GF» از transmissions_fa برداشته شد — در منابع بررسی‌شده تأیید نشد؛ فقط «اتوماتیک ۶ سرعته» ماند.",
+   "فاول قفل ماندن دسته دنده در P از medium به low کاهش یافت: بولتن مربوط به مدل هم‌خانواده (النترا) است و روی کونا مستقیماً مستند نشد؛ همین محدودیت در cause_fa نوشته شد.",
+   "فاول صدای ستون فرمان MDPS با تصریح «اختصاصی کونا نیست» نگه داشته شد (confidence پایین).",
+   "فاول برقی تقویت شد: منبع ۳ ایرادهای باتری و هشدارهای الکی نقطه کور/FCA را از مدل ۲۰۱۸ به بعد گزارش می‌کند — یعنی به کوناهای ایران هم می‌خورد؛ FCA به علائم اضافه شد.",
+   "در فاول گیربکس، «کمبود و فرسودگی روغن گیربکس» به‌عنوان علت اصلی گزارش‌شده جلو آمد."
+  ],
+  "removed_claims": [
+   "ادعای «هیوندای برای گیربکس A6GF روال عیب‌یابی و بولتن منتشر کرده» به شکل محتاطانه‌تر بازنویسی شد — چنین بولتنی برای کونا در منابع بررسی‌شده پیدا نشد.",
+   "هیچ ایراد مربوط به کونا الکتریک (فراخوان باتری LG، آتش‌سوزی، سیستم شارژ) در پروفایل نبود و اضافه هم نشد؛ تیپ تشخیصی مربوطه صریح‌تر شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lemberg Law — 2019-2021 Hyundai Kona engine problems and 2.0L Nu MPI piston-ring recall",
+    "url": "https://lemberglaw.com/2019-2021-hyundai-kona-recall-notice/"
+   },
+   {
+    "id": 2,
+    "title": "RecallExplained — Hyundai Kona recalls and NHTSA complaint data (2018 to 2026), recall 21V301000",
+    "url": "https://recallexplained.com/hyundai/kona/"
+   },
+   {
+    "id": 3,
+    "title": "Motor & Wheels — Hyundai Kona problems: 7 common issues explained",
+    "url": "https://motorandwheels.com/hyundai-kona-problems/"
+   },
+   {
+    "id": 4,
+    "title": "CarComplaints — Hyundai TSBs for the 2.0 Nu / 6-speed automatic family (Elantra 2017)",
+    "url": "https://www.carcomplaints.com/Hyundai/Elantra/2017/tsbs/"
+   },
+   {
+    "id": 5,
+    "title": "Cars.com — 2019 Hyundai Kona recalls",
+    "url": "https://www.cars.com/research/hyundai-kona-2019/recalls/"
+   },
+   {
+    "id": 6,
+    "title": "RepairPal / NHTSA — Recall 21V301000: Hyundai engine stalls due to piston ring failure (2019-2020 Elantra, 2019-2021 Kona & Veloster, 2.0L Nu MPI, ۱۲۵٬۸۴۰ خودرو)",
+    "url": "https://repairpal.com/recall/21V301000"
    }
   ]
  },
