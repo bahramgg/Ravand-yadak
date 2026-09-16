@@ -91,6 +91,7 @@ section[id]{scroll-margin-top:var(--head-h)}
   background:var(--blue);transform:scaleX(0);transition:transform .22s;
 }
 .menu a:hover::after,.menu a.is-active::after{transform:scaleX(1)}
+.menu__ai{display:none}   /* the assistant sits in the menu on phones only */
 
 .tools{flex:0 0 auto;display:flex;align-items:center;gap:10px}
 .btn-request{
@@ -764,16 +765,21 @@ body.ai-in-view .totop{opacity:0;visibility:hidden;pointer-events:none}
   .btn-ai span{display:none}
 }
 @media (max-width:991px){
-  /* the menu stays visible on phones: a swipeable row of pills under the logo row */
-  .burger{display:none!important}
-  .topbar__inner{flex-wrap:wrap;height:auto;padding-block:10px 0;gap:10px 12px}
-  .mainnav{order:3;flex:1 0 100%;justify-content:flex-start;min-width:0;margin-inline:-15px}
-  .menu{display:flex;flex-direction:row;align-items:center;gap:8px;width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:2px 15px 10px}
-  .menu::-webkit-scrollbar{display:none}
-  .menu li{flex:0 0 auto}
-  .menu a{display:block;padding:6px 14px;border-radius:30px;font-size:12.5px;color:rgba(255,255,255,.9);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
-  .menu a.is-active{background:var(--blue);border-color:var(--blue);color:#fff}
+  /* phones: the nav lives in a drop-down under the header, opened by the burger, and the assistant
+     is the last item in it — so the bar itself stays logo · cart · burger. */
+  .burger{display:flex}
+  .topbar.is-open,.topbar.is-open.is-top{background:rgba(8,12,19,.97);border-bottom-color:rgba(255,255,255,.09)}
+  .topbar__inner{flex-wrap:wrap;height:auto;min-height:64px;padding-block:10px;gap:10px 12px}
+  .mainnav{order:3;flex:1 0 100%;justify-content:flex-start;min-width:0}
+  .menu{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;padding-bottom:6px}
+  .menu.is-open{display:flex}
+  .menu li{width:100%;border-top:1px solid rgba(255,255,255,.08)}
+  .menu a{display:block;padding:13px 2px;font-size:14px;color:rgba(255,255,255,.9)}
+  .menu a.is-active{color:#fff}
   .menu a::after{display:none}
+  .menu__ai{display:block}
+  .menu__ai a{display:flex;align-items:center;gap:8px;color:#8fc0ef;font-weight:700}
+  .btn-ai{display:none}
   .tools{margin-inline-start:auto}
   .btn-request{display:none}
   .hero__grid{grid-template-columns:1fr;height:auto}
