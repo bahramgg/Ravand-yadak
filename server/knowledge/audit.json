@@ -5553,6 +5553,40 @@
    }
   ]
  },
+ "farda-sx6": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity re-confirmed independently: 4A91T 1.5 turbo, 1499 cc, 147 hp @5500, 200 Nm @4000, CVT, 7 seats in a 2+2+3 layout (khodro45).",
+   "Years corrected: pre-sale Esfand 1398, deliveries during 1399, and NOT offered from 1400 onward — the roster's «۱۳۹۸ تا امروز» is wrong.",
+   "Transmission note expanded: the 5- and 6-speed manuals exist only in export markets, not in Iran, so manual-gearbox parts should not be quoted for an Iranian SX6.",
+   "The draft's claim of zero documented faults was checked and CONFIRMED: the model's own becharkh forum page carries no owner posts at all (only SX5 and T5 posts), and a Persian search turns up no SX6 fault reports. The empty fault list is honest, not lazy.",
+   "Diagnostic tips: added that the forum page itself is empty (so the emptiness is evidence, not an oversight), and a caution not to guess faults from the cars' present age/mileage.",
+   "Maintenance: added the CVT 'come to a full stop before D→N/P' rule; production-stopped wording tightened to 'not offered after 1399' per khodro45."
+  ],
+  "removed_claims": [
+   "Nothing removed — the draft asserted no faults and that position survives verification.",
+   "Not added despite being tempting: the SX5 owner complaints (rain sensor, reversing camera, fog lights) found during this check belong to a different model with a different platform and were deliberately kept out of SX6.",
+   "Not added: the trunk-space criticism from khodro45 — it is a design limitation, not a fault."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "فردا SX6؛ بررسی جامع و مشخصات فنی — خودرو۴۵",
+    "url": "https://khodro45.com/mag/sx6-farda/"
+   },
+   {
+    "id": 2,
+    "title": "بررسی فردا SX6 (دانگ فنگ) — باما",
+    "url": "https://bama.ir/news/12589/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%81%D8%B1%D8%AF%D8%A7-sx6-%D8%AF%D8%A7%D9%86%DA%AF-%D9%81%D9%86%DA%AF"
+   },
+   {
+    "id": 3,
+    "title": "فردا SX6 | نظرات کاربران و بررسی مشکلات و معایب — انجمن بچرخ (هیچ پست مالکی برای این مدل ثبت نشده است)",
+    "url": "https://becharkh.com/forum/car?brand=farda&model=sx6"
+   }
+  ]
+ },
  "farda-suba-m4": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -5588,6 +5622,55 @@
     "id": 3,
     "title": "مشخصات فنی فردا سوبا M4 سال ۱۴۰۲ تا ۱۴۰۴ — باما",
     "url": "https://bama.ir/car-reviews/farda/subam4-specs-1435"
+   }
+  ]
+ },
+ "farda-511": {
+  "verdict": "weak",
+  "duplicate_of": "",
+  "corrections": [
+   "Identity confirmed by Wikipedia: the Iranian Farda 511 is the third-generation Changan Alsvin — 1.5 Blue Core NA petrol (105–106 hp), 5-speed manual or 5-speed dual-clutch. Engine family name added; the exact engine code is still not documented in any source opened, so it stays unspecified rather than guessed.",
+   "The 1.4-litre variant claim was kept but marked as not offered/unconfirmed in Iran (Wikipedia lists it for other markets only).",
+   "The single DCT fault was kept and its symptom made more concrete ('3–4 jerks when moving from N to D'), which is what Pakistani Alsvin owners actually describe; late gearbox-oil changes added as a contributing cause per the same owner reports.",
+   "Extra source added: PakWheels Alsvin owner reviews (id 5), so the fault rests on more than the two forum threads.",
+   "A diagnostic tip was added stating explicitly that the only fault in this profile comes from Pakistani owners, not from Iranian evidence.",
+   "Verdict weak: only one model-specific fault is supportable, and even that is imported from another market."
+  ],
+  "removed_claims": [
+   "Nothing was removed from the draft's fault list — it already contained only the one DCT item, which survives verification at low confidence.",
+   "Generic 'AC not cooling' and 'worn suspension' items found in an SEO parts blog during this check were deliberately NOT added: they are generic wear advice, not Alsvin-specific defects.",
+   "A 1.4-litre Iranian variant: not asserted — no source places it in Iran."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "بررسی اف‌ام‌سی ۵۱۱ فردا موتور (چانگان السوین) — خودروشاپ",
+    "url": "https://khodroshop.ir/article/7872-.html"
+   },
+   {
+    "id": 2,
+    "title": "Changan Alsvin — Wikipedia (نسل سوم، در ایران با نام فردا ۵۱۱)",
+    "url": "https://en.wikipedia.org/wiki/Changan_Alsvin"
+   },
+   {
+    "id": 3,
+    "title": "Alsvin gear issue — DCT error light on — PakWheels Forums",
+    "url": "https://www.pakwheels.com/forums/t/alsvin-lumiere-gear-issue-dct-error-light-on/3001780"
+   },
+   {
+    "id": 4,
+    "title": "Changan Alsvin transmission problems — Gari.pk owner forum",
+    "url": "https://www.gari.pk/cars-motors/changan/alsvin/transmission-problems/"
+   },
+   {
+    "id": 5,
+    "title": "Changan Alsvin owner reviews — PakWheels",
+    "url": "https://www.pakwheels.com/new-cars/changan/alsvin/reviews"
+   },
+   {
+    "id": 6,
+    "title": "فردا موتور | نظرات کاربران و بررسی مشکلات و معایب — انجمن بچرخ (برای ۵۱۱ پستی ثبت نشده است)",
+    "url": "https://becharkh.com/forum/car?s=1&brand=farda"
    }
   ]
  },

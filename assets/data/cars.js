@@ -486,8 +486,16 @@ window.RY_CARS = {
    "group": "domestic",
    "models": [
     {
+     "id": "xtrim-lx",
+     "fa": "LX (از ۱۴۰۴: SX)"
+    },
+    {
+     "id": "xtrim-txl",
+     "fa": "TXL (با نام TX هم عرضه می‌شود)"
+    },
+    {
      "id": "xtrim-vx",
-     "fa": "اکستریم"
+     "fa": "VX (از ۱۴۰۴: QX)"
     }
    ]
   },
