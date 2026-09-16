@@ -191,6 +191,7 @@ section[id]{scroll-margin-top:var(--head-h)}
 }
 .hero__sub{color:#b9c3d0;font-size:14px;line-height:2.1;max-width:440px;margin-top:14px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero__badges{display:none}   /* phones only — see the max-width 991 block */
 
 .hero__scroll{
   position:absolute;z-index:5;bottom:26px;left:50%;transform:translateX(-50%);
@@ -787,12 +788,20 @@ body.ai-in-view .totop{opacity:0;visibility:hidden;pointer-events:none}
     .hero__plate{background-image:url('../img/hero/plate-mobile.jpg');background-position:46% 100%}
     .hero__car{display:none}
   }
-  .hero__veil{background:linear-gradient(to bottom,rgba(4,7,12,.9) 0%,rgba(4,7,12,.72) 40%,rgba(4,7,12,.12) 62%,rgba(4,7,12,.08) 84%,rgba(4,7,12,.72) 100%)}
-  .hero__inner{justify-content:flex-start;padding-block:calc(var(--head-h) + 26px) 0}
-  .hero__title{font-size:32px}
-  .hero__sub{font-size:13.5px;line-height:2}
-  .hero__cta{margin-top:20px}
-  .hero__scroll{bottom:16px}
+  /* darker foot so the full-width buttons stay readable over the wet road */
+  .hero__veil{background:linear-gradient(to bottom,rgba(4,7,12,.9) 0%,rgba(4,7,12,.72) 40%,rgba(4,7,12,.12) 62%,rgba(4,7,12,.38) 82%,rgba(4,7,12,.88) 100%)}
+  /* phones get their own hero composition, not the desktop block scaled down:
+     copy at the top, the car owning the middle, full-width buttons in thumb reach at the foot. */
+  .hero__inner{justify-content:flex-start;align-items:stretch;padding-block:calc(var(--head-h) + 22px) 72px}
+  .hero__kicker{font-size:11.5px}
+  .hero__title{font-size:clamp(30px,8.6vw,38px);line-height:1.32}
+  .hero__sub{display:none}
+  .hero__badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;padding:0}
+  .hero__badges li{list-style:none;font-size:11.5px;line-height:1;color:#cfd9e6;
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:7px 11px}
+  .hero__cta{flex-direction:column;align-items:stretch;gap:10px;width:100%;margin-top:auto}
+  .hero__cta .btn{justify-content:center;padding-block:14px;font-size:14.5px}
+  .hero__scroll{bottom:14px}
   .banner--main{height:300px}
   .promos__grid{grid-template-columns:1fr}
   .cats{flex-wrap:wrap;row-gap:24px}

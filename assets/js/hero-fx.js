@@ -26,8 +26,8 @@
   /* portrait phones show their own 9:16 frame (style.css: plate-mobile.jpg, 768x1376, cover, position 46% 100%);
      smoke and splashes are placed in that frame's coordinates instead of the desktop scene */
   var mobileScene = window.matchMedia('(max-width: 991px) and (orientation: portrait)');
-  var M_W = 768, M_H = 1376, M_POS_X = 0.46, M_POS_Y = 1;
-  var M_EXHAUST_X = 0.13, M_EXHAUST_Y = 0.715, M_GROUND_Y = 0.79;
+  var M_W = 1536, M_H = 2752, M_POS_X = 0.46, M_POS_Y = 1;
+  var M_EXHAUST_X = 0.14, M_EXHAUST_Y = 0.595, M_GROUND_Y = 0.63;
   var exX = 0, exY = 0, groundY = 0;
 
   var LAYERS = [
