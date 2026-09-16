@@ -6470,6 +6470,59 @@
    }
   ]
  },
+ "lexus-rx-al20": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فراخوان 16V198000 (آسیب اورینگ اکچویتور ABS در RX مدل ۲۰۱۶) که در پیش‌نویس فقط در نکات آمده بود، با استعلام مستقیم از NHTSA تأیید و به‌عنوان یک ایراد مستقل با confidence بالا اضافه شد.",
+   "برنامه 23LE04 با منبع مستقل تأیید شد: RX450h مدل ۲۰۱۶ تا ۲۰۱۹، و برای این خودرو هم کیت بوستر و هم کیت پمپ بوستر لازم است؛ نام قطعات اصلاح شد.",
+   "شرح موتور 8AR-FTS اصلاح شد: تزریق ترکیبی D-4ST (مستقیم به‌همراه ریلی)، نه تزریق صرفاً مستقیم.",
+   "ادعای رسوب کربن بازنویسی و بازه آن از «۶۰ تا ۱۰۰ هزار» به «بالای ۱۰۰ هزار کیلومتر» اصلاح شد؛ انژکتور از فهرست قطعات حذف شد چون علت رسوب سوپاپ است نه انژکتور.",
+   "شرح موتور 2GR-FKS دقیق‌تر شد (D-4S و چرخه اتکینسون).",
+   "ضعف واتر پمپ برقی با منبع دوم (MotorReviewer) تأیید شد."
+  ],
+  "removed_claims": [
+   "ایراد «کوپلینگ دیفرانسیل عقب در سیستم دودیفرانسیل» حذف شد: مستند L-TT-0301-21 یک راهنمای فنی (Technical Tip) برای عیب‌یابی است، نه بولتن یا فراخوان یک خرابی شناخته‌شده، و گزارش مستقل دیگری برای آن پیدا نشد؛ اشاره به سرویس روغن دیفرانسیل عقب در بخش نگهداری باقی ماند.",
+   "نکته عیب‌یابی مربوط به کوپلینگ دیفرانسیل عقب هم همراه ایراد حذف شد."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Lexus Customer Support Program 23LE04 (Mar 2023) — Brake booster and brake booster pump coverage, 2016-2019 RX 450h (NHTSA copy)",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234307-9999.pdf"
+   },
+   {
+    "id": 2,
+    "title": "EngineScope — Toyota 8AR-FTS reliability and known issues",
+    "url": "https://enginescope.gr/engine/toyota-8ar/"
+   },
+   {
+    "id": 3,
+    "title": "CarComplaints — 2016 Lexus RX 350 TSBs (L-SB-0109-17 hesitation)",
+    "url": "https://www.carcomplaints.com/Lexus/RX_350/2016/tsbs/"
+   },
+   {
+    "id": 4,
+    "title": "خودرو۴۵ — لکسوس RX200t مدل ۲۰۱۷ و ۲۰۱۸؛ بررسی جامع و مشخصات فنی (واردات ایرتویا)",
+    "url": "https://khodro45.com/mag/lexus-rx200t-2013/"
+   },
+   {
+    "id": 5,
+    "title": "پدال — راهنمای خرید لکسوس RX کارکرده (ورود نسل چهارم با موتور ۲ لیتری توربو)",
+    "url": "https://www.pedal.ir/lexus/lexus-rx350-review/"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls API — 2016 Lexus RX350 (16V198000 ABS actuator damaged O-ring; also 16V053000 knee airbag, 18V085000 airbag sensors)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=LEXUS&model=RX350&modelYear=2016"
+   },
+   {
+    "id": 7,
+    "title": "MotorReviewer — Toyota 8AR-FTS 2.0T engine specs, problems and reliability (water pump, D-4ST injection)",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=139"
+   }
+  ]
+ },
  "lexus-es-xv60": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -7201,6 +7254,62 @@
     "id": 6,
     "title": "MyMotorList — Mitsubishi Outlander engines (4B12 since 2006; 4J12 since 2013 on European, Chinese and American Outlanders)",
     "url": "https://mymotorlist.com/models/mitsubishi-outlander/"
+   }
+  ]
+ },
+ "honda-accord-cp-8th-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "مهم‌ترین اصلاح: ایراد مصرف روغن و رینگ پیستون فقط به نسخه شش‌سیلندر J35 دارای VCM محدود شد. متن دادخواست جمعی و گارانتی ویژه هشت‌ساله صراحتاً آکوردهای چهارسیلندر را خارج می‌کند، در حالی که پیش‌نویس آن را به موتور K24 هم نسبت داده بود — و نسخه رایج در ایران همان ۲۴۰۰ چهارسیلندر است.",
+   "«رینگ و پیستون موتور K24» از فهرست قطعات آن ایراد حذف شد و فقط J35 ماند.",
+   "ترتیب ایرادها بر اساس آمار carcomplaints اصلاح شد: سایش زودهنگام ترمز عقب پرشکایت‌ترین ایراد مدل ۲۰۰۸ است و به ابتدای فهرست آمد.",
+   "بازه کیلومتر مصرف روغن از «۱۰۰ تا ۱۵۰ هزار» به «حدود ۱۱۰ هزار کیلومتر» بر پایه میانگین ۶۷ هزار مایلی carcomplaints اصلاح شد.",
+   "شدت سایش لنت عقب از high به medium کاهش یافت (قطعه مصرفی زودمصرف است، نه خرابی ناایمن فوری) و بازه آن با میانگین ۲۶ هزار مایل هم‌خوان شد.",
+   "ایراد misfire ناشی از VCM از high به medium کاهش یافت چون بخشی از همان پرونده مصرف روغن است و بولتن TSB 11-033 با منبع مستقل تأیید نشد؛ «مصرف بالای روغن» از شرح آن حذف شد تا با ایراد جداگانه تکراری نشود.",
+   "خرابی سنسور میل‌لنگ از medium به low کاهش یافت (تنها یک منبع تجمیعی) و «استارت و دینام» از فهرست قطعات آن حذف شد چون ربطی به این علت ندارد.",
+   "یک نکته عیب‌یابی و یک نکته نگهداری درباره جدا کردن ایرادهای ۲۴۰۰ از ۳۵۰۰ اضافه شد."
+  ],
+  "removed_claims": [
+   "نسبت دادن مصرف روغن و تعویض رینگ و پیستون به موتور چهارسیلندر K24: تسویه دادخواست جمعی و گارانتی ویژه هوندا فقط شامل موتورهای شش‌سیلندر دارای VCM است و چهارسیلندرها صراحتاً خارج شده‌اند.",
+   "ایراد کولر و بخاری (سوراخ شدن کندانسور و خرابی موتور فن): در فهرست شکایت‌های carcomplaints این مدل نیامده و علت ذکرشده (برخورد سنگ و ریزگرد) ساییدگی عمومی هر خودرویی است، نه ایراد ویژه این مدل.",
+   "«گیرکردن یا نشتی کالیپر عقب» به‌عنوان بخشی از ایراد ترمز کم‌رنگ شد و فقط به‌صورت قطعه احتمالی باقی ماند؛ آمار carcomplaints درباره سایش لنت و دیسک است، نه خرابی کالیپر."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "2008 Honda Accord Problems — CarComplaints (شکایت‌های برتر: سایش زودهنگام ترمز ۲۶ هزار مایل، مصرف روغن ۶۷ هزار مایل، صدای سایش هنگام استارت)",
+    "url": "https://www.carcomplaints.com/Honda/Accord/2008/"
+   },
+   {
+    "id": 2,
+    "title": "2008 Honda Accord Excessive Oil Consumption — CarComplaints",
+    "url": "https://www.carcomplaints.com/Honda/Accord/2008/engine/excessive_oil_consumption.shtml"
+   },
+   {
+    "id": 3,
+    "title": "2008-2012 Honda Accord Piston Ring Issue — Cars.com (گارانتی ویژه هشت‌ساله رینگ و شمع)",
+    "url": "https://www.cars.com/articles/2008-2012-honda-accord-piston-ring-issue-1420685066617/"
+   },
+   {
+    "id": 4,
+    "title": "7 Most Common 2008-2012 8th-Gen Honda Accord Problems After 100,000 Miles — MotorBiscuit (TSB 12-087، TSB 11-033، TSB 09-010)",
+    "url": "https://www.motorbiscuit.com/7-common-2008-2012-8th-gen-honda-accord-problems-100000-miles/"
+   },
+   {
+    "id": 5,
+    "title": "The VCM mega thread — DriveAccord owner forum",
+    "url": "https://www.driveaccord.net/threads/the-vcm-mega-thread-what-is-vcm-does-my-accord-have-it-whats-so-bad-about-it-and-more.559190/"
+   },
+   {
+    "id": 6,
+    "title": "Honda Accord Oil Consumption Class Action / Settlement — Terrell Marshall",
+    "url": "https://www.terrellmarshall.com/cases/honda-accord-oil-consumption-lawsuit"
+   },
+   {
+    "id": 7,
+    "title": "Top Class Actions — Honda oil defect settlement: 2008-2012 Accord and others with six-cylinder VCM engines; four-cylinder Accords excluded",
+    "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/class-action-settlement-reached-over-honda-accord-oil-defect/"
    }
   ]
  },
@@ -8261,6 +8370,68 @@
    }
   ]
  },
+ "bmw-5-series-f10": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Verified all four cited recalls directly against the NHTSA API: 13V-454, 14V-627 and 24V-608 are listed for the 528i, and 14V-176 for the 2011 535i",
+   "VANOS bolt recall 14V-176: re-scoped from '528i and 535i model 2011 (and N52 528i)' to the six-cylinder cars around 2010-2012 for which it is actually listed (535i 2011 confirmed); the unverified N52-528i claim was dropped",
+   "Added fuel pump fault (recall 16V-746, in-tank pump wire crimp melting the connector, stall and fuel leak) — confirmed on the 2011 535i list",
+   "Added rear driveshaft CV joint fault (recall 17V-067, loss of drive) — it was listed only in a source title in the draft, not as a fault; confidence medium as the older F10 fleet in Iran is mostly 528i",
+   "Oil-leak fault: removed the 'belt may snap and get behind the crank pulley' escalation, which no cited source supports; kept oil-soaked belt wear"
+  ],
+  "removed_claims": [
+   "'فراخوان 14V-176 برای 528i مدل ۲۰۱۱' — the NHTSA list for the 2011 535i confirms the campaign, but nothing confirms the N52 528i is in its scope",
+   "Claim that a piece of the oil-soaked accessory belt can be pulled behind the crankshaft pulley (an N47/other-engine story) — not supported for N20/N55 F10 by any cited source"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "BMW N20 Timing Chain Issues Explained — Carlsbad Auto Service",
+    "url": "https://carlsbadautoservice.com/bmw-n20-timing-chain-issues-explained/"
+   },
+   {
+    "id": 2,
+    "title": "مشکلات رایج موتور N20 بی‌ام‌و، راهکارها و لوازم یدکی مورد نیاز — لوکس یدک",
+    "url": "https://luxyadak.com/blog/129_N20-issue.html"
+   },
+   {
+    "id": 3,
+    "title": "بررسی ایرادات، خرابی‌ها و مشکلات عمده در بی‌ام‌و سری ۵ اتاق F10 — لوکس یدک",
+    "url": "https://luxyadak.com/blog/164_%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88-%D8%B3%D8%B1%DB%8C-5.html"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls, BMW 528i 2013 — 13V-454 / 14V-627 brake vacuum pump, 24V-608 water pump connector (fire risk)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=bmw&model=528i&modelYear=2013"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls, BMW 535i 2011 — 14V-176 VANOS housing bolts, 16V-746 in-tank fuel pump, 17V-067 rear driveshaft CV joint",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=bmw&model=535i&modelYear=2011"
+   },
+   {
+    "id": 6,
+    "title": "The 5 Most Common BMW N55 Engine Problems — BMW Tuning",
+    "url": "https://bmwtuning.co/n55-engine-problems/"
+   },
+   {
+    "id": 7,
+    "title": "BMW F10 Problems: Common Issues And Solutions — BMW Insights",
+    "url": "https://bmwinsights.com/bmw-f10-problems/"
+   },
+   {
+    "id": 8,
+    "title": "How To Replace A BMW N20 & N26 Oil Filter Housing Gasket — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-replace-a-bmw-n20-n26-oil-filter-housing-gasket-f30"
+   },
+   {
+    "id": 9,
+    "title": "Understanding Timing Chain Failure in BMW N20 (fault codes 2A67 / 2D55) — German Tech Motorworks",
+    "url": "https://www.germantechmotorworks.com/understanding-timing-chain-failure-in-bmw-n20-a-technical-overview"
+   }
+  ]
+ },
  "bmw-x3-e83": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -8405,6 +8576,50 @@
     "id": 11,
     "title": "NHTSA recalls for BMW X5 2008 (10V-518 fuel pump commutator wear, 16V-746)",
     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=BMW&model=X5&modelYear=2008"
+   }
+  ]
+ },
+ "bmw-x5-f15": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "HPFP fault: confidence lowered from high to medium and the wording changed — the cited N55 article says the faulty early HPFP design belongs to 2010-2011 cars and most failed under warranty, so it is not an F15-era certainty; NHTSA recall 21V-586 (HPFP failure, stall) for some 2014 X5s added as the hard evidence, and the claim that the fault is specific to the 35i was dropped",
+   "Added transfer case (xDrive) actuator fault — source 5 was cited in the draft's source list but no fault used it",
+   "Charge pipe confidence lowered to medium (the N55 article carries it only as a comment-level issue, not one of its five listed problems)",
+   "Airbag tip corrected: 15V-147 is the head protection (curtain) airbag, not a driver airbag; added 24V-527 and the 14V-202 rear door lock / child lock recall",
+   "Source 4 title corrected: 14V-202 is rear door locks and the child safety lock, not a 'soft-close door latch'",
+   "Added a tip that the EGR cooler recalls (18V-755, 21V-907) are diesel-only and irrelevant to the 35i/50i cars imported into Iran",
+   "N63TU oil-consumption fault: the unsourced '1 litre per 1500 km' figure was removed and the fault reordered below the more common items"
+  ],
+  "removed_claims": [
+   "'روغن‌سوزی تا حد یک لیتر در هر ۱۵۰۰ کیلومتر' for the N63TU — no cited source gives that rate; it circulates for the original N63, not the TU",
+   "Framing the HPFP failure as a high-confidence N55-specific F15 fault — the evidence points to the early (2010-2011) pump design plus a 2014 recall, not to every F15 35i"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "BMW X5 F15 Reliability Guide: Everything You Need to Know Before Buying — Euro Premium Parts",
+    "url": "https://europremiumparts.com/blogs/bmw-buying-guides/bmw-x5-f15-reliability-guide-everything-you-need-to-know-before-buying"
+   },
+   {
+    "id": 2,
+    "title": "The 5 Most Common BMW N55 Engine Problems (valve cover, water pump, oil filter housing gasket, VANOS solenoid, HPFP) — BMW Tuning",
+    "url": "https://bmwtuning.co/n55-engine-problems/"
+   },
+   {
+    "id": 3,
+    "title": "BMW X5 Problems to Expect – BMW F15 — Simple Car Guy",
+    "url": "https://simplecarguy.com/bmw-x5-problems-to-expect-bmw-f15/"
+   },
+   {
+    "id": 4,
+    "title": "NHTSA recalls, BMW X5 2014 — 21V-586 high-pressure fuel pump, 16V-683 / 23V-797 / 24V-527 driver airbag inflator, 15V-147 head protection airbag, 14V-202 rear door locks, 18V-755 / 21V-907 EGR cooler (diesel only)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=bmw&model=x5&modelYear=2014"
+   },
+   {
+    "id": 5,
+    "title": "How To Repair A BMW Transfer Case Actuator (BMW X3, X5 & X6) — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-repair-a-bmw-transfer-case-actuator-bmw-x3-x5-x6"
    }
   ]
  },
