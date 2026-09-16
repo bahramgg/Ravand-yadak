@@ -882,10 +882,6 @@ window.RY_CARS = {
     {
      "id": "kia-cadenza-vg",
      "fa": "کادنزا VG"
-    },
-    {
-     "id": "kia-cadenza-yg",
-     "fa": "کادنزا YG"
     }
    ]
   },
