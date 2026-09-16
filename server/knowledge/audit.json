@@ -1879,6 +1879,111 @@
    }
   ]
  },
+ "renault-megane": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "توان موتورها تصحیح شد: K4M مگان ایرانی ۱۱۵ اسب و F4R حدود ۱۳۶ اسب (منبع پدال).",
+   "ادعای «همان موتور تندر ۹۰ و ساندرو، قطعات مشترک» تعدیل شد: K4M مگان نسخه پرقدرت‌تر با پولی دفیزر است، پس همه قطعات یکی نیست.",
+   "به فالت گیربکس، داغ شدن و ضعف خنک‌کن DP0 و خرابی بلوک سوپاپ اضافه شد و ارجاع به کد DF049 حذف شد چون در منابع مستقل تأیید نشد.",
+   "فالت جدید «لغزش و ضربه» کنورتور DP0 اضافه شد (منبع تعمیرگاه تخصصی گیربکس).",
+   "فالت جدید پولی دفیزر K4M اضافه شد.",
+   "اعتماد فالت کوئل K4M و تسمه تایم از medium به high بالا رفت (چند منبع مستقل: motorreviewer، فروم رنو، پدال).",
+   "توصیف گیربکس DP0 به «مشترک با پژو و سیتروئن (AL4)» اصلاح شد؛ ادعای فارسی رایج که DP0 گیربکس ZF 4HP است نادرست است و وارد پروفایل نشد.",
+   "یک نکته نگهداری درباره کمیابی قطعات مگان (پایان تولید ۱۳۹۳) اضافه شد."
+  ],
+  "removed_claims": [
+   "کد خطای «DF049» به عنوان رایج‌ترین کد گیربکس DP0 حذف شد — فقط در یک سایت فارسی دیده شد و منبع مستقلی آن را تأیید نکرد.",
+   "ادعای ضمنی اشتراک کامل قطعات موتور با تندر ۹۰/ساندرو حذف شد — نسخه مگان K4M متفاوت (۱۱۵ اسب، دفیزردار) است."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "باما — مشخصات فنی رنو مگان مونتاژ ۲۰۰۰ (۱۳۸۷ تا ۱۳۹۳)",
+    "url": "https://bama.ir/car-reviews/renault/meganir-specs-1099-2000"
+   },
+   {
+    "id": 2,
+    "title": "car.ir — رنو مگان ۲۰۰۰ اتوماتیک ۱۳۸۷ تا ۱۳۹۲ (موتور F4R، گیربکس DP0)",
+    "url": "https://car.ir/533-renault-megane-2-0l-automatic-1387-1392"
+   },
+   {
+    "id": 3,
+    "title": "رنو تنظیم — علائم پشت آمپر مگان و لیست خطاهای مگان",
+    "url": "https://renotanzim.com/%D8%B9%D9%84%D8%A7%D8%A6%D9%85-%D9%BE%D8%B4%D8%AA-%D8%A2%D9%85%D9%BE%D8%B1-%D9%85%DA%AF%D8%A7%D9%86/"
+   },
+   {
+    "id": 4,
+    "title": "ایران رنو — معایب و مشکلات گیربکس اتوماتیک مگان",
+    "url": "https://autorenault.ir/megane-automatic-transmission-problems/"
+   },
+   {
+    "id": 5,
+    "title": "مستر رنو — مشکلات گیربکس اتوماتیک مگان",
+    "url": "https://mrreno.ir/megans-automatic-transmission-problems/"
+   },
+   {
+    "id": 6,
+    "title": "پارس رنو — علت دیر روشن شدن یا روشن نشدن رنو مگان",
+    "url": "https://parsreno.com/reasons-for-renault-megane-not-turning-on/"
+   },
+   {
+    "id": 7,
+    "title": "Mégane II Owners' Club — The \"steering locked\" problem and a temporary solution",
+    "url": "https://www.meganeownersclub.co.uk/forum/viewtopic.php?t=20000"
+   },
+   {
+    "id": 8,
+    "title": "Independent Renault Forums — Steering Locked / Not Locked issues (ESL, card reader, UCH)",
+    "url": "https://www.renaultforums.co.uk/threads/steering-locked-not-locked-issues.546433/"
+   },
+   {
+    "id": 9,
+    "title": "Mégane II Owners' Club — Electrical problems including key card, windows, fan",
+    "url": "https://www.meganeownersclub.co.uk/forum/viewtopic.php?t=24947"
+   },
+   {
+    "id": 10,
+    "title": "پدال — بررسی موتور K4M رنو (کوئل، تسمه تایم، موتور تداخلی)",
+    "url": "https://www.pedal.ir/renault/743572-renault-k4m-engine/"
+   },
+   {
+    "id": 11,
+    "title": "MotorReviewer — Renault F4R 2.0L engine specs, problems (interference timing belt, coils, oil consumption)",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=22"
+   },
+   {
+    "id": 12,
+    "title": "تعمیرکار — گیربکس اتوماتیک خانواده AL4/DP",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/"
+   },
+   {
+    "id": 13,
+    "title": "گیربکس کارن — مشکلات گیربکس اتوماتیک AL4 رنو",
+    "url": "https://gearbox-karen.com/%D9%85%D8%B4%DA%A9%D9%84%D8%A7%D8%AA-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%B3%D8%A7%D9%86%D8%AF%D8%B1%D9%88-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/"
+   },
+   {
+    "id": 14,
+    "title": "ECT — Steering Lock (ESL) problem on Mégane 2/3, Clio, Scénic, Laguna",
+    "url": "https://www.ect-download.com/en/blog/2021-08-12/steering-lock-esl-problem-megane-2-3-clio-3-4-fluence-2-3-laguna-2-3-scenic-2-3-captur-plug-play-no-need"
+   },
+   {
+    "id": 15,
+    "title": "Stephens Engineering — Renault DP0 gearbox fault: slip and thump, valve body, overheating",
+    "url": "https://www.stephensengineering.co.uk/renault-dpo-gearbox-fault/"
+   },
+   {
+    "id": 16,
+    "title": "MotorReviewer — Renault K4M 1.6L engine specs, problems (coils, dephaser, thermostat, fuel sensitivity)",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=26"
+   },
+   {
+    "id": 17,
+    "title": "پدال — بررسی خرید رنو مگان کارکرده (مشخصات ۱۶۰۰ و ۲۰۰۰ بازار ایران)",
+    "url": "https://www.pedal.ir/renault/used-renault-megane-review/"
+   }
+  ]
+ },
  "nissan-maxima": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -2814,6 +2919,67 @@
     "id": 6,
     "title": "خودرو۴۵ — کاپرا U؛ بررسی جامع و مشخصات فنی",
     "url": "https://khodro45.com/mag/capra-2-facelift/"
+   }
+  ]
+ },
+ "isuzu-d-max": {
+  "verdict": "ok",
+  "duplicate_of": "",
+  "corrections": [
+   "حذف نکردن فالت‌های DPF تأیید شد و مستند شد: دی‌مکس بهمن دیزل با استاندارد یورو ۴ عرضه شده و فیلتر ذرات دیزل ندارد (DPF روی این موتور از نسخه‌های یورو ۵ به بعد آمد). یک نکته تشخیصی صریح در همین مورد اضافه شد.",
+   "توصیف موتور کامل شد: نسخه ۱۶۳ اسبی با توربوی هندسه‌متغیر VGS و گشتاور ۳۶۰ نیوتن‌متر در ۱۸۰۰ تا ۲۸۰۰ دور (منبع بهمن دیزل/خودرو۴۵)، که ناسازگاری ظاهری بین کد 4JJ1-TC و فالت VGT را رفع می‌کند.",
+   "عبارت «موتور تداخلی است» از توصیف موتور حذف شد چون در فالت‌ها استفاده‌ای نداشت و منبع مستقل روشنی نداشت.",
+   "منبع autoindustriya (کد و توربوی VGS نسخه ۱۶۳ اسب) به منابع اضافه شد."
+  ],
+  "removed_claims": [
+   "توصیف «موتور تداخلی» حذف شد — بی‌استفاده و بدون منبع مستقل روشن.",
+   "هیچ فالت DPF (گرفتگی فیلتر ذرات، سیکل بازیابی، افزودنی AdBlue) اضافه نشد — نسخه ایران یورو ۴ و بدون DPF است؛ تصمیم نویسنده پیش‌نویس درست بود."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "کیان باتری — نقد و بررسی وانت دو کابین ایسوزو دی‌مکس (موتور دیزل ۳ لیتری، ۳۶۰ نیوتن‌متر)",
+    "url": "https://www.kianbattery.com/%D9%86%D9%82%D8%AF-%D9%88-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%88%D8%A7%D9%86%D8%AA-%D8%A7%DB%8C%D8%B3%D9%88%D8%B2%D9%88-%D8%AF%DB%8C-%D9%85%DA%A9%D8%B3/"
+   },
+   {
+    "id": 2,
+    "title": "EngineCode — Isuzu 4JJ1 engine guide: specs and common issues (injector seal leaks, EGR cooler leak, VGT actuator)",
+    "url": "https://www.enginecode.uk/isuzu/4jj1-specs"
+   },
+   {
+    "id": 3,
+    "title": "Crate Engines Australia — Isuzu 4JJ1 engine problems: injectors, turbo, symptoms and costs",
+    "url": "https://crateenginesaustralia.com.au/4jj1-engine-problems-replacement-costs/"
+   },
+   {
+    "id": 4,
+    "title": "Home of Engines — Top 7 common Isuzu 4JJ1 engine problems and fixes",
+    "url": "https://homeofengines.co.za/top-7-common-isuzu-4jj1-engine-problems/"
+   },
+   {
+    "id": 5,
+    "title": "Aus Auto Store — Isuzu D-MAX common problems: engine, sensors and parts guide",
+    "url": "https://www.ausautostore.com/blogs/news/isuzu-d-max-common-problems"
+   },
+   {
+    "id": 6,
+    "title": "Unsealed 4X4 — Isuzu MU-X and D-Max common problems and solutions (EGR soot and oil gunge in the intake)",
+    "url": "https://magazine.unsealed4x4.com.au/unsealed-4x4-issue-068/mu-x-common-problems-and-solutions"
+   },
+   {
+    "id": 7,
+    "title": "AutoIndustriya — 4JJ1-TC: Isuzu's 3.0 common-rail diesel with VGS turbo, 163 PS",
+    "url": "https://www.autoindustriya.com/features/4jj1-tc-isuzu-s-reliability-and-efficiency-gets-a-fresh-boost.html"
+   },
+   {
+    "id": 8,
+    "title": "خودرو ۴۵ — بررسی جامع و مشخصات فنی ایسوزو D-MAX بازار ایران (۱۶۳ اسب، ۳۶۰ نیوتن‌متر، ۵ سرعته دستی)",
+    "url": "https://khodro45.com/mag/isuzu-dmax/"
+   },
+   {
+    "id": 9,
+    "title": "گروه بهمن — رونمایی از پیکاپ ایسوزو D-MAX (استاندارد آلایندگی یورو ۴)",
+    "url": "http://bahman.ir/Post/%D8%B1%D9%88%D9%86%D9%85%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B2-%D9%BE%DB%8C%DA%A9%D8%A7%D9%BE-%D9%82%D8%AF%D8%B1%D8%AA%D9%85%D9%86%D8%AF-%D8%A7%DB%8C%D8%B3%D9%88%D8%B2%D9%88-D-MAX"
    }
   ]
  },
@@ -5054,6 +5220,61 @@
     "id": 4,
     "title": "خودرو۴۵ — بررسی مشخصات ام جی ۳۶۰",
     "url": "https://khodro45.com/mag/mg-360/"
+   }
+  ]
+ },
+ "geely-emgrand-7": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "نوع گیربکس تأیید شد: نسخه ایرانی امگرند ۷ اتوماتیک واقعاً CVT ساخت پانچ با شبیه‌سازی ۶ دنده است (باما و car.ir هر دو). نام تجاری «VT2» از توصیف حذف شد چون فقط در یک منبع فارسی آمده بود.",
+   "اشاره شد که در بازار جهانی EC7 اتوماتیک ۴ سرعته (JL-4AT-2A) هم داشته، ولی نسخه مونتاژ ایران CVT است — پس هشدار روغن CVTF درست است.",
+   "موتور تأیید شد: ۱٫۸ لیتری JL4G18 با CVVT، ۱۳۷ اسب / ۱۷۲ نیوتن‌متر؛ حجم دقیق ۱۷۹۲ سی‌سی اضافه شد.",
+   "به فالت تعلیق، نداشتن کنترل پایداری (ESC) اضافه شد و «ناپایداری در سرعت بالا» که منبعی نداشت حذف شد.",
+   "از فالت داخل کابین، عدد «۷۰ هزار کیلومتر» حذف شد چون منبع فقط «بعد از مدت کوتاهی» گفته بود.",
+   "یک نکته تشخیصی درباره CVT بودن گیربکس (برای سفارش درست روغن و قطعه) اضافه شد.",
+   "ادعای قطعی تسمه‌ای بودن تایم JL4G18 تعدیل شد و به تأیید روی خودرو مشروط شد."
+  ],
+  "removed_claims": [
+   "نام مدل «VT2» برای گیربکس CVT حذف شد — منبع مستقلی برای این کد در نسخه ایران پیدا نشد، هرچند پانچ بودن گیربکس تأیید است.",
+   "«ناپایداری خودرو در سرعت بالا» حذف شد — در منبع همراه مکانیک فقط کوبش تعلیق و سختی کنترل روی ناهمواری آمده بود.",
+   "عدد «فرسودگی داخل کابین از حدود ۷۰ هزار کیلومتر» حذف شد — عددی در منابع نبود."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "باما — مشخصات فنی جیلی امگرند ۷ اتوماتیک (۱٫۸ لیتر، ۱۳۷ اسب، CVT با ۶ دنده مصنوعی)",
+    "url": "https://bama.ir/car-reviews/geely/emgrand7-specs-998-at"
+   },
+   {
+    "id": 2,
+    "title": "تعمیرکار — گیربکس جیلی امگرند از چه نوعی است (CVT پانچ، ایرادها، روغن CVTF هر ۴۰ هزار کیلومتر)",
+    "url": "https://tamircar.net/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AC%DB%8C%D9%84%DB%8C-%D8%A7%D9%85%DA%AF%D8%B1%D9%86%D8%AF-%D8%A7%D8%B2-%DA%86%D9%87-%D9%86%D9%88%D8%B9%DB%8C-%D8%A7%D8%B3%D8%AA-%D9%88-%D8%AF%D8%B1-%DA%86/"
+   },
+   {
+    "id": 3,
+    "title": "اتوکلینیک۲۴ — تعمیر گیربکس اتوماتیک جیلی امگرند ۷ (زوزه، لرزش در سرعت پایین، حالت اضطراری)",
+    "url": "https://autoclinic24.com/geely-emgrand-7-automatic-transmission-repair/"
+   },
+   {
+    "id": 4,
+    "title": "گیربکس تهران — تعمیر گیربکس جیلی امگرند ۷",
+    "url": "https://tehran-gearbox.com/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9-%D8%AC%DB%8C%D9%84%DB%8C-%D8%A7%D9%85%DA%AF%D8%B1%D9%86%D8%AF-%DB%B7/"
+   },
+   {
+    "id": 5,
+    "title": "همراه مکانیک — معایب جیلی امگرند ۷ (تعلیق سفت، نبود ESC، کمیابی قطعات، ترک خوردن روکش صندلی)",
+    "url": "https://www.hamrah-mechanic.com/mag/disadvantages-of-emgrand7/"
+   },
+   {
+    "id": 6,
+    "title": "همراه مکانیک — بررسی فنی و آزمایش خودروی جیلی امگرند ۷",
+    "url": "https://www.hamrah-mechanic.com/mag/tech-of-review-geely-emgrand7/"
+   },
+   {
+    "id": 7,
+    "title": "car.ir — جیلی امگرند ۷ اتوماتیک ۲۰۱۲ تا ۲۰۱۴، مشخصات فنی بازار ایران",
+    "url": "https://car.ir/121-geely-emgrand7-automatic-2012-2014"
    }
   ]
  },
@@ -8711,6 +8932,78 @@
    }
   ]
  },
+ "mitsubishi-pajero-v80-v90-4th-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "فالت قرقره میل‌لنگ نگه داشته و تقویت شد: علاوه بر منبع ترجمه‌شده روسی، فروم پاجرو استرالیا و یک تعمیرگاه استرالیایی همین ایراد را روی V6 پاجرو گزارش کرده‌اند. علت اصلی به «شل شدن پیچ مرکزی و ساییده شدن خار میل‌لنگ» اصلاح شد (نه فقط جدا شدن لاستیک)، شدت از medium به high و اطمینان از low به medium بالا رفت.",
+   "اطمینان فالت سنسور میل‌لنگ از medium به high رسید (CarsGuide آن را «notorious» می‌خواند و MotorHub هم تأیید می‌کند).",
+   "اطمینان فالت چراغ چشمک‌زن ۴WD به high رسید و «سیم‌کشی و سوکت خورده نزدیک جعبه انتقال» به علت‌ها اضافه شد.",
+   "فالت جدید مصرف روغن از گیت سوپاپ (بعد از ۱۵۰ هزار کیلومتر) اضافه شد.",
+   "دوره تسمه تایم از «۹۰ تا ۱۰۰ هزار کیلومتر» به «حدود ۹۰ هزار کیلومتر» اصلاح شد و ضعیف شدن واتر پمپ در حوالی ۱۲۰ هزار کیلومتر اضافه شد.",
+   "یک نکته تشخیصی برای دیدن لنگی پولی میل‌لنگ و یک نکته نگهداری درباره پیچ نو میل‌لنگ اضافه شد."
+  ],
+  "removed_claims": [
+   "عبارت «۵ تا ۷ سال» برای دوره تسمه تایم حذف شد — فقط در منبع ترجمه‌شده روسی بود و منابع دیگر دوره را بر حسب کیلومتر می‌دهند."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Oborudow (ترجمه فارسی مقاله روسی) — نگهداری و تعمیر میتسوبیشی پاجرو نسل چهارم (تسمه تایم، قرقره میل‌لنگ)",
+    "url": "https://oborudow.ru/fa/tips/mitsubisi-padzhero-4-pokoleniya-sledi-za-soboi-bud-ostorozhen-remont-i/"
+   },
+   {
+    "id": 2,
+    "title": "CarsGuide — Mitsubishi Pajero problems and reliability issues (crank-angle sensor, fuel pump, Super Select 4WD indicator)",
+    "url": "https://www.carsguide.com.au/mitsubishi/pajero/problems"
+   },
+   {
+    "id": 3,
+    "title": "Pajero 4WD Club of Victoria Forum — 6G75 timing belt kit",
+    "url": "https://www.pajeroforum.com.au/forum/vehicles/generation-3-pajero/1151111-6g75-timing-belt-kit-which-one-to-take"
+   },
+   {
+    "id": 4,
+    "title": "MotorReviewer — Mitsubishi 6G72 3.0L V6 specs, problems and reliability",
+    "url": "https://www.motorreviewer.com/engine.php?engine_id=204"
+   },
+   {
+    "id": 5,
+    "title": "Pajero Owners Club of South Africa — Super Select flashing lights (sensor switch, seized actuator rod, linkage)",
+    "url": "https://www.pajeroclub.co.za/forum/viewtopic.php?t=42"
+   },
+   {
+    "id": 6,
+    "title": "Pajero 4WD Club of Victoria Forum — Transfer case problems",
+    "url": "https://www.pajeroforum.com.au/forum/vehicles/generation-3-pajero/67565-transfer-case-problems"
+   },
+   {
+    "id": 7,
+    "title": "ایررور — میتسوبیشی پاجرو، بررسی تاریخچه و نسل‌ها (سیستم Super Select 4WD-II در نسل چهارم)",
+    "url": "https://irrover.ir/%D9%85%DB%8C%D8%AA%D8%B3%D9%88%D8%A8%DB%8C%D8%B4%DB%8C-%D9%BE%D8%A7%D8%AC%D8%B1%D9%88/"
+   },
+   {
+    "id": 8,
+    "title": "MotorHub — Mitsubishi Pajero IV reliability: timing belt at 90k, water pump ~120k, valve stem seals past 150k, crank sensor",
+    "url": "https://motorhub.club/blog/mitsubishi-pajero-iv-reliability-review-2025/"
+   },
+   {
+    "id": 9,
+    "title": "4WDinfo — Pajero 4WD light flashing: transfer case sensors, actuator and wiring",
+    "url": "https://4wdinfo.com/pajero-4wd-light-flashing"
+   },
+   {
+    "id": 10,
+    "title": "Autofix — Mitsubishi Pajero V6 crankshaft pulley issues",
+    "url": "http://autofix.com.au/blog/mitsubishi-pajero-v6-crankshaft-pulley-issues"
+   },
+   {
+    "id": 11,
+    "title": "Pajero 4WD Club of Victoria Forum — Harmonic balancer failure / key way gone (crank bolt loosening)",
+    "url": "https://www.pajeroforum.com.au/forum/vehicles/generation-2-pajero/27043-harmonic-balancer-failure"
+   }
+  ]
+ },
  "suzuki-kizashi": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -9070,6 +9363,70 @@
     "id": 9,
     "title": "EngineScope — Renault TCe 1.2 (H5F) reliability",
     "url": "https://enginescope.gr/engine/renault-tce-12/"
+   }
+  ]
+ },
+ "renault-talisman": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "تصمیم پیش‌نویس برای کنار گذاشتن فالت «تسمه تایم» تأیید شد: موتور M5M 450 تالیسمان زنجیر تایم دارد (کاتالوگ قطعات AUTODOC برای همین موتور کیت زنجیر تایم می‌فروشد). یک نکته تشخیصی صریح اضافه شد تا فروش اشتباه سرویس تسمه تایم رخ ندهد.",
+   "کد موتور به M5M 450 دقیق شد و توان به حدود ۲۰۰ اسب (۱۴۷ کیلووات) اصلاح شد؛ بازه «۱۹۰ تا ۲۰۰» حذف شد.",
+   "نوع گیربکس از «خشک/تر» به «کلاچ تر» اصلاح شد — EDC هفت‌سرعته پشت TCe 200 نسخه کلاچ‌تر است و روغن مخصوص خودش را می‌خواهد.",
+   "به علت فالت گیربکس، «به‌ویژه نسخه‌های اولیه» و علامت «تأخیر هنگام راه افتادن» اضافه شد.",
+   "اطمینان فالت توربو از medium به low پایین آمد و در متن مشخص شد که پشتوانه‌اش فقط گزارش تعمیرگاه‌های ایرانی است.",
+   "فالت باتری/دینام/استارت حذف شد."
+  ],
+  "removed_claims": [
+   "فالت «تسمه تایم تالیسمان» که یک صفحه فارسی ادعا کرده بود اضافه نشد — این موتور زنجیر تایم دارد و چنین سرویسی وجود ندارد.",
+   "فالت باتری و دینام و استارت حذف شد — فقط یک صفحه تعمیرگاهی فارسی، بدون هیچ منبع مستقل، و علائمش با هر خودروی دیگری هم می‌خواند (فرسودگی عمومی، نه ایراد خاص تالیسمان).",
+   "ادعای «خرابی زنجیر تایم» هم اضافه نشد — کشیدگی زنجیر در گزارش‌ها به موتور ۱٫۸ TCe نسبت داده شده، نه ۱٫۶ TCe نسخه ایران."
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "همراه مکانیک — معایب رنو تلیسمان",
+    "url": "https://www.hamrah-mechanic.com/mag/renault-talisman-failure/"
+   },
+   {
+    "id": 2,
+    "title": "مستر رنو — معایب رنو تلیسمان در طولانی‌مدت و تجربه مالکان (انژکتور، پمپ بنزین، توربو، منیفولد)",
+    "url": "https://mrreno.ir/disadvantages-of-renault-talisman/"
+   },
+   {
+    "id": 3,
+    "title": "رنو کرج — تعمیرگاه تخصصی رنو تالیسمان (روغن هر ۸ هزار، روغن گیربکس DCT هر ۵۵ هزار کیلومتر، گرفتگی انژکتور با بنزین بی‌کیفیت)",
+    "url": "https://www.renaultkaraj.com/talisman-specialized-repair-shop/"
+   },
+   {
+    "id": 4,
+    "title": "پدال — رنو تالیسمان کارکرده: مشخصات و راهنمای خرید دست‌دوم",
+    "url": "https://www.pedal.ir/renault/726199-used-renault-talisman-review/"
+   },
+   {
+    "id": 5,
+    "title": "CarReliabilityReport — Renault Talisman I (2015–2022) reliability: EDC gearbox faults from 30–50 thousand km",
+    "url": "https://carreliabilityreport.com/en/reliability/renault-talisman-2015-2022-essence"
+   },
+   {
+    "id": 6,
+    "title": "AUTODOC Blog — Renault Talisman: common problems and faults (EDC jerky shifts, delays pulling away)",
+    "url": "https://www.autodoc.co.uk/info/problems-with-the-renault-talisman"
+   },
+   {
+    "id": 7,
+    "title": "Independent Renault Forums — Talisman 1.6 TCe 200 EDC problem",
+    "url": "https://www.renaultforums.co.uk/threads/talisman-1-6-tce-200-edc-problem.602005/"
+   },
+   {
+    "id": 8,
+    "title": "ویکی‌پدیای فارسی — رنو تالیسمان (فیلترهای بزرگ‌تر در نسخه ایران به دلیل کیفیت پایین سوخت)",
+    "url": "https://fa.wikipedia.org/wiki/%D8%B1%D9%86%D9%88_%D8%AA%D8%A7%D9%84%DB%8C%D8%B3%D9%85%D8%A7%D9%86"
+   },
+   {
+    "id": 9,
+    "title": "AUTODOC Parts — Timing chain kit for Renault Talisman 1.6 TCe 200, engine M5M 450 (proof the engine is chain-driven)",
+    "url": "https://www.autodoc.parts/car-parts/timing-chain-kit-15065/renault/talisman/talisman/117837-1-6-tce-200"
    }
   ]
  },
