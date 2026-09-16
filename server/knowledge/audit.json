@@ -7313,6 +7313,65 @@
    }
   ]
  },
+ "honda-accord-cr-9th-gen": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "CVT judder: TSB 13-053 confirmed but re-scoped to model years 2013-2014 (the draft said 2013-2015); the later-car judder is covered by the fluid-overheating software bulletins (17-017 / 17-018), which is now said explicitly, and the 30-100 km/h steady-throttle judder added to the symptom",
+   "Fuel pump recall 23V-858 confirmed on the 2013 Accord NHTSA list; the Denso impeller wording kept but marked as the known cause of that recall family rather than as recall text",
+   "Recall 17V-418 kept but the unverified '2013 تا ۲۰۱۶' model range dropped — it was verified only on the 2013 list",
+   "Added the fuel tank neck fault (recall 13V-297, fuel leak / fire risk) — it was in the source title but not used as a fault",
+   "Added a tip that the driveshaft corrosion recalls (20V-769, 25V-422) are road-salt-belt items and do not apply to cars in Iran",
+   "Engine oil consumption: the '2 litres means serious wear' threshold removed as unsourced; K24W noted as direct injection in the engine description",
+   "Recall/TSB numbers converted from Persian digits to Latin, per the field rules"
+  ],
+  "removed_claims": [
+   "TSB 16-002 as the bulletin for starter grinding noise on 2013-2015 Accords — no source found for that number; the starter fault itself is kept at medium confidence on owner-problem sources, without the cause 'starter misaligned with the flywheel/torque converter', which is also unsupported",
+   "'TSB 13-053 for 2013-2015' — the bulletin covers 2013 and 2014 cars"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Most Common 9th Gen Honda Accord Problems — 2013-2017 — 1A Auto",
+    "url": "https://blog.1aauto.com/9th-gen-honda-accord-problems/"
+   },
+   {
+    "id": 2,
+    "title": "Honda Accord gen 9 (2013–2017) CVT Transmission Problems: Failure Patterns & Repair Costs — Transmission Audit",
+    "url": "https://transmissionaudit.com/cars/honda/accord-2013-2017/"
+   },
+   {
+    "id": 3,
+    "title": "8 Most Common 2013-2017 9th-Gen Honda Accord Problems After 100,000 Miles — MotorBiscuit",
+    "url": "https://www.motorbiscuit.com/8-common-2013-2017-9th-gen-honda-accord-problems-100000-miles/"
+   },
+   {
+    "id": 4,
+    "title": "9th Generation (2013-2017) Accord Problems — HondaProblems.com",
+    "url": "https://www.hondaproblems.com/models/accord/generations/9/"
+   },
+   {
+    "id": 5,
+    "title": "Used Honda Accord 9th Gen (2013-2017): Buyer's Guide — CarScout",
+    "url": "https://usecarscout.com/blog/used-honda-accord-9th-gen-buying-guide"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls, Honda Accord 2013 — 23V-858 in-tank fuel pump failure, 17V-418 battery sensor water ingress (fire), 13V-297 fuel tank neck out of spec (fuel leak), 20V-769 / 25V-422 driveshaft corrosion (road salt)",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=honda&model=accord&modelYear=2013"
+   },
+   {
+    "id": 7,
+    "title": "Honda Accord CVT judder service bulletins — TSB 13-053 (2013-2014, valve body + software) and the torque converter / CVT judder software bulletins 17-017 & 17-018",
+    "url": "https://www.driveaccord.net/threads/did-the-software-update-recall-fix-the-%E2%80%9Cjudder%E2%80%9D-problems-with-the-2013-2015-accords.540865/"
+   },
+   {
+    "id": 8,
+    "title": "2013 Honda Accord Technical Service Bulletins — CarComplaints",
+    "url": "https://www.carcomplaints.com/Honda/Accord/2013/tsbs/"
+   }
+  ]
+ },
  "renault-koleos-hy-1st-gen": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -8509,6 +8568,71 @@
    }
   ]
  },
+ "bmw-x3-f25": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Variant table fixed: the xDrive28i kept the N52 through model year 2012 and moved to the N20 in 2013, while the xDrive20i had the N20 from the start — the draft dated the N20 28i a year early and merged the two cars into one row",
+   "All cited NHTSA campaigns checked against the API: 11V-341 (EPS), 23V-707 (VANOS bolts) and 17V-683 (PCV heater) are on the 2011 X3 list; 13V-454, 14V-627, 24V-608, 17V-495, plus 13V-570 and 24V-527 are on the 2013 list",
+   "Added the EPS steering-module fault (11V-341) and the PCV valve heater short-circuit fault (17V-683) as faults — the draft only mentioned steering in a tip and left source 6 unused",
+   "Brake vacuum pump: scope changed from 'xDrive28i مدل ۲۰۱۳ و ۲۰۱۴' to N20-engined X3s around 2013, which is what the recall list supports",
+   "Water pump connector recall scope changed from 'مدل ۲۰۱۳ تا ۲۰۱۷' to 'from 2013 on' — only the 2013 listing was verified",
+   "Airbag/child-seat recalls (17V-495, 24V-527, 13V-570, 16V-333) added to the diagnostic tips",
+   "Transfer case cause: 'ساییدگی دندانه‌های چرخ‌دنده پلاستیکی داخل اکچویتور' generalised to wear of the actuator mechanism — the cited sources do not describe the gears as plastic"
+  ],
+  "removed_claims": [
+   "'X3 xDrive30i مدل ۲۰۱۱ و ۲۰۱۲' in the VANOS tip — there is no F25 xDrive30i in those years (that badge belongs to the E83 3.0si era and to the later G01), so it looked like a leak from an older generation",
+   "Persian-digit recall numbers (۲۴V-۶۰۸ etc.) — campaign numbers restored to Latin digits as the field rules require",
+   "Claim that the actuator's internal gears are plastic — unsupported by the cited transfer case sources"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Recalls & faults: BMW F25 X3 (2011-17) — Australian Car.Reviews",
+    "url": "https://www.australiancar.reviews/recalls-faults-bmw-f25-x3-2011-17/"
+   },
+   {
+    "id": 2,
+    "title": "Common Problems of BMW X3 F25 xDrive28i: A Comprehensive Guide — Euro Auto Pro",
+    "url": "https://www.euroautopro.com.au/post/common-problems-of-bmw-x3-f25-xdrive28i-a-comprehensive-guide"
+   },
+   {
+    "id": 3,
+    "title": "BMW N20 Timing Chain Issues Explained — Carlsbad Auto Service",
+    "url": "https://carlsbadautoservice.com/bmw-n20-timing-chain-issues-explained/"
+   },
+   {
+    "id": 4,
+    "title": "مشکلات رایج موتور N20 بی‌ام‌و، راهکارها و لوازم یدکی مورد نیاز — لوکس یدک",
+    "url": "https://luxyadak.com/blog/129_N20-issue.html"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls, BMW X3 2013 — 13V-454 / 14V-627 brake vacuum pump, 24V-608 water pump connector, 17V-495 & 24V-527 airbag inflator, 13V-570 instrument panel tear seam, 16V-333 child seat anchors",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=bmw&model=x3&modelYear=2013"
+   },
+   {
+    "id": 6,
+    "title": "NHTSA recalls, BMW X3 2011 — 11V-341 electric power steering module, 23V-707 VANOS housing bolts, 17V-683 PCV valve heater short circuit, 16V-333 child seat anchors",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=bmw&model=x3&modelYear=2011"
+   },
+   {
+    "id": 7,
+    "title": "BMW X3, X4, X5 & X6 Transfer Case Guide: Diagnosing Grinding, Juddering, and Failure (2012-2019) — Go-Parts",
+    "url": "https://www.go-parts.com/garage/transfer-case-assembly-bmw-x5-bmw-x6-bmw-x3-2012-2019"
+   },
+   {
+    "id": 8,
+    "title": "Understanding Timing Chain Failure in BMW N20 (fault codes 2A67 / 2D55) — German Tech Motorworks",
+    "url": "https://www.germantechmotorworks.com/understanding-timing-chain-failure-in-bmw-n20-a-technical-overview"
+   },
+   {
+    "id": 9,
+    "title": "How To Replace A BMW N20 & N26 Oil Filter Housing Gasket — FCP Euro",
+    "url": "https://www.fcpeuro.com/blog/how-to-replace-a-bmw-n20-n26-oil-filter-housing-gasket-f30"
+   }
+  ]
+ },
  "bmw-x5-e70": {
   "verdict": "corrected",
   "duplicate_of": "",
@@ -8620,6 +8744,65 @@
     "id": 5,
     "title": "How To Repair A BMW Transfer Case Actuator (BMW X3, X5 & X6) — FCP Euro",
     "url": "https://www.fcpeuro.com/blog/how-to-repair-a-bmw-transfer-case-actuator-bmw-x3-x5-x6"
+   }
+  ]
+ },
+ "porsche-cayenne-92a": {
+  "verdict": "corrected",
+  "duplicate_of": "",
+  "corrections": [
+   "Cooling fault rewritten so the first-generation (955/957) plastic coolant pipes under the intake are not attributed to the 92A: the second generation uses metal pipes whose adhesive joints dry out and seep, alongside water pump / thermostat housing leaks; sources 7 and 8 added and a diagnostic tip added to keep the 955 story out of diagnoses",
+   "Variants corrected: the S and GTS kept the 4.8 V8 only until the 2015 facelift, after which both moved to the 3.6 biturbo V6 — the draft ran the V8 to ۱۳۹۷",
+   "Recall 16V-169 verified against NHTSA and its production window stated as the recall gives it (28 Apr 2010 - 11 Jan 2016); campaign numbers put back into Latin digits",
+   "Headlamp detachment recall 12V-065 promoted from a tip to a fault (verified, production Mar 2010 - Jan 2012); recall 22V-656 (missing low-beam adjuster caps) added to the tips",
+   "Air suspension fault now says it applies only to cars fitted with air suspension — steel springs were standard on the base Cayenne"
+  ],
+  "removed_claims": [
+   "'لوله و اتصالات خنک‌کاری بین بانک سیلندر' as a 92A part/cause — that is the 955/957 V8 plastic coolant-pipe failure and does not belong to this generation",
+   "Tip about a weak timing chain tensioner rattling on cold start in the V6 and V8 — no cited source supports it for the 92A, and it risks sending a diagnosis to an expensive non-fault",
+   "Claim that Porsche introduced the reinforced transfer case clutch pack 'in 2018' — the year is not in the cited sources, so only the existence of an uprated pack is kept",
+   "Claim that moisture entering through a misshapen transfer case breather spoils the oil — not supported by the cited sources"
+  ],
+  "sources": [
+   {
+    "id": 1,
+    "title": "Porsche Cayenne Transfer Case Failure: Common Issues, Symptoms, and Fixes (2011-2018) — Seacoast Specialist Cars",
+    "url": "https://sscarsnh.com/porsche-cayenne-transfer-case-failure-common-issues-symptoms-and-fixes-2011-2018/"
+   },
+   {
+    "id": 2,
+    "title": "12 Most Common Problems with the Porsche Cayenne — Volksmaster",
+    "url": "https://www.volksmasterltd.co.uk/12-most-common-problems-with-the-porsche-cayenne/"
+   },
+   {
+    "id": 3,
+    "title": "Problem with transfer case — Porsche Cayenne 92A (958) — PFF Forum",
+    "url": "https://www.pff.de/en/thread/2822437-problem-with-transfer-case/"
+   },
+   {
+    "id": 4,
+    "title": "Expert Solutions for Porsche Cayenne & Panamera Common Problems — PCarwise",
+    "url": "https://www.pcarwise.com/local-help/porsche-common-problems/porsche-cayenne-panamera-common-problems/"
+   },
+   {
+    "id": 5,
+    "title": "NHTSA recalls, Porsche Cayenne 2011 — 16V-169 brake pedal pivot pin circlip (built Apr 2010-Jan 2016), 12V-065 headlamp detachment (built Mar 2010-Jan 2012), 22V-656 headlight adjustment screw caps",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=porsche&model=cayenne&modelYear=2011"
+   },
+   {
+    "id": 6,
+    "title": "Top 16 Reported Common Problems in Porsche Cayenne — AR Motors",
+    "url": "https://www.armotors.ae/blog/top-16-reported-common-problems-in-porsche-cayenne/"
+   },
+   {
+    "id": 7,
+    "title": "Porsche Cayenne 958 Cooling System Issues Explained — eEuroparts",
+    "url": "https://eeuroparts.com/blog/porsche-cayenne-958-cooling-system-issues-explained"
+   },
+   {
+    "id": 8,
+    "title": "Porsche Cayenne V8 coolant pipe update (955/957 plastic pipes vs 958 slip-fit metal pipes) — Fifth Gear",
+    "url": "https://fifthgear.biz/fifthgear-blog/porsche-cayenne-v8-coolant-pipe-update/"
    }
   ]
  },
