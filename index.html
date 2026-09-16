@@ -39,9 +39,8 @@
         <svg viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 10.4h9.9l2.1-7.4H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.4" cy="19" r="1.5" fill="currentColor"/><circle cx="16.6" cy="19" r="1.5" fill="currentColor"/></svg>
         <span class="tools__badge">۰</span>
       </a>
-      <button class="burger" aria-expanded="false" type="button">
+      <button class="burger" aria-label="منو" aria-expanded="false" type="button">
         <span class="burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="burger__label">منو</span>
       </button>
     </div>
   </div>
@@ -147,7 +146,17 @@
 
 <!-- ============ AI DIAGNOSIS ============ -->
 <section class="ai" id="diagnose">
-  <div class="container ai__shell">
+  <div class="container ai__open">
+    <button class="ai__toggle" id="aiToggle" type="button" aria-expanded="false" aria-controls="aiShell">
+      <span class="ai__toggle-ic" aria-hidden="true"><i class="ai-spark"></i></span>
+      <span class="ai__toggle-txt">
+        <b>عیب‌یابی هوشمند خودرو</b>
+        <i>خودرو و مشکل را بگویید؛ چند سؤال کوتاه می‌پرسیم و قطعه‌ی مناسب را نشان می‌دهیم</i>
+      </span>
+      <span class="ai__toggle-chev" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="container ai__shell" id="aiShell">
     <aside class="ai__side">
       <span class="ai__kicker"><i class="ai-spark" aria-hidden="true"></i>دستیار هوشمند روند</span>
       <h2 class="ai__title">عیب‌یابی هوشمند خودرو</h2>

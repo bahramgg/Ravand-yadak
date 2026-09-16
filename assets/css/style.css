@@ -128,9 +128,9 @@ section[id]{scroll-margin-top:var(--head-h)}
   box-shadow:0 0 0 2px #0d1420;
 }
 
-.burger{display:none;align-items:center;gap:8px;height:var(--ctl);padding-inline:12px;border-radius:10px;
-  border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.06);color:#fff;
-  font-size:12.5px;font-weight:600;line-height:1;transition:background .18s,border-color .18s}
+.burger{display:none;align-items:center;justify-content:center;width:var(--ctl);height:var(--ctl);
+  border-radius:10px;border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.06);color:#fff;
+  transition:background .18s,border-color .18s}
 .burger__lines{display:flex;flex-direction:column;justify-content:space-between;width:18px;height:12px}
 .burger__lines span{display:block;height:2px;background:#fff;border-radius:2px}
 /* unmistakable when open: the button turns into the brand blue */
@@ -533,6 +533,7 @@ body.ai-in-view .totop{opacity:0;visibility:hidden;pointer-events:none}
 }
 .ai [hidden]{display:none!important}
 .ai__shell{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.62fr);gap:28px;align-items:stretch}
+.ai__open{display:none}   /* the opener button is a phone-only affordance */
 .ai-spark{font-style:normal}
 .ai-spark::before{content:"✦"}
 
@@ -829,8 +830,26 @@ body.ai-in-view .totop{opacity:0;visibility:hidden;pointer-events:none}
   .bgrid{grid-template-columns:1fr 1fr}
   .features__inner{grid-template-columns:1fr 1fr}
   .footer__inner{grid-template-columns:1fr 1fr}
-  .ai{align-items:stretch;padding:12px 0 14px}
-  .ai__shell{display:flex;flex-direction:column;gap:10px;height:calc(100svh - var(--head-h) - 26px);min-height:560px}
+  /* the section now holds two blocks (opener + wizard), so it stacks instead of sitting in a row */
+  .ai{display:block;padding:12px 0 14px}
+  /* folded, the section is just the button — it must not reserve a screen of empty space */
+  .ai:not(.is-open){min-height:0}
+  /* phones: the assistant stays folded behind one big button until it is asked for */
+  .ai__open{display:block}
+  .ai__toggle{display:flex;align-items:center;gap:12px;width:100%;padding:15px 16px;border-radius:18px;
+    background:linear-gradient(135deg,#2b87de,#125aa2);box-shadow:0 12px 28px rgba(26,115,201,.28);
+    color:#fff;text-align:start}
+  .ai__toggle-ic{flex:0 0 42px;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+    background:rgba(255,255,255,.16);font-size:17px}
+  .ai__toggle-txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .ai__toggle-txt b{font-size:15px;font-weight:800;line-height:1.5}
+  .ai__toggle-txt i{font-style:normal;font-size:11.5px;line-height:1.75;color:rgba(255,255,255,.85)}
+  .ai__toggle-chev{flex:0 0 auto;margin-inline-start:auto;width:10px;height:10px;
+    border-inline-start:2px solid #fff;border-block-end:2px solid #fff;transform:rotate(-45deg);
+    transition:transform .2s}
+  .ai.is-open .ai__toggle-chev{transform:rotate(135deg)}
+  .ai__shell{display:none;flex-direction:column;gap:10px;height:calc(100svh - var(--head-h) - 26px);min-height:560px}
+  .ai.is-open .ai__shell{display:flex;margin-top:10px}
   .ai__side{flex:0 0 auto;gap:8px}
   .ai__kicker,.ai__sub,.ai__note,.ai-car__label,.ai-car__answers{display:none!important}
   .ai__title{font-size:19px}

@@ -327,4 +327,39 @@
     window.addEventListener('load', set);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(set);
   })();
+  /* ---------------------------------------------------------
+     دستیار عیب‌یابی روی موبایل تاشده است: با دکمه‌ی بزرگ باز می‌شود،
+     و هر لینکی که به #diagnose می‌رود هم آن را باز می‌کند.
+     --------------------------------------------------------- */
+  (function () {
+    var sec = document.getElementById('diagnose');
+    var toggle = document.getElementById('aiToggle');
+    if (!sec || !toggle) return;
+    function setOpen(state) {
+      sec.classList.toggle('is-open', state);
+      toggle.setAttribute('aria-expanded', String(state));
+      /* the assistant measures itself to fit one screen — nudge it once it becomes visible */
+      if (state) window.dispatchEvent(new Event('resize'));
+    }
+    toggle.addEventListener('click', function () {
+      var open = !sec.classList.contains('is-open');
+      setOpen(open);
+      /* the wizard is built to fill exactly one screen, so park it right under the header */
+      if (open) {
+        requestAnimationFrame(function () {
+          var shell = document.getElementById('aiShell');
+          var bar = document.getElementById('topbar');
+          if (!shell) return;
+          var top = shell.getBoundingClientRect().top + window.pageYOffset - (bar ? bar.offsetHeight : 0) - 8;
+          var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: top, behavior: still ? 'auto' : 'smooth' });
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      var el = e.target && e.target.closest ? e.target.closest('a[href="#diagnose"]') : null;
+      if (el) setOpen(true);
+    }, true);
+    if (location.hash === '#diagnose') setOpen(true);
+  })();
 })();
